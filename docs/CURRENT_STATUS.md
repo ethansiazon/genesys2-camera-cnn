@@ -138,3 +138,17 @@ was rechecked unchanged. No board programming or remote Git push performed.
 Next: user loads r4 via JTAG after wiring confirmation; only SW6 up, BTNC,
 wait 5 seconds and compare same scene/white objects/ceiling light. Save the
 physical observation before promoting or changing another variable.
+
+### Physical result: reference-startup block rejected
+
+User reports r4 is "way worse everything looks darker with more purple with a
+slight green hue (farther from real colors)". This is a qualitative regression;
+no r4 UART settings/raw capture was obtained. Do not repeat or promote this
+register block. It does not establish a black-sun root cause or identify which
+setting changed the appearance. Working source still records this rejected
+candidate; the preferred archive and earlier diagnostic copies remain intact.
+Next physical action: reload camera/versions/last_exposure_test/camera_hdmi.bit,
+only SW6 up, BTNC and wait five seconds; confirm preferred image returns.
+Baseline restoration is not yet confirmed. A read-only ISP/AWB diagnostic is
+already built as r3 if needed later; do not call it physically tested or read
+UART until the user confirms the appropriate connection and loaded version.

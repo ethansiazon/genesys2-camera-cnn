@@ -1,5 +1,11 @@
 # Controlled reference startup candidate
 
+**REJECTED after user test:** darker, more purple, slight green hue, farther
+from real colours. Do not promote this candidate. Restore the preserved
+`camera/versions/last_exposure_test/camera_hdmi.bit` for preferred viewing.
+The source below remains as a reproducible rejected experiment; see
+`docs/camera_analog_reference_20261104/PHYSICAL_RESULT.json`.
+
 Fresh copy of camera/versions/last_exposure_test, Ethan's preferred picture.
 Only ov5640_init.v differs in synthesizable RTL: 28 Linux-verified startup
 register writes inserted after the PLL-source selection and before DVP/ISP setup.

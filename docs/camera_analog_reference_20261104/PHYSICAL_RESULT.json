@@ -1,0 +1,12 @@
+{
+  "candidate": "analog_reference128_20261104_r4",
+  "bitstream_sha256": "7f287fae0a415126e231f36e4bb643f9bd449e1739dbd76941cc210354ffc7ab",
+  "source_commit": "090f597",
+  "evidence": "User visual comparison after manual loading instructions; no UART readback or paired raw capture for this candidate yet.",
+  "user_observation_verbatim": "way worse everything looks darker with more purple with a slight green hue (farther from real colors)",
+  "decision": "rejected; do not promote or repeat this same register block unchanged",
+  "preferred_baseline": "camera/versions/last_exposure_test/camera_hdmi.bit",
+  "baseline_restoration_confirmed": false,
+  "interpretation": "The full reference-startup block regressed the observed live image under this configuration. This does not isolate which register caused the regression or establish a black-sun diagnosis.",
+  "next_step": "Restore preferred baseline and confirm its earlier appearance. Use actual ISP/AWB readbacks before the next isolated colour-setting experiment."
+}
