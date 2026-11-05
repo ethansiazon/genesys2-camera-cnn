@@ -405,3 +405,18 @@ unchanged, noCNN changes or Git push. Next step is physical same-scene format
 comparison before stacking picture tuning. Do not call these confirmed fixes.
 Desktop test kit and ZIP will contain baseline, both builds, matching source,
 recipes, instructions, blank observationsheet and evidence. User can test later.
+
+
+## Best-camera teammate handoff created November5
+
+Send Desktop/Genesys2-Best-Camera-Handoff-20261105.zip (about2.6MB), not an older
+October handoff. Primary bitstream LOAD_THIS_BEST_TESTED.bit is the original
+preferred last_exposure_test, not an unvalidated new candidate. Includes exact
+preserved archive, editable matching RTL/constraints/sim, portable Vivado project
+and guarded build tools, WIRING, README_FIRST, DEBUGGING_HANDOFF, AGENTS notes,
+labelled later raw lamp/paper evidence, and optionalr8 experimentZIP separately.
+No CNN or credentials.78baseline files verified;153package files hash/CRCchecked.
+Fresh Vivado project creation validated21RTLfiles/part/SIM_FAST_INIT0/constraints;
+no synthesis or board programming. See BEST_CAMERA_HANDOFF_20261105.json forhash.
+Original and active working sources unchanged; noGitpush. Physical image still
+dark/washed with bright-light green/dark artefacts; handoff does not claim cure.
