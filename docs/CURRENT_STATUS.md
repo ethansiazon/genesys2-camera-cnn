@@ -1,4 +1,4 @@
-# Status at import — 4 November 2026
+# Status at import â€” 4 November 2026
 
 ## Camera: Ethan's saved work
 
@@ -31,7 +31,7 @@ received YUV values and offline RGB conversion; isolate capture/byte interpretat
 from sensor configuration. Then vary one setting and compare against baseline.
 No new camera programming or heavy build occurred during repository preparation.
 
-## Active raw diagnostic � 4 November
+## Active raw diagnostic — 4 November
 
 The editable camera/working source now adds raw YUYV observation/recording using
 the earlier tested observer and snapshot format. Exposure remains 128 lines,
@@ -41,7 +41,9 @@ local_results/captures. The register reader labels the current exposure/gain
 readback addresses correctly. Seventeen functional fixtures and the host decoder
 fixture passed. The guarded single-thread build is in
 builds/raw_exposure_diagnostic_20261104_r1; inspect its STATUS.json before acting.
-No new version has yet been programmed or physically validated.
+The raw diagnostic built successfully in about 5 minutes. Setup slack +0.175 ns,
+hold slack +0.078 ns, zero routing errors. See camera_raw_diagnostic_20261104.
+Awaiting user loading/comparison; physical image quality is not yet verified.
 
 ## CNN and Niko's board work
 

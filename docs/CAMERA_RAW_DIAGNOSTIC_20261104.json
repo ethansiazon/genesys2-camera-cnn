@@ -67,5 +67,6 @@
     "vga_timing.v": "dfcd550bb17785eaff368c5c2afac3c7c7c4198ed459e1d16b8fbcd95a6bd1c3",
     "ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58"
   },
-  "physical_status": "Not built or programmed yet"
+  "physical_status": "Built and timing passed; not yet physically verified",
+  "build_result": "docs/camera_raw_diagnostic_20261104/BUILD_RESULT.json"
 }
