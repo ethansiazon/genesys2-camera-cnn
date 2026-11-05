@@ -88,3 +88,21 @@ hold slack +0.063 ns, zero routing errors. Its frozen RTL differs from raw-128
 only in ov5640_init.v (one exposure setpoint plus its comment). The user has
 been asked to load it manually and compare the same scene. Physical results
 remain pending; do not claim a brightness or colour improvement yet.
+
+## Current ISP readback experiment - 4 November
+
+Exposure-192 was physically tested and read back correctly, but the user reports
+brighter output with worse green/purple colouring. It was not promoted. Its raw
+capture is saved locally; framing differs from the raw-128 capture, so aggregate
+statistics are not a paired brightness/colour effect estimate.
+
+The active working source now RESTORES 128-line exposure/1x gain and extends
+read-only diagnostics to 48 registers, including AWB gains and colour-matrix/ISP
+controls. Its sensor-write table matches the captured raw-128 version exactly.
+SW0 rising edge repeats READS only, leaving init_done/camera streaming intact;
+SW0 still shows the overlay while up. Normal viewing remains only SW6 up. UART
+page D1640004 carries the additional 24 ISP values; D1640002 remains compatible.
+The initialization/refresh/NACK and top-level UART-page/capture checks passed.
+Build: builds/isp_readback128_20261104_r3, guarded single-thread, not yet complete.
+User moved USB to JTAG only, board powered, only SW6 up. No new version has yet
+been loaded. Current physical board remains the exposure-192 test.

@@ -47,6 +47,7 @@ module ov5640_init #(
 )(
     input  wire        clk,
     input  wire        rst,
+    input  wire        debug_refresh, // Rising edge: repeat READS only; no camera reset/writes.
     // SW1: run the sensor's own internal colour bar instead of the imager.
     // The DVP then carries a synthetic, noise-free, perfectly static pattern,
     // so anything speckled or flickering on screen is transport error, not
@@ -74,8 +75,8 @@ module ov5640_init #(
     output reg         init_done,
     output reg         nack_seen,
     output reg  [7:0]  table_index,
-    output reg [191:0] debug_readback,
-    output reg [23:0] debug_read_nack
+    output reg [383:0] debug_readback,
+    output reg [47:0] debug_read_nack
 );
     localparam integer MS = CLK_HZ / 1000;
 
@@ -157,12 +158,12 @@ module ov5640_init #(
         8'd53 : entry = {C_WR,  16'h501F, 8'h00};  // ISP YUV422 (was 0x01, RGB)
         8'd54 : entry = {C_WR,  16'h4740, 8'h22};  // Linux OV5640 DVP: rising sample, HREF high, VSYNC high (bit0=0).
         8'd55 : entry = {C_WR,  16'h503D, testbar ? 8'h80 : 8'h00};  // internal colour bar
-        // One controlled trial: manual exposure 192 lines of VTS 520,
+        // One controlled trial: manual exposure 128 lines of VTS 520,
         // gain 1x. Register encodings follow Espressif OV5640 controls.
         // White balance, receiver, clock, window and format stay unchanged.
         8'd56 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
         8'd57 : entry = {C_WR, 16'h3500, 8'h00};
-        8'd58 : entry = {C_WR, 16'h3501, 8'h0C}; // 192 << 4 = 0x00C00
+        8'd58 : entry = {C_WR, 16'h3501, 8'h08}; // 128 << 4 = 0x00800
         8'd59 : entry = {C_WR, 16'h3502, 8'h00};
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
@@ -183,34 +184,59 @@ module ov5640_init #(
                      P_TBL=4'd7,   P_TBL_W=4'd8, P_DLY=4'd9,
                      P_DONE=4'd10, P_DEBUG=4'd11, P_DEBUG_WAIT=4'd12;
 
-    reg [4:0] debug_index;
+    reg [5:0] debug_index;
+    reg debug_refresh_q = 0;
     reg [15:0] debug_addr;
     always @* begin
         case (debug_index)
-        5'd0: debug_addr=16'h4740;
-        5'd1: debug_addr=16'h4300;
-        5'd2: debug_addr=16'h501F;
-        5'd3: debug_addr=16'h300E;
-        5'd4: debug_addr=16'h3017;
-        5'd5: debug_addr=16'h3018;
-        5'd6: debug_addr=16'h3034;
-        5'd7: debug_addr=16'h3035;
-        5'd8: debug_addr=16'h3036;
-        5'd9: debug_addr=16'h3037;
-        5'd10: debug_addr=16'h3108;
-        5'd11: debug_addr=16'h3824;
-        5'd12: debug_addr=16'h3808;
-        5'd13: debug_addr=16'h3809;
-        5'd14: debug_addr=16'h380A;
-        5'd15: debug_addr=16'h380B;
-        5'd16: debug_addr=16'h3008;
-        5'd17: debug_addr=16'h4713;
-        5'd18: debug_addr=16'h3503;
-        5'd19: debug_addr=16'h3500;
-        5'd20: debug_addr=16'h3501;
-        5'd21: debug_addr=16'h3502;
-        5'd22: debug_addr=16'h350A;
-        5'd23: debug_addr=16'h350B;
+        6'd0: debug_addr=16'h4740;
+        6'd1: debug_addr=16'h4300;
+        6'd2: debug_addr=16'h501F;
+        6'd3: debug_addr=16'h300E;
+        6'd4: debug_addr=16'h3017;
+        6'd5: debug_addr=16'h3018;
+        6'd6: debug_addr=16'h3034;
+        6'd7: debug_addr=16'h3035;
+        6'd8: debug_addr=16'h3036;
+        6'd9: debug_addr=16'h3037;
+        6'd10: debug_addr=16'h3108;
+        6'd11: debug_addr=16'h3824;
+        6'd12: debug_addr=16'h3808;
+        6'd13: debug_addr=16'h3809;
+        6'd14: debug_addr=16'h380A;
+        6'd15: debug_addr=16'h380B;
+        6'd16: debug_addr=16'h3008;
+        6'd17: debug_addr=16'h4713;
+        6'd18: debug_addr=16'h3503;
+        6'd19: debug_addr=16'h3500;
+        6'd20: debug_addr=16'h3501;
+        6'd21: debug_addr=16'h3502;
+        6'd22: debug_addr=16'h350A;
+        6'd23: debug_addr=16'h350B;
+        6'd24: debug_addr=16'h5000;
+        6'd25: debug_addr=16'h5001;
+        6'd26: debug_addr=16'h5005;
+        6'd27: debug_addr=16'h3400;
+        6'd28: debug_addr=16'h3401;
+        6'd29: debug_addr=16'h3402;
+        6'd30: debug_addr=16'h3403;
+        6'd31: debug_addr=16'h3404;
+        6'd32: debug_addr=16'h3405;
+        6'd33: debug_addr=16'h3406;
+        6'd34: debug_addr=16'h5380;
+        6'd35: debug_addr=16'h5381;
+        6'd36: debug_addr=16'h5382;
+        6'd37: debug_addr=16'h5383;
+        6'd38: debug_addr=16'h5384;
+        6'd39: debug_addr=16'h5385;
+        6'd40: debug_addr=16'h5386;
+        6'd41: debug_addr=16'h5387;
+        6'd42: debug_addr=16'h5388;
+        6'd43: debug_addr=16'h5389;
+        6'd44: debug_addr=16'h538A;
+        6'd45: debug_addr=16'h538B;
+        6'd46: debug_addr=16'h5480;
+        6'd47: debug_addr=16'h5580;
         default: debug_addr=16'h300A;
         endcase
     end
@@ -220,6 +246,7 @@ module ov5640_init #(
 
     always @(posedge clk) begin
         sccb_start <= 1'b0;
+        debug_refresh_q <= debug_refresh;
         if (rst) begin
             st          <= P_RST0;
             timer       <= 32'd0;
@@ -231,6 +258,7 @@ module ov5640_init #(
             init_done   <= 1'b0;
             nack_seen   <= 1'b0;
             table_index <= 8'd0;
+            debug_refresh_q <= 0;
             debug_index <= 0; debug_readback <= 0; debug_read_nack <= 0;
             sccb_rw     <= 1'b0;
             sccb_addr   <= 16'h0000;
@@ -319,10 +347,15 @@ module ov5640_init #(
             P_DEBUG_WAIT: if (sccb_done) begin
                 debug_readback[debug_index*8 +: 8] <= sccb_rdata;
                 debug_read_nack[debug_index] <= sccb_nack;
-                if (debug_index == 23) st <= P_DONE;
+                if (debug_index == 47) st <= P_DONE;
                 else begin debug_index <= debug_index + 1'b1; st <= P_DEBUG; end
             end
-            P_DONE: init_done <= 1'b1;
+            P_DONE: begin
+                init_done <= 1'b1;
+                if (debug_refresh && !debug_refresh_q) begin
+                    debug_index <= 0; st <= P_DEBUG;
+                end
+            end
             default: st <= P_DONE;
             endcase
         end

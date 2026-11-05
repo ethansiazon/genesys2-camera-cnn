@@ -8,6 +8,7 @@ $diagnosticStamp=Get-Date -Format 'yyyyMMdd_HHmmss'
 $rawPath=Join-Path $OutDir ('diagnostics_'+$diagnosticStamp+'.txt')
 $jsonPath=Join-Path $OutDir ('diagnostics_'+$diagnosticStamp+'.json')
 $registerAddresses=@('4740','4300','501F','300E','3017','3018','3034','3035','3036','3037','3108','3824','3808','3809','380A','380B','3008','4713','3503','3500','3501','3502','350A','350B')
+$ispAddresses=@('5000','5001','5005','3400','3401','3402','3403','3404','3405','3406','5380','5381','5382','5383','5384','5385','5386','5387','5388','5389','538A','538B','5480','5580')
 $measurements=New-Object System.Collections.Generic.List[object]
 $reader=New-Object System.IO.Ports.SerialPort($Port,115200,[System.IO.Ports.Parity]::None,8,[System.IO.Ports.StopBits]::One)
 $reader.ReadTimeout=1200;$reader.NewLine="`n"
@@ -37,6 +38,12 @@ try {
     for($i=0;$i -lt 24;$i++){$registers[$registerAddresses[$i]]=('{0:X2}' -f (($w[1+[math]::Floor($i/4)] -shr (8*($i%4))) -band 255))}
     $row.registers=$registers;$row.read_nack_mask=('{0:X6}' -f $w[7])
     Write-Host ('READBACK: '+(($registers.GetEnumerator()|ForEach-Object{$_.Key+'='+$_.Value}) -join ' ')+' NACK='+$row.read_nack_mask)
+   }
+   'D1640004' {
+    $registers=[ordered]@{}
+    for($i=0;$i -lt 24;$i++){$registers[$ispAddresses[$i]]=('{0:X2}' -f (($w[1+[math]::Floor($i/4)] -shr (8*($i%4))) -band 255))}
+    $row.isp_registers=$registers;$row.isp_read_nack_mask=('{0:X6}' -f $w[7])
+    Write-Host ('ISP READBACK: '+(($registers.GetEnumerator()|ForEach-Object{$_.Key+'='+$_.Value}) -join ' ')+' NACK='+$row.isp_read_nack_mask)
    }
    'D1640003' {
     $row.frame_counter=$w[2];$row.pixels_per_frame=$w[3];$row.x_max=($w[4] -band 1023);$row.y_max=(($w[4] -shr 16) -band 1023)

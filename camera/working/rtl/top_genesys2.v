@@ -181,10 +181,17 @@ module top_genesys2 #(
         .scl_low(scl_low), .sda_low(sda_low), .sda_in(jb[3])
     );
 
-    wire [191:0] config_readback;
-    wire [23:0] config_read_nack;
+    wire [383:0] config_readback;
+    wire [47:0] config_read_nack;
+    // SW0 still controls the overlay; its rising edge also refreshes read-only
+    // diagnostics after the camera settles. It never changes sensor settings.
+    (* ASYNC_REG="TRUE" *) reg [1:0] debug_refresh_sync = 0;
+    always @(posedge clk200) begin
+        if (rst200) debug_refresh_sync <= 0;
+        else debug_refresh_sync <= {debug_refresh_sync[0],sw[0]};
+    end
     ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000)) init_i (
-        .clk(clk200), .rst(rst200), .testbar(testbar), .vyuy(vyuy_sel),
+        .clk(clk200), .rst(rst200), .debug_refresh(debug_refresh_sync[1]), .testbar(testbar), .vyuy(vyuy_sel),
         .sccb_start(sccb_start), .sccb_rw(sccb_rw),
         .sccb_addr(sccb_addr), .sccb_wdata(sccb_wdata),
         .sccb_rdata(sccb_rdata), .sccb_busy(sccb_busy),
@@ -399,7 +406,8 @@ module top_genesys2 #(
                               {16'd0,sw,led},{16'd0,chip_id},32'hD1640000};
         1: diagnostic_words = {32'd200000000,hp_hmaxlo,hp_hmaxhi,hp_hhigh,
                               hp_vmaxlo,hp_vmaxhi,hp_vhigh,32'hD1640001};
-        2: diagnostic_words = {{8'd0,config_read_nack},config_readback,32'hD1640002};
+        2: diagnostic_words = {{8'd0,config_read_nack[23:0]},config_readback[191:0],32'hD1640002};
+        4: diagnostic_words = {{8'd0,config_read_nack[47:24]},config_readback[383:192],32'hD1640004};
         default: diagnostic_words = {m_href_ln,m_hi_len,m_href_len,
                               {6'd0,ym_200,6'd0,xm_200},{12'd0,pf_200},
                               {16'd0,fc_200},{lmin_200,lmax_200,shl_200},32'hD1640003};

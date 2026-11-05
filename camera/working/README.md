@@ -7,7 +7,7 @@ selected on 4 November 2026. The unchanged saved version is
 
 Initial RTL and constraints are byte-identical to that saved version.
 The saved baseline uses 128 exposure lines, gain 1x, VTS 520.
-The active working copy now tests 192 exposure lines; gain and VTS remain fixed. The user reports a dark,
+The active working copy now uses 128 exposure lines and read-only ISP diagnostics. The user reports a dark,
 washed-out picture, with remaining green distortion on bright lights.
 Monitor aspect-ratio stretching has been corrected on the monitor.
 
@@ -36,7 +36,10 @@ Wait for the camera to settle before raising SW7; lower then raise it to capture
 a new frame without resetting the camera. The preserved .bit in this folder is
 still the OLD baseline; use the separately built diagnostic .bit after it passes.
 
-## Controlled exposure-192 experiment
+## Controlled exposure-192 experiment (rejected)
+
+User reported brighter but greener/purpler output. Its code and bitstream are
+saved in Git/build history; it is not the current preferred version.
 +
 +Only the exposure-time setpoint changes: 128 to 192 lines (+50%). Gain remains
 +1x and timing, format, receiver, colour conversion and raw recorder are unchanged.
@@ -44,3 +47,10 @@ still the OLD baseline; use the separately built diagnostic .bit after it passes
 +The original and raw-128 bitstreams remain saved separately. This experiment
 +requires its new built bitstream; source changes do not alter the running board.
 +
+## Active ISP readback diagnostic
+
+The active working source returns to 128-line exposure and 1x gain. No colour
+register writes were added. Diagnostics now include 48 camera registers across
+UART pages D1640002 and D1640004. After settling, raising then lowering SW0
+refreshes READS only; normal viewing is still only SW6 up. SW7 raw capture is
+unchanged. All sensor writes match the previously captured raw-128 version.

@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-04",
+  "purpose": "Inspect ISP and AWB settings without changing those settings",
+  "baseline": "Raw-exposure-128 diagnostic",
+  "sensor_writes_match_raw128": true,
+  "exposure_lines": 128,
+  "gain": "1x",
+  "readback_register_count": 48,
+  "ISP_addresses": [
+    "5000",
+    "5001",
+    "5005",
+    "3400",
+    "3401",
+    "3402",
+    "3403",
+    "3404",
+    "3405",
+    "3406",
+    "5380",
+    "5381",
+    "5382",
+    "5383",
+    "5384",
+    "5385",
+    "5386",
+    "5387",
+    "5388",
+    "5389",
+    "538A",
+    "538B",
+    "5480",
+    "5580"
+  ],
+  "ISP_packet_tag": "D1640004",
+  "refresh_control": "After settling, pulse SW0 up then down without reset; this repeats SCCB reads only. Overlay appears while SW0 is up.",
+  "physical_status": "Build running; current board still exposure-192 until new candidate is loaded",
+  "sources": [
+    "https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf",
+    "https://github.com/espressif/esp32-camera/blob/master/sensors/ov5640.c"
+  ],
+  "scope": "Read-only camera colour settings diagnosis; no claim of a colour fix",
+  "functional_tests_passed": [
+    "tb_init_readback",
+    "tb_top_wiring_inverted"
+  ],
+  "test_scope": "48-register byte order, high/low NACK masks, refresh without extra sensor writes, restored exposure, UART page-4 packing and top-level camera capture",
+  "build_path": "builds/isp_readback128_20261104_r3"
+}
