@@ -1,0 +1,208 @@
+{
+  "date": "2026-11-04",
+  "raw_sha256": "01a2dbc2b169b55ad66d16feebba105ee0483c9cf5f4d077199b7c29dadb8e6c",
+  "raw_bytes": 153600,
+  "different_bytes_from_per_column_mode": 1974,
+  "rows_with_differences": 79,
+  "max_different_bytes_in_row": 47,
+  "examples": [
+    {
+      "row": 77,
+      "byte_column": 320,
+      "got": 81,
+      "mode": 82,
+      "xor": 3
+    },
+    {
+      "row": 78,
+      "byte_column": 320,
+      "got": 81,
+      "mode": 82,
+      "xor": 3
+    },
+    {
+      "row": 78,
+      "byte_column": 332,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 79,
+      "byte_column": 320,
+      "got": 81,
+      "mode": 82,
+      "xor": 3
+    },
+    {
+      "row": 79,
+      "byte_column": 338,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 85,
+      "byte_column": 344,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 86,
+      "byte_column": 348,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 87,
+      "byte_column": 404,
+      "got": 69,
+      "mode": 70,
+      "xor": 3
+    },
+    {
+      "row": 88,
+      "byte_column": 328,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 88,
+      "byte_column": 330,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 88,
+      "byte_column": 404,
+      "got": 69,
+      "mode": 70,
+      "xor": 3
+    },
+    {
+      "row": 89,
+      "byte_column": 322,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 89,
+      "byte_column": 324,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 89,
+      "byte_column": 328,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 89,
+      "byte_column": 330,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 90,
+      "byte_column": 320,
+      "got": 81,
+      "mode": 82,
+      "xor": 3
+    },
+    {
+      "row": 90,
+      "byte_column": 322,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 90,
+      "byte_column": 324,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 90,
+      "byte_column": 328,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    },
+    {
+      "row": 90,
+      "byte_column": 330,
+      "got": 80,
+      "mode": 79,
+      "xor": 31
+    }
+  ],
+  "bar_interior_modal_yuyv": [
+    [
+      255,
+      128,
+      255,
+      128
+    ],
+    [
+      255,
+      0,
+      255,
+      143
+    ],
+    [
+      215,
+      223,
+      215,
+      0
+    ],
+    [
+      199,
+      0,
+      199,
+      0
+    ],
+    [
+      79,
+      255,
+      79,
+      255
+    ],
+    [
+      63,
+      32,
+      63,
+      255
+    ],
+    [
+      15,
+      255,
+      15,
+      112
+    ],
+    [
+      0,
+      128,
+      0,
+      128
+    ]
+  ],
+  "scope": "One static synthetic sensor-bar frame. Compare each byte column against its most frequent value across rows; does not prove live-data sampling is error-free.",
+  "max_absolute_difference": 3,
+  "bytes_differing_more_than1": 64,
+  "bytes_differing_more_than4": 0,
+  "chroma_bytes_differing_from_mode": 138,
+  "max_chroma_difference": 2,
+  "visual_observation": "Clean vertical colour bars after independent laptop conversion; no visible horizontal streaks.",
+  "interpretation": "Per-column deviations are not automatically transport errors; possible sensor pattern processing/dither. This synthetic pattern does not establish correct live colour."
+}

@@ -43,7 +43,9 @@ fixture passed. The guarded single-thread build is in
 builds/raw_exposure_diagnostic_20261104_r1; inspect its STATUS.json before acting.
 The raw diagnostic built successfully in about 5 minutes. Setup slack +0.175 ns,
 hold slack +0.078 ns, zero routing errors. See camera_raw_diagnostic_20261104.
-Awaiting user loading/comparison; physical image quality is not yet verified.
+User reports loading the diagnostic: image looks more purple and remains dark.
+Awaiting current UART register readback and raw-frame capture. Do not treat the
+new image as an improvement or start exposure/gamma changes before comparison.
 
 ## CNN and Niko's board work
 

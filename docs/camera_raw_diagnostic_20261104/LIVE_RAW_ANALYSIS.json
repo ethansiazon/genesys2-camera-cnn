@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-04",
+  "source_capture_local": "local_results\\physical_raw_exposure_diagnostic_20261104\\raw_yuv_20261104_221914.yuyv.bin",
+  "sha256": "a2acc409dd765a9634e98efa896ba7b03db8ce26d236b157c496ac405cc295e5",
+  "pixels": 76800,
+  "transfer_packets": 5487,
+  "transfer_resynchronizations": 0,
+  "metadata_address_errors": 0,
+  "exposure_lines": 128,
+  "gain": "1x",
+  "median_luma": 43.0,
+  "percent_luma_below64": 94.40755208333333,
+  "green_dominant_pixels_in_independent_opencv_conversion": 141,
+  "green_pixel_chroma_medians": [
+    74.0,
+    79.0
+  ],
+  "visual_observation": "Dark room scene; bright light retains green/banded false colours after offline conversion. Alternate range conversion does not remove the local false colour.",
+  "scope": "This is one current live frame. False colour is reproducible from received raw YUV independent of FPGA HDMI; sensor vs electrical sampling vs phase/format cause remains unproved. Raw scene imagery stays outside Git."
+}

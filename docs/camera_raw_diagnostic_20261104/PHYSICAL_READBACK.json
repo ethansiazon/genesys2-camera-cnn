@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-04",
+  "source_local": "local_results\\physical_raw_exposure_diagnostic_20261104\\diagnostics_20261104_221656.json",
+  "user_image_observation": "More purple tone and still dark than preferred archived bitstream",
+  "switches_hex": "40",
+  "register_reads_without_nack": 4,
+  "intended_manual_settings_verified": true,
+  "readback": {
+    "4740": "22",
+    "4300": "30",
+    "501F": "00",
+    "300E": "58",
+    "3017": "FF",
+    "3018": "FF",
+    "3034": "1A",
+    "3035": "41",
+    "3036": "48",
+    "3037": "13",
+    "3108": "01",
+    "3824": "04",
+    "3808": "01",
+    "3809": "40",
+    "380A": "00",
+    "380B": "F0",
+    "3008": "02",
+    "4713": "02",
+    "3503": "03",
+    "3500": "00",
+    "3501": "08",
+    "3502": "00",
+    "350A": "00",
+    "350B": "10"
+  },
+  "full_frame_measurements": 7,
+  "pixels_per_frame": 76800,
+  "dimensions": [
+    320,
+    240
+  ],
+  "pclk_hz_range": [
+    7217743,
+    7219350
+  ],
+  "raw_edge_counts_note": "Raw sync probes show many short extra edges; filtered frame rate is approximately 14-15 Hz. Full frame counts do not prove correct data bytes.",
+  "scope": "Current register settings and frame counters confirmed. Raw-frame and pixel-value diagnosis pending; green/purple cause remains unknown."
+}
