@@ -20,11 +20,12 @@
     "350A": "00",
     "350B": "10"
   },
-  "physical_status": "Build running; user moved cable to JTAG, only SW6 up",
+  "physical_status": "Built and timing passed; awaiting physical loading/feedback",
   "scope": "Controlled brightness experiment; not a claimed fix for green highlights",
   "functional_tests_passed": [
     "tb_init_readback",
     "tb_top_wiring_inverted"
   ],
-  "build_path": "builds/exposure192_20261104_r2"
+  "build_path": "builds/exposure192_20261104_r2",
+  "build_result": "docs/camera_exposure192_20261104/BUILD_RESULT.json"
 }

@@ -1,0 +1,25 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\exposure192_20261104_r2",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\exposure192_20261104_r2\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-04 22:37:30",
+  "launcher_pid": 14820,
+  "elapsed_seconds": 328,
+  "available_ram_gib": 2.4,
+  "timing": {
+    "setup_wns_ns": 0.245,
+    "hold_whs_ns": 0.063,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "ab197aebd800b1770f406932c0ff4573bc24a0a57919ea01baec2529ae7557e2",
+  "source_commit": "629c551",
+  "changed_rtl_from_raw128": [
+    "ov5640_init.v"
+  ],
+  "exposure_lines": 192,
+  "gain": "1x",
+  "physical_status": "Built, timing passed; awaiting user loading and visual comparison"
+}

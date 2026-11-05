@@ -73,3 +73,18 @@ The earlier 23.37% result measured the isolated routed CNN core.
 No full live-camera CNN pipeline or complete-system frame rate has been proved.
 Do not use imported old notes saying the board is currently running a bitstream
 as a statement of the present board state.
+
+## Active exposure experiment - 4 November
+
+After raw-128 readback/live capture and clean-looking synthetic bars, the
+working source changes only the exposure setpoint from 128 to 192 lines. Gain
+stays 1x and frame timing stays fixed. Two targeted functional checks passed.
+The guarded single-thread build is builds/exposure192_20261104_r2.
+User has JTAG only connected, board powered, only SW6 up. The board still runs
+the raw-128 build until the new candidate is explicitly loaded.
+
+The exposure-192 build completed in 328 seconds with setup slack +0.245 ns and
+hold slack +0.063 ns, zero routing errors. Its frozen RTL differs from raw-128
+only in ov5640_init.v (one exposure setpoint plus its comment). The user has
+been asked to load it manually and compare the same scene. Physical results
+remain pending; do not claim a brightness or colour improvement yet.
