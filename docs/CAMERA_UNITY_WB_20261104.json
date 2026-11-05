@@ -44,5 +44,12 @@
   "sources": [
     "https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf",
     "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c"
+  ],
+  "build_status": "complete; timing passed; physical image untested",
+  "bitstream_sha256": "754433b86e128950ec96100fdaff250574c8752eb2ead9154d61e219b90a4602",
+  "targeted_checks_passed": [
+    "tb_init_readback",
+    "tb_init_unity_wb",
+    "tb_top_wiring_inverted"
   ]
 }

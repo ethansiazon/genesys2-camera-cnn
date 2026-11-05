@@ -1,0 +1,22 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\unity_wb128_20261104_r5",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\unity_wb128_20261104_r5\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-05 00:10:12",
+  "launcher_pid": 26748,
+  "elapsed_seconds": 318,
+  "available_ram_gib": 2.11,
+  "timing": {
+    "setup_wns_ns": 0.295,
+    "hold_whs_ns": 0.076,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "754433b86e128950ec96100fdaff250574c8752eb2ead9154d61e219b90a4602",
+  "source_commit": "6eafc33",
+  "errors": 0,
+  "critical_warnings": 0,
+  "physical_camera_tested": false
+}

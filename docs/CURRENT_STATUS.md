@@ -189,3 +189,13 @@ read-back r3, only seven manual WB writes added. Colour gains R/G/B=1x and
 control, not final calibration. Previous rejected r4 working folder preserved
 in local_artifacts/rejected_analog_working_20261104_r4. No analog-block retry.
 Current physical board still r3. Physical r5 performance remains unknown.
+
+R5 unity-WB build complete in 318 seconds. Setup +0.295 ns, hold +0.076 ns,
+zero routing errors and no ERROR/CRITICAL WARNING log entries. Three targeted
+checks passed: original 48-register refresh, manual WB ordering/values before
+streaming and no writes on refresh, and top-level inverted-HREF capture/UART.
+Bit: builds/unity_wb128_20261104_r5/camera_hdmi.bit
+SHA256: 754433b86e128950ec96100fdaff250574c8752eb2ead9154d61e219b90a4602
+User has confirmed JTAG only, only SW6 up. Await manual programming, BTNC,
+5-second settling and physical image report. No appearance claim made.
+Baseline fallback remains unchanged; working source hashes match this build.
