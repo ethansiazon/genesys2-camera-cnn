@@ -538,3 +538,16 @@ RGB565sensorbarcapturetoisolateexternalscreen/lightingandcheckactualreceived
 colourpacking. NextinstructionSW1+6up(7down),BTNCsettle,then7up; thisresetis
 intentional andreturnsstartupautoWB/exposure128/factorygamma. Awaitphysical
 stepbeforeUARTcapture. No simultaneousISP recipes orclock/padwrites.
+
+
+## User clarified internalbars correct; livecolour wrong
+
+Do NOT repeat knowninternalbarvisualtest simplytohear same result. Userclarifies
+syntheticbarsmatchreference whilephotographedscenechangeshues. Acknowledgedthis
+movesprioritytowardlive sensor/ISPconfiguration, not prooftransportperfect.
+NofreshinternalRGBbarcapture orresetconfirmed. Last confirmedSW6+7up/UART;
+WBwasheld01; nogammawritesapplied. NeedSW7downbeforecontrols. Nextread5000/1/3/5,
+501D/E/F,381x/382x,4514/4520,5380..B/WB/exposure; thenone-reversible-factor
+livecolourprocessingtest (CMXbit1in5001), withreadbeforevalues, keepingallother
+5001bits/scalingunchanged, restoreifworse. ManufacturerPDF5001definesCMXenable;
+EspressifsettingshasCMXreferencecoefficients. No newrecipe/bypasswriteyet.

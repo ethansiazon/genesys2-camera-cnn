@@ -21,7 +21,7 @@
   "before_readback": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_gamma_held_baseline_readback_20261105\\SESSION.json",
   "WB_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_gamma_hold_wb_20261105\\change\\SESSION.json",
   "user_confirmed": "SW6/SW7 up; scene unchanged; no reset",
-  "next": "InternalRGB565bars capture first; nextBTNC will intentionally resetheldWB to auto",
+  "next": "User says camera built-in bars are already correct. No repeated bar trial. AwaitSW7down, read ISP/mirror/binning/CMX and inspect live-only processing before selecting controlled CMX diagnostic.",
   "before_capture": "local_results/picture_trials/r8_gamma_before_capture_20261105/raw_yuv_20261105_040048.txt",
   "before_format": "RGB565, metadataR565 verified",
   "before_frame": 9789,

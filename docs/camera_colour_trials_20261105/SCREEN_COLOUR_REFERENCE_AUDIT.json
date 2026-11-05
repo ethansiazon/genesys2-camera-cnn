@@ -212,12 +212,14 @@
     "DVP data bit/phase/transport fault",
     "Format/packing error not yet independently ruled out on actual hardware"
   ],
-  "next_test": "Capture internal sensor-generated RGB565 bars with SW1+SW6, BTNC then settle and SW7 for raw capture. This removes external photographed screen/lighting; outcome narrows pipeline but does not prove every input bit is correct.",
+  "next_test": "Stop repeating known bar visual check. With SW7down, read ISP/mirror/binning/colour-matrix control state; consider one-bit colour-matrix bypass then restore, preserving scaling/exposure/WB. Actual frame/readback evidence required.",
   "gamma_writes_applied": false,
   "state_note": "Only earlier3406WBhold was applied. NextBTNC is intentional and returnsWBauto/exposure128/defaultgamma.",
   "primary_sources": [
     "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c",
     "https://linux.googlesource.com/linux/kernel/git/torvalds/linux/+/077ab8985ee278c3d8618182d335b0f0cd919e16/drivers/media/i2c/ov5640.c",
     "OV5640v2.03 product specification table6-5"
-  ]
+  ],
+  "user_follow_up": "Built-in camera colour bars look similar to expected reference, but live sensor scene colours do not.",
+  "scope_update": "Reported clean synthetic bars suggest downstream display/packing works for those test values; does not prove every DVP value or live-mode transition is correct."
 }
