@@ -487,3 +487,14 @@ loadonlySW6up/SW7down+BTNC, sametestscene, thenqualitativecomparison. No new
 build or boardprogramming. RGBcomparesformatpath atsamestartingexposure128/gain1x;
 no simultaneousbrightness/saturation changes. Awaitphysicalobservation before
 adoptingnewpreferredversion or applyingreversibletuningtrials.
+
+
+## RGB565r8 physical comparison: similar appearance
+
+Userreported "Looks about the same" after requestedRGB565load/onlySW6up+BTNC.
+Recordedscope: qualitative liveobservation, pendingactual4300/501Freadback.
+No demonstrated improvement or acceptednewbestimage. This supportsmovingaway
+fromFPGA-YUVconverter-only explanation, not proofthatallformat/capturefaults
+areexcluded. BoardstillJTAG6010only. NextrequestUART/J15only withpoweron,
+onlySW6up/SW7down,noreset; readformat/exposure/WB/gamma/ISP/BLCstate before
+choosinga single reversibletonalsettingtrial. No new writes/build/programming.
