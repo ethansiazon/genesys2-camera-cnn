@@ -116,3 +116,14 @@ for 1 second and down (no BTNC), then move to UART/J15 only while main power
 stays on. That reply is pending. Do not read COM3 until UART is confirmed.
 After confirmation verify D1640004 ISP packets and read actual AWB/CMX controls.
 Current code performs no new ISP writes; causes of colour distortion remain open.
+
+## Controlled analog/reference-startup trial - 4 November
+
+User authorized a fresh candidate based directly on last_exposure_test. The
+previous pending ISP-readback build was not confirmed loaded; its working copy
+is preserved in local_artifacts/isp_readback_working_before_analog_20261104.
+Active working RTL now matches the preferred archive except 28 verified Linux
+reference startup writes in ov5640_init.v. No receiver, colour conversion,
+exposure, gain, clock, wiring or memory changes. Original RGB565 snapshot format
+restored with the archive. New output: builds/analog_reference128_20261104_r4.
+Physical appearance remains untested. Do not call this a confirmed colour fix.

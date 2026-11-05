@@ -1,6 +1,4 @@
-// Qualified sampled-input receiver: PCLK JA physical 1, D6 JB physical 8.
-// Nov 4 diagnostic: manual 128-line exposure/1x gain preserved; SW7 records raw
-// YUYV instead of converted RGB565. HDMI and the receiver datapath are unchanged.
+// Source-clock receiver: PCLK JA physical 1, D6 JB physical 8.
 // Slow divider 4; explicit rising-PCLK/active-high-HREF configuration.
 // SCCB reader uses JB[3] SDA. 320x240 capture, 2x display over DVI-compatible
 // TMDS on HDMI OUT. No temporal/median blur in this reference bring-up build.
@@ -181,17 +179,10 @@ module top_genesys2 #(
         .scl_low(scl_low), .sda_low(sda_low), .sda_in(jb[3])
     );
 
-    wire [383:0] config_readback;
-    wire [47:0] config_read_nack;
-    // SW0 still controls the overlay; its rising edge also refreshes read-only
-    // diagnostics after the camera settles. It never changes sensor settings.
-    (* ASYNC_REG="TRUE" *) reg [1:0] debug_refresh_sync = 0;
-    always @(posedge clk200) begin
-        if (rst200) debug_refresh_sync <= 0;
-        else debug_refresh_sync <= {debug_refresh_sync[0],sw[0]};
-    end
+    wire [191:0] config_readback;
+    wire [23:0] config_read_nack;
     ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000)) init_i (
-        .clk(clk200), .rst(rst200), .debug_refresh(debug_refresh_sync[1]), .testbar(testbar), .vyuy(vyuy_sel),
+        .clk(clk200), .rst(rst200), .testbar(testbar), .vyuy(vyuy_sel),
         .sccb_start(sccb_start), .sccb_rw(sccb_rw),
         .sccb_addr(sccb_addr), .sccb_wdata(sccb_wdata),
         .sccb_rdata(sccb_rdata), .sccb_busy(sccb_busy),
@@ -406,8 +397,7 @@ module top_genesys2 #(
                               {16'd0,sw,led},{16'd0,chip_id},32'hD1640000};
         1: diagnostic_words = {32'd200000000,hp_hmaxlo,hp_hmaxhi,hp_hhigh,
                               hp_vmaxlo,hp_vmaxhi,hp_vhigh,32'hD1640001};
-        2: diagnostic_words = {{8'd0,config_read_nack[23:0]},config_readback[191:0],32'hD1640002};
-        4: diagnostic_words = {{8'd0,config_read_nack[47:24]},config_readback[383:192],32'hD1640004};
+        2: diagnostic_words = {{8'd0,config_read_nack},config_readback,32'hD1640002};
         default: diagnostic_words = {m_href_ln,m_hi_len,m_href_len,
                               {6'd0,ym_200,6'd0,xm_200},{12'd0,pf_200},
                               {16'd0,fc_200},{lmin_200,lmax_200,shl_200},32'hD1640003};
@@ -418,12 +408,9 @@ module top_genesys2 #(
     always @(posedge clk200)record_mode_sync<={record_mode_sync[0],sw[7]};
     wire record_mode=record_mode_sync[1];
     wire report_busy,record_go;wire[255:0] record_words;
-    wire raw_we;wire[16:0]raw_addr;wire[15:0]raw_word;
-    yuv_word_observer raw_observer(.clk(clk_cam),.rst(rst_cam),.state(capture_debug),
-      .wr_en(raw_we),.wr_addr(raw_addr),.wr_data(raw_word));
-    frame_snapshot #(.RAW_WORDS(1)) record_i(.src_clk(clk_cam),.src_rst(rst_cam),
+    frame_snapshot record_i(.src_clk(clk_cam),.src_rst(rst_cam),
        .dst_clk(clk200),.dst_rst(rst200),.arm(sw[7]&&init_done),
-       .pixel_we(raw_we),.pixel_addr(raw_addr),.pixel_rgb({8'd0,raw_word}),
+       .pixel_we(cwr_en),.pixel_addr(cwr_addr),.pixel_rgb(cwr_data),
        .frame_count(cam_frame_cnt),.report_busy(report_busy),
        .words(record_words),.go(record_go));
     uart_report rpt_i (

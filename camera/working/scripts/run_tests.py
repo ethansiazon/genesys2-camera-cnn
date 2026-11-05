@@ -13,6 +13,7 @@ tests={
  'tb_pipeline_recorder':['pipeline_recorder'],
  'tb_sync_health_probe':['sync_health_probe'],
  'tb_init_readback':['ov5640_init'],
+ 'tb_init_analog_reference':['ov5640_init'],
  'tb_ycbcr':['ycbcr2rgb'],
  'tb_vga':['vga_timing','pattern_gen'],
  'tb_sccb':['sccb_master'],
@@ -24,8 +25,6 @@ tests={
  'tb_top_wiring_inverted':['top_genesys2','cam_capture','ycbcr2rgb','frame_buffer',
  'sccb_master','ov5640_init','sync_health_probe','camera_status_snapshot','uart_tx','uart_report','dvp_probe','debug_overlay','pattern_gen','vga_timing'],
 }
-tests['tb_yuv_word_observer']=['frame_snapshot']
-tests['tb_raw_word_snapshot']=['frame_snapshot']
 results=[]
 for test,files in tests.items():
     if 'frame_buffer' in files or 'frame_snapshot' in files: files=files+['banked_frame_memory']
