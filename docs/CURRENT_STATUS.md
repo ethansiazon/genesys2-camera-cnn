@@ -290,3 +290,14 @@ are pending. Next request SW7 up after settling, without BTNC. Current board
 R6 UART only, SW6 up, exposure160, held gainsR04CD/G052F/B0400. To undo viaUART
 write3501=08 or restore the saved write-session before value. BTNC restores
 preferred startup128 and automatic WB, so do not reset during paired comparison.
+
+Exposure160 raw after-frame completed at
+local_results/live_controls/r6_exposure160_capture_20261105/raw_yuv_20261105_010205.txt.
+Fresh frame15218 vs prior9211, but paper/camera framing shifted; no paired
+brightness effect estimated. User did not notice a change and asked about UART
+operation; explained controls act live without a reset/rebuild. Proposed next
+visual bracket256 lines while holding WB, using complete3500/3501/3502 write
+sequence as in Espressif set_aec_value, checking VTS first. No claim that the
+earlier single-byte update failed; source sequencing is followed to remove an
+uncertainty. Current physical setting remains160, SW6/SW7 up, UART only. Await
+SW7 down before writes. No colour gains changed; no image fix claimed.
