@@ -617,3 +617,19 @@ Default profile preserves r8. This is a coupled mode-family diagnostic, not a
 confirmed fix or full Linux port. Timing/frame rate and physical hues need testing.
 See camera_reference_readout_20261105/PLAN.md for the exact changes/provenance.
 Previous working source saved in local_artifacts/r8_before_reference_readout_20261105.
+
+
+### R9 readout candidate build complete; awaiting physical comparison
+
+Four targeted simulations passed: default init/read-only refresh, UART host
+control, RGB565 top capture with baseline readout, and reference readout. The
+profile transaction ordering is checked before stream enable. Behavioural sensor
+does not model physical sensor colour, readout row timing or frame rate.
+
+Build builds/reference_readout_rgb565_20261105_r9 completed in 314 seconds.
+Setup +0.347 ns, hold +0.064 ns, zero routing errors,
+zero ERROR or CRITICAL WARNING log entries. SHA256 d4abae84925f0df8f13cb4d8ab39cbdded0ffd66e8c6a8d9c063289ce88e71f5.
+Frozen source hashes verified, working RTL matches, preferred original unchanged.
+No board programming or push. User asked to move UART to JTAG only, keep SW6 up;
+confirmation has not arrived. Next manual load instructions in build LOAD_README.md.
+Need actual colour comparison/readback/geometry before promoting this candidate.
