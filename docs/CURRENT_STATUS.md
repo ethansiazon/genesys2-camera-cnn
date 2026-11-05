@@ -498,3 +498,17 @@ fromFPGA-YUVconverter-only explanation, not proofthatallformat/capturefaults
 areexcluded. BoardstillJTAG6010only. NextrequestUART/J15only withpoweron,
 onlySW6up/SW7down,noreset; readformat/exposure/WB/gamma/ISP/BLCstate before
 choosinga single reversibletonalsettingtrial. No new writes/build/programming.
+
+
+## RGB565 physical settings verified throughUART
+
+UserconfirmedUARTonly/onlySW6up/noreset andaskedwhy. ExplainedUARTreadback/live
+controls/onevariablecomparison. Readonly59registeraudit complete onCOM3: ID5640,
+430061/501F01 confirmsRGB565; exposure128/gain1x/manualAECAGC03; automaticWB00.
+RAWgammaenabled5000A7bit5; gamma5480..5490 factorydefaults.548000isBIASplusOFF,
+not globalgammaOFF (manufacturerPDF148). BLCenabled400089; startline400100,
+linecount400408 differfromreference02/02 butnotprovenfault andwritesblocked.
+No settingschanged. SavedRGB565_SENSOR_READBACK.json withphysicalsession.
+Next controlledtonecurveGammaReference trial afterstablewhite/coloured/light
+scene, settledWBheld andbeforecapture, preserving exposure/gain/saturation.
+Awaitsceneready; do notblindlyadjustallsettings orclaimtonecurvefixesgreenfault.

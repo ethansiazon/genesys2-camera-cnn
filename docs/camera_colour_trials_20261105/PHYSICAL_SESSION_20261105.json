@@ -1,5 +1,5 @@
 {
-  "stage": "RGB565_live_observation_received_await_UART_readback",
+  "stage": "RGB565_verified_readonly_audit_complete",
   "baseline": "last_exposure_test, actual captures saved",
   "saved_photos": 10,
   "capture_reader_process_active": false,
@@ -12,10 +12,10 @@
   "physical_result": {
     "user_verbatim": "Looks about the same",
     "compared_with": "last_exposure_test",
-    "camera_format_register_readback_verified": false,
+    "camera_format_register_readback_verified": true,
     "interpretation": "No demonstrated improvement after changing sensor format and bypassing FPGA YUV conversion. Qualitative observation narrows converter-only explanation but does not isolate ISP versus capture/transport issues."
   },
   "automatic_programming": false,
   "scope": "Compare actual white/coloured objects and bright-light fault before any exposure/gamma/saturation recipes",
-  "next_step": "Read current format/exposure/WB/gamma/ISP/BLC registers via UART; no new tuning writes until baseline recorded."
+  "next_step": "Stationary scene, allow autoWBsettle, holdcurrentWB, savebeforeframe, compareGammaReference without exposure/gain/saturation changes"
 }
