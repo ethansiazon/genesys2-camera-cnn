@@ -8,7 +8,8 @@
 `default_nettype none
 
 module top_genesys2 #(
-    parameter integer SIM_FAST_INIT = 0 // Testbench only; keep zero on board.
+    parameter integer SIM_FAST_INIT = 0, // Testbench only; keep zero on board.
+    parameter integer RGB565 = 0 // Build-time format selection, never a live switch.
 )(
     input  wire       sysclk_p,          // AD12, 200 MHz LVDS
     input  wire       sysclk_n,          // AD11
@@ -193,7 +194,7 @@ module top_genesys2 #(
     end
     wire ctrl_valid,ctrl_rw,ctrl_ready,ctrl_done,ctrl_nack;
     wire [15:0] ctrl_addr; wire [7:0] ctrl_wdata,ctrl_rdata;
-    ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000)) init_i (
+    ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000),.RGB565(RGB565)) init_i (
         .clk(clk200), .rst(rst200), .debug_refresh(debug_refresh_sync[1]), .testbar(testbar), .vyuy(vyuy_sel),
         .host_valid(ctrl_valid),.host_rw(ctrl_rw),.host_addr(ctrl_addr),
         .host_wdata(ctrl_wdata),.host_ready(ctrl_ready),.host_done(ctrl_done),
@@ -263,7 +264,7 @@ module top_genesys2 #(
         href_invert_c <= {href_invert_c[0],sw[6]};
     end
     cam_capture #(
-        .H(320), .V(240), .SOURCE_SYNC(0), .SAMPLE_TICK_MODE(1), .SYNC_FILTER(0), .VSYNC_ACTIVE_HIGH(1),
+        .H(320), .V(240), .RGB565(RGB565), .SOURCE_SYNC(0), .SAMPLE_TICK_MODE(1), .SYNC_FILTER(0), .VSYNC_ACTIVE_HIGH(1),
         .MIN_LINE_PX(280), .MEDIAN3(0), .TEMPORAL(0)
     ) cap_i (
         .clk(clk_cam), .rst(rst_cam), .pclk_i(cam_pclk_raw),
@@ -427,7 +428,7 @@ module top_genesys2 #(
     wire raw_we;wire[16:0]raw_addr;wire[15:0]raw_word;
     yuv_word_observer raw_observer(.clk(clk_cam),.rst(rst_cam),.state(capture_debug),
       .wr_en(raw_we),.wr_addr(raw_addr),.wr_data(raw_word));
-    frame_snapshot #(.RAW_WORDS(1)) record_i(.src_clk(clk_cam),.src_rst(rst_cam),
+    frame_snapshot #(.RAW_WORDS(1),.RAW_MAGIC(RGB565 ? 32'h52353635 : 32'h59555630)) record_i(.src_clk(clk_cam),.src_rst(rst_cam),
        .dst_clk(clk200),.dst_rst(rst200),.arm(sw[7]&&init_done),
        .pixel_we(raw_we),.pixel_addr(raw_addr),.pixel_rgb({8'd0,raw_word}),
        .frame_count(cam_frame_cnt),.report_busy(report_busy),

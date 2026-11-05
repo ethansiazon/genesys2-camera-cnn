@@ -1,7 +1,8 @@
 `timescale 1ns/1ps
 `default_nettype none
 // Observes framebuffer writes only. Frozen full-frame RGB565 UART snapshot.
-module frame_snapshot #(parameter integer DEPTH=76800,RAW_WORDS=0)(
+module frame_snapshot #(parameter integer DEPTH=76800,RAW_WORDS=0,
+ parameter [31:0] RAW_MAGIC=32'h59555630)(
  input wire src_clk,src_rst,dst_clk,dst_rst,arm,
  input wire pixel_we,input wire[16:0]pixel_addr,input wire[23:0]pixel_rgb,
  input wire[15:0]frame_count,input wire report_busy,
@@ -10,7 +11,7 @@ module frame_snapshot #(parameter integer DEPTH=76800,RAW_WORDS=0)(
  localparam integer PACKETS=(DEPTH+13)/14;
  localparam [31:0] DEPTH_WORD=DEPTH;
  localparam [31:0] TAG=RAW_WORDS ? 32'hD16C0000 : 32'hD16A0000;
- localparam [31:0] MAGIC=RAW_WORDS ? 32'h59555630 : 32'h534E4150;
+ localparam [31:0] MAGIC=RAW_WORDS ? RAW_MAGIC : 32'h534E4150;
  (* ASYNC_REG="TRUE" *)reg[1:0]arm_s=0,arm_d=0,done_d=0;
  reg active=0,captured=0;reg[15:0]capture_frame=0;
  reg[31:0]write_count=0,address_errors=0,finish_reason=0;

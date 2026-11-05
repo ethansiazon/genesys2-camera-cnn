@@ -4,6 +4,7 @@
 
 module cam_capture #(
     parameter integer H                 = 320,
+    parameter integer RGB565            = 0,
     parameter integer SOURCE_SYNC       = 0,
     parameter integer SAMPLE_TICK_MODE  = 0,
     parameter integer V                 = 240,
@@ -121,7 +122,7 @@ module cam_capture #(
     reg [7:0] y0_r = 0, y1_r = 0, cb_r = 0, cr_r = 0;
 
     // XORing the phase LSB turns YUYV into UYVY with no second decode path.
-    wire [1:0] slot = p ^ {1'b0, uyvy};
+    wire [1:0] slot = (RGB565 != 0) ? p : (p ^ {1'b0, uyvy});
 
     // 3-tap median on luma: impulse rejection for single-bit flips on the data
     // bus, which show up as black/white speckle. Luma only -- chroma is shared
@@ -129,7 +130,7 @@ module cam_capture #(
     reg  [7:0] m1 = 8'd0, m0 = 8'd0;
     wire [7:0] med3 = (m1 > m0) ? ((m0 > d_s1) ? m0 : ((m1 > d_s1) ? d_s1 : m1))
                                 : ((m1 > d_s1) ? m1 : ((m0 > d_s1) ? d_s1 : m0));
-    wire [7:0] luma_in = (MEDIAN3 != 0) ? med3 : d_s1;
+    wire [7:0] luma_in = (MEDIAN3 != 0 && RGB565 == 0) ? med3 : d_s1;
 
     wire byte_now   = pclk_rise && href;
     wire group_done = byte_now && (p == 2'd3);
@@ -154,15 +155,36 @@ module cam_capture #(
 
     wire [7:0] rgb_r, rgb_g, rgb_b;
     wire       rgb_valid;
+    generate if (RGB565 == 0) begin : g_yuv
     ycbcr2rgb cvt (
         .clk(clk), .rst(rst), .full_range(full_range),
         .y(cvt_y), .cb(cb_q), .cr(cr_q), .valid_i(cvt_valid),
         .r(rgb_r), .g(rgb_g), .b(rgb_b), .valid_o(rgb_valid)
     );
+    end else begin : g_rgb565
+        // Reuse four-byte scheduling: two independent RGB565 words per group.
+        // Keep the same two-cycle valid/data latency as ycbcr2rgb.
+        wire [15:0] word_in = ep == 0 ? {y0_q,cb_q} : {y1_q,cr_q};
+        reg [23:0] pixels_1=0,pixels_2=0;
+        reg valid_1=0,valid_2=0;
+        always @(posedge clk) begin
+            if(rst) begin pixels_1<=0;pixels_2<=0;valid_1<=0;valid_2<=0;end
+            else begin
+                pixels_1 <= {word_in[15:11],word_in[15:13],
+                             word_in[10:5],word_in[10:9],
+                             word_in[4:0],word_in[4:2]};
+                pixels_2<=pixels_1;valid_1<=cvt_valid;valid_2<=valid_1;
+            end
+        end
+        assign {rgb_r,rgb_g,rgb_b}=pixels_2;
+        assign rgb_valid=valid_2;
+    end endgenerate
 
     reg [7:0] luma_d1, luma_d2;
     always @(posedge clk) begin
-        luma_d1 <= cvt_y;
+        // Green is a diagnostic brightness proxy in RGB mode, not Y luma.
+        luma_d1 <= (RGB565 != 0) ?
+          (ep == 0 ? {y0_q[2:0],cb_q[7:5],y0_q[2:1]} : {y1_q[2:0],cr_q[7:5],y1_q[2:1]}) : cvt_y;
         luma_d2 <= luma_d1;
     end
 

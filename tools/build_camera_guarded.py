@@ -8,6 +8,7 @@ p.add_argument('--vivado',required=True)
 p.add_argument('--out',required=True)
 p.add_argument('--min-free-gib',type=float,default=1.5)
 p.add_argument('--timeout-min',type=float,default=45)
+p.add_argument('--format',choices=('yuyv','rgb565'),default='yuyv')
 a=p.parse_args()
 root=Path(__file__).resolve().parents[1]
 source=root/'camera/working'
@@ -31,7 +32,7 @@ text=text.replace('set_param general.maxThreads 2','set_param general.maxThreads
 (snapshot/'scripts/build.tcl').write_text(text)
 hashes={str(f.relative_to(snapshot)).replace('\\','/'):hashlib.sha256(f.read_bytes()).hexdigest() for f in snapshot.rglob('*') if f.is_file()}
 (out/'SOURCE_SHA256.json').write_text(json.dumps(hashes,indent=2)+'\n')
-status={'state':'starting','output':str(out),'source_snapshot':str(snapshot),'memory_guard_gib':a.min_free_gib,'threads':1,'board_programming':False}
+status={'state':'starting','output':str(out),'source_snapshot':str(snapshot),'memory_guard_gib':a.min_free_gib,'threads':1,'board_programming':False,'camera_format':a.format,'rgb565_generic':int(a.format=='rgb565')}
 def save():
     status['updated_at_local']=time.strftime('%Y-%m-%d %H:%M:%S')
     temp=out/'STATUS.tmp';temp.write_text(json.dumps(status,indent=2)+'\n');temp.replace(out/'STATUS.json')
@@ -47,7 +48,7 @@ def stop_tree(proc):
             except psutil.NoSuchProcess:pass
     except psutil.NoSuchProcess:pass
 save()
-args=[a.vivado,'-mode','batch','-notrace','-log',str(out/'vivado.log'),'-journal',str(out/'vivado.jou'),'-source',str(snapshot/'scripts/build.tcl'),'-tclargs',str(out)]
+args=[a.vivado,'-mode','batch','-notrace','-log',str(out/'vivado.log'),'-journal',str(out/'vivado.jou'),'-source',str(snapshot/'scripts/build.tcl'),'-tclargs',str(out),str(int(a.format=='rgb565'))]
 if os.name=='nt' and Path(a.vivado).suffix.lower() in ('.bat','.cmd'):
     args=[os.environ.get('COMSPEC','cmd.exe'),'/d','/s','/c',subprocess.list2cmdline(args)]
 started=time.monotonic();last_print=0

@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "sources": {
+    "settings": {
+      "url": "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/private_include/ov5640_settings.h",
+      "sha256": "db1930b344a83b084f6fb5c3c3e1dead5922a422c1212355c52ad5af141d3b6f"
+    },
+    "driver": {
+      "url": "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c",
+      "sha256": "df60065649695167db86787d7904b584ec82f73f8c0a686743f93f8d2d5b35ac"
+    }
+  },
+  "trials": {
+    "HoldWB": {
+      "label": "Freeze the current settled white balance",
+      "writes": [
+        "3406=01"
+      ],
+      "require_held_wb": false,
+      "family": "WB",
+      "purpose": "Stop automatic colour drift during paired comparisons; no new colour gains"
+    },
+    "AutoWB": {
+      "label": "Return to automatic white balance",
+      "writes": [
+        "3406=00"
+      ],
+      "require_held_wb": false,
+      "family": "WB",
+      "purpose": "Let the camera adapt again; allow settling"
+    },
+    "Exposure128": {
+      "label": "128 exposure lines, gain unchanged",
+      "writes": [
+        "3500=00",
+        "3501=08",
+        "3502=00"
+      ],
+      "require_held_wb": true,
+      "family": "exposure",
+      "exposure_lines": 128,
+      "purpose": "Bracket brightness at fixed sensor gain. Longer exposure may worsen highlight distortion; not a cure."
+    },
+    "Exposure192": {
+      "label": "192 exposure lines, gain unchanged",
+      "writes": [
+        "3500=00",
+        "3501=0C",
+        "3502=00"
+      ],
+      "require_held_wb": true,
+      "family": "exposure",
+      "exposure_lines": 192,
+      "purpose": "Bracket brightness at fixed sensor gain. Longer exposure may worsen highlight distortion; not a cure."
+    },
+    "Exposure256": {
+      "label": "256 exposure lines, gain unchanged",
+      "writes": [
+        "3500=00",
+        "3501=10",
+        "3502=00"
+      ],
+      "require_held_wb": true,
+      "family": "exposure",
+      "exposure_lines": 256,
+      "purpose": "Bracket brightness at fixed sensor gain. Longer exposure may worsen highlight distortion; not a cure."
+    },
+    "Saturation0": {
+      "label": "Espressif saturation level 0",
+      "writes": [
+        "5381=1D",
+        "5382=60",
+        "5383=03",
+        "5384=0C",
+        "5385=78",
+        "5386=84",
+        "5387=7D",
+        "5388=6B",
+        "5389=12",
+        "538A=01",
+        "538B=98"
+      ],
+      "require_held_wb": true,
+      "family": "colour_matrix",
+      "purpose": "Published colour matrix, not a percentage increase over our previous unknown/default matrix. Compare level0 first; then restore between trials."
+    },
+    "Saturation1": {
+      "label": "Espressif saturation level 1",
+      "writes": [
+        "5381=1D",
+        "5382=60",
+        "5383=03",
+        "5384=0D",
+        "5385=84",
+        "5386=91",
+        "5387=8A",
+        "5388=76",
+        "5389=14",
+        "538A=01",
+        "538B=98"
+      ],
+      "require_held_wb": true,
+      "family": "colour_matrix",
+      "purpose": "Published colour matrix, not a percentage increase over our previous unknown/default matrix. Compare level0 first; then restore between trials."
+    },
+    "Saturation2": {
+      "label": "Espressif saturation level 2",
+      "writes": [
+        "5381=1D",
+        "5382=60",
+        "5383=03",
+        "5384=0E",
+        "5385=90",
+        "5386=9E",
+        "5387=96",
+        "5388=80",
+        "5389=16",
+        "538A=01",
+        "538B=98"
+      ],
+      "require_held_wb": true,
+      "family": "colour_matrix",
+      "purpose": "Published colour matrix, not a percentage increase over our previous unknown/default matrix. Compare level0 first; then restore between trials."
+    },
+    "GammaReference": {
+      "label": "Espressif gamma0 curve",
+      "writes": [
+        "5480=01",
+        "5481=08",
+        "5482=14",
+        "5483=28",
+        "5484=51",
+        "5485=65",
+        "5486=71",
+        "5487=7D",
+        "5488=87",
+        "5489=91",
+        "548A=9A",
+        "548B=AA",
+        "548C=B8",
+        "548D=CD",
+        "548E=DD",
+        "548F=EA",
+        "5490=1D"
+      ],
+      "require_held_wb": true,
+      "family": "gamma",
+      "purpose": "Test a published tonal curve without changing exposure/gain. Sensor/ISP enable state still affects response; no guaranteed brightness improvement."
+    },
+    "WBOffice": {
+      "label": "Espressif office white-balance preset",
+      "writes": [
+        "3406=01",
+        "3400=05",
+        "3401=20",
+        "3402=04",
+        "3403=10",
+        "3404=06",
+        "3405=60"
+      ],
+      "require_held_wb": false,
+      "family": "WB",
+      "purpose": "Optional room-lighting comparison if neutral paper is visibly tinted. Not a calibrated match to this room; do not stack with other changes."
+    }
+  },
+  "limits": [
+    "No format, clock, pad, voltage or Windows writes",
+    "No automatic multi-trial loop",
+    "Each apply saves before-values and verified readback; failed transfer stops without retry",
+    "Hardware absent during preparation; all trials physically untested"
+  ]
+}

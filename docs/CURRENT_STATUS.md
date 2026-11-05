@@ -378,3 +378,15 @@ Next priority controlled RGB565 format comparison, with dedicated packing path,
 same image geometry/clocks/exposure and original source preserved. Do not
 claim every fix tried or assume sensor defective. AWB startup settling is a
 hypothesis consistent with automaticWB, not a verified cause of this observation.
+
+
+## Offline colour trialsr8 prepared; board unavailable
+
+User says teammates currently have board. No hardware connections attempted.
+Source supports build-timeYUYV/RGB565 comparison fromr6 baseline; RGB565 bypasses
+FPGAcolourconversion and tags raw snapshotsR565. Published reversible runtime
+exposure/saturation/gamma/WB trials prepared, with format/ID/WB/VTS preflight.
+All targeted simulations and offlinehost/decoder tests passed. See
+camera_colour_trials_20261105/PLAN.md. Original archived favourite untouched.
+Next build two separate frozen camera-only variants sequentially under guard;
+no claimed image improvement before board comparisons. No push authorized.

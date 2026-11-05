@@ -43,7 +43,8 @@
 `default_nettype none
 
 module ov5640_init #(
-    parameter integer CLK_HZ = 100_000_000
+    parameter integer CLK_HZ = 100_000_000,
+    parameter integer RGB565 = 0 // Separate format diagnostic; default preserves YUYV.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -159,8 +160,10 @@ module ov5640_init #(
         // PCLK and the ribbon rate are unchanged, but luma arrives as a full
         // 8 bits per pixel instead of 6 bits of green. The 24-bit HDMI path
         // wants RGB, so ycbcr2rgb converts in fabric.
-        8'd52 : entry = {C_WR,  16'h4300, vyuy ? 8'h31 : 8'h30};  // YVYU : YUYV
-        8'd53 : entry = {C_WR,  16'h501F, 8'h00};  // ISP YUV422 (was 0x01, RGB)
+        // RGB565: Espressif sensor_fmt_rgb565; datasheet table6-5, 0x61 is
+        // {R[4:0],G[5:3]} then {G[2:0],B[4:0]}, high byte first.
+        8'd52 : entry = {C_WR,  16'h4300, RGB565 ? 8'h61 : (vyuy ? 8'h31 : 8'h30)};
+        8'd53 : entry = {C_WR,  16'h501F, RGB565 ? 8'h01 : 8'h00};
         8'd54 : entry = {C_WR,  16'h4740, 8'h22};  // Linux OV5640 DVP: rising sample, HREF high, VSYNC high (bit0=0).
         8'd55 : entry = {C_WR,  16'h503D, testbar ? 8'h80 : 8'h00};  // internal colour bar
         // One controlled trial: manual exposure 128 lines of VTS 520,
