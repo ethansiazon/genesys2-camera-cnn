@@ -1,0 +1,169 @@
+{
+  "date": "2026-11-05",
+  "stage": "applied_await_visual_result",
+  "camera": "OV5640 RGB565r8,430061/501F01/live503D00",
+  "diagnostic": "DisableCMX only:5001A3->A1, bit1 cleared; scaling/SDE/AWBenablebits unchanged",
+  "WB": "Manual hold atR04B6/G0528/B0400 after separate340600->01 write",
+  "exposure": "128lines/manual",
+  "gain": "1x",
+  "shared_register_diff": {
+    "5001": {
+      "before": "A3",
+      "after": "A1"
+    }
+  },
+  "before_readback": {
+    "started": "2026-11-05T04:18:08.6568083-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "5001",
+        "value": "A3"
+      },
+      {
+        "address": "3406",
+        "value": "01"
+      },
+      {
+        "address": "3400",
+        "value": "04"
+      },
+      {
+        "address": "3401",
+        "value": "B6"
+      },
+      {
+        "address": "3402",
+        "value": "05"
+      },
+      {
+        "address": "3403",
+        "value": "28"
+      },
+      {
+        "address": "3404",
+        "value": "04"
+      },
+      {
+        "address": "3405",
+        "value": "00"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "08"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3503",
+        "value": "03"
+      },
+      {
+        "address": "350A",
+        "value": "00"
+      },
+      {
+        "address": "350B",
+        "value": "10"
+      }
+    ]
+  },
+  "after_readback": {
+    "started": "2026-11-05T04:18:09.6478620-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "4300",
+        "value": "61"
+      },
+      {
+        "address": "501F",
+        "value": "01"
+      },
+      {
+        "address": "5000",
+        "value": "A7"
+      },
+      {
+        "address": "5001",
+        "value": "A1"
+      },
+      {
+        "address": "5003",
+        "value": "08"
+      },
+      {
+        "address": "3406",
+        "value": "01"
+      },
+      {
+        "address": "3400",
+        "value": "04"
+      },
+      {
+        "address": "3401",
+        "value": "B6"
+      },
+      {
+        "address": "3402",
+        "value": "05"
+      },
+      {
+        "address": "3403",
+        "value": "28"
+      },
+      {
+        "address": "3404",
+        "value": "04"
+      },
+      {
+        "address": "3405",
+        "value": "00"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "08"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3503",
+        "value": "03"
+      },
+      {
+        "address": "350A",
+        "value": "00"
+      },
+      {
+        "address": "350B",
+        "value": "10"
+      }
+    ]
+  },
+  "write_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_bypass_write_20261105\\SESSION.json",
+  "WB_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_hold_wb_20261105\\SESSION.json",
+  "visual_result": null,
+  "limits": "Diagnostic bypass of camera colour matrix, not a final calibrated recipe or claimed improvement. Earlier rawreference had differentWB values; do not claim quantitatively matched images.",
+  "gamma_changes": false,
+  "user_state": "UARTonly,onlySW6up,SW7down, same scene,noreset confirmed"
+}

@@ -551,3 +551,18 @@ WBwasheld01; nogammawritesapplied. NeedSW7downbeforecontrols. Nextread5000/1/3/5
 livecolourprocessingtest (CMXbit1in5001), withreadbeforevalues, keepingallother
 5001bits/scalingunchanged, restoreifworse. ManufacturerPDF5001definesCMXenable;
 EspressifsettingshasCMXreferencecoefficients. No newrecipe/bypasswriteyet.
+
+
+## CMX bypass live diagnostic applied and verified
+
+UserconfirmedonlySW6up/SW7down/UART/samescene/noreset. Pre-readlive503D00,
+RGB430061/501F01,5001A3,5000A7/500308; WBreadback00(auto), despiteearlierhold
+01 soearliertonebeforeframeisnotanexactpairedbaseline. Orientation/binning
+382041/382107,381471/381571,451400/452000 recorded; no writes tothese.
+HeldsettledWB3406=01atR04B6/G0528/B0400, verified. Thenonebit5001A3->A1
+(CMXdisable) appliedthroughwhitelistedUART, readbackconfirmed. Sharedregister
+comparisonheldbefore->afterdiffONLY5001; exposure128/gain1x/WBgainsunchanged.
+No gamma/clock/pad/scaling changes. Awaituserhue/light observation. Restore
+matrix via saved r8_cmx_bypass_write_20261105/SESSION.json (5001A3); WBrestore
+separate r8_cmx_hold_wb_20261105/SESSION.json (340600). Neverautopromotebypass.
+CurrentboardRGB565r8,WBheld,CMXoff,UARTonly,SW6up/SW7down. No newbuild/program.
