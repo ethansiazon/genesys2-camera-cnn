@@ -127,3 +127,14 @@ reference startup writes in ov5640_init.v. No receiver, colour conversion,
 exposure, gain, clock, wiring or memory changes. Original RGB565 snapshot format
 restored with the archive. New output: builds/analog_reference128_20261104_r4.
 Physical appearance remains untested. Do not call this a confirmed colour fix.
+
+Reference-startup build completed in 332 seconds. All 16 functional fixtures
+passed. Routed setup slack +0.279 ns, hold +0.084 ns; zero routing errors,
+zero ERROR/CRITICAL WARNING log entries. Bit SHA256:
+7f287fae0a415126e231f36e4bb643f9bd449e1739dbd76941cc210354ffc7ab.
+Separate project: builds/camera_analog_reference128_20261104_project/camera_hdmi.xpr.
+The frozen RTL hashes match camera/working. The preferred original .bit hash
+was rechecked unchanged. No board programming or remote Git push performed.
+Next: user loads r4 via JTAG after wiring confirmation; only SW6 up, BTNC,
+wait 5 seconds and compare same scene/white objects/ceiling light. Save the
+physical observation before promoting or changing another variable.
