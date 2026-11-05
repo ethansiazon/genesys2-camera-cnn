@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "stage": "before_saved_await_SW7down",
+  "stage": "gamma_deferred_new_colour_reference",
   "candidate": "RGB565 r8",
   "format_readback": {
     "4300": "61",
@@ -21,9 +21,10 @@
   "before_readback": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_gamma_held_baseline_readback_20261105\\SESSION.json",
   "WB_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_gamma_hold_wb_20261105\\change\\SESSION.json",
   "user_confirmed": "SW6/SW7 up; scene unchanged; no reset",
-  "next": "UserSW7down withoutmovingcamera, thenGammaReference apply/readback andaftercapture",
+  "next": "InternalRGB565bars capture first; nextBTNC will intentionally resetheldWB to auto",
   "before_capture": "local_results/picture_trials/r8_gamma_before_capture_20261105/raw_yuv_20261105_040048.txt",
   "before_format": "RGB565, metadataR565 verified",
   "before_frame": 9789,
-  "before_visual": "Scene includes a backlit screen showing colour bars and a bright lamp with green/dark distortion. Not a calibrated or matte-white reference."
+  "before_visual": "Scene includes a backlit screen showing colour bars and a bright lamp with green/dark distortion. Not a calibrated or matte-white reference.",
+  "gamma_writes_applied": false
 }

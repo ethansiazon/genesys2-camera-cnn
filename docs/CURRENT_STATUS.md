@@ -523,3 +523,18 @@ atframe9789, decoderformatR565 verified. Image includesbacklitcolourbar screen,
 ceiling/room andgreen/darkbrightlamp; not calibratedmattewhite. Saved under
 local_results/picture_trials/r8_gamma_before_capture_20261105. No gammawritesyet.
 AwaitSW7downbeforeGammaReferenceonlywrite; nevercommandsduringrecording.
+
+
+## User supplied true photographed-screen colour reference
+
+Reference bars arewhite/yellow/cyan/green/magenta/red/blue/black. Userconfirms
+bluefar-rightcolour, correspondingto greenish regionincapture. Sampledactual
+RGB565word ROIs: expectedblue~RGB57/121/49; yellow~239/203/239(pinkish).
+These are approximateperspectiveROIs, notcalibratedchartaccuracy. Offlinebyte
+swapfailsotherbars; nojustifiedchannel/bitrewiringcorrection. 430061 highbyte
+packing agreesmanufacturer/Espressif/Linux. GAMMADEFERRED; nogammawriteshave
+occurred. OnlyWBhold340601 remains(lastuserswitchstate6+7up). Neednewinternal
+RGB565sensorbarcapturetoisolateexternalscreen/lightingandcheckactualreceived
+colourpacking. NextinstructionSW1+6up(7down),BTNCsettle,then7up; thisresetis
+intentional andreturnsstartupautoWB/exposure128/factorygamma. Awaitphysical
+stepbeforeUARTcapture. No simultaneousISP recipes orclock/padwrites.
