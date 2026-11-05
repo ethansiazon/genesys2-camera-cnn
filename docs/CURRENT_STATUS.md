@@ -329,3 +329,13 @@ receiver are unchanged. See camera_drive_address_20261105/PLAN.md. Original
 archived favourite and r6 source backup preserved. Simulations/build pending;
 no programming or runtime pad write occurred. Current running board remainsr6,
 exposure160,heldWB,SW6up/SW7down,UARTonly. New startup will restore128/autoWB.
+
+
+R7 build complete: drive_address128_20261105_r7/camera_hdmi.bit;
+SHA256 1a87f4655d11fde536ed1252f4ec258d0e653c671082723395f994d3d6fde45b.
+320seconds,setup+0.168ns,hold+0.074ns,route/DRCzeroerrors,noERROR/CRITICALWARNING.
+Three relevant simulations passed; frozen source audit confirms only entry6
+address/comment differs fromr6. No physical image result or board programming.
+User confirmedJTAGonly/mainpoweron/onlySW6up. Await manual Program Device,
+thenBTNC/fivesecondsettle and same-scene observation. New startup128/autoWB.
+To rollback load immutable last_exposure_test/camera_hdmi.bit (onlySW6up+BTNC).

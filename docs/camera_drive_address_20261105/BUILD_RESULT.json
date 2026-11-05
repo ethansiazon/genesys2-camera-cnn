@@ -1,0 +1,30 @@
+{
+  "source_commit": "affc86e",
+  "status": {
+    "state": "complete",
+    "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\drive_address128_20261105_r7",
+    "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\drive_address128_20261105_r7\\source",
+    "memory_guard_gib": 1.5,
+    "threads": 1,
+    "board_programming": false,
+    "updated_at_local": "2026-11-05 01:27:54",
+    "launcher_pid": 27616,
+    "elapsed_seconds": 320,
+    "available_ram_gib": 1.75,
+    "timing": {
+      "setup_wns_ns": 0.168,
+      "hold_whs_ns": 0.074,
+      "physical_camera_tested": false
+    },
+    "bitstream_sha256": "1a87f4655d11fde536ed1252f4ec258d0e653c671082723395f994d3d6fde45b"
+  },
+  "exact_changed_source_files": [
+    "rtl/ov5640_init.v"
+  ],
+  "source_change": "Only startup entry6 address3016->302C, valueC3 unchanged",
+  "physical_camera_tested": false,
+  "board_programmed": false,
+  "log_errors": 0,
+  "log_critical_warnings": 0,
+  "baseline_preserved": true
+}
