@@ -1,0 +1,90 @@
+{
+  "prepared": "2026-10-28",
+  "original_artifact_copies_hash_verified": 1149,
+  "camera_project_creation": "PASS, Vivado 2026.1; actual top, RTL, XDC and cascade-height synthesis option accepted",
+  "camera_functional_tests": {
+    "passed": true,
+    "count": 15,
+    "scope": "Existing best_receiver functional tests; no physical board access"
+  },
+  "cv_model_load": {
+    "passed": true,
+    "parameters": 331114,
+    "input_bchw": [
+      1,
+      3,
+      192,
+      256
+    ],
+    "head_shapes_bchw": [
+      [
+        1,
+        21,
+        48,
+        64
+      ],
+      [
+        1,
+        21,
+        24,
+        32
+      ]
+    ],
+    "ema_strict_load": true,
+    "clipped_values": 0,
+    "random_probe_float_vs_fixed_max_abs": [
+      0.008348464965820312,
+      0.005205661058425903
+    ],
+    "checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+    "quantized_model_sha256": "d6c0f5dec98c8b7c4663b8763717457b289ef600a676f6ca6ffb42ed5f9f5867",
+    "torch": "2.4.1+cpu",
+    "scope": "Loading/shape/random-input smoke check, not an accuracy evaluation.",
+    "next_epoch_recovery_counter": 9,
+    "completed_epoch": 8
+  },
+  "cv_replay_parity": {
+    "passed": true,
+    "frames": 469,
+    "exact_per_frame_fields": [
+      "frame",
+      "source_time_seconds",
+      "tracker_active",
+      "neural_confidence",
+      "box_native",
+      "centre_native",
+      "measurement_age_seconds"
+    ],
+    "original_records_sha256": "5a8f42d33cd09c8153efd98b77a8efc45849ddf0ef7b67f3710939e2bf332b90",
+    "portable_records_sha256": "2bbd271411b01945899744c195ede90b3e210e99b0a45d267ca44f55abd18e2c",
+    "prediction_frames": 202,
+    "scope": "All per-frame outputs identical to saved original R9 replay on this complete 469-frame clip; not new accuracy or FPGA validation."
+  },
+  "new_portable_python_syntax_checked": [
+    "camera/scripts/build_with_guard.py",
+    "camera/scripts/run_simulations.py",
+    "cv_model/software/data_roi256.py",
+    "cv_model/software/decoder_work_r2.py",
+    "cv_model/software/environment.py",
+    "cv_model/software/fixed_reference.py",
+    "cv_model/software/inspect_model.py",
+    "cv_model/software/model.py",
+    "cv_model/software/model_p2_two_class.py",
+    "cv_model/software/motion_proposal_probe.py",
+    "cv_model/software/observations_integer_r2.py",
+    "cv_model/software/prepare_motion_train.py",
+    "cv_model/software/runtime.py",
+    "cv_model/software/run_video.py",
+    "cv_model/software/track_feedback_r1.py"
+  ],
+  "new_files": "Top-level handoff docs/AGENTS; camera/scripts wrappers; CV runtime, inspection and video adapter; extracted runtime helpers listed in software/EXTRACTION_PROVENANCE.json; validation and manifests.",
+  "not_done": [
+    "No new CNN training",
+    "No synthesis/place-route rerun",
+    "No board programming/USB access",
+    "No camera colour fixes",
+    "No complete-system integration",
+    "No clean install on teammate computer"
+  ],
+  "dependency_test_context": "Existing Python 3.12.10/Torch 2.4.1+cpu environment; isolated setuptools75.8.0/GitPython3.1.44 added for legacy YOLOv5 imports; no original Python environment modified."
+}

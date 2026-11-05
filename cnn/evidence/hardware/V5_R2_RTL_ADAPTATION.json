@@ -1,0 +1,13 @@
+{
+  "source_templates": {
+    "prepare_output32_r7_actual_rtl.py": "37bf7fa0d6b5d15c27c66da77aaf69d18c893e50ede023a073138e554bbd30f4",
+    "run_output32_r7_actual_rtl.py": "68b3278858499533ee1817697c6bdf47a9f67e1358f0a7f5fc67c9159839a15f"
+  },
+  "adapted_sha256": {
+    "prepare_v5_r2_actual_rtl.py": "af1c42486d9237bcf7fbe7c1f2e12421f33d52bbf17d288f670dbce7e6e9cf63",
+    "run_v5_r2_actual_rtl.py": "e331b17f53b3b5a831e4c7540951b52b675e512eb85e2ff8ef7a59748c1fe1a0"
+  },
+  "actual_trained_checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "changes": "Versioned model/build/gate/output/progress/simulation naming only. Same55op/twohead layout; copied generatedRTL NEVERedited. OriginalRAM128/256unitgates/realTRAINvector/full80640rawoutputs required.",
+  "scope": "Prepared actual-trained RTL experiment, not result, route, physicalDDR or board proof."
+}

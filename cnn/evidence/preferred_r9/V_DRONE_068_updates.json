@@ -1,0 +1,5911 @@
+[
+  {
+    "capture_frame": 0,
+    "capture_time": 0.0,
+    "available_time": 0.09,
+    "candidates": [],
+    "rois": [],
+    "association_result": "untracked",
+    "actual_available_native_time": 0.1
+  },
+  {
+    "capture_frame": 3,
+    "capture_time": 0.1,
+    "available_time": 0.19,
+    "candidates": [
+      {
+        "box": [
+          194.08909606933594,
+          73.97554016113281,
+          30.979019165039062,
+          25.471298217773438
+        ],
+        "score": 0.77593994140625,
+        "origin": "motion",
+        "raw_index": 9842,
+        "raw_objectness": 20355
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          148,
+          26,
+          228,
+          86
+        ],
+        "origin": "motion",
+        "proposal": [
+          188.0,
+          56.0,
+          687.0625
+        ]
+      }
+    ],
+    "association_result": "acquiring",
+    "actual_available_native_time": 0.2
+  },
+  {
+    "capture_frame": 6,
+    "capture_time": 0.2,
+    "available_time": 0.29000000000000004,
+    "candidates": [
+      {
+        "box": [
+          193.18382263183594,
+          100.33006286621094,
+          33.804718017578125,
+          26.22821044921875
+        ],
+        "score": 0.71142578125,
+        "origin": "motion",
+        "raw_index": 11121,
+        "raw_objectness": 14806
+      },
+      {
+        "box": [
+          208.12796020507812,
+          68.1326904296875,
+          24.950469970703125,
+          21.06524658203125
+        ],
+        "score": 0.0036163330078125,
+        "origin": "motion",
+        "raw_index": 11123,
+        "raw_objectness": -92032
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          150,
+          71,
+          230,
+          131
+        ],
+        "origin": "motion",
+        "proposal": [
+          190.0,
+          101.0,
+          746.3125
+        ]
+      },
+      {
+        "rectangle": [
+          159,
+          39,
+          239,
+          99
+        ],
+        "origin": "motion",
+        "proposal": [
+          199.0,
+          69.0,
+          159.9375
+        ]
+      }
+    ],
+    "association_result": "acquired",
+    "actual_available_native_time": 0.3
+  },
+  {
+    "capture_frame": 9,
+    "capture_time": 0.3,
+    "available_time": 0.39,
+    "candidates": [
+      {
+        "box": [
+          190.59022521972656,
+          121.26957702636719,
+          36.91923522949219,
+          26.816574096679688
+        ],
+        "score": 0.87408447265625,
+        "origin": "search",
+        "raw_index": 9551,
+        "raw_objectness": 31732
+      },
+      {
+        "box": [
+          191.54647827148438,
+          120.3115234375,
+          37.297698974609375,
+          27.500030517578125
+        ],
+        "score": 0.3979339599609375,
+        "origin": "motion",
+        "raw_index": 9840,
+        "raw_objectness": -6759
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          122,
+          74,
+          262,
+          179
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          150,
+          71,
+          230,
+          131
+        ],
+        "origin": "motion",
+        "proposal": [
+          190.0,
+          101.0,
+          760.0625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.4
+  },
+  {
+    "capture_frame": 12,
+    "capture_time": 0.4,
+    "available_time": 0.49,
+    "candidates": [
+      {
+        "box": [
+          189.51516723632812,
+          140.6085662841797,
+          36.03120422363281,
+          24.275955200195312
+        ],
+        "score": 0.8732147216796875,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 31613
+      },
+      {
+        "box": [
+          189.19140625,
+          140.1040802001953,
+          36.25193786621094,
+          27.343887329101562
+        ],
+        "score": 0.705780029296875,
+        "origin": "motion",
+        "raw_index": 10352,
+        "raw_objectness": 14316
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          115,
+          90,
+          263,
+          200
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          148,
+          111,
+          228,
+          171
+        ],
+        "origin": "motion",
+        "proposal": [
+          188.0,
+          141.0,
+          844.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.5
+  },
+  {
+    "capture_frame": 15,
+    "capture_time": 0.5,
+    "available_time": 0.59,
+    "candidates": [
+      {
+        "box": [
+          187.1599578857422,
+          155.8096160888672,
+          34.57945251464844,
+          24.952728271484375
+        ],
+        "score": 0.91729736328125,
+        "origin": "search",
+        "raw_index": 9551,
+        "raw_objectness": 39426
+      },
+      {
+        "box": [
+          188.767822265625,
+          155.1944122314453,
+          40.080902099609375,
+          28.351730346679688
+        ],
+        "score": 0.6104583740234375,
+        "origin": "motion",
+        "raw_index": 11312,
+        "raw_objectness": 7355
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          116,
+          108,
+          260,
+          216
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          148,
+          111,
+          228,
+          171
+        ],
+        "origin": "motion",
+        "proposal": [
+          188.0,
+          141.0,
+          846.453125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.6
+  },
+  {
+    "capture_frame": 18,
+    "capture_time": 0.6,
+    "available_time": 0.69,
+    "candidates": [
+      {
+        "box": [
+          184.5914306640625,
+          174.0597381591797,
+          34.77313232421875,
+          24.892532348632812
+        ],
+        "score": 0.8278350830078125,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 25700
+      },
+      {
+        "box": [
+          185.09927368164062,
+          173.6848602294922,
+          34.9849853515625,
+          24.92742919921875
+        ],
+        "score": 0.6123046875,
+        "origin": "motion",
+        "raw_index": 9839,
+        "raw_objectness": 7488
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          116,
+          122,
+          254,
+          226
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          146,
+          126,
+          226,
+          186
+        ],
+        "origin": "motion",
+        "proposal": [
+          186.0,
+          156.0,
+          805.0625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.7
+  },
+  {
+    "capture_frame": 21,
+    "capture_time": 0.7,
+    "available_time": 0.7899999999999999,
+    "candidates": [
+      {
+        "box": [
+          181.62814331054688,
+          190.17578125,
+          34.9259033203125,
+          23.319610595703125
+        ],
+        "score": 0.8929290771484375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 34738
+      },
+      {
+        "box": [
+          182.8134765625,
+          189.3768768310547,
+          33.76165771484375,
+          25.346771240234375
+        ],
+        "score": 0.7826690673828125,
+        "origin": "motion",
+        "raw_index": 9805,
+        "raw_objectness": 20980
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          113,
+          140,
+          252,
+          245
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          149,
+          143,
+          229,
+          203
+        ],
+        "origin": "motion",
+        "proposal": [
+          189.0,
+          173.0,
+          672.8125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.8
+  },
+  {
+    "capture_frame": 24,
+    "capture_time": 0.8,
+    "available_time": 0.89,
+    "candidates": [
+      {
+        "box": [
+          179.98052978515625,
+          201.64886474609375,
+          34.14509582519531,
+          24.29058837890625
+        ],
+        "score": 0.82275390625,
+        "origin": "search",
+        "raw_index": 10320,
+        "raw_objectness": 25153
+      },
+      {
+        "box": [
+          179.93511962890625,
+          201.73501586914062,
+          32.72709655761719,
+          24.02862548828125
+        ],
+        "score": 0.81640625,
+        "origin": "motion",
+        "raw_index": 9744,
+        "raw_objectness": 24433
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          109,
+          155,
+          249,
+          260
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          138,
+          161,
+          218,
+          221
+        ],
+        "origin": "motion",
+        "proposal": [
+          178.0,
+          191.0,
+          629.25
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 0.9
+  },
+  {
+    "capture_frame": 27,
+    "capture_time": 0.9,
+    "available_time": 0.99,
+    "candidates": [
+      {
+        "box": [
+          177.4051971435547,
+          214.0491943359375,
+          29.996322631835938,
+          21.232666015625
+        ],
+        "score": 0.8577728271484375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 29447
+      },
+      {
+        "box": [
+          178.99766540527344,
+          213.80349731445312,
+          30.55621337890625,
+          23.98089599609375
+        ],
+        "score": 0.5688934326171875,
+        "origin": "motion",
+        "raw_index": 11313,
+        "raw_objectness": 4542
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          110,
+          165,
+          246,
+          267
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          136,
+          171,
+          216,
+          231
+        ],
+        "origin": "motion",
+        "proposal": [
+          176.0,
+          201.0,
+          598.8125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.0
+  },
+  {
+    "capture_frame": 30,
+    "capture_time": 1.0,
+    "available_time": 1.09,
+    "candidates": [
+      {
+        "box": [
+          176.6993408203125,
+          224.61550903320312,
+          33.40185546875,
+          24.58880615234375
+        ],
+        "score": 0.88201904296875,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 32963
+      },
+      {
+        "box": [
+          176.334716796875,
+          223.4643096923828,
+          34.172149658203125,
+          26.287628173828125
+        ],
+        "score": 0.6566619873046875,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 10644
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          115,
+          182,
+          235,
+          272
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          132,
+          192,
+          212,
+          252
+        ],
+        "origin": "motion",
+        "proposal": [
+          172.0,
+          222.0,
+          557.9921875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.1
+  },
+  {
+    "capture_frame": 33,
+    "capture_time": 1.1,
+    "available_time": 1.1900000000000002,
+    "candidates": [
+      {
+        "box": [
+          177.29176330566406,
+          232.93130493164062,
+          32.95402526855469,
+          24.943801879882812
+        ],
+        "score": 0.73028564453125,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 16331
+      },
+      {
+        "box": [
+          177.79139709472656,
+          233.2890625,
+          32.17167663574219,
+          26.327529907226562
+        ],
+        "score": 0.713836669921875,
+        "origin": "motion",
+        "raw_index": 9746,
+        "raw_objectness": 14994
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          108,
+          186,
+          242,
+          287
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          132,
+          192,
+          212,
+          252
+        ],
+        "origin": "motion",
+        "proposal": [
+          172.0,
+          222.0,
+          540.177734375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.2
+  },
+  {
+    "capture_frame": 36,
+    "capture_time": 1.2,
+    "available_time": 1.29,
+    "candidates": [
+      {
+        "box": [
+          179.62924194335938,
+          242.13294982910156,
+          32.50682067871094,
+          25.693130493164062
+        ],
+        "score": 0.8762054443359375,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 32060
+      },
+      {
+        "box": [
+          180.70701599121094,
+          242.44871520996094,
+          35.254730224609375,
+          28.284866333007812
+        ],
+        "score": 0.5774993896484375,
+        "origin": "motion",
+        "raw_index": 9650,
+        "raw_objectness": 5122
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          110,
+          193,
+          243,
+          293
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          135,
+          209,
+          215,
+          269
+        ],
+        "origin": "motion",
+        "proposal": [
+          175.0,
+          239.0,
+          485.71875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.3
+  },
+  {
+    "capture_frame": 39,
+    "capture_time": 1.3,
+    "available_time": 1.3900000000000001,
+    "candidates": [
+      {
+        "box": [
+          183.93959045410156,
+          251.0072021484375,
+          36.15306091308594,
+          27.74017333984375
+        ],
+        "score": 0.8577728271484375,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 29459
+      },
+      {
+        "box": [
+          183.91033935546875,
+          250.62315368652344,
+          36.62019348144531,
+          28.808120727539062
+        ],
+        "score": 0.419647216796875,
+        "origin": "motion",
+        "raw_index": 11154,
+        "raw_objectness": -5307
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          112,
+          200,
+          249,
+          303
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          138,
+          219,
+          218,
+          279
+        ],
+        "origin": "motion",
+        "proposal": [
+          178.0,
+          249.0,
+          574.6682739257812
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.4
+  },
+  {
+    "capture_frame": 42,
+    "capture_time": 1.4,
+    "available_time": 1.49,
+    "candidates": [
+      {
+        "box": [
+          186.4694366455078,
+          257.0123291015625,
+          34.44136047363281,
+          23.347122192382812
+        ],
+        "score": 0.8322296142578125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 26213
+      },
+      {
+        "box": [
+          186.94973754882812,
+          256.97996520996094,
+          31.961410522460938,
+          25.221588134765625
+        ],
+        "score": 0.69677734375,
+        "origin": "motion",
+        "raw_index": 9715,
+        "raw_objectness": 13621
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          113,
+          205,
+          261,
+          316
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          138,
+          219,
+          218,
+          279
+        ],
+        "origin": "motion",
+        "proposal": [
+          178.0,
+          249.0,
+          581.5625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.5
+  },
+  {
+    "capture_frame": 45,
+    "capture_time": 1.5,
+    "available_time": 1.59,
+    "candidates": [
+      {
+        "box": [
+          192.18067932128906,
+          264.2597961425781,
+          33.82685852050781,
+          22.080337524414062
+        ],
+        "score": 0.823333740234375,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 25201
+      },
+      {
+        "box": [
+          192.4800567626953,
+          263.8386993408203,
+          33.34950256347656,
+          23.592971801757812
+        ],
+        "score": 0.7563629150390625,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 18539
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          120,
+          213,
+          258,
+          316
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          148,
+          233,
+          228,
+          293
+        ],
+        "origin": "motion",
+        "proposal": [
+          188.0,
+          263.0,
+          449.1796875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.6
+  },
+  {
+    "capture_frame": 48,
+    "capture_time": 1.6,
+    "available_time": 1.6900000000000002,
+    "candidates": [
+      {
+        "box": [
+          197.8434600830078,
+          268.18995666503906,
+          34.681976318359375,
+          22.958038330078125
+        ],
+        "score": 0.9136810302734375,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 38655
+      },
+      {
+        "box": [
+          197.7841796875,
+          269.3498840332031,
+          32.24102783203125,
+          24.587722778320312
+        ],
+        "score": 0.5736846923828125,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 4853
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          129,
+          221,
+          264,
+          322
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          154,
+          239,
+          234,
+          299
+        ],
+        "origin": "motion",
+        "proposal": [
+          194.0,
+          269.0,
+          553.96484375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.7
+  },
+  {
+    "capture_frame": 51,
+    "capture_time": 1.7,
+    "available_time": 1.79,
+    "candidates": [
+      {
+        "box": [
+          202.54891967773438,
+          272.6533203125,
+          31.554443359375,
+          22.331283569335938
+        ],
+        "score": 0.7620697021484375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 19089
+      },
+      {
+        "box": [
+          203.29298400878906,
+          272.1239318847656,
+          34.308135986328125,
+          24.288681030273438
+        ],
+        "score": 0.68426513671875,
+        "origin": "motion",
+        "raw_index": 9651,
+        "raw_objectness": 12646
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          133,
+          222,
+          272,
+          326
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          154,
+          239,
+          234,
+          299
+        ],
+        "origin": "motion",
+        "proposal": [
+          194.0,
+          269.0,
+          504.27044677734375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.8
+  },
+  {
+    "capture_frame": 54,
+    "capture_time": 1.8,
+    "available_time": 1.8900000000000001,
+    "candidates": [
+      {
+        "box": [
+          206.6996307373047,
+          274.84759521484375,
+          31.428482055664062,
+          20.677200317382812
+        ],
+        "score": 0.88836669921875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 33956
+      },
+      {
+        "box": [
+          207.22097778320312,
+          275.4755401611328,
+          30.979019165039062,
+          23.941940307617188
+        ],
+        "score": 0.724090576171875,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 15792
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          144,
+          230,
+          270,
+          325
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          164,
+          245,
+          244,
+          305
+        ],
+        "origin": "motion",
+        "proposal": [
+          204.0,
+          275.0,
+          544.043212890625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 1.9
+  },
+  {
+    "capture_frame": 57,
+    "capture_time": 1.9,
+    "available_time": 1.99,
+    "candidates": [
+      {
+        "box": [
+          211.041259765625,
+          278.0133056640625,
+          35.319854736328125,
+          26.02874755859375
+        ],
+        "score": 0.785308837890625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 21231
+      },
+      {
+        "box": [
+          211.6328887939453,
+          277.3208312988281,
+          32.86566162109375,
+          24.202484130859375
+        ],
+        "score": 0.754913330078125,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 18460
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          148,
+          231,
+          274,
+          326
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          168,
+          248,
+          248,
+          308
+        ],
+        "origin": "motion",
+        "proposal": [
+          208.0,
+          278.0,
+          567.375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.0
+  },
+  {
+    "capture_frame": 60,
+    "capture_time": 2.0,
+    "available_time": 2.09,
+    "candidates": [
+      {
+        "box": [
+          213.7814178466797,
+          279.14405822753906,
+          35.2763671875,
+          24.738967895507812
+        ],
+        "score": 0.9178924560546875,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 39528
+      },
+      {
+        "box": [
+          213.85768127441406,
+          278.51756286621094,
+          31.541580200195312,
+          24.545303344726562
+        ],
+        "score": 0.7725372314453125,
+        "origin": "motion",
+        "raw_index": 9614,
+        "raw_objectness": 20008
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          145,
+          228,
+          286,
+          334
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          177,
+          247,
+          257,
+          307
+        ],
+        "origin": "motion",
+        "proposal": [
+          217.0,
+          277.0,
+          442.7432861328125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.1
+  },
+  {
+    "capture_frame": 63,
+    "capture_time": 2.1,
+    "available_time": 2.19,
+    "candidates": [
+      {
+        "box": [
+          216.14968872070312,
+          280.68006896972656,
+          37.08818054199219,
+          27.643722534179688
+        ],
+        "score": 0.9049835205078125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 36923
+      },
+      {
+        "box": [
+          216.3232421875,
+          279.48455810546875,
+          33.82991027832031,
+          23.063125610351562
+        ],
+        "score": 0.8187408447265625,
+        "origin": "motion",
+        "raw_index": 9584,
+        "raw_objectness": 24720
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          147,
+          228,
+          288,
+          334
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          175,
+          250,
+          255,
+          310
+        ],
+        "origin": "motion",
+        "proposal": [
+          215.0,
+          280.0,
+          392.91888427734375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.2
+  },
+  {
+    "capture_frame": 66,
+    "capture_time": 2.2,
+    "available_time": 2.29,
+    "candidates": [
+      {
+        "box": [
+          218.38418579101562,
+          280.4401550292969,
+          35.785186767578125,
+          24.241409301757812
+        ],
+        "score": 0.9219207763671875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 40452
+      },
+      {
+        "box": [
+          218.55128479003906,
+          279.8883361816406,
+          34.269287109375,
+          26.844512939453125
+        ],
+        "score": 0.7364044189453125,
+        "origin": "motion",
+        "raw_index": 10354,
+        "raw_objectness": 16826
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          145,
+          227,
+          293,
+          338
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          172,
+          252,
+          252,
+          312
+        ],
+        "origin": "motion",
+        "proposal": [
+          212.0,
+          282.0,
+          280.3212890625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.3
+  },
+  {
+    "capture_frame": 69,
+    "capture_time": 2.3,
+    "available_time": 2.3899999999999997,
+    "candidates": [
+      {
+        "box": [
+          219.81072998046875,
+          280.9904327392578,
+          33.98478698730469,
+          23.613754272460938
+        ],
+        "score": 0.8895263671875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 34164
+      },
+      {
+        "box": [
+          219.81617736816406,
+          280.7350158691406,
+          32.17167663574219,
+          23.85540771484375
+        ],
+        "score": 0.717803955078125,
+        "origin": "motion",
+        "raw_index": 9618,
+        "raw_objectness": 15297
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          149,
+          228,
+          293,
+          335
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          173,
+          250,
+          253,
+          310
+        ],
+        "origin": "motion",
+        "proposal": [
+          213.0,
+          280.0,
+          292.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.4
+  },
+  {
+    "capture_frame": 72,
+    "capture_time": 2.4,
+    "available_time": 2.4899999999999998,
+    "candidates": [
+      {
+        "box": [
+          222.84603881835938,
+          280.1402282714844,
+          34.622467041015625,
+          24.015640258789062
+        ],
+        "score": 0.8991241455078125,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 35834
+      },
+      {
+        "box": [
+          222.3768768310547,
+          280.66070556640625,
+          32.72709655761719,
+          24.41729736328125
+        ],
+        "score": 0.7341156005859375,
+        "origin": "motion",
+        "raw_index": 9618,
+        "raw_objectness": 16647
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          154,
+          231,
+          290,
+          333
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          176,
+          250,
+          256,
+          310
+        ],
+        "origin": "motion",
+        "proposal": [
+          216.0,
+          280.0,
+          598.3125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.5
+  },
+  {
+    "capture_frame": 75,
+    "capture_time": 2.5,
+    "available_time": 2.59,
+    "candidates": [
+      {
+        "box": [
+          224.30377197265625,
+          279.22950744628906,
+          32.59782409667969,
+          21.79425048828125
+        ],
+        "score": 0.9473876953125,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 47341
+      },
+      {
+        "box": [
+          224.58485412597656,
+          279.7725524902344,
+          32.3104248046875,
+          24.843017578125
+        ],
+        "score": 0.771148681640625,
+        "origin": "motion",
+        "raw_index": 9618,
+        "raw_objectness": 19891
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          156,
+          228,
+          295,
+          332
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          178,
+          249,
+          258,
+          309
+        ],
+        "origin": "motion",
+        "proposal": [
+          218.0,
+          279.0,
+          563.892578125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.6
+  },
+  {
+    "capture_frame": 78,
+    "capture_time": 2.6,
+    "available_time": 2.69,
+    "candidates": [
+      {
+        "box": [
+          227.79574584960938,
+          277.64605712890625,
+          32.80427551269531,
+          23.17529296875
+        ],
+        "score": 0.924957275390625,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 41160
+      },
+      {
+        "box": [
+          227.4643096923828,
+          277.6416473388672,
+          30.55645751953125,
+          22.706741333007812
+        ],
+        "score": 0.715423583984375,
+        "origin": "motion",
+        "raw_index": 9586,
+        "raw_objectness": 15129
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          161,
+          230,
+          291,
+          328
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          181,
+          248,
+          261,
+          308
+        ],
+        "origin": "motion",
+        "proposal": [
+          221.0,
+          278.0,
+          735.615234375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.7
+  },
+  {
+    "capture_frame": 81,
+    "capture_time": 2.7,
+    "available_time": 2.79,
+    "candidates": [
+      {
+        "box": [
+          229.61961364746094,
+          275.9923095703125,
+          33.36058044433594,
+          23.320022583007812
+        ],
+        "score": 0.9178924560546875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 39573
+      },
+      {
+        "box": [
+          230.4739990234375,
+          276.54229736328125,
+          32.51911926269531,
+          25.430084228515625
+        ],
+        "score": 0.548675537109375,
+        "origin": "motion",
+        "raw_index": 9618,
+        "raw_objectness": 3231
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          165,
+          227,
+          296,
+          326
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          184,
+          246,
+          264,
+          306
+        ],
+        "origin": "motion",
+        "proposal": [
+          224.0,
+          276.0,
+          723.07470703125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.8
+  },
+  {
+    "capture_frame": 84,
+    "capture_time": 2.8,
+    "available_time": 2.8899999999999997,
+    "candidates": [
+      {
+        "box": [
+          234.0037841796875,
+          273.11021423339844,
+          33.96968078613281,
+          23.980117797851562
+        ],
+        "score": 0.9544830322265625,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 49839
+      },
+      {
+        "box": [
+          234.5163116455078,
+          273.18382263183594,
+          31.7518310546875,
+          25.221588134765625
+        ],
+        "score": 0.771148681640625,
+        "origin": "motion",
+        "raw_index": 9587,
+        "raw_objectness": 19904
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          165,
+          225,
+          299,
+          325
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          186,
+          245,
+          266,
+          305
+        ],
+        "origin": "motion",
+        "proposal": [
+          226.0,
+          275.0,
+          674.9357299804688
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 2.9
+  },
+  {
+    "capture_frame": 87,
+    "capture_time": 2.9,
+    "available_time": 2.9899999999999998,
+    "candidates": [
+      {
+        "box": [
+          239.65353393554688,
+          269.5660400390625,
+          32.74241638183594,
+          22.772735595703125
+        ],
+        "score": 0.9671630859375,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 55423
+      },
+      {
+        "box": [
+          239.6475372314453,
+          269.5566864013672,
+          29.918853759765625,
+          22.885055541992188
+        ],
+        "score": 0.6740570068359375,
+        "origin": "motion",
+        "raw_index": 9587,
+        "raw_objectness": 11911
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          169,
+          220,
+          305,
+          322
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          191,
+          242,
+          271,
+          302
+        ],
+        "origin": "motion",
+        "proposal": [
+          231.0,
+          272.0,
+          634.79296875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.0
+  },
+  {
+    "capture_frame": 90,
+    "capture_time": 3.0,
+    "available_time": 3.09,
+    "candidates": [
+      {
+        "box": [
+          243.5156707763672,
+          266.6261444091797,
+          31.12774658203125,
+          21.297805786132812
+        ],
+        "score": 0.9334259033203125,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 43267
+      },
+      {
+        "box": [
+          244.1977081298828,
+          266.58323669433594,
+          29.918853759765625,
+          22.929733276367188
+        ],
+        "score": 0.685943603515625,
+        "origin": "motion",
+        "raw_index": 9587,
+        "raw_objectness": 12807
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          179,
+          218,
+          310,
+          316
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          196,
+          239,
+          276,
+          299
+        ],
+        "origin": "motion",
+        "proposal": [
+          236.0,
+          269.0,
+          644.691162109375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.1
+  },
+  {
+    "capture_frame": 93,
+    "capture_time": 3.1,
+    "available_time": 3.19,
+    "candidates": [
+      {
+        "box": [
+          249.9689483642578,
+          262.2453918457031,
+          32.21824645996094,
+          21.783538818359375
+        ],
+        "score": 0.949676513671875,
+        "origin": "search",
+        "raw_index": 9584,
+        "raw_objectness": 48114
+      },
+      {
+        "box": [
+          249.7646484375,
+          261.99693298339844,
+          31.7518310546875,
+          24.41729736328125
+        ],
+        "score": 0.7065887451171875,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 14408
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          185,
+          217,
+          310,
+          310
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          206,
+          231,
+          286,
+          291
+        ],
+        "origin": "motion",
+        "proposal": [
+          246.0,
+          261.0,
+          609.2394409179688
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.2
+  },
+  {
+    "capture_frame": 96,
+    "capture_time": 3.2,
+    "available_time": 3.29,
+    "candidates": [
+      {
+        "box": [
+          255.6068115234375,
+          256.8564910888672,
+          31.637130737304688,
+          21.686386108398438
+        ],
+        "score": 0.835479736328125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 26595
+      },
+      {
+        "box": [
+          256.3413391113281,
+          257.259765625,
+          31.330703735351562,
+          23.2850341796875
+        ],
+        "score": 0.7264251708984375,
+        "origin": "motion",
+        "raw_index": 9556,
+        "raw_objectness": 15982
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          191,
+          210,
+          320,
+          307
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          206,
+          231,
+          286,
+          291
+        ],
+        "origin": "motion",
+        "proposal": [
+          246.0,
+          261.0,
+          638.29296875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.3
+  },
+  {
+    "capture_frame": 99,
+    "capture_time": 3.3,
+    "available_time": 3.3899999999999997,
+    "candidates": [
+      {
+        "box": [
+          263.5230255126953,
+          251.37367248535156,
+          33.727691650390625,
+          23.462005615234375
+        ],
+        "score": 0.9176025390625,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 39472
+      },
+      {
+        "box": [
+          263.41514587402344,
+          251.0308074951172,
+          31.471664428710938,
+          24.374069213867188
+        ],
+        "score": 0.7394256591796875,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 17065
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          198,
+          205,
+          324,
+          300
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          220,
+          220,
+          300,
+          280
+        ],
+        "origin": "motion",
+        "proposal": [
+          260.0,
+          250.0,
+          562.0974731445312
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.4
+  },
+  {
+    "capture_frame": 102,
+    "capture_time": 3.4,
+    "available_time": 3.4899999999999998,
+    "candidates": [
+      {
+        "box": [
+          270.8389892578125,
+          246.0386505126953,
+          31.938430786132812,
+          22.04840087890625
+        ],
+        "score": 0.7279815673828125,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 16134
+      },
+      {
+        "box": [
+          270.75843811035156,
+          245.90553283691406,
+          30.696990966796875,
+          23.768096923828125
+        ],
+        "score": 0.7911834716796875,
+        "origin": "motion",
+        "raw_index": 9556,
+        "raw_objectness": 21829
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          203,
+          196,
+          338,
+          297
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          220,
+          220,
+          300,
+          280
+        ],
+        "origin": "motion",
+        "proposal": [
+          260.0,
+          250.0,
+          576.826171875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.5
+  },
+  {
+    "capture_frame": 105,
+    "capture_time": 3.5,
+    "available_time": 3.59,
+    "candidates": [
+      {
+        "box": [
+          278.30421447753906,
+          238.4250946044922,
+          33.02276611328125,
+          23.180816650390625
+        ],
+        "score": 0.9351043701171875,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 43710
+      },
+      {
+        "box": [
+          278.279296875,
+          237.8118133544922,
+          29.208953857421875,
+          21.391647338867188
+        ],
+        "score": 0.83868408203125,
+        "origin": "motion",
+        "raw_index": 9524,
+        "raw_objectness": 27025
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          214,
+          193,
+          341,
+          288
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          227,
+          215,
+          307,
+          275
+        ],
+        "origin": "motion",
+        "proposal": [
+          267.0,
+          245.0,
+          564.125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.6
+  },
+  {
+    "capture_frame": 108,
+    "capture_time": 3.6,
+    "available_time": 3.69,
+    "candidates": [
+      {
+        "box": [
+          284.9477233886719,
+          231.7805633544922,
+          34.13563537597656,
+          24.903717041015625
+        ],
+        "score": 0.877471923828125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 32247
+      },
+      {
+        "box": [
+          285.85777282714844,
+          230.75094604492188,
+          32.59967041015625,
+          25.474594116210938
+        ],
+        "score": 0.7599334716796875,
+        "origin": "motion",
+        "raw_index": 11028,
+        "raw_objectness": 18911
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          220,
+          183,
+          352,
+          282
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          235,
+          209,
+          315,
+          269
+        ],
+        "origin": "motion",
+        "proposal": [
+          275.0,
+          239.0,
+          547.125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.7
+  },
+  {
+    "capture_frame": 111,
+    "capture_time": 3.7,
+    "available_time": 3.79,
+    "candidates": [
+      {
+        "box": [
+          291.3690185546875,
+          224.43411254882812,
+          34.59263610839844,
+          26.679351806640625
+        ],
+        "score": 0.831695556640625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 26191
+      },
+      {
+        "box": [
+          292.5404968261719,
+          223.69683837890625,
+          31.541580200195312,
+          25.512542724609375
+        ],
+        "score": 0.6288604736328125,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 8648
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          224,
+          174,
+          360,
+          276
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          249,
+          196,
+          329,
+          256
+        ],
+        "origin": "motion",
+        "proposal": [
+          289.0,
+          226.0,
+          602.0396728515625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.8
+  },
+  {
+    "capture_frame": 114,
+    "capture_time": 3.8,
+    "available_time": 3.8899999999999997,
+    "candidates": [
+      {
+        "box": [
+          296.39048767089844,
+          216.9143524169922,
+          34.82527160644531,
+          26.178955078125
+        ],
+        "score": 0.8936767578125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 34876
+      },
+      {
+        "box": [
+          297.1011199951172,
+          216.0356903076172,
+          30.837844848632812,
+          25.011993408203125
+        ],
+        "score": 0.7725372314453125,
+        "origin": "motion",
+        "raw_index": 9491,
+        "raw_objectness": 20001
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          227,
+          164,
+          369,
+          271
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          249,
+          195,
+          329,
+          255
+        ],
+        "origin": "motion",
+        "proposal": [
+          289.0,
+          225.0,
+          660.515625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 3.9
+  },
+  {
+    "capture_frame": 117,
+    "capture_time": 3.9,
+    "available_time": 3.9899999999999998,
+    "candidates": [
+      {
+        "box": [
+          300.3229217529297,
+          210.65623474121094,
+          28.683700561523438,
+          22.612823486328125
+        ],
+        "score": 0.8998260498046875,
+        "origin": "search",
+        "raw_index": 10383,
+        "raw_objectness": 35942
+      },
+      {
+        "box": [
+          301.0683288574219,
+          209.51560974121094,
+          27.142868041992188,
+          21.712203979492188
+        ],
+        "score": 0.627044677734375,
+        "origin": "motion",
+        "raw_index": 9520,
+        "raw_objectness": 8495
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          232,
+          157,
+          372,
+          262
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          259,
+          185,
+          339,
+          245
+        ],
+        "origin": "motion",
+        "proposal": [
+          299.0,
+          215.0,
+          625.666015625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.0
+  },
+  {
+    "capture_frame": 120,
+    "capture_time": 4.0,
+    "available_time": 4.09,
+    "candidates": [
+      {
+        "box": [
+          302.3980712890625,
+          203.77337646484375,
+          32.01203918457031,
+          25.770156860351562
+        ],
+        "score": 0.6601715087890625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 10852
+      },
+      {
+        "box": [
+          303.6239318847656,
+          203.06475830078125,
+          29.918853759765625,
+          25.011993408203125
+        ],
+        "score": 0.7833251953125,
+        "origin": "motion",
+        "raw_index": 9490,
+        "raw_objectness": 21075
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          245,
+          159,
+          366,
+          249
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          258,
+          182,
+          338,
+          242
+        ],
+        "origin": "motion",
+        "proposal": [
+          298.0,
+          212.0,
+          565.69287109375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.1
+  },
+  {
+    "capture_frame": 123,
+    "capture_time": 4.1,
+    "available_time": 4.1899999999999995,
+    "candidates": [
+      {
+        "box": [
+          304.57725524902344,
+          196.68997192382812,
+          31.621810913085938,
+          23.179046630859375
+        ],
+        "score": 0.8013153076171875,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 22829
+      },
+      {
+        "box": [
+          304.96669006347656,
+          195.20701599121094,
+          29.4229736328125,
+          23.417572021484375
+        ],
+        "score": 0.7833251953125,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 21046
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          241,
+          146,
+          374,
+          246
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          262,
+          167,
+          342,
+          227
+        ],
+        "origin": "motion",
+        "proposal": [
+          302.0,
+          197.0,
+          535.1459350585938
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.2
+  },
+  {
+    "capture_frame": 126,
+    "capture_time": 4.2,
+    "available_time": 4.29,
+    "candidates": [
+      {
+        "box": [
+          303.24290466308594,
+          190.7237091064453,
+          29.024185180664062,
+          22.091796875
+        ],
+        "score": 0.737152099609375,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 16917
+      },
+      {
+        "box": [
+          302.81504821777344,
+          190.5756072998047,
+          28.995712280273438,
+          22.301666259765625
+        ],
+        "score": 0.637939453125,
+        "origin": "motion",
+        "raw_index": 9520,
+        "raw_objectness": 9292
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          244,
+          142,
+          370,
+          237
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          262,
+          168,
+          342,
+          228
+        ],
+        "origin": "motion",
+        "proposal": [
+          302.0,
+          198.0,
+          523.8639526367188
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.3
+  },
+  {
+    "capture_frame": 129,
+    "capture_time": 4.3,
+    "available_time": 4.39,
+    "candidates": [
+      {
+        "box": [
+          302.79705810546875,
+          183.2069549560547,
+          34.62751770019531,
+          26.26336669921875
+        ],
+        "score": 0.84796142578125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 28188
+      },
+      {
+        "box": [
+          302.91253662109375,
+          182.6613006591797,
+          29.635177612304688,
+          24.631149291992188
+        ],
+        "score": 0.6662750244140625,
+        "origin": "motion",
+        "raw_index": 9614,
+        "raw_objectness": 11351
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          245,
+          140,
+          363,
+          229
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          266,
+          151,
+          346,
+          211
+        ],
+        "origin": "motion",
+        "proposal": [
+          306.0,
+          181.0,
+          320.5078125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.4
+  },
+  {
+    "capture_frame": 132,
+    "capture_time": 4.4,
+    "available_time": 4.49,
+    "candidates": [
+      {
+        "box": [
+          301.5819396972656,
+          177.9677276611328,
+          30.878570556640625,
+          23.710159301757812
+        ],
+        "score": 0.8688201904296875,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 30959
+      },
+      {
+        "box": [
+          301.8669128417969,
+          176.79298400878906,
+          30.20257568359375,
+          24.245559692382812
+        ],
+        "score": 0.7049713134765625,
+        "origin": "motion",
+        "raw_index": 9614,
+        "raw_objectness": 14256
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          233,
+          124,
+          373,
+          229
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          265,
+          145,
+          345,
+          205
+        ],
+        "origin": "motion",
+        "proposal": [
+          305.0,
+          175.0,
+          387.4375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.5
+  },
+  {
+    "capture_frame": 135,
+    "capture_time": 4.5,
+    "available_time": 4.59,
+    "candidates": [
+      {
+        "box": [
+          299.80670166015625,
+          169.68353271484375,
+          28.76171875,
+          21.114791870117188
+        ],
+        "score": 0.9036407470703125,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 36677
+      },
+      {
+        "box": [
+          300.6085510253906,
+          170.01190185546875,
+          28.853988647460938,
+          22.165924072265625
+        ],
+        "score": 0.5992431640625,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 6596
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          238,
+          124,
+          364,
+          219
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          257,
+          140,
+          337,
+          200
+        ],
+        "origin": "motion",
+        "proposal": [
+          297.0,
+          170.0,
+          422.79071044921875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.6
+  },
+  {
+    "capture_frame": 138,
+    "capture_time": 4.6,
+    "available_time": 4.6899999999999995,
+    "candidates": [
+      {
+        "box": [
+          297.3126525878906,
+          161.93692016601562,
+          32.867919921875,
+          24.583389282226562
+        ],
+        "score": 0.8449249267578125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 27744
+      },
+      {
+        "box": [
+          297.7537841796875,
+          161.08421325683594,
+          29.4229736328125,
+          21.437545776367188
+        ],
+        "score": 0.75054931640625,
+        "origin": "motion",
+        "raw_index": 9488,
+        "raw_objectness": 18026
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          241,
+          119,
+          356,
+          206
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          257,
+          140,
+          337,
+          200
+        ],
+        "origin": "motion",
+        "proposal": [
+          297.0,
+          170.0,
+          436.53125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.7
+  },
+  {
+    "capture_frame": 141,
+    "capture_time": 4.7,
+    "available_time": 4.79,
+    "candidates": [
+      {
+        "box": [
+          294.8731994628906,
+          153.1239471435547,
+          30.61785888671875,
+          21.840850830078125
+        ],
+        "score": 0.8397369384765625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 27152
+      },
+      {
+        "box": [
+          294.2976379394531,
+          153.1475372314453,
+          29.208953857421875,
+          20.70098876953125
+        ],
+        "score": 0.8193206787109375,
+        "origin": "motion",
+        "raw_index": 9487,
+        "raw_objectness": 24746
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          230,
+          105,
+          361,
+          204
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          255,
+          132,
+          335,
+          192
+        ],
+        "origin": "motion",
+        "proposal": [
+          295.0,
+          162.0,
+          370.826171875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.8
+  },
+  {
+    "capture_frame": 144,
+    "capture_time": 4.8,
+    "available_time": 4.89,
+    "candidates": [
+      {
+        "box": [
+          292.54400634765625,
+          146.76007080078125,
+          28.501754760742188,
+          20.568954467773438
+        ],
+        "score": 0.830047607421875,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 26001
+      },
+      {
+        "box": [
+          292.76953125,
+          146.14129638671875,
+          28.427047729492188,
+          20.97802734375
+        ],
+        "score": 0.6406402587890625,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 9464
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          232,
+          99,
+          354,
+          191
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          249,
+          116,
+          329,
+          176
+        ],
+        "origin": "motion",
+        "proposal": [
+          289.0,
+          146.0,
+          333.953125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 4.9
+  },
+  {
+    "capture_frame": 147,
+    "capture_time": 4.9,
+    "available_time": 4.99,
+    "candidates": [
+      {
+        "box": [
+          288.8924865722656,
+          134.85202026367188,
+          31.533920288085938,
+          22.150833129882812
+        ],
+        "score": 0.86749267578125,
+        "origin": "search",
+        "raw_index": 9551,
+        "raw_objectness": 30812
+      },
+      {
+        "box": [
+          288.9666290283203,
+          134.61593627929688,
+          27.641891479492188,
+          19.770065307617188
+        ],
+        "score": 0.7248687744140625,
+        "origin": "motion",
+        "raw_index": 9584,
+        "raw_objectness": 15880
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          233,
+          97,
+          347,
+          182
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          247,
+          105,
+          327,
+          165
+        ],
+        "origin": "motion",
+        "proposal": [
+          287.0,
+          135.0,
+          473.8125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.0
+  },
+  {
+    "capture_frame": 150,
+    "capture_time": 5.0,
+    "available_time": 5.09,
+    "candidates": [
+      {
+        "box": [
+          287.3492736816406,
+          127.30197143554688,
+          32.34001159667969,
+          22.6627197265625
+        ],
+        "score": 0.8947906494140625,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 35103
+      },
+      {
+        "box": [
+          286.7132110595703,
+          126.76963806152344,
+          30.20257568359375,
+          23.811737060546875
+        ],
+        "score": 0.773895263671875,
+        "origin": "motion",
+        "raw_index": 9487,
+        "raw_objectness": 20138
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          223,
+          78,
+          349,
+          173
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          247,
+          105,
+          327,
+          165
+        ],
+        "origin": "motion",
+        "proposal": [
+          287.0,
+          135.0,
+          499.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.1
+  },
+  {
+    "capture_frame": 153,
+    "capture_time": 5.1,
+    "available_time": 5.1899999999999995,
+    "candidates": [
+      {
+        "box": [
+          283.5829315185547,
+          118.39508056640625,
+          30.46624755859375,
+          22.09075927734375
+        ],
+        "score": 0.918487548828125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 39655
+      },
+      {
+        "box": [
+          283.1459197998047,
+          118.60111999511719,
+          30.414764404296875,
+          23.021270751953125
+        ],
+        "score": 0.639739990234375,
+        "origin": "motion",
+        "raw_index": 11152,
+        "raw_objectness": 9438
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          220,
+          70,
+          350,
+          167
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          241,
+          88,
+          321,
+          148
+        ],
+        "origin": "motion",
+        "proposal": [
+          281.0,
+          118.0,
+          545.25
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.2
+  },
+  {
+    "capture_frame": 156,
+    "capture_time": 5.2,
+    "available_time": 5.29,
+    "candidates": [
+      {
+        "box": [
+          280.70587158203125,
+          110.82330322265625,
+          32.380889892578125,
+          23.786041259765625
+        ],
+        "score": 0.867034912109375,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 30718
+      },
+      {
+        "box": [
+          281.5693817138672,
+          110.57942199707031,
+          31.049728393554688,
+          23.592971801757812
+        ],
+        "score": 0.7310638427734375,
+        "origin": "motion",
+        "raw_index": 9520,
+        "raw_objectness": 16372
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          220,
+          64,
+          342,
+          155
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          241,
+          88,
+          321,
+          148
+        ],
+        "origin": "motion",
+        "proposal": [
+          281.0,
+          118.0,
+          582.9375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.3
+  },
+  {
+    "capture_frame": 159,
+    "capture_time": 5.3,
+    "available_time": 5.39,
+    "candidates": [
+      {
+        "box": [
+          276.0084228515625,
+          97.79557800292969,
+          31.706161499023438,
+          23.669387817382812
+        ],
+        "score": 0.8962554931640625,
+        "origin": "search",
+        "raw_index": 10319,
+        "raw_objectness": 35345
+      },
+      {
+        "box": [
+          276.16285705566406,
+          97.50787353515625,
+          30.343612670898438,
+          23.063125610351562
+        ],
+        "score": 0.807464599609375,
+        "origin": "motion",
+        "raw_index": 9422,
+        "raw_objectness": 23516
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          213,
+          54,
+          343,
+          151
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          239,
+          81,
+          319,
+          141
+        ],
+        "origin": "motion",
+        "proposal": [
+          279.0,
+          111.0,
+          545.875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.4
+  },
+  {
+    "capture_frame": 162,
+    "capture_time": 5.4,
+    "available_time": 5.49,
+    "candidates": [
+      {
+        "box": [
+          272.33128356933594,
+          89.02268981933594,
+          29.140701293945312,
+          21.564071655273438
+        ],
+        "score": 0.858245849609375,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 29475
+      },
+      {
+        "box": [
+          272.5502624511719,
+          88.67916870117188,
+          29.28021240234375,
+          22.346694946289062
+        ],
+        "score": 0.867034912109375,
+        "origin": "motion",
+        "raw_index": 9487,
+        "raw_objectness": 30705
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          209,
+          40,
+          336,
+          135
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          234,
+          68,
+          314,
+          128
+        ],
+        "origin": "motion",
+        "proposal": [
+          274.0,
+          98.0,
+          539.01953125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.5
+  },
+  {
+    "capture_frame": 165,
+    "capture_time": 5.5,
+    "available_time": 5.59,
+    "candidates": [
+      {
+        "box": [
+          269.2237243652344,
+          82.04995727539062,
+          30.809341430664062,
+          21.190261840820312
+        ],
+        "score": 0.77593994140625,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 20366
+      },
+      {
+        "box": [
+          269.6374969482422,
+          81.10111999511719,
+          31.713775634765625,
+          23.315460205078125
+        ],
+        "score": 0.75128173828125,
+        "origin": "motion",
+        "raw_index": 11054,
+        "raw_objectness": 18098
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          209,
+          34,
+          329,
+          124
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          233,
+          58,
+          313,
+          118
+        ],
+        "origin": "motion",
+        "proposal": [
+          273.0,
+          88.0,
+          523.9375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.6
+  },
+  {
+    "capture_frame": 168,
+    "capture_time": 5.6,
+    "available_time": 5.6899999999999995,
+    "candidates": [
+      {
+        "box": [
+          265.0653991699219,
+          72.88919067382812,
+          31.18304443359375,
+          22.6265869140625
+        ],
+        "score": 0.85919189453125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 29657
+      },
+      {
+        "box": [
+          265.09869384765625,
+          73.55130004882812,
+          29.359970092773438,
+          23.189865112304688
+        ],
+        "score": 0.5736846923828125,
+        "origin": "motion",
+        "raw_index": 10384,
+        "raw_objectness": 4853
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          204,
+          28,
+          327,
+          120
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          223,
+          43,
+          303,
+          103
+        ],
+        "origin": "motion",
+        "proposal": [
+          263.0,
+          73.0,
+          538.625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.7
+  },
+  {
+    "capture_frame": 171,
+    "capture_time": 5.7,
+    "available_time": 5.79,
+    "candidates": [
+      {
+        "box": [
+          260.4730682373047,
+          64.320556640625,
+          30.864883422851562,
+          23.141708374023438
+        ],
+        "score": 0.8000640869140625,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 22695
+      },
+      {
+        "box": [
+          261.0467987060547,
+          63.749053955078125,
+          31.1900634765625,
+          24.800384521484375
+        ],
+        "score": 0.7000732421875,
+        "origin": "motion",
+        "raw_index": 9487,
+        "raw_objectness": 13890
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          199,
+          17,
+          324,
+          111
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          223,
+          43,
+          303,
+          103
+        ],
+        "origin": "motion",
+        "proposal": [
+          263.0,
+          73.0,
+          570.75
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.8
+  },
+  {
+    "capture_frame": 174,
+    "capture_time": 5.8,
+    "available_time": 5.89,
+    "candidates": [
+      {
+        "box": [
+          256.24452209472656,
+          55.169830322265625,
+          32.37525939941406,
+          22.966506958007812
+        ],
+        "score": 0.73028564453125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 16345
+      },
+      {
+        "box": [
+          257.31031799316406,
+          54.7060546875,
+          32.65861511230469,
+          25.636489868164062
+        ],
+        "score": 0.760650634765625,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 18916
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          195,
+          9,
+          318,
+          102
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          214,
+          26,
+          294,
+          86
+        ],
+        "origin": "motion",
+        "proposal": [
+          254.0,
+          56.0,
+          518.5
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 5.9
+  },
+  {
+    "capture_frame": 177,
+    "capture_time": 5.9,
+    "available_time": 5.99,
+    "candidates": [
+      {
+        "box": [
+          252.39266967773438,
+          48.7294921875,
+          32.79908752441406,
+          23.180953979492188
+        ],
+        "score": 0.92303466796875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 40723
+      },
+      {
+        "box": [
+          253.0705108642578,
+          48.80769348144531,
+          33.142303466796875,
+          25.011993408203125
+        ],
+        "score": 0.861541748046875,
+        "origin": "motion",
+        "raw_index": 9519,
+        "raw_objectness": 29957
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          185,
+          0,
+          322,
+          103
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          214,
+          26,
+          294,
+          86
+        ],
+        "origin": "motion",
+        "proposal": [
+          254.0,
+          56.0,
+          534.802734375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.0
+  },
+  {
+    "capture_frame": 180,
+    "capture_time": 6.0,
+    "available_time": 6.09,
+    "candidates": [
+      {
+        "box": [
+          249.220458984375,
+          42.06947326660156,
+          30.549728393554688,
+          21.52191162109375
+        ],
+        "score": 0.9026031494140625,
+        "origin": "search",
+        "raw_index": 10320,
+        "raw_objectness": 36472
+      },
+      {
+        "box": [
+          248.6613006591797,
+          41.615936279296875,
+          31.681671142578125,
+          24.072509765625
+        ],
+        "score": 0.74835205078125,
+        "origin": "motion",
+        "raw_index": 9584,
+        "raw_objectness": 17882
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          182,
+          0,
+          314,
+          98
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          207,
+          12,
+          287,
+          72
+        ],
+        "origin": "motion",
+        "proposal": [
+          247.0,
+          42.0,
+          549.6875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.1
+  },
+  {
+    "capture_frame": 183,
+    "capture_time": 6.1,
+    "available_time": 6.1899999999999995,
+    "candidates": [
+      {
+        "box": [
+          243.72064208984375,
+          35.65635681152344,
+          29.842529296875,
+          21.644989013671875
+        ],
+        "score": 0.960205078125,
+        "origin": "search",
+        "raw_index": 9519,
+        "raw_objectness": 52148
+      },
+      {
+        "box": [
+          244.90130615234375,
+          35.202362060546875,
+          29.28021240234375,
+          23.941940307617188
+        ],
+        "score": 0.6901397705078125,
+        "origin": "motion",
+        "raw_index": 9519,
+        "raw_objectness": 13124
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          184,
+          0,
+          307,
+          92
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          207,
+          12,
+          287,
+          72
+        ],
+        "origin": "motion",
+        "proposal": [
+          247.0,
+          42.0,
+          553.5
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.2
+  },
+  {
+    "capture_frame": 186,
+    "capture_time": 6.2,
+    "available_time": 6.29,
+    "candidates": [
+      {
+        "box": [
+          240.2652587890625,
+          30.793304443359375,
+          32.15879821777344,
+          24.028564453125
+        ],
+        "score": 0.7627716064453125,
+        "origin": "search",
+        "raw_index": 9488,
+        "raw_objectness": 19120
+      },
+      {
+        "box": [
+          240.32923889160156,
+          29.7548828125,
+          29.84814453125,
+          23.592971801757812
+        ],
+        "score": 0.7833251953125,
+        "origin": "motion",
+        "raw_index": 9519,
+        "raw_objectness": 21062
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          179,
+          0,
+          299,
+          90
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          202,
+          6,
+          282,
+          66
+        ],
+        "origin": "motion",
+        "proposal": [
+          242.0,
+          36.0,
+          540.8125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.3
+  },
+  {
+    "capture_frame": 189,
+    "capture_time": 6.3,
+    "available_time": 6.39,
+    "candidates": [
+      {
+        "box": [
+          236.7350311279297,
+          26.548385620117188,
+          32.76274108886719,
+          23.437637329101562
+        ],
+        "score": 0.724090576171875,
+        "origin": "search",
+        "raw_index": 10192,
+        "raw_objectness": 15824
+      },
+      {
+        "box": [
+          236.6524200439453,
+          26.3232421875,
+          33.07337951660156,
+          25.759750366210938
+        ],
+        "score": 0.6757659912109375,
+        "origin": "motion",
+        "raw_index": 9551,
+        "raw_objectness": 12001
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          173,
+          0,
+          299,
+          94
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          198,
+          0,
+          278,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          238.0,
+          29.0,
+          603.576171875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.4
+  },
+  {
+    "capture_frame": 192,
+    "capture_time": 6.4,
+    "available_time": 6.49,
+    "candidates": [
+      {
+        "box": [
+          231.2118377685547,
+          24.644668579101562,
+          31.347747802734375,
+          23.010696411132812
+        ],
+        "score": 0.835479736328125,
+        "origin": "search",
+        "raw_index": 9391,
+        "raw_objectness": 26646
+      },
+      {
+        "box": [
+          232.00209045410156,
+          23.550262451171875,
+          33.50018310546875,
+          26.985122680664062
+        ],
+        "score": 0.53704833984375,
+        "origin": "motion",
+        "raw_index": 11055,
+        "raw_objectness": 2423
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          167,
+          0,
+          298,
+          98
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          194,
+          0,
+          274,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          234.0,
+          26.0,
+          476.8125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.5
+  },
+  {
+    "capture_frame": 195,
+    "capture_time": 6.5,
+    "available_time": 6.59,
+    "candidates": [
+      {
+        "box": [
+          225.97044372558594,
+          22.500640869140625,
+          29.615921020507812,
+          20.667770385742188
+        ],
+        "score": 0.8714752197265625,
+        "origin": "search",
+        "raw_index": 9391,
+        "raw_objectness": 31337
+      },
+      {
+        "box": [
+          226.70896911621094,
+          21.449737548828125,
+          30.979019165039062,
+          25.011993408203125
+        ],
+        "score": 0.5650634765625,
+        "origin": "motion",
+        "raw_index": 9487,
+        "raw_objectness": 4295
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          164,
+          0,
+          289,
+          94
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          189,
+          0,
+          269,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          229.0,
+          24.0,
+          433.845703125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.6
+  },
+  {
+    "capture_frame": 198,
+    "capture_time": 6.6,
+    "available_time": 6.6899999999999995,
+    "candidates": [
+      {
+        "box": [
+          223.29811096191406,
+          22.662857055664062,
+          29.931747436523438,
+          22.388427734375
+        ],
+        "score": 0.8110809326171875,
+        "origin": "search",
+        "raw_index": 9392,
+        "raw_objectness": 23852
+      },
+      {
+        "box": [
+          222.89430236816406,
+          21.779022216796875,
+          30.979019165039062,
+          25.595138549804688
+        ],
+        "score": 0.63250732421875,
+        "origin": "motion",
+        "raw_index": 9488,
+        "raw_objectness": 8892
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          162,
+          0,
+          280,
+          89
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          181,
+          0,
+          261,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          221.0,
+          23.0,
+          353.25
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.7
+  },
+  {
+    "capture_frame": 201,
+    "capture_time": 6.7,
+    "available_time": 6.79,
+    "candidates": [
+      {
+        "box": [
+          218.0923309326172,
+          23.715484619140625,
+          30.001998901367188,
+          22.639739990234375
+        ],
+        "score": 0.8879852294921875,
+        "origin": "search",
+        "raw_index": 9423,
+        "raw_objectness": 33904
+      },
+      {
+        "box": [
+          219.18382263183594,
+          22.918624877929688,
+          29.28021240234375,
+          22.346694946289062
+        ],
+        "score": 0.78662109375,
+        "origin": "motion",
+        "raw_index": 9521,
+        "raw_objectness": 21372
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          160,
+          0,
+          279,
+          90
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          176,
+          0,
+          256,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          216.0,
+          24.0,
+          369.25
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.8
+  },
+  {
+    "capture_frame": 204,
+    "capture_time": 6.8,
+    "available_time": 6.89,
+    "candidates": [
+      {
+        "box": [
+          213.166259765625,
+          24.697402954101562,
+          30.079238891601562,
+          21.986709594726562
+        ],
+        "score": 0.88323974609375,
+        "origin": "search",
+        "raw_index": 9423,
+        "raw_objectness": 33174
+      },
+      {
+        "box": [
+          214.04229736328125,
+          24.1326904296875,
+          31.471664428710938,
+          24.459609985351562
+        ],
+        "score": 0.764892578125,
+        "origin": "motion",
+        "raw_index": 9521,
+        "raw_objectness": 19336
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          153,
+          0,
+          274,
+          91
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          171,
+          0,
+          251,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          211.0,
+          25.0,
+          392.6875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 6.9
+  },
+  {
+    "capture_frame": 207,
+    "capture_time": 6.9,
+    "available_time": 6.99,
+    "candidates": [
+      {
+        "box": [
+          209.61874389648438,
+          26.77984619140625,
+          29.767852783203125,
+          21.413070678710938
+        ],
+        "score": 0.90191650390625,
+        "origin": "search",
+        "raw_index": 10224,
+        "raw_objectness": 36357
+      },
+      {
+        "box": [
+          209.6669921875,
+          26.4739990234375,
+          31.471664428710938,
+          24.843017578125
+        ],
+        "score": 0.8278350830078125,
+        "origin": "motion",
+        "raw_index": 9551,
+        "raw_objectness": 25713
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          148,
+          0,
+          269,
+          90
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          171,
+          0,
+          251,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          211.0,
+          26.0,
+          499.5625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.0
+  },
+  {
+    "capture_frame": 210,
+    "capture_time": 7.0,
+    "available_time": 7.09,
+    "candidates": [
+      {
+        "box": [
+          207.29400634765625,
+          29.223876953125,
+          31.335052490234375,
+          24.646728515625
+        ],
+        "score": 0.909271240234375,
+        "origin": "search",
+        "raw_index": 10224,
+        "raw_objectness": 37753
+      },
+      {
+        "box": [
+          206.493408203125,
+          28.720703125,
+          29.989654541015625,
+          24.115478515625
+        ],
+        "score": 0.6085968017578125,
+        "origin": "motion",
+        "raw_index": 9583,
+        "raw_objectness": 7234
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          146,
+          0,
+          265,
+          89
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          167,
+          0,
+          247,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          207.0,
+          28.0,
+          571.75
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.1
+  },
+  {
+    "capture_frame": 213,
+    "capture_time": 7.1,
+    "available_time": 7.1899999999999995,
+    "candidates": [
+      {
+        "box": [
+          202.97805786132812,
+          31.841094970703125,
+          28.483245849609375,
+          21.330093383789062
+        ],
+        "score": 0.8980560302734375,
+        "origin": "search",
+        "raw_index": 9455,
+        "raw_objectness": 35642
+      },
+      {
+        "box": [
+          202.76498413085938,
+          31.7742919921875,
+          30.131515502929688,
+          25.387924194335938
+        ],
+        "score": 0.46295166015625,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": -2429
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          138,
+          0,
+          270,
+          99
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          161,
+          0,
+          241,
+          60
+        ],
+        "origin": "motion",
+        "proposal": [
+          201.0,
+          30.0,
+          465.5625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.2
+  },
+  {
+    "capture_frame": 216,
+    "capture_time": 7.2,
+    "available_time": 7.29,
+    "candidates": [
+      {
+        "box": [
+          201.75112915039062,
+          35.07322692871094,
+          30.06280517578125,
+          25.682220458984375
+        ],
+        "score": 0.6740570068359375,
+        "origin": "search",
+        "raw_index": 9520,
+        "raw_objectness": 11923
+      },
+      {
+        "box": [
+          202.58909606933594,
+          35.31977844238281,
+          29.918853759765625,
+          26.367462158203125
+        ],
+        "score": 0.6048583984375,
+        "origin": "motion",
+        "raw_index": 9649,
+        "raw_objectness": 6966
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          142,
+          0,
+          256,
+          85
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          159,
+          2,
+          239,
+          62
+        ],
+        "origin": "motion",
+        "proposal": [
+          199.0,
+          32.0,
+          374.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.3
+  },
+  {
+    "capture_frame": 219,
+    "capture_time": 7.3,
+    "available_time": 7.39,
+    "candidates": [
+      {
+        "box": [
+          201.5583953857422,
+          40.00755310058594,
+          27.78997802734375,
+          24.35723876953125
+        ],
+        "score": 0.88079833984375,
+        "origin": "search",
+        "raw_index": 10288,
+        "raw_objectness": 32750
+      },
+      {
+        "box": [
+          202.31031799316406,
+          41.44036865234375,
+          27.28533935546875,
+          24.41729736328125
+        ],
+        "score": 0.559295654296875,
+        "origin": "motion",
+        "raw_index": 9681,
+        "raw_objectness": 3893
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          131,
+          0,
+          268,
+          103
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          159,
+          6,
+          239,
+          66
+        ],
+        "origin": "motion",
+        "proposal": [
+          199.0,
+          36.0,
+          334.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.4
+  },
+  {
+    "capture_frame": 222,
+    "capture_time": 7.4,
+    "available_time": 7.49,
+    "candidates": [
+      {
+        "box": [
+          202.0947265625,
+          44.378082275390625,
+          28.263946533203125,
+          22.557571411132812
+        ],
+        "score": 0.7885894775390625,
+        "origin": "search",
+        "raw_index": 10320,
+        "raw_objectness": 21543
+      },
+      {
+        "box": [
+          203.3719940185547,
+          44.46430969238281,
+          30.90838623046875,
+          26.764480590820312
+        ],
+        "score": 0.5879364013671875,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 5805
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          135,
+          0,
+          265,
+          97
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          162,
+          13,
+          242,
+          73
+        ],
+        "origin": "motion",
+        "proposal": [
+          202.0,
+          43.0,
+          314.7578125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.5
+  },
+  {
+    "capture_frame": 225,
+    "capture_time": 7.5,
+    "available_time": 7.59,
+    "candidates": [
+      {
+        "box": [
+          204.5105438232422,
+          49.757171630859375,
+          30.649124145507812,
+          23.850906372070312
+        ],
+        "score": 0.8327789306640625,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 26295
+      },
+      {
+        "box": [
+          204.61842346191406,
+          49.90992736816406,
+          27.856430053710938,
+          22.21173095703125
+        ],
+        "score": 0.700897216796875,
+        "origin": "motion",
+        "raw_index": 9648,
+        "raw_objectness": 13933
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          142,
+          3,
+          262,
+          94
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          163,
+          17,
+          243,
+          77
+        ],
+        "origin": "motion",
+        "proposal": [
+          203.0,
+          47.0,
+          293.369140625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.6
+  },
+  {
+    "capture_frame": 228,
+    "capture_time": 7.6,
+    "available_time": 7.6899999999999995,
+    "candidates": [
+      {
+        "box": [
+          207.21343994140625,
+          53.74041748046875,
+          31.514556884765625,
+          22.981185913085938
+        ],
+        "score": 0.8714752197265625,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 31388
+      },
+      {
+        "box": [
+          206.94004821777344,
+          54.202362060546875,
+          29.208953857421875,
+          22.885055541992188
+        ],
+        "score": 0.7325897216796875,
+        "origin": "motion",
+        "raw_index": 9649,
+        "raw_objectness": 16523
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          142,
+          7,
+          269,
+          102
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          163,
+          21,
+          243,
+          81
+        ],
+        "origin": "motion",
+        "proposal": [
+          203.0,
+          51.0,
+          252.3125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.7
+  },
+  {
+    "capture_frame": 231,
+    "capture_time": 7.7,
+    "available_time": 7.79,
+    "candidates": [
+      {
+        "box": [
+          211.091796875,
+          61.34275817871094,
+          29.8092041015625,
+          21.4761962890625
+        ],
+        "score": 0.816986083984375,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 24515
+      },
+      {
+        "box": [
+          211.02886962890625,
+          61.735015869140625,
+          28.569000244140625,
+          21.666000366210938
+        ],
+        "score": 0.6123046875,
+        "origin": "motion",
+        "raw_index": 9615,
+        "raw_objectness": 7499
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          146,
+          11,
+          272,
+          105
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          173,
+          31,
+          253,
+          91
+        ],
+        "origin": "motion",
+        "proposal": [
+          213.0,
+          61.0,
+          279.94921875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.8
+  },
+  {
+    "capture_frame": 234,
+    "capture_time": 7.8,
+    "available_time": 7.89,
+    "candidates": [
+      {
+        "box": [
+          216.30517578125,
+          69.43156433105469,
+          33.208465576171875,
+          23.572174072265625
+        ],
+        "score": 0.9086151123046875,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 37635
+      },
+      {
+        "box": [
+          215.75787353515625,
+          68.73046875,
+          29.139083862304688,
+          22.751251220703125
+        ],
+        "score": 0.7683868408203125,
+        "origin": "motion",
+        "raw_index": 9583,
+        "raw_objectness": 19640
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          154,
+          23,
+          274,
+          112
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          178,
+          40,
+          258,
+          100
+        ],
+        "origin": "motion",
+        "proposal": [
+          218.0,
+          70.0,
+          369.6875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 7.9
+  },
+  {
+    "capture_frame": 237,
+    "capture_time": 7.9,
+    "available_time": 7.99,
+    "candidates": [
+      {
+        "box": [
+          218.62469482421875,
+          75.08155822753906,
+          33.00343322753906,
+          22.920852661132812
+        ],
+        "score": 0.9433441162109375,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 46059
+      },
+      {
+        "box": [
+          218.96212768554688,
+          75.73501586914062,
+          30.767364501953125,
+          23.417572021484375
+        ],
+        "score": 0.716217041015625,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 15168
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          154,
+          27,
+          287,
+          126
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          177,
+          45,
+          257,
+          105
+        ],
+        "origin": "motion",
+        "proposal": [
+          217.0,
+          75.0,
+          458.548828125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.0
+  },
+  {
+    "capture_frame": 240,
+    "capture_time": 8.0,
+    "available_time": 8.09,
+    "candidates": [
+      {
+        "box": [
+          223.94970703125,
+          83.538330078125,
+          31.779403686523438,
+          23.72125244140625
+        ],
+        "score": 0.884033203125,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 33272
+      },
+      {
+        "box": [
+          224.05520629882812,
+          82.13737487792969,
+          27.784408569335938,
+          21.93939208984375
+        ],
+        "score": 0.580352783203125,
+        "origin": "motion",
+        "raw_index": 9682,
+        "raw_objectness": 5309
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          156,
+          32,
+          288,
+          131
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          177,
+          45,
+          257,
+          105
+        ],
+        "origin": "motion",
+        "proposal": [
+          217.0,
+          75.0,
+          456.375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.1
+  },
+  {
+    "capture_frame": 243,
+    "capture_time": 8.1,
+    "available_time": 8.19,
+    "candidates": [
+      {
+        "box": [
+          228.3729248046875,
+          91.373291015625,
+          28.0277099609375,
+          22.180206298828125
+        ],
+        "score": 0.82275390625,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 25169
+      },
+      {
+        "box": [
+          228.8076934814453,
+          91.73501586914062,
+          31.401809692382812,
+          24.969207763671875
+        ],
+        "score": 0.614166259765625,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 7586
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          165,
+          43,
+          292,
+          139
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          186,
+          61,
+          266,
+          121
+        ],
+        "origin": "motion",
+        "proposal": [
+          226.0,
+          91.0,
+          464.1875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.2
+  },
+  {
+    "capture_frame": 246,
+    "capture_time": 8.2,
+    "available_time": 8.29,
+    "candidates": [
+      {
+        "box": [
+          231.94342041015625,
+          99.75929260253906,
+          29.915451049804688,
+          22.728866577148438
+        ],
+        "score": 0.84234619140625,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 27445
+      },
+      {
+        "box": [
+          232.58485412597656,
+          99.20236206054688,
+          27.428192138671875,
+          19.910415649414062
+        ],
+        "score": 0.8679351806640625,
+        "origin": "motion",
+        "raw_index": 9714,
+        "raw_objectness": 30851
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          174,
+          55,
+          292,
+          143
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          186,
+          61,
+          266,
+          121
+        ],
+        "origin": "motion",
+        "proposal": [
+          226.0,
+          91.0,
+          504.4375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.3
+  },
+  {
+    "capture_frame": 249,
+    "capture_time": 8.3,
+    "available_time": 8.39,
+    "candidates": [
+      {
+        "box": [
+          237.61756896972656,
+          109.29971313476562,
+          32.30073547363281,
+          21.364212036132812
+        ],
+        "score": 0.8875885009765625,
+        "origin": "search",
+        "raw_index": 11152,
+        "raw_objectness": 33832
+      },
+      {
+        "box": [
+          237.60238647460938,
+          109.18968200683594,
+          29.28021240234375,
+          22.030593872070312
+        ],
+        "score": 0.754913330078125,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 18416
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          182,
+          66,
+          292,
+          148
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          195,
+          80,
+          275,
+          140
+        ],
+        "origin": "motion",
+        "proposal": [
+          235.0,
+          110.0,
+          450.75
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.4
+  },
+  {
+    "capture_frame": 252,
+    "capture_time": 8.4,
+    "available_time": 8.49,
+    "candidates": [
+      {
+        "box": [
+          241.71409606933594,
+          117.98173522949219,
+          30.245193481445312,
+          22.120437622070312
+        ],
+        "score": 0.9319610595703125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 42879
+      },
+      {
+        "box": [
+          241.48992919921875,
+          117.51560974121094,
+          28.2841796875,
+          21.024383544921875
+        ],
+        "score": 0.6406402587890625,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 9475
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          178,
+          70,
+          307,
+          167
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          199,
+          88,
+          279,
+          148
+        ],
+        "origin": "motion",
+        "proposal": [
+          239.0,
+          118.0,
+          500.0390625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.5
+  },
+  {
+    "capture_frame": 255,
+    "capture_time": 8.5,
+    "available_time": 8.59,
+    "candidates": [
+      {
+        "box": [
+          245.8717803955078,
+          128.07029724121094,
+          31.206756591796875,
+          22.19500732421875
+        ],
+        "score": 0.91729736328125,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 39413
+      },
+      {
+        "box": [
+          246.08572387695312,
+          127.232177734375,
+          26.144989013671875,
+          19.349395751953125
+        ],
+        "score": 0.8092803955078125,
+        "origin": "motion",
+        "raw_index": 9714,
+        "raw_objectness": 23662
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          186,
+          81,
+          307,
+          172
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          199,
+          88,
+          279,
+          148
+        ],
+        "origin": "motion",
+        "proposal": [
+          239.0,
+          118.0,
+          481.75
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.6
+  },
+  {
+    "capture_frame": 258,
+    "capture_time": 8.6,
+    "available_time": 8.69,
+    "candidates": [
+      {
+        "box": [
+          249.50352478027344,
+          138.505859375,
+          31.901168823242188,
+          23.496368408203125
+        ],
+        "score": 0.87103271484375,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 31274
+      },
+      {
+        "box": [
+          249.97113037109375,
+          138.61935424804688,
+          29.7078857421875,
+          22.436126708984375
+        ],
+        "score": 0.699249267578125,
+        "origin": "motion",
+        "raw_index": 11282,
+        "raw_objectness": 13821
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          188,
+          91,
+          313,
+          184
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          203,
+          98,
+          283,
+          158
+        ],
+        "origin": "motion",
+        "proposal": [
+          243.0,
+          128.0,
+          418.31640625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.7
+  },
+  {
+    "capture_frame": 261,
+    "capture_time": 8.7,
+    "available_time": 8.79,
+    "candidates": [
+      {
+        "box": [
+          253.23184204101562,
+          148.06100463867188,
+          29.140701293945312,
+          20.715652465820312
+        ],
+        "score": 0.837615966796875,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 26882
+      },
+      {
+        "box": [
+          253.90557861328125,
+          147.80859375,
+          28.711318969726562,
+          21.161956787109375
+        ],
+        "score": 0.6867828369140625,
+        "origin": "motion",
+        "raw_index": 9585,
+        "raw_objectness": 12834
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          190,
+          101,
+          317,
+          196
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          211,
+          119,
+          291,
+          179
+        ],
+        "origin": "motion",
+        "proposal": [
+          251.0,
+          149.0,
+          372.625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.8
+  },
+  {
+    "capture_frame": 264,
+    "capture_time": 8.8,
+    "available_time": 8.89,
+    "candidates": [
+      {
+        "box": [
+          255.87937927246094,
+          155.57000732421875,
+          34.10472106933594,
+          23.83697509765625
+        ],
+        "score": 0.8947906494140625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 35062
+      },
+      {
+        "box": [
+          256.8583526611328,
+          156.3754425048828,
+          31.049728393554688,
+          23.549530029296875
+        ],
+        "score": 0.6160125732421875,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 7768
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          199,
+          114,
+          315,
+          202
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          214,
+          126,
+          294,
+          186
+        ],
+        "origin": "motion",
+        "proposal": [
+          254.0,
+          156.0,
+          410.8515625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 8.9
+  },
+  {
+    "capture_frame": 267,
+    "capture_time": 8.9,
+    "available_time": 8.99,
+    "candidates": [
+      {
+        "box": [
+          259.7635498046875,
+          165.67013549804688,
+          29.433731079101562,
+          20.41064453125
+        ],
+        "score": 0.88720703125,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 33774
+      },
+      {
+        "box": [
+          259.93601989746094,
+          165.3797149658203,
+          27.856430053710938,
+          19.630203247070312
+        ],
+        "score": 0.806243896484375,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 23378
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          191,
+          113,
+          327,
+          215
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          217,
+          135,
+          297,
+          195
+        ],
+        "origin": "motion",
+        "proposal": [
+          257.0,
+          165.0,
+          420.25
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.0
+  },
+  {
+    "capture_frame": 270,
+    "capture_time": 9.0,
+    "available_time": 9.09,
+    "candidates": [
+      {
+        "box": [
+          261.52232360839844,
+          172.6080322265625,
+          30.414016723632812,
+          20.83770751953125
+        ],
+        "score": 0.9317169189453125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 42842
+      },
+      {
+        "box": [
+          262.6728820800781,
+          173.33714294433594,
+          27.499755859375,
+          20.143707275390625
+        ],
+        "score": 0.5774993896484375,
+        "origin": "motion",
+        "raw_index": 9617,
+        "raw_objectness": 5134
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          204,
+          131,
+          322,
+          219
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          220,
+          143,
+          300,
+          203
+        ],
+        "origin": "motion",
+        "proposal": [
+          260.0,
+          173.0,
+          463.2265625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.1
+  },
+  {
+    "capture_frame": 273,
+    "capture_time": 9.1,
+    "available_time": 9.19,
+    "candidates": [
+      {
+        "box": [
+          265.2863464355469,
+          182.19935607910156,
+          32.125,
+          23.576309204101562
+        ],
+        "score": 0.8925628662109375,
+        "origin": "search",
+        "raw_index": 10384,
+        "raw_objectness": 34696
+      },
+      {
+        "box": [
+          265.2158203125,
+          181.05609130859375,
+          30.979019165039062,
+          24.115478515625
+        ],
+        "score": 0.8638458251953125,
+        "origin": "motion",
+        "raw_index": 9584,
+        "raw_objectness": 30296
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          203,
+          135,
+          325,
+          226
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          224,
+          152,
+          304,
+          212
+        ],
+        "origin": "motion",
+        "proposal": [
+          264.0,
+          182.0,
+          641.5625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.2
+  },
+  {
+    "capture_frame": 276,
+    "capture_time": 9.2,
+    "available_time": 9.29,
+    "candidates": [
+      {
+        "box": [
+          268.58009338378906,
+          192.3966064453125,
+          30.231887817382812,
+          21.57568359375
+        ],
+        "score": 0.83868408203125,
+        "origin": "search",
+        "raw_index": 9615,
+        "raw_objectness": 27018
+      },
+      {
+        "box": [
+          268.3232421875,
+          191.50181579589844,
+          30.273712158203125,
+          23.85540771484375
+        ],
+        "score": 0.6504669189453125,
+        "origin": "motion",
+        "raw_index": 9584,
+        "raw_objectness": 10177
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          204,
+          143,
+          333,
+          239
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          227,
+          163,
+          307,
+          223
+        ],
+        "origin": "motion",
+        "proposal": [
+          267.0,
+          193.0,
+          687.3125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.3
+  },
+  {
+    "capture_frame": 279,
+    "capture_time": 9.3,
+    "available_time": 9.39,
+    "candidates": [
+      {
+        "box": [
+          270.27439880371094,
+          201.12277221679688,
+          31.702728271484375,
+          22.112274169921875
+        ],
+        "score": 0.916107177734375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 39199
+      },
+      {
+        "box": [
+          270.99818420410156,
+          200.76611328125,
+          31.7518310546875,
+          23.85540771484375
+        ],
+        "score": 0.8193206787109375,
+        "origin": "motion",
+        "raw_index": 9713,
+        "raw_objectness": 24782
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          211,
+          157,
+          332,
+          247
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          227,
+          163,
+          307,
+          223
+        ],
+        "origin": "motion",
+        "proposal": [
+          267.0,
+          193.0,
+          671.373046875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.4
+  },
+  {
+    "capture_frame": 282,
+    "capture_time": 9.4,
+    "available_time": 9.49,
+    "candidates": [
+      {
+        "box": [
+          273.6223907470703,
+          208.69638061523438,
+          33.44160461425781,
+          23.891189575195312
+        ],
+        "score": 0.926300048828125,
+        "origin": "search",
+        "raw_index": 10352,
+        "raw_objectness": 41479
+      },
+      {
+        "box": [
+          274.4534912109375,
+          208.64915466308594,
+          29.989654541015625,
+          23.063125610351562
+        ],
+        "score": 0.64154052734375,
+        "origin": "motion",
+        "raw_index": 9714,
+        "raw_objectness": 9536
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          209,
+          163,
+          336,
+          258
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          229,
+          171,
+          309,
+          231
+        ],
+        "origin": "motion",
+        "proposal": [
+          269.0,
+          201.0,
+          618.0625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.5
+  },
+  {
+    "capture_frame": 285,
+    "capture_time": 9.5,
+    "available_time": 9.59,
+    "candidates": [
+      {
+        "box": [
+          275.18629455566406,
+          215.7978973388672,
+          32.00700378417969,
+          23.236038208007812
+        ],
+        "score": 0.8783111572265625,
+        "origin": "search",
+        "raw_index": 10351,
+        "raw_objectness": 32392
+      },
+      {
+        "box": [
+          275.11842346191406,
+          215.3524627685547,
+          30.837844848632812,
+          24.202484130859375
+        ],
+        "score": 0.8267059326171875,
+        "origin": "motion",
+        "raw_index": 9681,
+        "raw_objectness": 25579
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          210,
+          167,
+          343,
+          267
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          231,
+          179,
+          311,
+          239
+        ],
+        "origin": "motion",
+        "proposal": [
+          271.0,
+          209.0,
+          447.365234375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.6
+  },
+  {
+    "capture_frame": 288,
+    "capture_time": 9.6,
+    "available_time": 9.69,
+    "candidates": [
+      {
+        "box": [
+          276.081787109375,
+          220.84619140625,
+          30.9493408203125,
+          21.392425537109375
+        ],
+        "score": 0.907318115234375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 37364
+      },
+      {
+        "box": [
+          276.5987854003906,
+          221.20492553710938,
+          28.497344970703125,
+          21.529510498046875
+        ],
+        "score": 0.7348785400390625,
+        "origin": "motion",
+        "raw_index": 9681,
+        "raw_objectness": 16685
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          213,
+          176,
+          341,
+          272
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          233,
+          186,
+          313,
+          246
+        ],
+        "origin": "motion",
+        "proposal": [
+          273.0,
+          216.0,
+          299.099609375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.7
+  },
+  {
+    "capture_frame": 291,
+    "capture_time": 9.7,
+    "available_time": 9.79,
+    "candidates": [
+      {
+        "box": [
+          277.22862243652344,
+          224.9103240966797,
+          30.188308715820312,
+          21.277664184570312
+        ],
+        "score": 0.907318115234375,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 37405
+      },
+      {
+        "box": [
+          276.8669128417969,
+          225.09397888183594,
+          30.131515502929688,
+          22.4368896484375
+        ],
+        "score": 0.8128662109375,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 24066
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          216,
+          181,
+          340,
+          274
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          235,
+          194,
+          315,
+          254
+        ],
+        "origin": "motion",
+        "proposal": [
+          275.0,
+          224.0,
+          367.8828125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.8
+  },
+  {
+    "capture_frame": 294,
+    "capture_time": 9.8,
+    "available_time": 9.89,
+    "candidates": [
+      {
+        "box": [
+          278.26251220703125,
+          229.58360290527344,
+          27.46826171875,
+          20.876663208007812
+        ],
+        "score": 0.74835205078125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 17842
+      },
+      {
+        "box": [
+          277.9621276855469,
+          229.298828125,
+          29.493194580078125,
+          21.984970092773438
+        ],
+        "score": 0.8238983154296875,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 25257
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          218,
+          185,
+          339,
+          275
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          236,
+          198,
+          316,
+          258
+        ],
+        "origin": "motion",
+        "proposal": [
+          276.0,
+          228.0,
+          380.198974609375
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 9.9
+  },
+  {
+    "capture_frame": 297,
+    "capture_time": 9.9,
+    "available_time": 9.99,
+    "candidates": [
+      {
+        "box": [
+          277.9777526855469,
+          231.99351501464844,
+          30.916702270507812,
+          21.711349487304688
+        ],
+        "score": 0.8966064453125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 35408
+      },
+      {
+        "box": [
+          278.00233459472656,
+          231.94871520996094,
+          30.271331787109375,
+          23.168731689453125
+        ],
+        "score": 0.7725372314453125,
+        "origin": "motion",
+        "raw_index": 11152,
+        "raw_objectness": 20023
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          220,
+          190,
+          338,
+          278
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          236,
+          201,
+          316,
+          261
+        ],
+        "origin": "motion",
+        "proposal": [
+          276.0,
+          231.0,
+          388.236328125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 10.0
+  },
+  {
+    "capture_frame": 300,
+    "capture_time": 10.0,
+    "available_time": 10.09,
+    "candidates": [
+      {
+        "box": [
+          278.2136535644531,
+          234.91143798828125,
+          31.848007202148438,
+          24.182174682617188
+        ],
+        "score": 0.7279815673828125,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 16118
+      },
+      {
+        "box": [
+          278.03765869140625,
+          234.83396911621094,
+          30.55645751953125,
+          22.616912841796875
+        ],
+        "score": 0.717010498046875,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 15205
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          217,
+          189,
+          340,
+          282
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          236,
+          204,
+          316,
+          264
+        ],
+        "origin": "motion",
+        "proposal": [
+          276.0,
+          234.0,
+          403.21875
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 10.1
+  },
+  {
+    "capture_frame": 303,
+    "capture_time": 10.1,
+    "available_time": 10.19,
+    "candidates": [
+      {
+        "box": [
+          278.23541259765625,
+          236.44712829589844,
+          31.961990356445312,
+          22.120437622070312
+        ],
+        "score": 0.90191650390625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 36329
+      },
+      {
+        "box": [
+          278.4933776855469,
+          236.63308715820312,
+          30.343612670898438,
+          23.37335205078125
+        ],
+        "score": 0.76348876953125,
+        "origin": "motion",
+        "raw_index": 9616,
+        "raw_objectness": 19200
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          214,
+          190,
+          343,
+          287
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          237,
+          206,
+          317,
+          266
+        ],
+        "origin": "motion",
+        "proposal": [
+          277.0,
+          236.0,
+          246.173828125
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 10.2
+  },
+  {
+    "capture_frame": 306,
+    "capture_time": 10.2,
+    "available_time": 10.29,
+    "candidates": [
+      {
+        "box": [
+          277.9334716796875,
+          238.0455322265625,
+          30.7373046875,
+          22.180206298828125
+        ],
+        "score": 0.8558502197265625,
+        "origin": "search",
+        "raw_index": 9583,
+        "raw_objectness": 29184
+      },
+      {
+        "box": [
+          277.8037109375,
+          238.06964111328125,
+          30.273712158203125,
+          23.240951538085938
+        ],
+        "score": 0.8879852294921875,
+        "origin": "motion",
+        "raw_index": 9615,
+        "raw_objectness": 33893
+      }
+    ],
+    "rois": [
+      {
+        "rectangle": [
+          215,
+          191,
+          342,
+          287
+        ],
+        "origin": "search"
+      },
+      {
+        "rectangle": [
+          239,
+          207,
+          319,
+          267
+        ],
+        "origin": "motion",
+        "proposal": [
+          279.0,
+          237.0,
+          137.4140625
+        ]
+      }
+    ],
+    "association_result": "associated",
+    "actual_available_native_time": 10.3
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "purpose": "One user-authorized manual-exposure/gain test; stop after user reports result, good or bad",
+  "baseline": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler",
+  "changed_rtl": [
+    "ov5640_init.v"
+  ],
+  "exposure_lines": 128,
+  "vts_lines": 520,
+  "gain_register": 16,
+  "white_balance": "unchanged; automatic white balance may still respond",
+  "register_reference": "https://github.com/espressif/esp32-camera/blob/master/sensors/ov5640.c",
+  "physical_result": "Partial improvement with a major brightness tradeoff; not a complete fix",
+  "best_archive_preserved": true,
+  "limit": "Diagnostic setting, not calibrated exposure or a proven colour fix"
+}

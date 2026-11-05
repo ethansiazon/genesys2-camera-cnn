@@ -1,0 +1,202 @@
+{
+  "verified": true,
+  "recommend_candidate": true,
+  "same_model_and_labels": true,
+  "controller_difference": {
+    "acquire_score": [
+      0.25,
+      0.15
+    ]
+  },
+  "validation_frame_count": 17193,
+  "recomputed_application": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8162040488714274,
+    "f1": 0.8136689801199859,
+    "precision": 0.8282840378397797,
+    "recall": 0.79956074442261,
+    "scene_empty_trigger": 0.009146341463414634,
+    "tp": 6917,
+    "fp_or_bad_box": 1434,
+    "fn": 1734,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "per_drone_video_changes": [
+    {
+      "video": "V_DRONE_002",
+      "drone_frames": 301,
+      "old_correct": 283,
+      "candidate_correct": 283,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_008",
+      "drone_frames": 302,
+      "old_correct": 135,
+      "candidate_correct": 135,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_009",
+      "drone_frames": 302,
+      "old_correct": 229,
+      "candidate_correct": 229,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_031",
+      "drone_frames": 328,
+      "old_correct": 316,
+      "candidate_correct": 316,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_038",
+      "drone_frames": 304,
+      "old_correct": 219,
+      "candidate_correct": 219,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_050",
+      "drone_frames": 316,
+      "old_correct": 289,
+      "candidate_correct": 289,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_052",
+      "drone_frames": 312,
+      "old_correct": 263,
+      "candidate_correct": 263,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_053",
+      "drone_frames": 300,
+      "old_correct": 238,
+      "candidate_correct": 238,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_056",
+      "drone_frames": 305,
+      "old_correct": 148,
+      "candidate_correct": 148,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_067",
+      "drone_frames": 325,
+      "old_correct": 308,
+      "candidate_correct": 308,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_068",
+      "drone_frames": 311,
+      "old_correct": 289,
+      "candidate_correct": 289,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_074",
+      "drone_frames": 316,
+      "old_correct": 148,
+      "candidate_correct": 148,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_079",
+      "drone_frames": 311,
+      "old_correct": 186,
+      "candidate_correct": 186,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_080",
+      "drone_frames": 300,
+      "old_correct": 200,
+      "candidate_correct": 200,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_085",
+      "drone_frames": 316,
+      "old_correct": 296,
+      "candidate_correct": 296,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_093",
+      "drone_frames": 329,
+      "old_correct": 291,
+      "candidate_correct": 291,
+      "correct_change": 0
+    },
+    {
+      "video": "V_DRONE_109",
+      "drone_frames": 326,
+      "old_correct": 301,
+      "candidate_correct": 301,
+      "correct_change": 0
+    },
+    {
+      "video": "video05",
+      "drone_frames": 450,
+      "old_correct": 424,
+      "candidate_correct": 424,
+      "correct_change": 0
+    },
+    {
+      "video": "video10",
+      "drone_frames": 2307,
+      "old_correct": 1811,
+      "candidate_correct": 1873,
+      "correct_change": 62
+    },
+    {
+      "video": "video14",
+      "drone_frames": 590,
+      "old_correct": 463,
+      "candidate_correct": 481,
+      "correct_change": 18
+    }
+  ],
+  "videos": [
+    {
+      "video": "video20",
+      "frames": 1635,
+      "decoded_start_middle_end": true,
+      "video_sha256": "7627ede196e265482e0d4a9977e05d9b2c7efcd2db4cecc5f5225cbe754155ad"
+    },
+    {
+      "video": "video13",
+      "frames": 1915,
+      "decoded_start_middle_end": true,
+      "video_sha256": "bbd908078cf32552d17da0fc5ac7c1728a037f1be8b47f5eecdc8cdededeb0a7"
+    }
+  ],
+  "external": {
+    "baseline025": {
+      "reviewed_frames": 42,
+      "false_alarm_frames": 0,
+      "frame_false_alarm_fraction": 0.0,
+      "cnn_calls": 259,
+      "seconds": 13.5,
+      "review_sha256": "6c8068cca3385b17db526a11dbcf131998247b6b3e230a2d246d21cf66be67c3",
+      "scope": "Same VAL-frozen V5CNN/feedbackR3, all native frames maintain state, ONLY42visuallyreviewedframes scored; interveningframes UNLABELLED.30fps ASSUMPTION for imagecollection/90ms delay, not actualDAVISrecording-time claim. No training/tuning, not population falsealarm probability or audited full-source independence."
+    },
+    "candidate015": {
+      "reviewed_frames": 42,
+      "false_alarm_frames": 0,
+      "frame_false_alarm_fraction": 0.0,
+      "cnn_calls": 259,
+      "seconds": 11.9,
+      "review_sha256": "6c8068cca3385b17db526a11dbcf131998247b6b3e230a2d246d21cf66be67c3",
+      "scope": "Same VAL-frozen V5CNN/feedbackR3, all native frames maintain state, ONLY42visuallyreviewedframes scored; interveningframes UNLABELLED.30fps ASSUMPTION for imagecollection/90ms delay, not actualDAVISrecording-time claim. No training/tuning, not population falsealarm probability or audited full-source independence."
+    }
+  },
+  "scope": "Evidence verification of this development configuration; not new training, unseen field accuracy, or full FPGA system validation."
+}

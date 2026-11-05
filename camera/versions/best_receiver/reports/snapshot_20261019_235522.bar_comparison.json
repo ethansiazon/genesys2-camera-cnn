@@ -1,0 +1,30 @@
+{
+  "source": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\snapshot_20261019_235522.txt",
+  "reference_files": [
+    "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\frame_snapshot\\reports\\snapshot_20261019_234052.txt",
+    "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\frame_snapshot\\reports\\snapshot_20261019_234817.txt"
+  ],
+  "rows_with_32_or_more_changed_pixels": 0,
+  "total_changed_pixels": 3,
+  "rows": [
+    {
+      "row": 125,
+      "changed_pixels": 1,
+      "first_x": 202,
+      "last_x": 202
+    },
+    {
+      "row": 127,
+      "changed_pixels": 1,
+      "first_x": 202,
+      "last_x": 202
+    },
+    {
+      "row": 131,
+      "changed_pixels": 1,
+      "first_x": 202,
+      "last_x": 202
+    }
+  ],
+  "scope": "Synthetic static colour-bar comparison only, assumes unchanged camera mode. Minor edge changes may be normal. Not a general live-image quality metric."
+}

@@ -1,0 +1,295 @@
+{
+  "checkpoint": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\trial05_roi_robust\\epoch_08.pt",
+  "checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "input": [
+    256,
+    192,
+    3
+  ],
+  "conv_configs": [
+    {
+      "name": "layers_0_conv",
+      "weight_integer": 5,
+      "weight_fraction": 11,
+      "raw_accumulator_abs_bound": 3198248550400.0,
+      "weights": 1728
+    },
+    {
+      "name": "layers_1_conv",
+      "weight_integer": 3,
+      "weight_fraction": 13,
+      "raw_accumulator_abs_bound": 2938968211456.0,
+      "weights": 4608
+    },
+    {
+      "name": "layers_2_cv1_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 738828877824.0,
+      "weights": 512
+    },
+    {
+      "name": "layers_2_m_0_cv1_conv",
+      "weight_integer": 3,
+      "weight_fraction": 13,
+      "raw_accumulator_abs_bound": 701876011008.0,
+      "weights": 256
+    },
+    {
+      "name": "layers_2_m_0_cv2_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 3577565937664.0,
+      "weights": 2304
+    },
+    {
+      "name": "layers_2_cv2_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 627849297920.0,
+      "weights": 512
+    },
+    {
+      "name": "layers_2_cv3_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 1034571218944.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_3_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 9361630953472.0,
+      "weights": 18432
+    },
+    {
+      "name": "layers_4_cv1_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 3557244534784.0,
+      "weights": 2048
+    },
+    {
+      "name": "layers_4_m_0_cv1_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 2758825476096.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_4_m_0_cv2_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 10212137238528.0,
+      "weights": 9216
+    },
+    {
+      "name": "layers_4_m_1_cv1_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 1178092437504.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_4_m_1_cv2_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 12494907113472.0,
+      "weights": 9216
+    },
+    {
+      "name": "layers_4_cv2_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 1773030604800.0,
+      "weights": 2048
+    },
+    {
+      "name": "layers_4_cv3_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 2531637329920.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_5_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 21860892803072.0,
+      "weights": 73728
+    },
+    {
+      "name": "layers_6_cv1_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 3818882859008.0,
+      "weights": 8192
+    },
+    {
+      "name": "layers_6_m_0_cv1_conv",
+      "weight_integer": 3,
+      "weight_fraction": 13,
+      "raw_accumulator_abs_bound": 3580031139840.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_6_m_0_cv2_conv",
+      "weight_integer": -1,
+      "weight_fraction": 17,
+      "raw_accumulator_abs_bound": 17497279430656.0,
+      "weights": 36864
+    },
+    {
+      "name": "layers_6_m_1_cv1_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 3774665981952.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_6_m_1_cv2_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 19610508197888.0,
+      "weights": 36864
+    },
+    {
+      "name": "layers_6_m_2_cv1_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 1927658471424.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_6_m_2_cv2_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 24961970339840.0,
+      "weights": 36864
+    },
+    {
+      "name": "layers_6_cv2_conv",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 2834186895360.0,
+      "weights": 8192
+    },
+    {
+      "name": "layers_6_cv3_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 5729720205312.0,
+      "weights": 16384
+    },
+    {
+      "name": "layers_7_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 6139829813248.0,
+      "weights": 8192
+    },
+    {
+      "name": "layers_10_cv1_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 4777986490368.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_10_m_0_cv1_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 2218119659520.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_10_m_0_cv2_conv",
+      "weight_integer": -1,
+      "weight_fraction": 17,
+      "raw_accumulator_abs_bound": 15799990353920.0,
+      "weights": 9216
+    },
+    {
+      "name": "layers_10_cv2_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 9023513427968.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_10_cv3_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 4895656640512.0,
+      "weights": 4096
+    },
+    {
+      "name": "layers_11_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 3900529442816.0,
+      "weights": 2048
+    },
+    {
+      "name": "layers_14_cv1_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 3894238248960.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_14_m_0_cv1_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 1681367105536.0,
+      "weights": 256
+    },
+    {
+      "name": "layers_14_m_0_cv2_conv",
+      "weight_integer": -1,
+      "weight_fraction": 17,
+      "raw_accumulator_abs_bound": 9045637332992.0,
+      "weights": 2304
+    },
+    {
+      "name": "layers_14_cv2_conv",
+      "weight_integer": 0,
+      "weight_fraction": 16,
+      "raw_accumulator_abs_bound": 3187331563520.0,
+      "weights": 1024
+    },
+    {
+      "name": "layers_14_cv3_conv",
+      "weight_integer": 1,
+      "weight_fraction": 15,
+      "raw_accumulator_abs_bound": 2342762840064.0,
+      "weights": 1024
+    },
+    {
+      "name": "head2",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 2726301532160.0,
+      "weights": 672
+    },
+    {
+      "name": "head3",
+      "weight_integer": 2,
+      "weight_fraction": 14,
+      "raw_accumulator_abs_bound": 3386325598208.0,
+      "weights": 1344
+    }
+  ],
+  "folding_max_error": 2.193450927734375e-05,
+  "format": {
+    "activation_bits": 24,
+    "activation_fraction": 14,
+    "physical_feature_lane_bits": 32,
+    "weight_bits": 16,
+    "bias_fraction": 14,
+    "bias_bits": 24,
+    "accumulator_bits": 48
+  },
+  "scope": "Actual V5 robustness epoch8 trained checkpoint. New coefficients need own numerical/quality/RTL proof. Per-layerW16/A24F14 initial engine conversion, not quantized accuracy or hardware resource/timing proof."
+}

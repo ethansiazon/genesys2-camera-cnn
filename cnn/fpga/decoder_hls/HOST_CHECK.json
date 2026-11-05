@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "cases": 8,
+  "queries": 96,
+  "compared_integer_fields": 768,
+  "different_fields": 0,
+  "source_sha256": {
+    "decoder_work_r2.cpp": "3e992d355b33eb1bf7ff0f49c7c80dd84d3afcac5d1540254aff40b2d70a9db3",
+    "decoder_work_r2.h": "691c14c9160938e906d1f6f60ef273645e736583eb8a7c97303bf2e940700d5e",
+    "model_shape.h": "23fcb6ff51887e2ba8c431bbf7e0448ab60cd59039b1020d9d78abc74f40a96b",
+    "sigmoid_lut.h": "2a8425849e91b579696df74c36fc2724f714b6f53e4d4dcf0b212c1e625d37a6",
+    "test_decoder.cpp": "d23957743adc869a4c72de563e5e8e313047e80cecbecbc910c700d60ee308e3"
+  },
+  "scope": "Actual Vitis ap_int host decoder vs independent NumPy integer reference,3actualfullV5CNNrawvectors+5syntheticcases/12configs, includinggatesbeforemax/rawties/signedmappedcoords/overflowboundaries. No HLS/RTL/nativequality/boardproof."
+}

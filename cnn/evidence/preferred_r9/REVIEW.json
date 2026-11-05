@@ -1,0 +1,50 @@
+{
+  "passed_conservative_originalVAL_gate": true,
+  "application": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8162040488714274,
+    "f1": 0.8136689801199859,
+    "precision": 0.8282840378397797,
+    "recall": 0.79956074442261,
+    "scene_empty_trigger": 0.009146341463414634,
+    "tp": 6917,
+    "fp_or_bad_box": 1434,
+    "fn": 1734,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "baseline": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8110285182199869,
+    "f1": 0.8096394102670377,
+    "precision": 0.8299344501092498,
+    "recall": 0.7903132585828228,
+    "scene_empty_trigger": 0.009146341463414634,
+    "tp": 6837,
+    "fp_or_bad_box": 1401,
+    "fn": 1814,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "sky": [
+    {
+      "sequence": "video05",
+      "baseline": 0.9422222222222222,
+      "candidate": 0.9422222222222222,
+      "change": 0.0
+    },
+    {
+      "sequence": "V_DRONE_002",
+      "baseline": 0.9401993355481728,
+      "candidate": 0.9401993355481728,
+      "change": 0.0
+    },
+    {
+      "sequence": "V_DRONE_031",
+      "baseline": 0.9634146341463414,
+      "candidate": 0.9634146341463414,
+      "change": 0.0
+    }
+  ],
+  "scope": "OriginalVAL configuration pilot. No weights trained, no13/20 or external scoring yet. Not an automatic replacement or completecampaign/hardwareclaim."
+}

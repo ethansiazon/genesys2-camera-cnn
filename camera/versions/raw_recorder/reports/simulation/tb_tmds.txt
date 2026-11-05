@@ -1,0 +1,16 @@
+=== tb_tmds start ===
+MARK A: round trip over all 256 byte values
+  ok  bytes that failed round trip = 0
+  ok  data symbols over 5 transitions = 0
+MARK B: control symbols
+  ok  control c=00 = 852
+  ok  control c=01 = 171
+  ok  control c=10 = 340
+  ok  control c=11 = 683
+  ok  control symbol transition count = 7
+MARK D: running disparity over 20000 random bytes
+  ok  worst disparity excursion = 8
+  ok  final disparity = 0
+=== TESTS COMPLETE: 0 error(s) ===
+=== ALL TESTS PASS ===
+C:\Users\ethan\Desktop\genesys2_camera_hdmi_20261019\variants\raw_yuv_snapshot\sim\tb_tmds.v:146: $finish called at 202656000 (1ps)

@@ -1,0 +1,72 @@
+{
+  "complete": true,
+  "native_validation": {
+    "threshold": 0.5,
+    "balanced_f1": 0.7869455200084507,
+    "f1": 0.8015637957587964,
+    "precision": 0.8220143360466529,
+    "recall": 0.7821061149000116,
+    "scene_empty_trigger": 0.04573170731707317,
+    "tp": 6766,
+    "fp_or_bad_box": 1465,
+    "fn": 1885,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "development": [
+    {
+      "source": "DUT_Anti_UAV",
+      "sequence": "video13",
+      "frames": 1915,
+      "cnn_updates": 639,
+      "cnn_calls": 1275,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 9,
+      "seconds_offline": 18.2,
+      "positive_frames": 1914,
+      "correct_box_recall": 0.3620689655172414,
+      "triggered_positive_fraction": 0.45768025078369906,
+      "box_precision_on_triggered_positive": 0.791095890410959,
+      "author_negative_frames": 1,
+      "author_negative_triggers": 1,
+      "scope": "CompletewatcheddevelopmentGT, same VAL-frozen image-onlycausalR3/10Hz/90msassumedavailability, no GT inruntime. Notphysicalboard/unseentest.",
+      "video": {
+        "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\feedback_r3_miss1_latency009_frozen_cases\\development\\video13_feedback.mp4",
+        "render_seconds": 35.9
+      }
+    },
+    {
+      "source": "DUT_Anti_UAV",
+      "sequence": "video20",
+      "frames": 1635,
+      "cnn_updates": 545,
+      "cnn_calls": 1085,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 2,
+      "seconds_offline": 14.8,
+      "positive_frames": 1635,
+      "correct_box_recall": 0.7773700305810397,
+      "triggered_positive_fraction": 0.9889908256880734,
+      "box_precision_on_triggered_positive": 0.7860235003092146,
+      "author_negative_frames": 0,
+      "author_negative_triggers": 0,
+      "scope": "CompletewatcheddevelopmentGT, same VAL-frozen image-onlycausalR3/10Hz/90msassumedavailability, no GT inruntime. Notphysicalboard/unseentest.",
+      "video": {
+        "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\feedback_r3_miss1_latency009_frozen_cases\\development\\video20_feedback.mp4",
+        "render_seconds": 31.5
+      }
+    }
+  ],
+  "external": {
+    "reviewed_frames": 42,
+    "false_alarm_frames": 0,
+    "frame_false_alarm_fraction": 0.0,
+    "cnn_calls": 259,
+    "seconds": 4.9,
+    "review_sha256": "6c8068cca3385b17db526a11dbcf131998247b6b3e230a2d246d21cf66be67c3",
+    "scope": "Same VAL-frozen V5CNN/feedbackR3, all native frames maintain state, ONLY42visuallyreviewedframes scored; interveningframes UNLABELLED.30fps ASSUMPTION for imagecollection/90ms delay, not actualDAVISrecording-time claim. No training/tuning, not population falsealarm probability or audited full-source independence."
+  },
+  "software_gate_passed": false,
+  "hardware_system_gate_passed": false,
+  "scope": "Completed frozen softwaretrial evidence, NOT finalcampaignsuccess. Actualnewtrainedweightsquantizednumerics/quality/hardwareprogram/routedcoreandMIG/frontend/decoder/camera/fullsystemtiming/unseen/fieldstillrequired. Do not retune13/20/external toclaimgeneralization."
+}

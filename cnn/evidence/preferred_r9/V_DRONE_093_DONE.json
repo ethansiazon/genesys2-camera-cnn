@@ -1,0 +1,23 @@
+{
+  "result": {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_093",
+    "frames": 329,
+    "cnn_updates": 110,
+    "cnn_calls": 217,
+    "maximum_cnn_calls_per_update": 2,
+    "acquisitions": 1,
+    "seconds_offline": 7.2
+  },
+  "files": {
+    "records": "V_DRONE_093_records.json",
+    "updates": "V_DRONE_093_updates.json",
+    "events": "V_DRONE_093_events.json"
+  },
+  "sha256": {
+    "records": "61ac11c5d4e4193ee88e2cb9df93913caa0357d955748b2df500389c862f475b",
+    "updates": "9036df6380cc433a3e30b3fe8eb3704934c538ee242dab297cd2b0cfa6001aec",
+    "events": "95bc1a586787ab9cbd474f6a7e670bce00f3407747b1a9facd1dc0fc88525c52"
+  },
+  "clipped_values": 0
+}

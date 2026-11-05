@@ -1,0 +1,99 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "tb_banked_frame_memory",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_banked_frame_memory.txt"
+    },
+    {
+      "test": "tb_frame_snapshot",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_frame_snapshot.txt"
+    },
+    {
+      "test": "tb_tmds",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_tmds.txt"
+    },
+    {
+      "test": "tb_pipeline_recorder",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_pipeline_recorder.txt"
+    },
+    {
+      "test": "tb_sync_health_probe",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_sync_health_probe.txt"
+    },
+    {
+      "test": "tb_init_readback",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_init_readback.txt"
+    },
+    {
+      "test": "tb_ycbcr",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_ycbcr.txt"
+    },
+    {
+      "test": "tb_vga",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_vga.txt"
+    },
+    {
+      "test": "tb_sccb",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_sccb.txt"
+    },
+    {
+      "test": "tb_yuv_capture",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_yuv_capture.txt"
+    },
+    {
+      "test": "tb_yuv_capture_source",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_yuv_capture_source.txt"
+    },
+    {
+      "test": "tb_camera_status_snapshot",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_camera_status_snapshot.txt"
+    },
+    {
+      "test": "tb_top_wiring",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_top_wiring.txt"
+    },
+    {
+      "test": "tb_top_wiring_inverted",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\reports\\simulation\\tb_top_wiring_inverted.txt"
+    }
+  ],
+  "scope": "Functional tests and actual top-level camera wiring. Top integration substitutes clock/HDMI primitives; not physical timing or TMDS proof.",
+  "rtl_sha256": {
+    "banked_frame_memory.v": "3fbc013f0e07ca260ae0cb05332a9fea74767aaf14818a44d20d4035fc9d1a27",
+    "cam_capture.v": "7c01b6bb2c8abdff81a3bc1bd336e83d4637487b499831b7ddf967250ffa7570",
+    "camera_status_snapshot.v": "4308ce6baf4c6bda7b28c0c8ac7117e8bd5649d9f0e775f7ec7f8afa5ebba39c",
+    "clk_gen.v": "498a4d1d35a8a6e5e15e014968a9793d7188a49dd4ee703e3eaa48643a663e99",
+    "debug_overlay.v": "29987d454aa3b09ad40c612a2f44e94d51609458da811e9789ee7968694d4194",
+    "dvp_clean_sampler.v": "0452f36fa1443b02a4e42f216442f3619ea79f379a532e16e1dbbcdf934846bc",
+    "dvp_probe.v": "da2179f54a1db9042f64224db5ecb8b692e0cc380cb30f1595ff664e0257f05c",
+    "frame_buffer.v": "7942bc42a15a8fd745af62b78676f7c6aaeb4e791eebd776d2e3b515acc95dbe",
+    "frame_snapshot.v": "c6b58257fc84d29f3381caca8e3fd86aa8294920551f3645d000968fdda6ad95",
+    "hdmi_out.v": "287e0dc85f8980b41d4137761b7d8d516bf11f469cc88179968ffe3090c9b664",
+    "ov5640_init.v": "b2cacf3069145c62a0b5ff99c4d2d608867d7d233628c9c5bc6174698d868b7c",
+    "pattern_gen.v": "bce4be60195507a4e647dbe9165607b3ede64fc7f94f809864ebc4ebcfe3b35c",
+    "pipeline_recorder.v": "d0dd29035bc7389957bba8deaded3d766c7022938aa91a899b73ee69c55252bb",
+    "sccb_master.v": "b5768dcc4825d2c68ac8d6e589d74769eba54cc40c12effac4d5a28fb246625e",
+    "sync_health_probe.v": "dbe89ebb519fbd8db1a6937d74eae9accb16411a4310fff78da8ec7964518dfe",
+    "tmds_encoder.v": "08d5c122965ab8f562fe32827cef0b5945d5020e0c6d0034740da030a116fc0b",
+    "top_genesys2.v": "2b7a2e72d7fd2522bbd2932b275912af7c03b56cac04833be8f04e005ca4371e",
+    "uart_report.v": "8d9505b09cb229371646276edbd3aa4d5cba882e4cb7c33b7bf40126b03fe22c",
+    "uart_tx.v": "311de313945d8bb5b74ef9c8ff2c18643ab5e66165fb8b15a1f778235163caee",
+    "vga_timing.v": "dfcd550bb17785eaff368c5c2afac3c7c7c4198ed459e1d16b8fbcd95a6bd1c3",
+    "ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58"
+  }
+}

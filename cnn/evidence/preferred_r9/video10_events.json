@@ -1,0 +1,62 @@
+[
+  {
+    "event": "acquired",
+    "capture_time": 0.2,
+    "available_time": 0.3
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 23.1
+  },
+  {
+    "event": "acquired",
+    "capture_time": 24.3,
+    "available_time": 24.4
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 32.5
+  },
+  {
+    "event": "acquired",
+    "capture_time": 33.0,
+    "available_time": 33.1
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 34.5
+  },
+  {
+    "event": "acquired",
+    "capture_time": 34.8,
+    "available_time": 34.9
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 38.6
+  },
+  {
+    "event": "acquired",
+    "capture_time": 38.7,
+    "available_time": 38.8
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 70.4
+  },
+  {
+    "event": "acquired",
+    "capture_time": 70.5,
+    "available_time": 70.6
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 77.0
+  }
+]

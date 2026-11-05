@@ -1,0 +1,23 @@
+{
+  "result": {
+    "source": "DUT_Anti_UAV",
+    "sequence": "video05",
+    "frames": 450,
+    "cnn_updates": 150,
+    "cnn_calls": 298,
+    "maximum_cnn_calls_per_update": 2,
+    "acquisitions": 1,
+    "seconds_offline": 12.5
+  },
+  "files": {
+    "records": "video05_records.json",
+    "updates": "video05_updates.json",
+    "events": "video05_events.json"
+  },
+  "sha256": {
+    "records": "37911c67c2de791a1cbaa27feec48bc7cdc94d593e0bf577aa6eff8a30ab38ab",
+    "updates": "7dc76317e20bd25ff5f86a218ccb5f2d60a09e871b7ed3a0bc471e8bb62f70fc",
+    "events": "0fb8232aa6f48a22d5d8103b0b5081945039d3cfd9180b220b87794cbafa79da"
+  },
+  "clipped_values": 0
+}

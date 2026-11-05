@@ -1,0 +1,65 @@
+{
+  "checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "quantized_model_sha256": "d6c0f5dec98c8b7c4663b8763717457b289ef600a676f6ca6ffb42ed5f9f5867",
+  "native_manifest_sha256": "193ca9b1c3a111231f1353091fd207a986db137a951feadabe7c3087d7b9a4fd",
+  "float_decoder_baseline_sha256": "921e8417d2a28d533a85b7ba807f5d073be47a93f037a5a71180f42ca57c0d19",
+  "decoder_host_gate_sha256": "111021662dda283178662ff1af4d8b3125d28729da0a30a42ad19f025e5557f8",
+  "source_sha256": {
+    "evaluate_retained_acquisition_r9.py": "e59eab8b5b95e5d284d403dbbf7aa93b2c22a4f9e16a4ed696dc82073684db07",
+    "observations_integer_r2.py": "d8acd8ffe55b9160e2568a308d16c8d2f3f44b605a79b112ad0f51fb0513206a",
+    "decoder_work_r2.py": "727c32c8b285293ef43d1f19bbb259ffd564185c27acbd9abbf2bf577903bdcd",
+    "track_feedback_r1.py": "dd2e1d1edf4df2260fe905e2277ec48673709e3830d3a80e7347a57b13644413",
+    "data_roi256.py": "fa33c2b798dbf3921a63d51d16fbe4a8a749d4771b5a888ea99c7995e37bda08",
+    "frozen_sequential_cpu.py": "7f6faefa18b9976f684bf4d3ab0390bb3e3cbbd6e34f523b0914f3f8c68a797c"
+  },
+  "controller": {
+    "acquire_score": 0.15,
+    "maintain_score": 0.06,
+    "acquisition_hits": 2,
+    "maximum_missed_updates": 1,
+    "maximum_observation_age": 0.6,
+    "maximum_without_high_score": 1.0,
+    "search_scale": 4.0,
+    "minimum_search_width": 80.0,
+    "maximum_search_width": 256.0,
+    "search_aspect": 0.75,
+    "association_diagonal": 1.5,
+    "minimum_association_radius": 8.0,
+    "minimum_side_ratio": 0.25,
+    "maximum_side_ratio": 4.0
+  },
+  "latency": 0.09,
+  "updated_hz": 10,
+  "max_calls_per_update": 2,
+  "anchors_q16": [
+    [
+      [
+        616038,
+        432538
+      ],
+      [
+        1074790,
+        760218
+      ],
+      [
+        1966080,
+        1225523
+      ]
+    ],
+    [
+      [
+        3230925,
+        2129920
+      ],
+      [
+        5131469,
+        3846963
+      ],
+      [
+        9928704,
+        3447194
+      ]
+    ]
+  ],
+  "scope": "Actual trainedV5fixedcore plus integerLUTsigmoid/boxsize/Q16coordinateconversion/motion+associationgatesbeforeRAWlogitranking. R9ONLYacquisitionhighscore .25to.15; maintenance.06/2hits/1miss/geometry/10Hz/90msASSUMED and same fixedV5weights unchanged. Causal ROI feedback recomputed from fresh nativepixels. CPU imagepreprocessing and tracker velocity/timing stillFLOAT; no hardware/system/boardFPS/field acceptance."
+}

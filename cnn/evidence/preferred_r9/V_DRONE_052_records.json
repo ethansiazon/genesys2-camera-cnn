@@ -1,0 +1,7802 @@
+[
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 0,
+    "truth_native": [
+      [
+        465.0,
+        296.5,
+        24.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 1,
+    "truth_native": [
+      [
+        465.0,
+        299.0,
+        24.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 2,
+    "truth_native": [
+      [
+        465.0,
+        302.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 3,
+    "truth_native": [
+      [
+        462.0,
+        304.0,
+        30.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 4,
+    "truth_native": [
+      [
+        460.5,
+        307.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 5,
+    "truth_native": [
+      [
+        459.0,
+        308.5,
+        30.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 6,
+    "truth_native": [
+      [
+        458.0,
+        312.0,
+        28.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 7,
+    "truth_native": [
+      [
+        460.0,
+        315.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 8,
+    "truth_native": [
+      [
+        458.5,
+        318.0,
+        21.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 0.0,
+    "tracker_active": false,
+    "neural_confidence": 0.0,
+    "selected_box_native": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "selected_iou": 0.0,
+    "measurement_age_seconds": null
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 9,
+    "truth_native": [
+      [
+        458.5,
+        323.0,
+        21.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      456.9334716796875,
+      323.6200866699219,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.4025458425061796,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 10,
+    "truth_native": [
+      [
+        458.0,
+        325.0,
+        20.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      456.13153076171875,
+      326.6478525797526,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.49291327653817907,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 11,
+    "truth_native": [
+      [
+        457.5,
+        327.5,
+        21.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      455.32958984375,
+      329.6756184895833,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.37379256804145244,
+    "measurement_age_seconds": 0.16666666666666663
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 12,
+    "truth_native": [
+      [
+        457.0,
+        328.5,
+        20.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      454.52764892578125,
+      332.70338439941406,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.41076106378181587,
+    "measurement_age_seconds": 0.2
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 13,
+    "truth_native": [
+      [
+        455.0,
+        328.5,
+        24.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      453.7257080078125,
+      335.7311503092448,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.39465857511873753,
+    "measurement_age_seconds": 0.23333333333333334
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 14,
+    "truth_native": [
+      [
+        455.5,
+        333.0,
+        25.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.3702239990234375,
+    "selected_box_native": [
+      452.92376708984375,
+      338.7589162190755,
+      29.011581420898438,
+      25.174484252929688
+    ],
+    "selected_iou": 0.5284652709773554,
+    "measurement_age_seconds": 0.26666666666666666
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 15,
+    "truth_native": [
+      [
+        453.0,
+        334.5,
+        30.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.304046630859375,
+    "selected_box_native": [
+      451.02490997314453,
+      338.2833595275879,
+      29.28021240234375,
+      26.764480590820312
+    ],
+    "selected_iou": 0.5068743910061034,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 16,
+    "truth_native": [
+      [
+        451.5,
+        336.0,
+        27.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.304046630859375,
+    "selected_box_native": [
+      450.14984130859375,
+      341.07757059733075,
+      29.28021240234375,
+      26.764480590820312
+    ],
+    "selected_iou": 0.575119175473959,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 17,
+    "truth_native": [
+      [
+        450.5,
+        339.0,
+        29.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.304046630859375,
+    "selected_box_native": [
+      449.27477264404297,
+      343.87178166707355,
+      29.28021240234375,
+      26.764480590820312
+    ],
+    "selected_iou": 0.4204622511317223,
+    "measurement_age_seconds": 0.16666666666666663
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 18,
+    "truth_native": [
+      [
+        448.5,
+        341.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.559295654296875,
+    "selected_box_native": [
+      449.3755760192871,
+      343.2436771392822,
+      26.470733642578125,
+      21.351287841796875
+    ],
+    "selected_iou": 0.7009822089083321,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 19,
+    "truth_native": [
+      [
+        447.5,
+        341.5,
+        27.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.559295654296875,
+    "selected_box_native": [
+      448.6089375813802,
+      345.65763092041016,
+      26.470733642578125,
+      21.351287841796875
+    ],
+    "selected_iou": 0.5713899482378342,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 20,
+    "truth_native": [
+      [
+        445.5,
+        344.5,
+        25.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.559295654296875,
+    "selected_box_native": [
+      447.8422991434733,
+      348.0715847015381,
+      26.470733642578125,
+      21.351287841796875
+    ],
+    "selected_iou": 0.595951386004235,
+    "measurement_age_seconds": 0.16666666666666663
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 21,
+    "truth_native": [
+      [
+        443.0,
+        345.5,
+        30.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5746307373046875,
+    "selected_box_native": [
+      444.184362411499,
+      347.28413105010986,
+      26.617630004882812,
+      20.7408447265625
+    ],
+    "selected_iou": 0.74232313440529,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 22,
+    "truth_native": [
+      [
+        442.5,
+        345.0,
+        29.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5746307373046875,
+    "selected_box_native": [
+      443.09646860758465,
+      349.3423728942871,
+      26.617630004882812,
+      20.7408447265625
+    ],
+    "selected_iou": 0.5809954961725263,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 23,
+    "truth_native": [
+      [
+        442.5,
+        347.0,
+        29.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5746307373046875,
+    "selected_box_native": [
+      442.00857480367023,
+      351.40061473846436,
+      26.617630004882812,
+      20.7408447265625
+    ],
+    "selected_iou": 0.547940697717114,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 24,
+    "truth_native": [
+      [
+        440.5,
+        349.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.700897216796875,
+    "selected_box_native": [
+      440.0717725753784,
+      351.156240940094,
+      22.554473876953125,
+      18.08087158203125
+    ],
+    "selected_iou": 0.7110901032505975,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 25,
+    "truth_native": [
+      [
+        439.5,
+        349.0,
+        27.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.700897216796875,
+    "selected_box_native": [
+      438.8895556131999,
+      352.95863660176593,
+      22.554473876953125,
+      18.08087158203125
+    ],
+    "selected_iou": 0.5416288461968556,
+    "measurement_age_seconds": 0.13333333333333341
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 26,
+    "truth_native": [
+      [
+        440.0,
+        350.5,
+        28.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.700897216796875,
+    "selected_box_native": [
+      437.7073386510213,
+      354.7610322634379,
+      22.554473876953125,
+      18.08087158203125
+    ],
+    "selected_iou": 0.5213591081788678,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 27,
+    "truth_native": [
+      [
+        438.5,
+        352.0,
+        29.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7924652099609375,
+    "selected_box_native": [
+      435.1615881919861,
+      354.63868260383606,
+      23.291732788085938,
+      16.31170654296875
+    ],
+    "selected_iou": 0.5755633588649434,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 28,
+    "truth_native": [
+      [
+        437.0,
+        353.5,
+        26.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7924652099609375,
+    "selected_box_native": [
+      433.82786750793457,
+      356.22721767425537,
+      23.291732788085938,
+      16.31170654296875
+    ],
+    "selected_iou": 0.5793277698256752,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 29,
+    "truth_native": [
+      [
+        431.0,
+        353.0,
+        34.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7924652099609375,
+    "selected_box_native": [
+      432.49414682388306,
+      357.8157527446747,
+      23.291732788085938,
+      16.31170654296875
+    ],
+    "selected_iou": 0.4003208011188103,
+    "measurement_age_seconds": 0.16666666666666663
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 30,
+    "truth_native": [
+      [
+        431.5,
+        354.0,
+        33.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6334075927734375,
+    "selected_box_native": [
+      432.07952761650085,
+      356.79156267642975,
+      25.41607666015625,
+      18.0408935546875
+    ],
+    "selected_iou": 0.5816315410195843,
+    "measurement_age_seconds": 0.09999999999999998
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 31,
+    "truth_native": [
+      [
+        432.5,
+        355.5,
+        31.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6334075927734375,
+    "selected_box_native": [
+      430.8479293187459,
+      358.0897949536641,
+      25.41607666015625,
+      18.0408935546875
+    ],
+    "selected_iou": 0.621744544116551,
+    "measurement_age_seconds": 0.13333333333333341
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 32,
+    "truth_native": [
+      [
+        432.0,
+        358.5,
+        30.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6334075927734375,
+    "selected_box_native": [
+      429.616331020991,
+      359.38802723089856,
+      25.41607666015625,
+      18.0408935546875
+    ],
+    "selected_iou": 0.7232977283708348,
+    "measurement_age_seconds": 0.16666666666666663
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 33,
+    "truth_native": [
+      [
+        431.5,
+        358.0,
+        31.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.637939453125,
+    "selected_box_native": [
+      428.86179292201996,
+      357.71384316682816,
+      23.606613159179688,
+      16.979995727539062
+    ],
+    "selected_iou": 0.5877422149333409,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 34,
+    "truth_native": [
+      [
+        428.5,
+        355.5,
+        25.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.637939453125,
+    "selected_box_native": [
+      427.6832013130188,
+      358.6818069616954,
+      23.606613159179688,
+      16.979995727539062
+    ],
+    "selected_iou": 0.6586390310650531,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 35,
+    "truth_native": [
+      [
+        429.0,
+        357.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.637939453125,
+    "selected_box_native": [
+      426.50460970401764,
+      359.64977075656253,
+      23.606613159179688,
+      16.979995727539062
+    ],
+    "selected_iou": 0.6019311313954773,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 36,
+    "truth_native": [
+      [
+        427.0,
+        357.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.815826416015625,
+    "selected_box_native": [
+      424.5285145640373,
+      359.06750813126564,
+      24.821990966796875,
+      17.262847900390625
+    ],
+    "selected_iou": 0.6339156727169922,
+    "measurement_age_seconds": 0.09999999999999987
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 37,
+    "truth_native": [
+      [
+        425.0,
+        357.5,
+        24.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.815826416015625,
+    "selected_box_native": [
+      423.26131145159405,
+      359.8632245461146,
+      24.821990966796875,
+      17.262847900390625
+    ],
+    "selected_iou": 0.6553216560434623,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 38,
+    "truth_native": [
+      [
+        424.5,
+        357.5,
+        23.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.815826416015625,
+    "selected_box_native": [
+      421.9941083391507,
+      360.65894096096355,
+      24.821990966796875,
+      17.262847900390625
+    ],
+    "selected_iou": 0.560035569180374,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 39,
+    "truth_native": [
+      [
+        424.0,
+        357.5,
+        24.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.837615966796875,
+    "selected_box_native": [
+      422.24096474051476,
+      358.723497107625,
+      21.620803833007812,
+      15.73138427734375
+    ],
+    "selected_iou": 0.7398190388051948,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 40,
+    "truth_native": [
+      [
+        424.0,
+        359.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.837615966796875,
+    "selected_box_native": [
+      421.14199046293896,
+      359.21575127045315,
+      21.620803833007812,
+      15.73138427734375
+    ],
+    "selected_iou": 0.6508679746366786,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 41,
+    "truth_native": [
+      [
+        420.5,
+        357.5,
+        29.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.837615966796875,
+    "selected_box_native": [
+      420.0430161853631,
+      359.70800543328124,
+      21.620803833007812,
+      15.73138427734375
+    ],
+    "selected_iou": 0.5584978218097086,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 42,
+    "truth_native": [
+      [
+        419.5,
+        359.0,
+        27.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7988128662109375,
+    "selected_box_native": [
+      417.5601338595152,
+      358.16698537021875,
+      24.051437377929688,
+      17.506362915039062
+    ],
+    "selected_iou": 0.6292799752665247,
+    "measurement_age_seconds": 0.09999999999999987
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 43,
+    "truth_native": [
+      [
+        416.5,
+        357.0,
+        27.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7988128662109375,
+    "selected_box_native": [
+      416.30739202102023,
+      358.4333201746146,
+      24.051437377929688,
+      17.506362915039062
+    ],
+    "selected_iou": 0.7628529502996281,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 44,
+    "truth_native": [
+      [
+        416.5,
+        356.0,
+        29.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7988128662109375,
+    "selected_box_native": [
+      415.05465018252534,
+      358.6996549790104,
+      24.051437377929688,
+      17.506362915039062
+    ],
+    "selected_iou": 0.6278801604330384,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 45,
+    "truth_native": [
+      [
+        416.5,
+        356.0,
+        29.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.851959228515625,
+    "selected_box_native": [
+      414.9891199693084,
+      358.4161342866719,
+      21.18402099609375,
+      15.2471923828125
+    ],
+    "selected_iou": 0.5546351429451761,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 46,
+    "truth_native": [
+      [
+        415.5,
+        356.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.851959228515625,
+    "selected_box_native": [
+      413.8682905336221,
+      358.621374035875,
+      21.18402099609375,
+      15.2471923828125
+    ],
+    "selected_iou": 0.5829301842574321,
+    "measurement_age_seconds": 0.13333333333333353
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 47,
+    "truth_native": [
+      [
+        415.5,
+        354.5,
+        27.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.851959228515625,
+    "selected_box_native": [
+      412.74746109793585,
+      358.8266137850781,
+      21.18402099609375,
+      15.2471923828125
+    ],
+    "selected_iou": 0.4971309501524714,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 48,
+    "truth_native": [
+      [
+        413.0,
+        354.0,
+        22.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      411.10629246756434,
+      355.9922392014414,
+      22.825286865234375,
+      16.439041137695312
+    ],
+    "selected_iou": 0.6462970971162719,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 49,
+    "truth_native": [
+      [
+        409.5,
+        353.5,
+        29.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      409.9276475658019,
+      355.8597440247734,
+      22.825286865234375,
+      16.439041137695312
+    ],
+    "selected_iou": 0.5625574659029751,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 50,
+    "truth_native": [
+      [
+        410.0,
+        354.0,
+        30.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      408.74900266403955,
+      355.7272488481055,
+      22.825286865234375,
+      16.439041137695312
+    ],
+    "selected_iou": 0.5211469857740061,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 51,
+    "truth_native": [
+      [
+        409.5,
+        353.5,
+        27.0,
+        25.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.81640625,
+    "selected_box_native": [
+      406.8730467464775,
+      353.8606673302129,
+      22.397781372070312,
+      16.743438720703125
+    ],
+    "selected_iou": 0.5431067823527794,
+    "measurement_age_seconds": 0.09999999999999987
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 52,
+    "truth_native": [
+      [
+        408.0,
+        354.0,
+        30.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.81640625,
+    "selected_box_native": [
+      405.6169228429596,
+      353.53549589340884,
+      22.397781372070312,
+      16.743438720703125
+    ],
+    "selected_iou": 0.5208553887263406,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 53,
+    "truth_native": [
+      [
+        405.0,
+        352.5,
+        24.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.81640625,
+    "selected_box_native": [
+      404.3607989394417,
+      353.21032445660484,
+      22.397781372070312,
+      16.743438720703125
+    ],
+    "selected_iou": 0.7440791267519151,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 54,
+    "truth_native": [
+      [
+        403.5,
+        352.0,
+        27.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5850982666015625,
+    "selected_box_native": [
+      402.2344893766567,
+      352.4926276714541,
+      25.443359375,
+      19.769027709960938
+    ],
+    "selected_iou": 0.8173188088948538,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 55,
+    "truth_native": [
+      [
+        403.0,
+        352.5,
+        28.0,
+        25.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5850982666015625,
+    "selected_box_native": [
+      400.8816781776647,
+      352.123842307056,
+      25.443359375,
+      19.769027709960938
+    ],
+    "selected_iou": 0.6787334385793529,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 56,
+    "truth_native": [
+      [
+        402.0,
+        351.0,
+        30.0,
+        28.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5850982666015625,
+    "selected_box_native": [
+      399.5288669786726,
+      351.75505694265786,
+      25.443359375,
+      19.769027709960938
+    ],
+    "selected_iou": 0.5915759938286009,
+    "measurement_age_seconds": 0.16666666666666674
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 57,
+    "truth_native": [
+      [
+        402.0,
+        350.5,
+        30.0,
+        27.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6215362548828125,
+    "selected_box_native": [
+      399.1533698714338,
+      350.404989983188,
+      25.487930297851562,
+      19.011154174804688
+    ],
+    "selected_iou": 0.57636506971867,
+    "measurement_age_seconds": 0.09999999999999987
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 58,
+    "truth_native": [
+      [
+        398.5,
+        348.0,
+        37.0,
+        30.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6215362548828125,
+    "selected_box_native": [
+      397.90914912708104,
+      349.92717333044857,
+      25.487930297851562,
+      19.011154174804688
+    ],
+    "selected_iou": 0.4365360112514699,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 59,
+    "truth_native": [
+      [
+        397.0,
+        347.5,
+        34.0,
+        29.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6215362548828125,
+    "selected_box_native": [
+      396.66492838272825,
+      349.44935667770915,
+      25.487930297851562,
+      19.011154174804688
+    ],
+    "selected_iou": 0.49143506337640125,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 60,
+    "truth_native": [
+      [
+        399.0,
+        349.0,
+        30.0,
+        26.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8397369384765625,
+    "selected_box_native": [
+      394.3176517325919,
+      347.68180407362524,
+      24.262466430664062,
+      16.816329956054688
+    ],
+    "selected_iou": 0.46577284182051065,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 61,
+    "truth_native": [
+      [
+        395.5,
+        346.5,
+        23.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8397369384765625,
+    "selected_box_native": [
+      392.95086922092986,
+      347.060683426292,
+      24.262466430664062,
+      16.816329956054688
+    ],
+    "selected_iou": 0.6608302934469468,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 62,
+    "truth_native": [
+      [
+        396.0,
+        346.5,
+        24.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8397369384765625,
+    "selected_box_native": [
+      391.58408670926775,
+      346.43956277895876,
+      24.262466430664062,
+      16.816329956054688
+    ],
+    "selected_iou": 0.5711603169729491,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 63,
+    "truth_native": [
+      [
+        395.5,
+        345.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.689300537109375,
+    "selected_box_native": [
+      389.98682879598346,
+      345.3085915509728,
+      25.182510375976562,
+      18.924468994140625
+    ],
+    "selected_iou": 0.6010072336437476,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 64,
+    "truth_native": [
+      [
+        390.0,
+        343.5,
+        34.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.689300537109375,
+    "selected_box_native": [
+      388.59443790636334,
+      344.6308208391226,
+      25.182510375976562,
+      18.924468994140625
+    ],
+    "selected_iou": 0.6620041333557205,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 65,
+    "truth_native": [
+      [
+        387.5,
+        344.5,
+        29.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.689300537109375,
+    "selected_box_native": [
+      387.2020470167433,
+      343.9530501272723,
+      25.182510375976562,
+      18.924468994140625
+    ],
+    "selected_iou": 0.7144912096023883,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 66,
+    "truth_native": [
+      [
+        387.0,
+        343.5,
+        30.0,
+        25.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6306915283203125,
+    "selected_box_native": [
+      385.6613450010191,
+      343.74039349277155,
+      25.653121948242188,
+      21.950210571289062
+    ],
+    "selected_iou": 0.7507885714331641,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 67,
+    "truth_native": [
+      [
+        385.5,
+        341.5,
+        27.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6306915283203125,
+    "selected_box_native": [
+      384.2524750973874,
+      343.11430212284904,
+      25.653121948242188,
+      21.950210571289062
+    ],
+    "selected_iou": 0.7881147382608399,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 68,
+    "truth_native": [
+      [
+        384.0,
+        341.5,
+        30.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6306915283203125,
+    "selected_box_native": [
+      382.84360519375576,
+      342.48821075292653,
+      25.653121948242188,
+      21.950210571289062
+    ],
+    "selected_iou": 0.787299467438084,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 69,
+    "truth_native": [
+      [
+        382.5,
+        342.5,
+        27.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8449249267578125,
+    "selected_box_native": [
+      380.7180626372283,
+      341.1559404597647,
+      22.974472045898438,
+      17.309127807617188
+    ],
+    "selected_iou": 0.6403672672383002,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 70,
+    "truth_native": [
+      [
+        381.5,
+        341.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8449249267578125,
+    "selected_box_native": [
+      379.22956243883044,
+      340.4513847650378,
+      22.974472045898438,
+      17.309127807617188
+    ],
+    "selected_iou": 0.7221979431435313,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 71,
+    "truth_native": [
+      [
+        381.0,
+        340.5,
+        28.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8449249267578125,
+    "selected_box_native": [
+      377.7410622404326,
+      339.7468290703109,
+      22.974472045898438,
+      17.309127807617188
+    ],
+    "selected_iou": 0.6402770113909588,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 72,
+    "truth_native": [
+      [
+        379.5,
+        340.5,
+        25.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7364044189453125,
+    "selected_box_native": [
+      374.8052059401962,
+      338.6073586576167,
+      28.107818603515625,
+      22.681884765625
+    ],
+    "selected_iou": 0.6002210043294788,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 73,
+    "truth_native": [
+      [
+        377.5,
+        339.0,
+        29.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7364044189453125,
+    "selected_box_native": [
+      373.15588839714957,
+      337.85447910533793,
+      28.107818603515625,
+      22.681884765625
+    ],
+    "selected_iou": 0.674896140679268,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 74,
+    "truth_native": [
+      [
+        373.5,
+        336.0,
+        21.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7364044189453125,
+    "selected_box_native": [
+      371.50657085410296,
+      337.1015995530591,
+      28.107818603515625,
+      22.681884765625
+    ],
+    "selected_iou": 0.5929055532373043,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 75,
+    "truth_native": [
+      [
+        371.5,
+        336.0,
+        25.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.779327392578125,
+    "selected_box_native": [
+      369.02446728894574,
+      335.2345951613279,
+      27.084808349609375,
+      22.334030151367188
+    ],
+    "selected_iou": 0.6725820068264724,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 76,
+    "truth_native": [
+      [
+        370.5,
+        336.0,
+        23.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.779327392578125,
+    "selected_box_native": [
+      367.28261796566466,
+      334.35792396022106,
+      27.084808349609375,
+      22.334030151367188
+    ],
+    "selected_iou": 0.6274938701596061,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 77,
+    "truth_native": [
+      [
+        367.5,
+        333.0,
+        29.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.779327392578125,
+    "selected_box_native": [
+      365.5407686423835,
+      333.48125275911417,
+      27.084808349609375,
+      22.334030151367188
+    ],
+    "selected_iou": 0.8109218306730726,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 78,
+    "truth_native": [
+      [
+        364.5,
+        332.0,
+        23.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7424163818359375,
+    "selected_box_native": [
+      363.22819128607443,
+      331.9524187354491,
+      26.756439208984375,
+      22.141326904296875
+    ],
+    "selected_iou": 0.8541193412473392,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 79,
+    "truth_native": [
+      [
+        363.5,
+        332.0,
+        25.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7424163818359375,
+    "selected_box_native": [
+      361.42292773690133,
+      331.00328499850247,
+      26.756439208984375,
+      22.141326904296875
+    ],
+    "selected_iou": 0.7826992716200285,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 80,
+    "truth_native": [
+      [
+        362.5,
+        331.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7424163818359375,
+    "selected_box_native": [
+      359.6176641877282,
+      330.0541512615558,
+      26.756439208984375,
+      22.141326904296875
+    ],
+    "selected_iou": 0.7182266180283422,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 81,
+    "truth_native": [
+      [
+        359.5,
+        327.5,
+        29.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7209625244140625,
+    "selected_box_native": [
+      358.10928912448253,
+      328.7281472339355,
+      23.5950927734375,
+      20.003387451171875
+    ],
+    "selected_iou": 0.7076188646078199,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 82,
+    "truth_native": [
+      [
+        356.5,
+        326.5,
+        23.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7209625244140625,
+    "selected_box_native": [
+      356.3370131848569,
+      327.7371390202473,
+      23.5950927734375,
+      20.003387451171875
+    ],
+    "selected_iou": 0.865574006180247,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 83,
+    "truth_native": [
+      [
+        356.5,
+        326.5,
+        23.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7209625244140625,
+    "selected_box_native": [
+      354.5647372452313,
+      326.74613080655917,
+      23.5950927734375,
+      20.003387451171875
+    ],
+    "selected_iou": 0.8098301982619344,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 84,
+    "truth_native": [
+      [
+        353.0,
+        324.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7613677978515625,
+    "selected_box_native": [
+      351.3796338810889,
+      325.3782490320068,
+      26.277175903320312,
+      22.480911254882812
+    ],
+    "selected_iou": 0.5416981829456036,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 85,
+    "truth_native": [
+      [
+        351.0,
+        322.5,
+        26.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7613677978515625,
+    "selected_box_native": [
+      349.450377116517,
+      324.3453659782226,
+      26.277175903320312,
+      22.480911254882812
+    ],
+    "selected_iou": 0.7492220577565751,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 86,
+    "truth_native": [
+      [
+        348.5,
+        321.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7613677978515625,
+    "selected_box_native": [
+      347.5211203519451,
+      323.3124829244384,
+      26.277175903320312,
+      22.480911254882812
+    ],
+    "selected_iou": 0.604332035348689,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 87,
+    "truth_native": [
+      [
+        346.5,
+        322.5,
+        25.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6834259033203125,
+    "selected_box_native": [
+      344.88144444298587,
+      322.1305765423706,
+      22.895156860351562,
+      19.396484375
+    ],
+    "selected_iou": 0.6918004716875702,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 88,
+    "truth_native": [
+      [
+        346.0,
+        323.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6834259033203125,
+    "selected_box_native": [
+      342.87325221792645,
+      321.0811353409993,
+      22.895156860351562,
+      19.396484375
+    ],
+    "selected_iou": 0.631903093884582,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 89,
+    "truth_native": [
+      [
+        342.0,
+        320.5,
+        32.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6834259033203125,
+    "selected_box_native": [
+      340.86505999286703,
+      320.03169413962803,
+      22.895156860351562,
+      19.396484375
+    ],
+    "selected_iou": 0.6608415956919392,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 90,
+    "truth_native": [
+      [
+        340.5,
+        320.0,
+        29.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7577972412109375,
+    "selected_box_native": [
+      338.26895403301637,
+      320.44967242645873,
+      26.189727783203125,
+      23.139602661132812
+    ],
+    "selected_iou": 0.7473756012790619,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 91,
+    "truth_native": [
+      [
+        338.5,
+        319.5,
+        35.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7577972412109375,
+    "selected_box_native": [
+      336.19543805964685,
+      319.5632778348877,
+      26.189727783203125,
+      23.139602661132812
+    ],
+    "selected_iou": 0.69527120602285,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 92,
+    "truth_native": [
+      [
+        334.5,
+        317.5,
+        27.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7577972412109375,
+    "selected_box_native": [
+      334.12192208627727,
+      318.67688324331664,
+      26.189727783203125,
+      23.139602661132812
+    ],
+    "selected_iou": 0.7183435093877648,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 93,
+    "truth_native": [
+      [
+        333.0,
+        317.5,
+        30.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.800689697265625,
+    "selected_box_native": [
+      330.7517636986371,
+      317.1603373118622,
+      28.343475341796875,
+      24.253677368164062
+    ],
+    "selected_iou": 0.6187352936428182,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 94,
+    "truth_native": [
+      [
+        330.5,
+        317.5,
+        23.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.800689697265625,
+    "selected_box_native": [
+      328.53417634590414,
+      316.20392590474853,
+      28.343475341796875,
+      24.253677368164062
+    ],
+    "selected_iou": 0.5687822841646989,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 95,
+    "truth_native": [
+      [
+        326.5,
+        316.0,
+        33.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.800689697265625,
+    "selected_box_native": [
+      326.3165889931712,
+      315.2475144976349,
+      28.343475341796875,
+      24.253677368164062
+    ],
+    "selected_iou": 0.7262306577410166,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 96,
+    "truth_native": [
+      [
+        323.5,
+        315.0,
+        27.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.719390869140625,
+    "selected_box_native": [
+      323.2009245739279,
+      313.6786870275131,
+      31.313919067382812,
+      26.425949096679688
+    ],
+    "selected_iou": 0.5873111560383547,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 97,
+    "truth_native": [
+      [
+        325.0,
+        313.5,
+        24.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.719390869140625,
+    "selected_box_native": [
+      320.8835508804716,
+      312.65422939117633,
+      31.313919067382812,
+      26.425949096679688
+    ],
+    "selected_iou": 0.590516782681408,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 98,
+    "truth_native": [
+      [
+        325.0,
+        313.0,
+        24.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.719390869140625,
+    "selected_box_native": [
+      318.5661771870153,
+      311.62977175483957,
+      31.313919067382812,
+      26.425949096679688
+    ],
+    "selected_iou": 0.48068494492225605,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 99,
+    "truth_native": [
+      [
+        321.5,
+        311.0,
+        31.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7813262939453125,
+    "selected_box_native": [
+      316.6227782659679,
+      310.348613228112,
+      27.366928100585938,
+      22.373443603515625
+    ],
+    "selected_iou": 0.6514955378300368,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 100,
+    "truth_native": [
+      [
+        316.5,
+        309.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7813262939453125,
+    "selected_box_native": [
+      314.3469573250014,
+      309.2956332706207,
+      27.366928100585938,
+      22.373443603515625
+    ],
+    "selected_iou": 0.5830547413370367,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 101,
+    "truth_native": [
+      [
+        315.0,
+        308.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7813262939453125,
+    "selected_box_native": [
+      312.071136384035,
+      308.24265331312944,
+      27.366928100585938,
+      22.373443603515625
+    ],
+    "selected_iou": 0.6798238846986051,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 102,
+    "truth_native": [
+      [
+        312.0,
+        306.0,
+        18.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7918243408203125,
+    "selected_box_native": [
+      309.77397458220264,
+      306.9078118630794,
+      23.03521728515625,
+      17.658828735351562
+    ],
+    "selected_iou": 0.6195071641282147,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 103,
+    "truth_native": [
+      [
+        309.0,
+        306.5,
+        24.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7918243408203125,
+    "selected_box_native": [
+      307.49578243447337,
+      305.8235139619705,
+      23.03521728515625,
+      17.658828735351562
+    ],
+    "selected_iou": 0.6615198949345937,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 104,
+    "truth_native": [
+      [
+        307.5,
+        306.5,
+        21.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7918243408203125,
+    "selected_box_native": [
+      305.21759028674404,
+      304.73921606086157,
+      23.03521728515625,
+      17.658828735351562
+    ],
+    "selected_iou": 0.6062075986450707,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 105,
+    "truth_native": [
+      [
+        305.0,
+        305.0,
+        26.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7563629150390625,
+    "selected_box_native": [
+      302.5746475083865,
+      304.0619534168913,
+      23.384933471679688,
+      18.458084106445312
+    ],
+    "selected_iou": 0.7250663011819078,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 106,
+    "truth_native": [
+      [
+        302.0,
+        303.5,
+        20.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7563629150390625,
+    "selected_box_native": [
+      300.2559275128096,
+      303.0228816554644,
+      23.384933471679688,
+      18.458084106445312
+    ],
+    "selected_iou": 0.5998657429310373,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 107,
+    "truth_native": [
+      [
+        300.0,
+        302.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7563629150390625,
+    "selected_box_native": [
+      297.9372075172327,
+      301.98380989403756,
+      23.384933471679688,
+      18.458084106445312
+    ],
+    "selected_iou": 0.7370094536248142,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 108,
+    "truth_native": [
+      [
+        297.0,
+        301.0,
+        18.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.75054931640625,
+    "selected_box_native": [
+      296.3078086785097,
+      300.570374901805,
+      24.93060302734375,
+      21.893325805664062
+    ],
+    "selected_iou": 0.4616958993248994,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 109,
+    "truth_native": [
+      [
+        295.5,
+        300.0,
+        21.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.75054931640625,
+    "selected_box_native": [
+      294.0656799225832,
+      299.4897072258442,
+      24.93060302734375,
+      21.893325805664062
+    ],
+    "selected_iou": 0.6155945324331992,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 110,
+    "truth_native": [
+      [
+        295.5,
+        300.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.75054931640625,
+    "selected_box_native": [
+      291.8235511666567,
+      298.40903954988335,
+      24.93060302734375,
+      21.893325805664062
+    ],
+    "selected_iou": 0.5703750260322404,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 111,
+    "truth_native": [
+      [
+        291.0,
+        298.5,
+        30.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      287.2453502621064,
+      298.6859366574455,
+      24.979263305664062,
+      20.972824096679688
+    ],
+    "selected_iou": 0.7478170058642876,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 112,
+    "truth_native": [
+      [
+        287.5,
+        297.0,
+        23.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      284.7436579341106,
+      297.7561095129872,
+      24.979263305664062,
+      20.972824096679688
+    ],
+    "selected_iou": 0.6877964902667645,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 113,
+    "truth_native": [
+      [
+        282.5,
+        298.5,
+        23.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      282.24196560611483,
+      296.82628236852895,
+      24.979263305664062,
+      20.972824096679688
+    ],
+    "selected_iou": 0.6585405996884173,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 114,
+    "truth_native": [
+      [
+        280.5,
+        297.0,
+        19.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.76348876953125,
+    "selected_box_native": [
+      279.9016973478501,
+      295.6274837095821,
+      22.198989868164062,
+      17.23553466796875
+    ],
+    "selected_iou": 0.5959047863277239,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 115,
+    "truth_native": [
+      [
+        278.5,
+        294.5,
+        23.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.76348876953125,
+    "selected_box_native": [
+      277.4179410276022,
+      294.66777084129177,
+      22.198989868164062,
+      17.23553466796875
+    ],
+    "selected_iou": 0.891974800617608,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 116,
+    "truth_native": [
+      [
+        277.0,
+        292.5,
+        20.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.76348876953125,
+    "selected_box_native": [
+      274.9341847073543,
+      293.7080579730015,
+      22.198989868164062,
+      17.23553466796875
+    ],
+    "selected_iou": 0.6261496725261002,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 117,
+    "truth_native": [
+      [
+        275.5,
+        291.5,
+        23.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.764892578125,
+    "selected_box_native": [
+      271.32195768271407,
+      291.3775312224668,
+      24.182815551757812,
+      19.012969970703125
+    ],
+    "selected_iou": 0.5669938537794865,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 118,
+    "truth_native": [
+      [
+        274.5,
+        291.5,
+        21.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.764892578125,
+    "selected_box_native": [
+      268.71281572864484,
+      290.2655057005938,
+      24.182815551757812,
+      19.012969970703125
+    ],
+    "selected_iou": 0.482211362457055,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 119,
+    "truth_native": [
+      [
+        271.5,
+        290.0,
+        27.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.764892578125,
+    "selected_box_native": [
+      266.10367377457555,
+      289.15348017872077,
+      24.182815551757812,
+      19.012969970703125
+    ],
+    "selected_iou": 0.6053617079216286,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 120,
+    "truth_native": [
+      [
+        269.0,
+        287.0,
+        22.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.74981689453125,
+    "selected_box_native": [
+      266.4989076133297,
+      289.5251379867217,
+      25.923355102539062,
+      22.425430297851562
+    ],
+    "selected_iou": 0.5820085749617385,
+    "measurement_age_seconds": 0.10000000000000009
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 121,
+    "truth_native": [
+      [
+        267.5,
+        287.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.74981689453125,
+    "selected_box_native": [
+      264.22358519179636,
+      288.577966168168,
+      25.923355102539062,
+      22.425430297851562
+    ],
+    "selected_iou": 0.5666931098411302,
+    "measurement_age_seconds": 0.1333333333333333
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 122,
+    "truth_native": [
+      [
+        265.5,
+        286.5,
+        21.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.74981689453125,
+    "selected_box_native": [
+      261.94826277026306,
+      287.6307943496143,
+      25.923355102539062,
+      22.425430297851562
+    ],
+    "selected_iou": 0.4996694973179943,
+    "measurement_age_seconds": 0.16666666666666652
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 123,
+    "truth_native": [
+      [
+        263.5,
+        286.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.78662109375,
+    "selected_box_native": [
+      258.72112586477033,
+      283.6233935783218,
+      27.014236450195312,
+      20.670745849609375
+    ],
+    "selected_iou": 0.5467420552774246,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 124,
+    "truth_native": [
+      [
+        260.5,
+        286.0,
+        19.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.78662109375,
+    "selected_box_native": [
+      256.3400462783526,
+      282.33619632057486,
+      27.014236450195312,
+      20.670745849609375
+    ],
+    "selected_iou": 0.4719638921433926,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 125,
+    "truth_native": [
+      [
+        258.0,
+        285.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.78662109375,
+    "selected_box_native": [
+      253.9589666919349,
+      281.048999062828,
+      27.014236450195312,
+      20.670745849609375
+    ],
+    "selected_iou": 0.5002440994588133,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 126,
+    "truth_native": [
+      [
+        257.5,
+        283.0,
+        23.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      251.62119830836167,
+      280.7073877071296,
+      25.363265991210938,
+      18.974761962890625
+    ],
+    "selected_iou": 0.46842631439590227,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 127,
+    "truth_native": [
+      [
+        256.0,
+        281.5,
+        26.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      249.24493107781558,
+      279.52525554961034,
+      25.363265991210938,
+      18.974761962890625
+    ],
+    "selected_iou": 0.48865735883112577,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 128,
+    "truth_native": [
+      [
+        253.0,
+        282.0,
+        20.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      246.8686638472695,
+      278.34312339209106,
+      25.363265991210938,
+      18.974761962890625
+    ],
+    "selected_iou": 0.411957072853288,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 129,
+    "truth_native": [
+      [
+        250.0,
+        282.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.724090576171875,
+    "selected_box_native": [
+      248.17318612927855,
+      279.7516278135258,
+      26.032485961914062,
+      21.195831298828125
+    ],
+    "selected_iou": 0.6993373011616756,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 130,
+    "truth_native": [
+      [
+        249.0,
+        280.5,
+        24.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.724090576171875,
+    "selected_box_native": [
+      246.2058955112386,
+      278.85734416477914,
+      26.032485961914062,
+      21.195831298828125
+    ],
+    "selected_iou": 0.576252347357804,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 131,
+    "truth_native": [
+      [
+        249.0,
+        279.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.724090576171875,
+    "selected_box_native": [
+      244.2386048931986,
+      277.96306051603256,
+      26.032485961914062,
+      21.195831298828125
+    ],
+    "selected_iou": 0.5888104507425923,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 132,
+    "truth_native": [
+      [
+        247.5,
+        278.0,
+        21.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      242.54409733710017,
+      278.2127813750246,
+      24.569046020507812,
+      23.156723022460938
+    ],
+    "selected_iou": 0.46033052224826165,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 133,
+    "truth_native": [
+      [
+        245.0,
+        276.5,
+        26.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      240.60711594816482,
+      277.4456093382489,
+      24.569046020507812,
+      23.156723022460938
+    ],
+    "selected_iou": 0.5960099969988623,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 134,
+    "truth_native": [
+      [
+        243.5,
+        277.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      238.67013455922947,
+      276.67843730147325,
+      24.569046020507812,
+      23.156723022460938
+    ],
+    "selected_iou": 0.5833589446851171,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 135,
+    "truth_native": [
+      [
+        241.5,
+        277.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6601715087890625,
+    "selected_box_native": [
+      239.0406949087845,
+      277.3457400527467,
+      25.5167236328125,
+      23.166351318359375
+    ],
+    "selected_iou": 0.7265243168175373,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 136,
+    "truth_native": [
+      [
+        241.5,
+        277.5,
+        27.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6601715087890625,
+    "selected_box_native": [
+      237.36010704634808,
+      276.73795410353205,
+      25.5167236328125,
+      23.166351318359375
+    ],
+    "selected_iou": 0.6696367224796992,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 137,
+    "truth_native": [
+      [
+        238.5,
+        276.5,
+        33.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6601715087890625,
+    "selected_box_native": [
+      235.67951918391165,
+      276.1301681543174,
+      25.5167236328125,
+      23.166351318359375
+    ],
+    "selected_iou": 0.7521421666797401,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 138,
+    "truth_native": [
+      [
+        236.0,
+        276.0,
+        28.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.685943603515625,
+    "selected_box_native": [
+      235.39916215165786,
+      274.70952163770147,
+      26.234466552734375,
+      21.800765991210938
+    ],
+    "selected_iou": 0.8353756052552145,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 139,
+    "truth_native": [
+      [
+        238.5,
+        276.0,
+        23.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.685943603515625,
+    "selected_box_native": [
+      233.87415549257503,
+      274.01141784766446,
+      26.234466552734375,
+      21.800765991210938
+    ],
+    "selected_iou": 0.5855036379527422,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 140,
+    "truth_native": [
+      [
+        236.5,
+        275.5,
+        19.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.685943603515625,
+    "selected_box_native": [
+      232.34914883349225,
+      273.31331405762745,
+      26.234466552734375,
+      21.800765991210938
+    ],
+    "selected_iou": 0.5758702381088984,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 141,
+    "truth_native": [
+      [
+        234.0,
+        276.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7225341796875,
+    "selected_box_native": [
+      230.16115181557498,
+      274.66353767431946,
+      25.994384765625,
+      24.567474365234375
+    ],
+    "selected_iou": 0.5804273582011147,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 142,
+    "truth_native": [
+      [
+        233.5,
+        276.0,
+        25.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7225341796875,
+    "selected_box_native": [
+      228.56247956106614,
+      274.1930258183635,
+      25.994384765625,
+      24.567474365234375
+    ],
+    "selected_iou": 0.5150345386830147,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 143,
+    "truth_native": [
+      [
+        232.5,
+        273.5,
+        21.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7225341796875,
+    "selected_box_native": [
+      226.9638073065573,
+      273.72251396240745,
+      25.994384765625,
+      24.567474365234375
+    ],
+    "selected_iou": 0.39376563807360365,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 144,
+    "truth_native": [
+      [
+        230.5,
+        275.5,
+        17.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      227.80565067585394,
+      275.05317386645663,
+      24.904434204101562,
+      22.07568359375
+    ],
+    "selected_iou": 0.5875051554522713,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 145,
+    "truth_native": [
+      [
+        227.0,
+        276.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      226.47814682399013,
+      274.78279220605674,
+      24.904434204101562,
+      22.07568359375
+    ],
+    "selected_iou": 0.7817033024434266,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 146,
+    "truth_native": [
+      [
+        227.5,
+        276.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      225.15064297212635,
+      274.51241054565685,
+      24.904434204101562,
+      22.07568359375
+    ],
+    "selected_iou": 0.6838028738919524,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 147,
+    "truth_native": [
+      [
+        226.0,
+        275.0,
+        26.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      225.55604646829804,
+      273.8003830147713,
+      22.540802001953125,
+      18.453277587890625
+    ],
+    "selected_iou": 0.7672531691297402,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 148,
+    "truth_native": [
+      [
+        225.0,
+        276.0,
+        24.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      224.42108787732707,
+      273.4809295909841,
+      22.540802001953125,
+      18.453277587890625
+    ],
+    "selected_iou": 0.7326290099019906,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 149,
+    "truth_native": [
+      [
+        225.0,
+        276.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.673187255859375,
+    "selected_box_native": [
+      223.2861292863561,
+      273.1614761671969,
+      22.540802001953125,
+      18.453277587890625
+    ],
+    "selected_iou": 0.614016025882925,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 150,
+    "truth_native": [
+      [
+        227.5,
+        277.5,
+        29.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.647796630859375,
+    "selected_box_native": [
+      222.84877823903184,
+      274.211447916077,
+      25.323150634765625,
+      20.003433227539062
+    ],
+    "selected_iou": 0.532189864367308,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 151,
+    "truth_native": [
+      [
+        224.5,
+        276.0,
+        33.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.647796630859375,
+    "selected_box_native": [
+      221.79133159735497,
+      274.0441528448085,
+      25.323150634765625,
+      20.003433227539062
+    ],
+    "selected_iou": 0.6428555351709372,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 152,
+    "truth_native": [
+      [
+        222.0,
+        276.0,
+        28.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.647796630859375,
+    "selected_box_native": [
+      220.7338849556781,
+      273.8768577735399,
+      25.323150634765625,
+      20.003433227539062
+    ],
+    "selected_iou": 0.741778327410454,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 153,
+    "truth_native": [
+      [
+        222.5,
+        276.0,
+        27.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.616943359375,
+    "selected_box_native": [
+      219.66811775721123,
+      276.72523079397604,
+      25.2138671875,
+      23.41912841796875
+    ],
+    "selected_iou": 0.6371529583451628,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 154,
+    "truth_native": [
+      [
+        221.5,
+        279.0,
+        25.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.616943359375,
+    "selected_box_native": [
+      218.60974660922435,
+      276.89300995511906,
+      25.2138671875,
+      23.41912841796875
+    ],
+    "selected_iou": 0.6754457062811138,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 155,
+    "truth_native": [
+      [
+        222.5,
+        279.0,
+        27.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.616943359375,
+    "selected_box_native": [
+      217.55137546123746,
+      277.06078911626213,
+      25.2138671875,
+      23.41912841796875
+    ],
+    "selected_iou": 0.5921658512225015,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 156,
+    "truth_native": [
+      [
+        222.0,
+        279.0,
+        26.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.699249267578125,
+    "selected_box_native": [
+      219.22684299725793,
+      278.72649173976146,
+      27.530471801757812,
+      25.68426513671875
+    ],
+    "selected_iou": 0.7623692361367294,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 157,
+    "truth_native": [
+      [
+        221.0,
+        280.5,
+        28.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.699249267578125,
+    "selected_box_native": [
+      218.47223170304966,
+      279.06070684116634,
+      27.530471801757812,
+      25.68426513671875
+    ],
+    "selected_iou": 0.6926908029947579,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 158,
+    "truth_native": [
+      [
+        219.0,
+        279.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.699249267578125,
+    "selected_box_native": [
+      217.71762040884138,
+      279.39492194257116,
+      27.530471801757812,
+      25.68426513671875
+    ],
+    "selected_iou": 0.644887626313758,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 159,
+    "truth_native": [
+      [
+        220.5,
+        281.0,
+        21.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6433258056640625,
+    "selected_box_native": [
+      216.73112016806257,
+      279.2814129841385,
+      26.798324584960938,
+      22.267410278320312
+    ],
+    "selected_iou": 0.46283705984687584,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 160,
+    "truth_native": [
+      [
+        219.5,
+        282.5,
+        19.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6433258056640625,
+    "selected_box_native": [
+      215.95074343534648,
+      279.56588096778364,
+      26.798324584960938,
+      22.267410278320312
+    ],
+    "selected_iou": 0.5266808908361499,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 161,
+    "truth_native": [
+      [
+        219.0,
+        282.0,
+        22.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6433258056640625,
+    "selected_box_native": [
+      215.17036670263036,
+      279.8503489514288,
+      26.798324584960938,
+      22.267410278320312
+    ],
+    "selected_iou": 0.5939629048394313,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 162,
+    "truth_native": [
+      [
+        218.0,
+        281.5,
+        20.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7049713134765625,
+    "selected_box_native": [
+      216.4842429453594,
+      282.7845892435341,
+      30.813674926757812,
+      29.088851928710938
+    ],
+    "selected_iou": 0.37932270549409663,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 163,
+    "truth_native": [
+      [
+        217.5,
+        283.5,
+        21.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7049713134765625,
+    "selected_box_native": [
+      215.93656098769276,
+      283.36347637256375,
+      30.813674926757812,
+      29.088851928710938
+    ],
+    "selected_iou": 0.3045738194114364,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 164,
+    "truth_native": [
+      [
+        219.0,
+        284.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7049713134765625,
+    "selected_box_native": [
+      215.3888790300261,
+      283.9423635015933,
+      30.813674926757812,
+      29.088851928710938
+    ],
+    "selected_iou": 0.4232216648587716,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 165,
+    "truth_native": [
+      [
+        219.5,
+        285.5,
+        23.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.703338623046875,
+    "selected_box_native": [
+      215.7119701054922,
+      284.64473602801706,
+      22.902847290039062,
+      18.553192138671875
+    ],
+    "selected_iou": 0.5246962801801494,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 166,
+    "truth_native": [
+      [
+        217.5,
+        285.5,
+        21.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.703338623046875,
+    "selected_box_native": [
+      215.26104070706253,
+      285.2373437567571,
+      22.902847290039062,
+      18.553192138671875
+    ],
+    "selected_iou": 0.6656108970296153,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 167,
+    "truth_native": [
+      [
+        216.0,
+        286.5,
+        24.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.703338623046875,
+    "selected_box_native": [
+      214.81011130863286,
+      285.8299514854972,
+      22.902847290039062,
+      18.553192138671875
+    ],
+    "selected_iou": 0.6466735026306456,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 168,
+    "truth_native": [
+      [
+        216.5,
+        287.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6926422119140625,
+    "selected_box_native": [
+      215.91883600489456,
+      288.296725618989,
+      23.834548950195312,
+      22.21258544921875
+    ],
+    "selected_iou": 0.6958050619569028,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 169,
+    "truth_native": [
+      [
+        218.0,
+        288.5,
+        24.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6926422119140625,
+    "selected_box_native": [
+      215.64120150587502,
+      289.0975740593682,
+      23.834548950195312,
+      22.21258544921875
+    ],
+    "selected_iou": 0.49942406430729425,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 170,
+    "truth_native": [
+      [
+        216.5,
+        289.0,
+        23.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6926422119140625,
+    "selected_box_native": [
+      215.36356700685548,
+      289.8984224997473,
+      23.834548950195312,
+      22.21258544921875
+    ],
+    "selected_iou": 0.5781919756074353,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 171,
+    "truth_native": [
+      [
+        217.0,
+        290.0,
+        24.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7356414794921875,
+    "selected_box_native": [
+      214.59457272656834,
+      288.38659828312734,
+      26.413284301757812,
+      21.775054931640625
+    ],
+    "selected_iou": 0.4641184159240229,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 172,
+    "truth_native": [
+      [
+        216.0,
+        289.5,
+        22.0,
+        11.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7356414794921875,
+    "selected_box_native": [
+      214.26234269629688,
+      288.930483094951,
+      26.413284301757812,
+      21.775054931640625
+    ],
+    "selected_iou": 0.42075927755483195,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 173,
+    "truth_native": [
+      [
+        216.0,
+        288.5,
+        22.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7356414794921875,
+    "selected_box_native": [
+      213.9301126660254,
+      289.4743679067747,
+      26.413284301757812,
+      21.775054931640625
+    ],
+    "selected_iou": 0.49726096438298323,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 174,
+    "truth_native": [
+      [
+        217.5,
+        290.5,
+        25.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.73028564453125,
+    "selected_box_native": [
+      215.9581826645537,
+      291.6857918173449,
+      24.992431640625,
+      22.612258911132812
+    ],
+    "selected_iou": 0.7495916720514483,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 175,
+    "truth_native": [
+      [
+        218.5,
+        289.5,
+        23.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.73028564453125,
+    "selected_box_native": [
+      215.88820819303777,
+      292.4149587512515,
+      24.992431640625,
+      22.612258911132812
+    ],
+    "selected_iou": 0.627138794632536,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 176,
+    "truth_native": [
+      [
+        219.0,
+        288.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.73028564453125,
+    "selected_box_native": [
+      215.8182337215218,
+      293.14412568515814,
+      24.992431640625,
+      22.612258911132812
+    ],
+    "selected_iou": 0.5091016671036833,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 177,
+    "truth_native": [
+      [
+        217.5,
+        290.0,
+        27.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805633544921875,
+    "selected_box_native": [
+      214.85940902026513,
+      290.7390522197076,
+      23.65802001953125,
+      18.222946166992188
+    ],
+    "selected_iou": 0.7258782509807558,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 178,
+    "truth_native": [
+      [
+        216.0,
+        291.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805633544921875,
+    "selected_box_native": [
+      214.69067341211132,
+      291.11997022035234,
+      23.65802001953125,
+      18.222946166992188
+    ],
+    "selected_iou": 0.8847204929070978,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 179,
+    "truth_native": [
+      [
+        217.0,
+        292.0,
+        22.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805633544921875,
+    "selected_box_native": [
+      214.5219378039575,
+      291.50088822099707,
+      23.65802001953125,
+      18.222946166992188
+    ],
+    "selected_iou": 0.7117214425503882,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 180,
+    "truth_native": [
+      [
+        217.0,
+        290.5,
+        22.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7325897216796875,
+    "selected_box_native": [
+      215.26611503259352,
+      292.4249078847561,
+      20.483917236328125,
+      15.601394653320312
+    ],
+    "selected_iou": 0.6629902553024312,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 181,
+    "truth_native": [
+      [
+        218.5,
+        290.5,
+        21.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7325897216796875,
+    "selected_box_native": [
+      215.198814184083,
+      292.86617051463577,
+      20.483917236328125,
+      15.601394653320312
+    ],
+    "selected_iou": 0.5414437084266545,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 182,
+    "truth_native": [
+      [
+        218.0,
+        293.0,
+        20.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7325897216796875,
+    "selected_box_native": [
+      215.13151333557252,
+      293.3074331445154,
+      20.483917236328125,
+      15.601394653320312
+    ],
+    "selected_iou": 0.6634817374459661,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 183,
+    "truth_native": [
+      [
+        218.0,
+        291.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7310638427734375,
+    "selected_box_native": [
+      216.72351161785926,
+      292.18433962353043,
+      22.11474609375,
+      19.33624267578125
+    ],
+    "selected_iou": 0.7341174813939512,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 184,
+    "truth_native": [
+      [
+        217.5,
+        292.5,
+        21.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7310638427734375,
+    "selected_box_native": [
+      216.84057733943735,
+      292.451784903314,
+      22.11474609375,
+      19.33624267578125
+    ],
+    "selected_iou": 0.8698886105037964,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 185,
+    "truth_native": [
+      [
+        217.0,
+        293.0,
+        22.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7310638427734375,
+    "selected_box_native": [
+      216.95764306101543,
+      292.7192301830976,
+      22.11474609375,
+      19.33624267578125
+    ],
+    "selected_iou": 0.9619613163589862,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 186,
+    "truth_native": [
+      [
+        216.5,
+        291.5,
+        23.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.697601318359375,
+    "selected_box_native": [
+      216.8940052596132,
+      292.4010839963355,
+      24.088729858398438,
+      20.608169555664062
+    ],
+    "selected_iou": 0.7876321538466029,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 187,
+    "truth_native": [
+      [
+        220.0,
+        292.5,
+        16.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.697601318359375,
+    "selected_box_native": [
+      216.99099281197127,
+      292.603463557614,
+      24.088729858398438,
+      20.608169555664062
+    ],
+    "selected_iou": 0.4834570765298841,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 188,
+    "truth_native": [
+      [
+        221.5,
+        290.5,
+        19.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.697601318359375,
+    "selected_box_native": [
+      217.08798036432933,
+      292.80584311889254,
+      24.088729858398438,
+      20.608169555664062
+    ],
+    "selected_iou": 0.42772943692696885,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 189,
+    "truth_native": [
+      [
+        222.0,
+        289.5,
+        18.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8013153076171875,
+    "selected_box_native": [
+      219.84444830851754,
+      292.68233063342166,
+      22.476394653320312,
+      18.551803588867188
+    ],
+    "selected_iou": 0.553217147296018,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 190,
+    "truth_native": [
+      [
+        224.5,
+        291.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8013153076171875,
+    "selected_box_native": [
+      220.23693368219006,
+      292.8484999672836,
+      22.476394653320312,
+      18.551803588867188
+    ],
+    "selected_iou": 0.6052087108033062,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 191,
+    "truth_native": [
+      [
+        224.0,
+        291.0,
+        24.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8013153076171875,
+    "selected_box_native": [
+      220.62941905586257,
+      293.0146693011455,
+      22.476394653320312,
+      18.551803588867188
+    ],
+    "selected_iou": 0.6189818662156069,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 192,
+    "truth_native": [
+      [
+        225.0,
+        291.5,
+        26.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      222.49982272603611,
+      292.5027482634882,
+      25.959014892578125,
+      22.920501708984375
+    ],
+    "selected_iou": 0.7582813528231919,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 193,
+    "truth_native": [
+      [
+        226.0,
+        291.5,
+        24.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      223.0565212437643,
+      292.59357422273683,
+      25.959014892578125,
+      22.920501708984375
+    ],
+    "selected_iou": 0.5961548707705074,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 194,
+    "truth_native": [
+      [
+        226.0,
+        291.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7911834716796875,
+    "selected_box_native": [
+      223.6132197614925,
+      292.6844001819855,
+      25.959014892578125,
+      22.920501708984375
+    ],
+    "selected_iou": 0.6652870958852092,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 195,
+    "truth_native": [
+      [
+        228.5,
+        291.0,
+        21.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7892303466796875,
+    "selected_box_native": [
+      226.2033186506157,
+      291.78414238125583,
+      22.29583740234375,
+      18.844619750976562
+    ],
+    "selected_iou": 0.7471394703014669,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 196,
+    "truth_native": [
+      [
+        230.0,
+        291.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7892303466796875,
+    "selected_box_native": [
+      226.98595054294333,
+      291.7648479227291,
+      22.29583740234375,
+      18.844619750976562
+    ],
+    "selected_iou": 0.7158313679091102,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 197,
+    "truth_native": [
+      [
+        233.0,
+        292.5,
+        18.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7892303466796875,
+    "selected_box_native": [
+      227.76858243527096,
+      291.7455534642024,
+      22.29583740234375,
+      18.844619750976562
+    ],
+    "selected_iou": 0.4797237786255933,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 198,
+    "truth_native": [
+      [
+        234.0,
+        292.5,
+        20.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.807464599609375,
+    "selected_box_native": [
+      230.09745552892113,
+      292.46134609297167,
+      20.678253173828125,
+      18.60302734375
+    ],
+    "selected_iou": 0.562730427157743,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 199,
+    "truth_native": [
+      [
+        234.5,
+        291.5,
+        19.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.807464599609375,
+    "selected_box_native": [
+      231.0518919991735,
+      292.52372797747785,
+      20.678253173828125,
+      18.60302734375
+    ],
+    "selected_iou": 0.6355953015863118,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 200,
+    "truth_native": [
+      [
+        236.5,
+        292.0,
+        23.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.807464599609375,
+    "selected_box_native": [
+      232.00632846942588,
+      292.586109861984,
+      20.678253173828125,
+      18.60302734375
+    ],
+    "selected_iou": 0.6253235884701682,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 201,
+    "truth_native": [
+      [
+        236.5,
+        291.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      234.52146793780045,
+      292.14527723349755,
+      19.8336181640625,
+      16.744659423828125
+    ],
+    "selected_iou": 0.733707759958697,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 202,
+    "truth_native": [
+      [
+        238.0,
+        291.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      235.6493158522886,
+      292.15174639433786,
+      19.8336181640625,
+      16.744659423828125
+    ],
+    "selected_iou": 0.6724846823034873,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 203,
+    "truth_native": [
+      [
+        240.5,
+        289.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.80194091796875,
+    "selected_box_native": [
+      236.77716376677677,
+      292.1582155551782,
+      19.8336181640625,
+      16.744659423828125
+    ],
+    "selected_iou": 0.5148086812351756,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 204,
+    "truth_native": [
+      [
+        244.0,
+        292.5,
+        30.0,
+        27.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.716217041015625,
+    "selected_box_native": [
+      239.55456484048221,
+      291.8400870420417,
+      21.980880737304688,
+      20.164749145507812
+    ],
+    "selected_iou": 0.5306000144430465,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 205,
+    "truth_native": [
+      [
+        246.5,
+        293.0,
+        25.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.716217041015625,
+    "selected_box_native": [
+      240.86569643932785,
+      291.81048979466243,
+      21.980880737304688,
+      20.164749145507812
+    ],
+    "selected_iou": 0.5567295137257124,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 206,
+    "truth_native": [
+      [
+        248.0,
+        292.5,
+        28.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.716217041015625,
+    "selected_box_native": [
+      242.17682803817348,
+      291.7808925472831,
+      21.980880737304688,
+      20.164749145507812
+    ],
+    "selected_iou": 0.5852669636460205,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 207,
+    "truth_native": [
+      [
+        250.0,
+        292.0,
+        24.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.694305419921875,
+    "selected_box_native": [
+      245.35783356770207,
+      292.161773257349,
+      21.92254638671875,
+      19.269317626953125
+    ],
+    "selected_iou": 0.5908528973502416,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 208,
+    "truth_native": [
+      [
+        249.5,
+        291.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.694305419921875,
+    "selected_box_native": [
+      246.8767289366236,
+      292.17778467190806,
+      21.92254638671875,
+      19.269317626953125
+    ],
+    "selected_iou": 0.7091964861179229,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 209,
+    "truth_native": [
+      [
+        252.0,
+        291.5,
+        18.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.694305419921875,
+    "selected_box_native": [
+      248.3956243055451,
+      292.1937960864671,
+      21.92254638671875,
+      19.269317626953125
+    ],
+    "selected_iou": 0.651765603027863,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 210,
+    "truth_native": [
+      [
+        255.0,
+        291.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6749114990234375,
+    "selected_box_native": [
+      251.62875351480804,
+      292.08158853297135,
+      21.298599243164062,
+      18.707733154296875
+    ],
+    "selected_iou": 0.7014292312377917,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 211,
+    "truth_native": [
+      [
+        255.0,
+        292.5,
+        24.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6749114990234375,
+    "selected_box_native": [
+      253.33811931043414,
+      292.08335339552434,
+      21.298599243164062,
+      18.707733154296875
+    ],
+    "selected_iou": 0.7934533336318124,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 212,
+    "truth_native": [
+      [
+        259.5,
+        292.5,
+        19.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6749114990234375,
+    "selected_box_native": [
+      255.04748510606026,
+      292.0851182580773,
+      21.298599243164062,
+      18.707733154296875
+    ],
+    "selected_iou": 0.5828758680260423,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 213,
+    "truth_native": [
+      [
+        261.0,
+        293.5,
+        16.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.727203369140625,
+    "selected_box_native": [
+      259.1197356441228,
+      293.1693800819154,
+      21.839187622070312,
+      20.541000366210938
+    ],
+    "selected_iou": 0.6776657148164374,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 214,
+    "truth_native": [
+      [
+        262.5,
+        291.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.727203369140625,
+    "selected_box_native": [
+      261.0916441889085,
+      293.2914223846111,
+      21.839187622070312,
+      20.541000366210938
+    ],
+    "selected_iou": 0.7293969838345805,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 215,
+    "truth_native": [
+      [
+        266.5,
+        291.0,
+        13.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.727203369140625,
+    "selected_box_native": [
+      263.0635527336942,
+      293.4134646873069,
+      21.839187622070312,
+      20.541000366210938
+    ],
+    "selected_iou": 0.47284067309560546,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 216,
+    "truth_native": [
+      [
+        269.5,
+        291.5,
+        19.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7233123779296875,
+    "selected_box_native": [
+      266.06751247538176,
+      291.8557090228913,
+      20.034332275390625,
+      17.994308471679688
+    ],
+    "selected_iou": 0.6698724904229895,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 217,
+    "truth_native": [
+      [
+        271.5,
+        292.5,
+        15.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7233123779296875,
+    "selected_box_native": [
+      268.15409337537875,
+      291.7911071070191,
+      20.034332275390625,
+      17.994308471679688
+    ],
+    "selected_iou": 0.6300718387680928,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 218,
+    "truth_native": [
+      [
+        273.5,
+        293.0,
+        19.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7233123779296875,
+    "selected_box_native": [
+      270.2406742753758,
+      291.72650519114694,
+      20.034332275390625,
+      17.994308471679688
+    ],
+    "selected_iou": 0.6314030304735144,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 219,
+    "truth_native": [
+      [
+        276.0,
+        291.5,
+        18.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      273.804309826558,
+      294.2689647409378,
+      19.759872436523438,
+      18.244598388671875
+    ],
+    "selected_iou": 0.6148465808098651,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 220,
+    "truth_native": [
+      [
+        279.5,
+        293.0,
+        25.0,
+        24.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      276.05500791002004,
+      294.4940363212504,
+      19.759872436523438,
+      18.244598388671875
+    ],
+    "selected_iou": 0.5616782023164125,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 221,
+    "truth_native": [
+      [
+        283.0,
+        295.0,
+        16.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.82275390625,
+    "selected_box_native": [
+      278.3057059934821,
+      294.71910790156306,
+      19.759872436523438,
+      18.244598388671875
+    ],
+    "selected_iou": 0.5468119639432872,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 222,
+    "truth_native": [
+      [
+        284.0,
+        295.0,
+        20.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6867828369140625,
+    "selected_box_native": [
+      281.2306156066384,
+      294.03268335923843,
+      18.84381103515625,
+      17.28466796875
+    ],
+    "selected_iou": 0.6573401682066963,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 223,
+    "truth_native": [
+      [
+        286.5,
+        296.0,
+        15.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6867828369140625,
+    "selected_box_native": [
+      283.55622608228873,
+      294.1564775925914,
+      18.84381103515625,
+      17.28466796875
+    ],
+    "selected_iou": 0.5891033960392872,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 224,
+    "truth_native": [
+      [
+        289.0,
+        295.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6867828369140625,
+    "selected_box_native": [
+      285.88183655793904,
+      294.2802718259443,
+      18.84381103515625,
+      17.28466796875
+    ],
+    "selected_iou": 0.6723405602652032,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 225,
+    "truth_native": [
+      [
+        291.0,
+        293.5,
+        18.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.840789794921875,
+    "selected_box_native": [
+      289.93267535703006,
+      296.01452588372075,
+      18.364273071289062,
+      16.193496704101562
+    ],
+    "selected_iou": 0.6651114780873513,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 226,
+    "truth_native": [
+      [
+        294.0,
+        294.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.840789794921875,
+    "selected_box_native": [
+      292.44997786861825,
+      296.3172600975652,
+      18.364273071289062,
+      16.193496704101562
+    ],
+    "selected_iou": 0.5926506004295821,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 227,
+    "truth_native": [
+      [
+        298.5,
+        295.0,
+        15.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.840789794921875,
+    "selected_box_native": [
+      294.9672803802064,
+      296.61999431140964,
+      18.364273071289062,
+      16.193496704101562
+    ],
+    "selected_iou": 0.5485573432534078,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 228,
+    "truth_native": [
+      [
+        301.0,
+        295.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64691162109375,
+    "selected_box_native": [
+      298.1866593337885,
+      296.017295595669,
+      24.333404541015625,
+      19.654129028320312
+    ],
+    "selected_iou": 0.6337597178222657,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 229,
+    "truth_native": [
+      [
+        303.0,
+        293.5,
+        18.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64691162109375,
+    "selected_box_native": [
+      300.7819703389316,
+      296.21942615067064,
+      24.333404541015625,
+      19.654129028320312
+    ],
+    "selected_iou": 0.558174970927474,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 230,
+    "truth_native": [
+      [
+        305.5,
+        294.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64691162109375,
+    "selected_box_native": [
+      303.3772813440746,
+      296.4215567056723,
+      24.333404541015625,
+      19.654129028320312
+    ],
+    "selected_iou": 0.6697639065594753,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 231,
+    "truth_native": [
+      [
+        308.5,
+        296.0,
+        19.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7333526611328125,
+    "selected_box_native": [
+      307.44309162978493,
+      296.61452090574466,
+      22.504150390625,
+      18.487335205078125
+    ],
+    "selected_iou": 0.730695859460391,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 232,
+    "truth_native": [
+      [
+        311.5,
+        294.5,
+        25.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7333526611328125,
+    "selected_box_native": [
+      310.20179144387987,
+      296.8156329768653,
+      22.504150390625,
+      18.487335205078125
+    ],
+    "selected_iou": 0.6499071289474495,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 233,
+    "truth_native": [
+      [
+        313.5,
+        293.0,
+        21.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7333526611328125,
+    "selected_box_native": [
+      312.96049125797487,
+      297.01674504798586,
+      22.504150390625,
+      18.487335205078125
+    ],
+    "selected_iou": 0.5856613880429412,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 234,
+    "truth_native": [
+      [
+        316.0,
+        293.5,
+        26.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7676849365234375,
+    "selected_box_native": [
+      313.9809147113768,
+      296.13368409789183,
+      24.460037231445312,
+      21.602249145507812
+    ],
+    "selected_iou": 0.6629825119563397,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 235,
+    "truth_native": [
+      [
+        317.5,
+        293.5,
+        23.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7676849365234375,
+    "selected_box_native": [
+      316.54647270761694,
+      296.21433249998864,
+      24.460037231445312,
+      21.602249145507812
+    ],
+    "selected_iou": 0.6975386041156805,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 236,
+    "truth_native": [
+      [
+        320.0,
+        292.5,
+        26.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7676849365234375,
+    "selected_box_native": [
+      319.1120307038571,
+      296.2949809020854,
+      24.460037231445312,
+      21.602249145507812
+    ],
+    "selected_iou": 0.6246597605896175,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 237,
+    "truth_native": [
+      [
+        323.5,
+        292.0,
+        19.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69097900390625,
+    "selected_box_native": [
+      320.58513051242676,
+      295.0365533526569,
+      23.847152709960938,
+      21.527847290039062
+    ],
+    "selected_iou": 0.5531100476721815,
+    "measurement_age_seconds": 0.10000000000000053
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 238,
+    "truth_native": [
+      [
+        325.0,
+        292.0,
+        22.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69097900390625,
+    "selected_box_native": [
+      323.0293042655924,
+      294.9684155379175,
+      23.847152709960938,
+      21.527847290039062
+    ],
+    "selected_iou": 0.6192949070306277,
+    "measurement_age_seconds": 0.13333333333333375
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 239,
+    "truth_native": [
+      [
+        323.5,
+        290.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69097900390625,
+    "selected_box_native": [
+      325.47347801875804,
+      294.90027772317814,
+      23.847152709960938,
+      21.527847290039062
+    ],
+    "selected_iou": 0.5418747979358398,
+    "measurement_age_seconds": 0.16666666666666696
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 240,
+    "truth_native": [
+      [
+        325.0,
+        289.5,
+        28.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8086700439453125,
+    "selected_box_native": [
+      326.01749506578363,
+      291.2524838296488,
+      23.384933471679688,
+      20.329208374023438
+    ],
+    "selected_iou": 0.7120129728910913,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 241,
+    "truth_native": [
+      [
+        327.5,
+        288.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8086700439453125,
+    "selected_box_native": [
+      328.25054029604485,
+      290.7866064505994,
+      23.384933471679688,
+      20.329208374023438
+    ],
+    "selected_iou": 0.7465441672615593,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 242,
+    "truth_native": [
+      [
+        329.0,
+        288.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8086700439453125,
+    "selected_box_native": [
+      330.48358552630606,
+      290.32072907155003,
+      23.384933471679688,
+      20.329208374023438
+    ],
+    "selected_iou": 0.7075999003421367,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 243,
+    "truth_native": [
+      [
+        328.5,
+        286.5,
+        27.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.84796142578125,
+    "selected_box_native": [
+      330.70094723992304,
+      288.61397384841814,
+      22.127426147460938,
+      18.002944946289062
+    ],
+    "selected_iou": 0.662639516287277,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 244,
+    "truth_native": [
+      [
+        329.0,
+        285.5,
+        26.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.84796142578125,
+    "selected_box_native": [
+      332.71002763500155,
+      288.01022115335957,
+      22.127426147460938,
+      18.002944946289062
+    ],
+    "selected_iou": 0.5741639931519704,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 245,
+    "truth_native": [
+      [
+        329.0,
+        283.0,
+        22.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.84796142578125,
+    "selected_box_native": [
+      334.7191080300801,
+      287.40646845830105,
+      22.127426147460938,
+      18.002944946289062
+    ],
+    "selected_iou": 0.38836576198607337,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 246,
+    "truth_native": [
+      [
+        330.5,
+        284.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7833251953125,
+    "selected_box_native": [
+      334.0842535271881,
+      284.255457993545,
+      22.498153686523438,
+      19.615325927734375
+    ],
+    "selected_iou": 0.7207250275632964,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 247,
+    "truth_native": [
+      [
+        332.0,
+        282.5,
+        22.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7833251953125,
+    "selected_box_native": [
+      335.79956337804765,
+      283.36867665740897,
+      22.498153686523438,
+      19.615325927734375
+    ],
+    "selected_iou": 0.6181819292259633,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 248,
+    "truth_native": [
+      [
+        334.5,
+        282.5,
+        27.0,
+        23.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7833251953125,
+    "selected_box_native": [
+      337.51487322890733,
+      282.4818953212729,
+      22.498153686523438,
+      19.615325927734375
+    ],
+    "selected_iou": 0.6703356223194769,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 249,
+    "truth_native": [
+      [
+        333.5,
+        278.0,
+        29.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.635223388671875,
+    "selected_box_native": [
+      334.6669283993363,
+      280.81495433856935,
+      22.545730590820312,
+      20.143707275390625
+    ],
+    "selected_iou": 0.6048365372013884,
+    "measurement_age_seconds": 0.10000000000000142
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 250,
+    "truth_native": [
+      [
+        335.5,
+        280.0,
+        33.0,
+        26.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.635223388671875,
+    "selected_box_native": [
+      335.87520995237026,
+      279.8414885972591,
+      22.545730590820312,
+      20.143707275390625
+    ],
+    "selected_iou": 0.5293177125073475,
+    "measurement_age_seconds": 0.13333333333333464
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 251,
+    "truth_native": [
+      [
+        337.0,
+        275.0,
+        26.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.635223388671875,
+    "selected_box_native": [
+      337.0834915054042,
+      278.8680228559489,
+      22.545730590820312,
+      20.143707275390625
+    ],
+    "selected_iou": 0.6076830280093475,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 252,
+    "truth_native": [
+      [
+        337.5,
+        275.0,
+        27.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7885894775390625,
+    "selected_box_native": [
+      336.747625881797,
+      276.8066165735816,
+      22.198989868164062,
+      19.16162109375
+    ],
+    "selected_iou": 0.6916160013360918,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 253,
+    "truth_native": [
+      [
+        339.0,
+        274.5,
+        24.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7885894775390625,
+    "selected_box_native": [
+      337.78433552631526,
+      275.7122685499317,
+      22.198989868164062,
+      19.16162109375
+    ],
+    "selected_iou": 0.7995233781114256,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 254,
+    "truth_native": [
+      [
+        339.0,
+        272.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7885894775390625,
+    "selected_box_native": [
+      338.82104517083354,
+      274.6179205262818,
+      22.198989868164062,
+      19.16162109375
+    ],
+    "selected_iou": 0.7459426625916568,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 255,
+    "truth_native": [
+      [
+        339.0,
+        273.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7819976806640625,
+    "selected_box_native": [
+      337.77965858298836,
+      272.7809327985095,
+      24.159332275390625,
+      20.375717163085938
+    ],
+    "selected_iou": 0.8024008459761567,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 256,
+    "truth_native": [
+      [
+        339.5,
+        271.0,
+        25.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7819976806640625,
+    "selected_box_native": [
+      338.5854686461329,
+      271.6040692521794,
+      24.159332275390625,
+      20.375717163085938
+    ],
+    "selected_iou": 0.7372006600321082,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 257,
+    "truth_native": [
+      [
+        340.5,
+        268.5,
+        27.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7819976806640625,
+    "selected_box_native": [
+      339.39127870927746,
+      270.42720570584925,
+      24.159332275390625,
+      20.375717163085938
+    ],
+    "selected_iou": 0.747905495027257,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 258,
+    "truth_native": [
+      [
+        339.0,
+        267.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.745391845703125,
+    "selected_box_native": [
+      338.6399437324121,
+      268.8171326590204,
+      23.104263305664062,
+      19.3023681640625
+    ],
+    "selected_iou": 0.7953283812830859,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 259,
+    "truth_native": [
+      [
+        339.5,
+        265.0,
+        23.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.745391845703125,
+    "selected_box_native": [
+      339.27273768000003,
+      267.59213472374597,
+      23.104263305664062,
+      19.3023681640625
+    ],
+    "selected_iou": 0.7428655962148676,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 260,
+    "truth_native": [
+      [
+        340.0,
+        266.0,
+        24.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.745391845703125,
+    "selected_box_native": [
+      339.90553162758795,
+      266.3671367884715,
+      23.104263305664062,
+      19.3023681640625
+    ],
+    "selected_iou": 0.9273982243219029,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 261,
+    "truth_native": [
+      [
+        340.5,
+        264.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      340.12907678563965,
+      264.2857635951352,
+      23.666122436523438,
+      19.16162109375
+    ],
+    "selected_iou": 0.8397801312721438,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 262,
+    "truth_native": [
+      [
+        340.5,
+        263.5,
+        27.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      340.71639864550133,
+      262.9656128534094,
+      23.666122436523438,
+      19.16162109375
+    ],
+    "selected_iou": 0.8319858836654328,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 263,
+    "truth_native": [
+      [
+        342.5,
+        262.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      341.303720505363,
+      261.64546211168357,
+      23.666122436523438,
+      19.16162109375
+    ],
+    "selected_iou": 0.8284651469046619,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 264,
+    "truth_native": [
+      [
+        341.5,
+        261.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7379150390625,
+    "selected_box_native": [
+      340.8580946061988,
+      259.6979049909269,
+      26.323028564453125,
+      23.446426391601562
+    ],
+    "selected_iou": 0.5784365169584205,
+    "measurement_age_seconds": 0.10000000000000142
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 265,
+    "truth_native": [
+      [
+        340.5,
+        259.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7379150390625,
+    "selected_box_native": [
+      341.33064449283535,
+      258.3080424293088,
+      26.323028564453125,
+      23.446426391601562
+    ],
+    "selected_iou": 0.7080581454084867,
+    "measurement_age_seconds": 0.13333333333333464
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 266,
+    "truth_native": [
+      [
+        343.0,
+        258.0,
+        26.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7379150390625,
+    "selected_box_native": [
+      341.8031943794719,
+      256.9181798676907,
+      26.323028564453125,
+      23.446426391601562
+    ],
+    "selected_iou": 0.6302770865154401,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 267,
+    "truth_native": [
+      [
+        344.0,
+        255.0,
+        26.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8250274658203125,
+    "selected_box_native": [
+      343.00264807214234,
+      256.45572587192834,
+      23.314315795898438,
+      18.269699096679688
+    ],
+    "selected_iou": 0.7446600248881655,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 268,
+    "truth_native": [
+      [
+        345.5,
+        255.0,
+        29.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8250274658203125,
+    "selected_box_native": [
+      343.5559650483382,
+      255.16890870651648,
+      23.314315795898438,
+      18.269699096679688
+    ],
+    "selected_iou": 0.6676262292100812,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 269,
+    "truth_native": [
+      [
+        347.5,
+        255.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.8250274658203125,
+    "selected_box_native": [
+      344.1092820245341,
+      253.88209154110456,
+      23.314315795898438,
+      18.269699096679688
+    ],
+    "selected_iou": 0.6780522109169171,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 270,
+    "truth_native": [
+      [
+        346.5,
+        253.5,
+        23.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      343.9370769047235,
+      251.29635964006573,
+      24.26690673828125,
+      20.220657348632812
+    ],
+    "selected_iou": 0.6449640474934769,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 271,
+    "truth_native": [
+      [
+        347.5,
+        252.5,
+        21.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      344.40978031469643,
+      249.86521861513975,
+      24.26690673828125,
+      20.220657348632812
+    ],
+    "selected_iou": 0.5946152515461463,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 272,
+    "truth_native": [
+      [
+        348.5,
+        251.0,
+        23.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.805023193359375,
+    "selected_box_native": [
+      344.8824837246694,
+      248.43407759021375,
+      24.26690673828125,
+      20.220657348632812
+    ],
+    "selected_iou": 0.5682255681766463,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 273,
+    "truth_native": [
+      [
+        347.5,
+        249.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.754913330078125,
+    "selected_box_native": [
+      347.06172387716646,
+      248.76838856026725,
+      24.884872436523438,
+      22.498291015625
+    ],
+    "selected_iou": 0.8601211825416923,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 274,
+    "truth_native": [
+      [
+        347.5,
+        246.5,
+        25.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.754913330078125,
+    "selected_box_native": [
+      347.72404248075316,
+      247.53340886811674,
+      24.884872436523438,
+      22.498291015625
+    ],
+    "selected_iou": 0.6572978070866992,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 275,
+    "truth_native": [
+      [
+        348.0,
+        243.0,
+        24.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.754913330078125,
+    "selected_box_native": [
+      348.3863610843399,
+      246.29842917596625,
+      24.884872436523438,
+      22.498291015625
+    ],
+    "selected_iou": 0.7184539240591842,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 276,
+    "truth_native": [
+      [
+        349.0,
+        243.0,
+        26.0,
+        22.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7082061767578125,
+    "selected_box_native": [
+      348.1113367920988,
+      243.88273706577814,
+      32.15879821777344,
+      28.95355224609375
+    ],
+    "selected_iou": 0.6143195891949207,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 277,
+    "truth_native": [
+      [
+        350.5,
+        245.0,
+        23.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7082061767578125,
+    "selected_box_native": [
+      348.669506185038,
+      242.5165671049568,
+      32.15879821777344,
+      28.95355224609375
+    ],
+    "selected_iou": 0.4446299124592608,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 278,
+    "truth_native": [
+      [
+        353.0,
+        244.5,
+        26.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7082061767578125,
+    "selected_box_native": [
+      349.22767557797727,
+      241.15039714413538,
+      32.15879821777344,
+      28.95355224609375
+    ],
+    "selected_iou": 0.45627775635578816,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 279,
+    "truth_native": [
+      [
+        352.0,
+        241.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5525360107421875,
+    "selected_box_native": [
+      351.52842382817835,
+      240.61378521990073,
+      25.311599731445312,
+      21.118698120117188
+    ],
+    "selected_iou": 0.8253634540010286,
+    "measurement_age_seconds": 0.10000000000000142
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 280,
+    "truth_native": [
+      [
+        352.0,
+        241.0,
+        26.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5525360107421875,
+    "selected_box_native": [
+      352.2802130941467,
+      239.33978837425568,
+      25.311599731445312,
+      21.118698120117188
+    ],
+    "selected_iou": 0.82449901271456,
+    "measurement_age_seconds": 0.13333333333333464
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 281,
+    "truth_native": [
+      [
+        353.5,
+        240.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.5525360107421875,
+    "selected_box_native": [
+      353.032002360115,
+      238.06579152861065,
+      25.311599731445312,
+      21.118698120117188
+    ],
+    "selected_iou": 0.8000459171770898,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 282,
+    "truth_native": [
+      [
+        353.5,
+        236.0,
+        25.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.705780029296875,
+    "selected_box_native": [
+      352.2679808349876,
+      235.33329031502856,
+      26.213348388671875,
+      24.216934204101562
+    ],
+    "selected_iou": 0.45538037987726426,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 283,
+    "truth_native": [
+      [
+        354.0,
+        232.5,
+        24.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.705780029296875,
+    "selected_box_native": [
+      352.85134667972306,
+      233.89723742850163,
+      26.213348388671875,
+      24.216934204101562
+    ],
+    "selected_iou": 0.7161723530937709,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 284,
+    "truth_native": [
+      [
+        354.0,
+        231.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.705780029296875,
+    "selected_box_native": [
+      353.43471252445846,
+      232.4611845419747,
+      26.213348388671875,
+      24.216934204101562
+    ],
+    "selected_iou": 0.680521868001541,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 285,
+    "truth_native": [
+      [
+        355.5,
+        231.5,
+        21.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.695953369140625,
+    "selected_box_native": [
+      355.57899774171256,
+      231.37116633671351,
+      24.087921142578125,
+      21.009231567382812
+    ],
+    "selected_iou": 0.7054378005298325,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 286,
+    "truth_native": [
+      [
+        357.0,
+        230.5,
+        24.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.695953369140625,
+    "selected_box_native": [
+      356.3357990722834,
+      229.97356174810497,
+      24.087921142578125,
+      21.009231567382812
+    ],
+    "selected_iou": 0.6804719267829765,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 287,
+    "truth_native": [
+      [
+        355.5,
+        228.0,
+        27.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.695953369140625,
+    "selected_box_native": [
+      357.09260040285426,
+      228.57595715949645,
+      24.087921142578125,
+      21.009231567382812
+    ],
+    "selected_iou": 0.8392409405537562,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 288,
+    "truth_native": [
+      [
+        356.5,
+        226.5,
+        29.0,
+        17.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      357.5532699279852,
+      226.96016507753643,
+      21.715179443359375,
+      18.22235107421875
+    ],
+    "selected_iou": 0.7105430030877283,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 289,
+    "truth_native": [
+      [
+        360.5,
+        225.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      358.27716772461827,
+      225.5383174341111,
+      21.715179443359375,
+      18.22235107421875
+    ],
+    "selected_iou": 0.7876844206516277,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 290,
+    "truth_native": [
+      [
+        362.0,
+        224.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6884613037109375,
+    "selected_box_native": [
+      359.00106552125135,
+      224.11646979068573,
+      21.715179443359375,
+      18.22235107421875
+    ],
+    "selected_iou": 0.6878005119258809,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 291,
+    "truth_native": [
+      [
+        362.0,
+        221.5,
+        24.0,
+        21.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69512939453125,
+    "selected_box_native": [
+      359.3450630035434,
+      219.53611281220572,
+      25.66253662109375,
+      22.383132934570312
+    ],
+    "selected_iou": 0.682592628111151,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 292,
+    "truth_native": [
+      [
+        361.5,
+        218.0,
+        23.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69512939453125,
+    "selected_box_native": [
+      360.02674965413854,
+      217.76331968710764,
+      25.66253662109375,
+      22.383132934570312
+    ],
+    "selected_iou": 0.5551954013522195,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 293,
+    "truth_native": [
+      [
+        363.0,
+        217.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.69512939453125,
+    "selected_box_native": [
+      360.70843630473377,
+      215.99052656200945,
+      25.66253662109375,
+      22.383132934570312
+    ],
+    "selected_iou": 0.5570953355055503,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 294,
+    "truth_native": [
+      [
+        363.5,
+        217.0,
+        21.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7461395263671875,
+    "selected_box_native": [
+      363.6002735061663,
+      215.86841346176683,
+      26.699249267578125,
+      23.6475830078125
+    ],
+    "selected_iou": 0.5321737745730541,
+    "measurement_age_seconds": 0.10000000000000142
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 295,
+    "truth_native": [
+      [
+        363.5,
+        215.0,
+        23.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7461395263671875,
+    "selected_box_native": [
+      364.5275324401878,
+      214.27902922831936,
+      26.699249267578125,
+      23.6475830078125
+    ],
+    "selected_iou": 0.7285712389988243,
+    "measurement_age_seconds": 0.13333333333333464
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 296,
+    "truth_native": [
+      [
+        364.0,
+        214.0,
+        24.0,
+        18.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7461395263671875,
+    "selected_box_native": [
+      365.4547913742094,
+      212.68964499487186,
+      26.699249267578125,
+      23.6475830078125
+    ],
+    "selected_iou": 0.679188828222737,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 297,
+    "truth_native": [
+      [
+        364.5,
+        213.5,
+        23.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7620697021484375,
+    "selected_box_native": [
+      364.63775271988,
+      211.76661945061005,
+      25.805099487304688,
+      21.125701904296875
+    ],
+    "selected_iou": 0.7520480011259715,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 298,
+    "truth_native": [
+      [
+        364.5,
+        211.5,
+        23.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7620697021484375,
+    "selected_box_native": [
+      365.3712008107514,
+      210.25127507151655,
+      25.805099487304688,
+      21.125701904296875
+    ],
+    "selected_iou": 0.6328523686997719,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 299,
+    "truth_native": [
+      [
+        363.0,
+        211.5,
+        26.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7620697021484375,
+    "selected_box_native": [
+      366.10464890162285,
+      208.735930692423,
+      25.805099487304688,
+      21.125701904296875
+    ],
+    "selected_iou": 0.576498147718917,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 300,
+    "truth_native": [
+      [
+        366.0,
+        211.5,
+        30.0,
+        15.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.717803955078125,
+    "selected_box_native": [
+      366.25676545906106,
+      210.01664865352768,
+      25.377471923828125,
+      23.985687255859375
+    ],
+    "selected_iou": 0.5614203184963761,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 301,
+    "truth_native": [
+      [
+        368.0,
+        212.0,
+        26.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.717803955078125,
+    "selected_box_native": [
+      366.9256211573288,
+      208.81197786778952,
+      25.377471923828125,
+      23.985687255859375
+    ],
+    "selected_iou": 0.5486446189351915,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 302,
+    "truth_native": [
+      [
+        368.0,
+        211.0,
+        26.0,
+        12.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.717803955078125,
+    "selected_box_native": [
+      367.5944768555966,
+      207.60730708205136,
+      25.377471923828125,
+      23.985687255859375
+    ],
+    "selected_iou": 0.49149482817466883,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 303,
+    "truth_native": [
+      [
+        371.0,
+        209.0,
+        20.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7386627197265625,
+    "selected_box_native": [
+      369.41974930667897,
+      207.9192282574279,
+      22.67083740234375,
+      20.12249755859375
+    ],
+    "selected_iou": 0.6869702375970448,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 304,
+    "truth_native": [
+      [
+        372.0,
+        207.5,
+        22.0,
+        13.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7386627197265625,
+    "selected_box_native": [
+      370.2170957552595,
+      206.88306768959137,
+      22.67083740234375,
+      20.12249755859375
+    ],
+    "selected_iou": 0.5624766276319052,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 305,
+    "truth_native": [
+      [
+        373.0,
+        207.0,
+        20.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.7386627197265625,
+    "selected_box_native": [
+      371.01444220383996,
+      205.84690712175484,
+      22.67083740234375,
+      20.12249755859375
+    ],
+    "selected_iou": 0.5822060771183606,
+    "measurement_age_seconds": 0.16666666666666607
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 306,
+    "truth_native": [
+      [
+        374.0,
+        207.0,
+        22.0,
+        14.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64154052734375,
+    "selected_box_native": [
+      369.9126258130075,
+      207.12525591338192,
+      28.056716918945312,
+      28.159347534179688
+    ],
+    "selected_iou": 0.36424303723214285,
+    "measurement_age_seconds": 0.09999999999999964
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 307,
+    "truth_native": [
+      [
+        373.0,
+        206.0,
+        24.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64154052734375,
+    "selected_box_native": [
+      370.4989541683198,
+      206.34626305215247,
+      28.056716918945312,
+      28.159347534179688
+    ],
+    "selected_iou": 0.47194921578667987,
+    "measurement_age_seconds": 0.13333333333333286
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 308,
+    "truth_native": [
+      [
+        374.5,
+        207.5,
+        27.0,
+        19.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.64154052734375,
+    "selected_box_native": [
+      371.08528252363226,
+      205.56727019092295,
+      28.056716918945312,
+      28.159347534179688
+    ],
+    "selected_iou": 0.5422646005886208,
+    "measurement_age_seconds": 0.16666666666666785
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 309,
+    "truth_native": [
+      [
+        375.5,
+        207.0,
+        25.0,
+        20.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6388397216796875,
+    "selected_box_native": [
+      373.5230167028905,
+      205.3676511500503,
+      22.755523681640625,
+      18.36376953125
+    ],
+    "selected_iou": 0.7203895588140266,
+    "measurement_age_seconds": 0.10000000000000142
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 310,
+    "truth_native": [
+      [
+        376.5,
+        205.0,
+        27.0,
+        16.0
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6388397216796875,
+    "selected_box_native": [
+      374.3150568164191,
+      204.65303315774938,
+      22.755523681640625,
+      18.36376953125
+    ],
+    "selected_iou": 0.7458730391028692,
+    "measurement_age_seconds": 0.13333333333333464
+  },
+  {
+    "source": "DroneDetectionThesis",
+    "sequence": "V_DRONE_052",
+    "frame": 311,
+    "truth_native": [
+      [
+        376.29648609077594,
+        205.2606149341142,
+        20.592972181551886,
+        16.521229868228374
+      ]
+    ],
+    "negative_kind": "scene_empty",
+    "confidence": 1.0,
+    "tracker_active": true,
+    "neural_confidence": 0.6388397216796875,
+    "selected_box_native": [
+      375.10709692994766,
+      203.93841516544845,
+      22.755523681640625,
+      18.36376953125
+    ],
+    "selected_iou": 0.7717698484784469,
+    "measurement_age_seconds": 0.16666666666666785
+  }
+]

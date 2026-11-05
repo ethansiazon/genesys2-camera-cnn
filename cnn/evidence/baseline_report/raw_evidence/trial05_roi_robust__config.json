@@ -1,0 +1,28 @@
+{
+  "trial": "05_roi_native_softmix_contrast",
+  "input": [
+    256,
+    192,
+    3
+  ],
+  "epochs": 8,
+  "draws_per_epoch": 6000,
+  "batch_size": 16,
+  "learning_rate": 0.0001,
+  "body_lr_scale": 0.25,
+  "weight_decay": 0.0001,
+  "seed": 20261019,
+  "minimum_epochs": 4,
+  "patience": 3,
+  "manifest": "roi256_dataset/manifest_native_all_v3.json",
+  "native_validation": "motion_validation_prepared/manifest.json",
+  "seed_checkpoint": "trial03_p23_consistent_flying/epoch_05.pt",
+  "warmstart_checkpoint": "trial04_roi256/epoch_11.pt",
+  "selection": "PREDECLARED motion_agreement beforemax, original17193nativeGTframes atclock-only5Hz, causalconfirm1..3 andpast-onlyvelocity, max sourcebalancedF1 under5%trueempty triggers. Originalstrictallaircraft and rawsampleddiagnostic retained. No13/20inselection.",
+  "augmentation": "OriginalTRAINgeometry/HSV/mirrorplus25%softMixUp(.6original+.4officialBeta32blendwithTRAINempty) OR25%contrast.65..90; no compoundedextra fading, targetwidth>=12/height>=8. Alloriginalframe/splitmembership retained, nativeDUT/UAVCBpixels.",
+  "early_stopping": "Minimum4epochs,3without sourcebalancednativecausalF1improvement,8max.2epochs/process exactEMA/optimizer/RNG/orderrecovery.",
+  "caveats": "Configurationtrial notisolatedcausalablation. FullnativeVAL only328trueemptyframes, rareaircraftexcludedONLYapplication. Actualprocessinglatencyzero, nohover/board/system claim. Learnedcoefficients/scales neednewfinalquantizedverification; oldROI11proofnotnewweightsproof.",
+  "manifest_sha256": "c0de852170aa96328ba8442869d0ed80dcfe984e016d180bbe73d9015b87ce56",
+  "native_validation_sha256": "193ca9b1c3a111231f1353091fd207a986db137a951feadabe7c3087d7b9a4fd",
+  "code_sha256": "28fb949e80594427159ed3e4ee9403f8dc930587b6751923a7d217450cdeee98"
+}

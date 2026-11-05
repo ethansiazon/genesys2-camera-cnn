@@ -1,0 +1,13 @@
+=== tb_sccb start ===
+MARK write 0x300A <= 0x42
+  ok  write bytes seen = 0x4
+  ok  dev byte = 0x78
+  ok  addr hi = 0x30
+  ok  addr lo = 0xa
+  ok  data = 0x42
+  ok  no nack = 0x0
+MARK nack is reported
+  ok  nack flagged = 0x1
+=== TESTS COMPLETE: 0 error(s) ===
+=== ALL TESTS PASS ===
+C:\Users\ethan\Desktop\genesys2_camera_hdmi_20261019\variants\raw_yuv_snapshot\sim\tb_sccb.v:119: $finish called at 756460000 (1ps)

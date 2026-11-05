@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "synthesis_passed": true,
+  "cpp_passed": true,
+  "kernel_program_sha256": {
+    "cnn_engine.cpp": "8020b79cc29f5ccae6868975a889b80d0057838ad7f36502e982e2e138c6de1d",
+    "cnn_engine.h": "87ce1d28b5ab74905aca442f86a7b771b1e4fb8f302ce8b5d376b451b5fab783",
+    "program.h": "fdb0264b650655ccadce5ca2eeb93a635d96b21eaae5a6e9d5838a4718339398"
+  }
+}

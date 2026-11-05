@@ -1,0 +1,41 @@
+=== tb_vga start ===
+MARK phase1 line length
+  ok  H total = 800
+MARK phase2 hsync
+  ok  hsync start hcnt = 656
+  ok  hsync width = 96
+MARK phase3 frame sweep
+  ok  V total lines = 525
+  ok  vsync start vcnt = 490
+  ok  vsync lines = 2
+  ok  active pixels = 307200
+  ok  cycles per frame = 420000
+MARK phase4 pattern bars
+  ok  bar0 white = fff
+  ok  bar1 yellow = ff0
+  ok  bar2 cyan = 0ff
+  ok  bar3 green = 0f0
+  ok  bar4 magenta = f0f
+  ok  bar5 red = f00
+  ok  bar6 blue = 00f
+  ok  bar7 black = 000
+  ok  bar7 at 319 = 000
+MARK phase5 pattern ramps
+  ok  grey  lvl0 = 000
+  ok  grey  lvl15 = fff
+  ok  red   lvl15 = f00
+  ok  green lvl15 = 0f0
+  ok  blue  lvl15 = 00f
+  ok  ramp off-x = 000
+MARK phase6 pattern geometry
+  ok  geo corner = f00
+  ok  geo corner br = f00
+  ok  geo border = fff
+  ok  geo cross = 0f0
+  ok  geo grid = 444
+  ok  geo blank = 000
+MARK phase7 offset wrap
+  ok  fset wrap 300+40 = fff
+=== TESTS COMPLETE: 0 error(s) ===
+=== ALL TESTS PASS ===
+C:\Users\ethan\Desktop\genesys2_camera_hdmi_20261019\variants\raw_yuv_snapshot\sim\tb_vga.v:182: $finish called at 33600182000 (1ps)

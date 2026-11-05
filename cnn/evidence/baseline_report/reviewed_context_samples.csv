@@ -1,0 +1,5 @@
+﻿reviewed_context,frames,positive_frames,correct_box_frames,correct_box_recall,active_positive_frames,wrong_box_positive_frames,missed_positive_frames,positive_frame_box_precision,centre_inside_label_frames,centre_inside_label_recall,negative_frames,negative_trigger_frames,negative_trigger_fraction,median_box_iou_all_positive_frames
+building,2,2,2,1.0,2,0,0,1.0,2,1.0,0,0,,0.7361502855195253
+sky,53,53,45,0.8490566037735849,53,8,0,0.8490566037735849,53,1.0,0,0,,0.664411681878161
+sky_tree_boundary_uncertain,2,2,1,0.5,2,1,0,0.5,2,1.0,0,0,,0.48079976836046046
+trees,3,3,1,0.3333333333333333,3,2,0,0.3333333333333333,1,0.3333333333333333,0,0,,0.0

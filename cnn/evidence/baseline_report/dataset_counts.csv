@@ -1,0 +1,14 @@
+﻿split,source,registered_views,registered_source_frame_keys,recording_or_group_keys,drone_group_views,background_group_views,historical_other_aircraft_group_views
+train,ADE20K,3600,1200,139,0,3600,0
+train,AntiUAV300,4536,4536,73,4392,144,0
+train,DUT_Anti_UAV,4816,4195,13,4138,678,0
+train,DroneDetectionThesis,13593,7195,199,4886,3358,5349
+train,SkyDetectionOutdoor,3537,1179,1179,0,3537,0
+train,UAV_CB,2613,2613,5,2613,0,0
+val,ADE20K,334,334,91,0,334,0
+val,AntiUAV300,998,998,8,996,2,0
+val,DUT_Anti_UAV,1444,1444,3,1116,328,0
+val,DroneDetectionThesis,2668,2668,43,1079,0,1589
+val,MendeleyEO,330,330,2,283,47,0
+val,SkyDetectionOutdoor,255,255,255,0,255,0
+val,UAV_CB,290,290,2,290,0,0

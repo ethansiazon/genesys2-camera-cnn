@@ -1,0 +1,65 @@
+{
+  "verified": true,
+  "all_four_evaluations_native_frames": 17193,
+  "all_original_labels_memberships_unchanged": true,
+  "original_preferred_model_and_sources_unchanged": true,
+  "original_source_fingerprints_verified": 13,
+  "new_trained_checkpoints_verified": 2,
+  "current_R9_still_preferred": true,
+  "application_metrics_recomputed": {
+    "current_matched_float": {
+      "threshold": 0.5,
+      "balanced_f1": 0.803514890651469,
+      "f1": 0.8049553781117894,
+      "precision": 0.8179214890824484,
+      "recall": 0.7923939428967749,
+      "scene_empty_trigger": 0.018292682926829267,
+      "tp": 6855,
+      "fp_or_bad_box": 1526,
+      "fn": 1796,
+      "scene_empty_frames": 328,
+      "positive_frames": 8651
+    },
+    "fine_tune_epoch_1": {
+      "threshold": 0.5,
+      "balanced_f1": 0.7873977255084281,
+      "f1": 0.797743565636385,
+      "precision": 0.8112824190271304,
+      "recall": 0.7846491735059531,
+      "scene_empty_trigger": 0.04878048780487805,
+      "tp": 6788,
+      "fp_or_bad_box": 1579,
+      "fn": 1863,
+      "scene_empty_frames": 328,
+      "positive_frames": 8651
+    },
+    "fine_tune_epoch_2": {
+      "threshold": 0.5,
+      "balanced_f1": 0.7826311590663743,
+      "f1": 0.7811667160201362,
+      "precision": 0.8009472917172699,
+      "recall": 0.7623396139174662,
+      "scene_empty_trigger": 0.0,
+      "tp": 6595,
+      "fp_or_bad_box": 1639,
+      "fn": 2056,
+      "scene_empty_frames": 328,
+      "positive_frames": 8651
+    },
+    "epoch1_original_BN_buffers": {
+      "threshold": 0.5,
+      "balanced_f1": 0.7844788978624474,
+      "f1": 0.78120011823825,
+      "precision": 0.7994917715392061,
+      "recall": 0.7637267367934343,
+      "scene_empty_trigger": 0.0,
+      "tp": 6607,
+      "fp_or_bad_box": 1657,
+      "fn": 2044,
+      "scene_empty_frames": 328,
+      "positive_frames": 8651
+    }
+  },
+  "aircraft_rejection_not_an_acceptance_gate": true,
+  "scope": "Matched FLOAT evaluation here. Newweights rejected before quantized/hardware promotion; original fixedR9results/coreproof intact. No ceiling/fieldaccuracy claim."
+}

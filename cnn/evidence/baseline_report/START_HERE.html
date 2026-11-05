@@ -1,0 +1,150 @@
+<!doctype html><meta charset="utf-8"><title>V5 full model results</title><style>body{max-width:1200px;margin:35px auto;padding:0 24px;color:#142438;background:#f5f8fc;font:17px/1.65 system-ui}h1,h2{color:#164568}table{border-collapse:collapse;width:100%;font-size:15px;background:white}td,th{border:1px solid #cbd5df;padding:8px;text-align:left}th{background:#dcebf6}img{max-width:100%;height:auto}a{color:#005b99}pre{white-space:pre-wrap}</style><h1>Retained V5: full results</h1><p><b>Main current pipeline:79.0% correct-box recall,83.0% precision,80.96% F1.</b> Includes CPU tracking/search. Full CNN core fits; complete system not demonstrated.</p><p><a href="../model_photo_examples_50/index.html">50-photo gallery</a> | <a href="native_per_video.csv">Every video (CSV)</a> | <a href="native_all_17193_frames.csv">Every frame (CSV)</a></p><ul><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/sky_context_audit_r1/videos/video05_integer_r2.mp4">video05 annotated video (94.2% recall)</a></li><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/sky_context_audit_r1/videos/V_DRONE_002_integer_r2.mp4">V_DRONE_002 annotated video (94.0% recall)</a></li><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/sky_context_audit_r1/videos/V_DRONE_031_integer_r2.mp4">V_DRONE_031 annotated video (96.3% recall)</a></li><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/sky_context_audit_r1/videos/video14_integer_r2.mp4">video14 annotated video (78.5% recall)</a></li><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/feedback_r3_miss1_latency009_frozen_cases/development/video13_feedback.mp4">video13 annotated video (36.2% recall)</a></li><li><a href="file:///C:/Users/ethan/Desktop/FPGA%20LAB%20PROJECT/genesys2_drone_tracker_v2/genesys2_feasibility_campaign/feedback_r3_miss1_latency009_frozen_cases/development/video20_feedback.mp4">video20 annotated video (77.7% recall)</a></li></ul><img src="charts/all_drone_videos.png"><img src="charts/training_history.png"><h1>Retained V5 model — complete results snapshot</h1>
+<p>This report covers the exact V5 epoch-8 checkpoint shown in the 50-photo gallery. It is one trained CNN plus a separate tracking/search pipeline. The main scores below include that pipeline; they are not stand-alone whole-image CNN accuracy.</p>
+<h2>Main result</h2>
+<table><tbody>
+<tr><th>Measure</th><th>Result</th><th>Meaning</th></tr>
+<tr><td>Correct-box recall</td><td>79.0%</td><td>6,837 correct boxes / 8,651 labelled drone frames</td></tr>
+<tr><td>Correct-box precision</td><td>83.0%</td><td>6,837 correct / 8,238 reported outputs, including empty-scene outputs</td></tr>
+<tr><td>F1</td><td>81.0%</td><td>Combines correct-box precision and recall; not percent accuracy</td></tr>
+<tr><td>Source-balanced F1</td><td>81.1%</td><td>Gives source/presence groups balanced weight rather than letting long clips dominate</td></tr>
+<tr><td>True-empty trigger frames</td><td>3 / 328 (0.9%)</td><td>Small, correlated author-labelled empty sample; not a universal false-alarm rate</td></tr>
+</tbody></table>
+<p>A correct box requires IoU &gt;=0.5: sufficient overlap with an author-labelled drone. Active outputs with bad boxes count as wrong outputs AND missed correct boxes. There are 1,814 missed correct boxes and 1,401 wrong/empty outputs. Neural confidence is not a measured probability of correctness. The metric threshold0.5 applies to binary tracker-active state, NOT a new neural threshold.</p>
+<h2>Model and training</h2>
+<table><tbody>
+<tr><th>Item</th><th>Value</th></tr>
+<tr><td>Architecture</td><td>Customized narrow YOLOv5 v7-family, ReLU, P2/P3 heads</td></tr>
+<tr><td>Learned parameters</td><td>331,114</td></tr>
+<tr><td>Input</td><td>256 x192 RGB, letterboxed ROI</td></tr>
+<tr><td>Raw heads</td><td>64 x48 x21 and32 x24 x21; 3 anchors/head;7 fields/anchor</td></tr>
+<tr><td>Seven fields</td><td>x/y/width/height, objectness, drone class, other-flying class</td></tr>
+<tr><td>Runtime ranking</td><td>Raw objectness, with geometry/motion/association gates BEFORE ranking; not strict class rejection</td></tr>
+<tr><td>Centre</td><td>Calculated from the box; no second CNN</td></tr>
+<tr><td>Training</td><td>8 epochs;6,000 weighted draws/epoch;batch16; warm-started from ROIepoch11</td></tr>
+<tr><td>Training learning rate</td><td>0.0001 nominal; body scale0.25; cosine/warmup;AdamW</td></tr>
+<tr><td>Training selection</td><td>Original5Hz native validation/calibration; final10Hz delayed evaluation is separately reported</td></tr>
+<tr><td>Nominal draws</td><td>48,000 draws WITH replacement, not48,000 unique images</td></tr>
+<tr><td>Fixed arithmetic</td><td>W16 per-layer fraction; activations signed24/F14 in32-bit lanes;48-bit accumulation bound</td></tr>
+<tr><td>CNN computation</td><td>170,606,592 multiply-accumulates per256x192 call</td></tr>
+</tbody></table>
+<p>Two training classes exist, but the retained runtime ranks flying-object objectness. Other aircraft can therefore trigger. This matches the user’s stated tolerance; it is not a bird/airplane rejection success. ModelEMA weights are retained. Original models and data remain unchanged.</p>
+<h2>Training data</h2>
+<p>32,695 registered TRAIN views, representing 20,918 source/frame keys across six sources. A key is not proof of an independent scene. Several views and neighbouring frames are related. Weighted random draws and crop augmentation mean registered membership does not prove every view was drawn in SGD.</p>
+<table><tbody>
+<tr><th>Source</th><th>TRAIN views</th><th>Source/frame keys</th><th>Groups/recordings</th></tr>
+<tr><td>ADE20K</td><td>3,600</td><td>1,200</td><td>139</td></tr>
+<tr><td>AntiUAV300</td><td>4,536</td><td>4,536</td><td>73</td></tr>
+<tr><td>DUT_Anti_UAV</td><td>4,816</td><td>4,195</td><td>13</td></tr>
+<tr><td>DroneDetectionThesis</td><td>13,593</td><td>7,195</td><td>199</td></tr>
+<tr><td>SkyDetectionOutdoor</td><td>3,537</td><td>1,179</td><td>1179</td></tr>
+<tr><td>UAV_CB</td><td>2,613</td><td>2,613</td><td>5</td></tr>
+</tbody></table>
+<p>TRAIN uses original/native pixels where registered and available, crop/scale jitter, colour/flip/blur, and guarded soft background MixUp/contrast. Mendeley is absent from this curated TRAIN manifest; its original validation diagnostic remains preserved with label-quality caveats. Historical hard_negative groups now include explicitly labelled other-flying objects, not necessarily empty pictures. Exact source rows, source paths, boxes, classes and split membership are in raw_evidence/training_manifest.json.gz. No source images were deleted or recopied.</p>
+<h2>Evaluation coverage and limitations</h2>
+<p>All46 original native validation recordings and17,193 frames were replayed. Of these,8,651 contain labelled drones,328 are true-empty frames, and8,214 depict other aircraft without labelled drones. The application metric excludes those8,214 other-aircraft frames by the declared user scope. It retains all drone frames/misses and true-empty frames. Original strict rejection metrics are included below.</p>
+<table><tbody>
+<tr><th>Source</th><th>Drone frames</th><th>Correct boxes</th><th>Recall</th><th>Centre inside labelled box</th></tr>
+<tr><td>DUT_Anti_UAV</td><td>3347</td><td>2698</td><td>80.6%</td><td>86.8%</td></tr>
+<tr><td>DroneDetectionThesis</td><td>5304</td><td>4139</td><td>78.0%</td><td>96.4%</td></tr>
+</tbody></table>
+<p>If birds/planes/helicopters MUST all be rejected, strict F1 is 62.9%, precision 52.3%, and negative trigger fraction 56.7%. This model/policy is not suitable for that stricter claim.</p>
+<p>Original VAL is repeatedly used for engineering selection, so it is development evidence, not a pristine unseen test. Drone clips include correlated field recordings. Complete OV5640 daylight/panning/hover field acceptance and measured board throughput have NOT been demonstrated. Motion proposal generation, image preprocessing and temporal tracking are still CPU software in these evaluations. A90ms availability delay and10updates/s were assumed; every native frame including startup and misses was scored. Predictions influence future crops only when available. Labels score after decisions and never select runtime crops.</p>
+<h2>Every drone video</h2>
+<table><tbody>
+<tr><th>Clip</th><th>Drone frames</th><th>Correct boxes</th><th>Recall</th><th>Centre inside label</th></tr>
+<tr><td>video05</td><td>450</td><td>424</td><td>94.2%</td><td>96.7%</td></tr>
+<tr><td>video10</td><td>2307</td><td>1811</td><td>78.5%</td><td>85.0%</td></tr>
+<tr><td>video14</td><td>590</td><td>463</td><td>78.5%</td><td>86.3%</td></tr>
+<tr><td>V_DRONE_002</td><td>301</td><td>283</td><td>94.0%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_008</td><td>302</td><td>135</td><td>44.7%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_009</td><td>302</td><td>229</td><td>75.8%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_031</td><td>328</td><td>316</td><td>96.3%</td><td>97.3%</td></tr>
+<tr><td>V_DRONE_038</td><td>304</td><td>219</td><td>72.0%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_050</td><td>316</td><td>289</td><td>91.5%</td><td>97.2%</td></tr>
+<tr><td>V_DRONE_052</td><td>312</td><td>263</td><td>84.3%</td><td>97.1%</td></tr>
+<tr><td>V_DRONE_053</td><td>300</td><td>238</td><td>79.3%</td><td>85.3%</td></tr>
+<tr><td>V_DRONE_056</td><td>305</td><td>148</td><td>48.5%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_067</td><td>325</td><td>308</td><td>94.8%</td><td>97.2%</td></tr>
+<tr><td>V_DRONE_068</td><td>311</td><td>289</td><td>92.9%</td><td>96.8%</td></tr>
+<tr><td>V_DRONE_074</td><td>316</td><td>148</td><td>46.8%</td><td>97.2%</td></tr>
+<tr><td>V_DRONE_079</td><td>311</td><td>186</td><td>59.8%</td><td>97.1%</td></tr>
+<tr><td>V_DRONE_080</td><td>300</td><td>200</td><td>66.7%</td><td>97.0%</td></tr>
+<tr><td>V_DRONE_085</td><td>316</td><td>296</td><td>93.7%</td><td>97.2%</td></tr>
+<tr><td>V_DRONE_093</td><td>329</td><td>291</td><td>88.4%</td><td>97.3%</td></tr>
+<tr><td>V_DRONE_109</td><td>326</td><td>301</td><td>92.3%</td><td>97.2%</td></tr>
+</tbody></table>
+<p>Complete46-recording results, including other-aircraft recordings, are in native_per_video.csv. All17,193 frame outputs and original truths are in native_all_17193_frames.csv and compressed JSON. Width/height errors remain failures even when the centre is correct.</p>
+<h2>Reviewed scene contexts</h2>
+<p>The same60 timestamps across20 drone clips were chosen before reading predictions. Manual context labels apply ONLY to those exact frames; three timestamps do not classify an entire recording. Small correlated illustrative sample:</p>
+<table><tbody>
+<tr><th>Context</th><th>Drone frames</th><th>Correct boxes</th><th>Recall</th></tr>
+<tr><td>building</td><td>2</td><td>2</td><td>100.0%</td></tr>
+<tr><td>sky</td><td>53</td><td>45</td><td>84.9%</td></tr>
+<tr><td>sky_tree_boundary_uncertain</td><td>2</td><td>1</td><td>50.0%</td></tr>
+<tr><td>trees</td><td>3</td><td>1</td><td>33.3%</td></tr>
+</tbody></table>
+<h2>Important stand-alone diagnostic</h2>
+<p>On the original6,319 static validation views at256input, the separately calibrated application diagnostic has 50.0% recall and 62.0% F1. It has no retained-ROI temporal pipeline. It includes original Mendeley label concerns and a different protocol, so it is NOT directly comparable to final79% tracking recall. It does show that the CNN cannot be advertised as universally strong whole-image detection.</p>
+<table><tbody>
+<tr><th>Static source</th><th>Correct-box recall</th></tr>
+<tr><td>ADE20K</td><td>n/a</td></tr>
+<tr><td>AntiUAV300</td><td>92.5%</td></tr>
+<tr><td>DUT_Anti_UAV</td><td>28.3%</td></tr>
+<tr><td>DroneDetectionThesis</td><td>55.4%</td></tr>
+<tr><td>MendeleyEO</td><td>12.0%</td></tr>
+<tr><td>SkyDetectionOutdoor</td><td>n/a</td></tr>
+<tr><td>UAV_CB</td><td>4.8%</td></tr>
+</tbody></table>
+<h2>Harder watched videos and external negatives</h2>
+<table><tbody>
+<tr><th>Clip</th><th>Correct-box recall</th><th>Arithmetic/scope</th></tr>
+<tr><td>video13</td><td>36.2%</td><td>Float R3, watched development; NOT newly rerun fixed integer proof</td></tr>
+<tr><td>video20</td><td>77.7%</td><td>Float R3, watched development; NOT newly rerun fixed integer proof</td></tr>
+</tbody></table>
+<p>External check: 0 triggers / 42 visually reviewed empty frames across six correlated DAVIS scenes, float R3. Intervening native frames maintained state but were unlabelled and NOT scored as confirmed negatives. This is encouraging but a small conditional sample, not a population rate or new integer field test.</p>
+<h2>FPGA evidence</h2>
+<table><tbody>
+<tr><th>Check</th><th>Actual outcome</th></tr>
+<tr><td>Complete host arithmetic</td><td>241,920 raw values,3 vectors, exact0 difference</td></tr>
+<tr><td>Actual generated CNN RTL</td><td>80,640 raw values,1 complete real TRAIN vector, exact0 difference;128/256memory-model gates passed</td></tr>
+<tr><td>Actual core placement/routing</td><td>All58,199 routable nets routed;0routing errors;0blackboxes</td></tr>
+<tr><td>Actual core timing</td><td>100MHz; setup margin+0.309ns;hold+0.056ns;no unconstrained INTERNAL endpoints</td></tr>
+<tr><td>Actual core resources</td><td>26,828LUT(13.16%);14,037FF(3.44%);266DSP(31.67%);98RAMB36+12RAMB18=208BRAM18 equivalents(23.37%)</td></tr>
+<tr><td>Decoder host proof</td><td>96queries /768integer fields exact0 difference</td></tr>
+<tr><td>Decoder actual RTL</td><td>3real-head queries /24integer fields exact0 difference</td></tr>
+<tr><td>Decoder HLS estimate ONLY</td><td>7,393LUT;6,706FF;34DSP;27BRAM18;not postrouted/combined withCNN</td></tr>
+<tr><td>External feature buffer</td><td>2.25MiB at declared packed layout;not all FPGA block RAM</td></tr>
+<tr><td>Exported coefficient file</td><td>665,600bytes (~650KiB);not total system memory</td></tr>
+<tr><td>Simulated CNN duration</td><td>3,718,308cycles =37.18308ms/call at100MHz, CONDITIONAL memory model</td></tr>
+<tr><td>Measured board speed</td><td>Not measured; do not call37ms actual camera/system throughput</td></tr>
+<tr><td>Complete system/board</td><td>No complete camera/MIG/preprocess/tracker/decoder system fit or physical-board inference claim</td></tr>
+</tbody></table>
+<p>445external input and530external output boundaries were untimed in the out-of-context core check. Internal timing passed; external system constraints still have to be supplied.139DRC warnings were retained; noerrors/criticalwarnings. Core timing is real placement-and-routing evidence, but the design is not a ready-to-program full-board bitstream. The decoder and proposed frontend still need complete integration. You and your teammate are handling the surrounding camera system.</p>
+<h2>Numeric variants and newer search trials</h2>
+<table><tbody>
+<tr><th>Pipeline</th><th>Balanced F1</th><th>Recall</th><th>True-empty trigger fraction</th></tr>
+<tr><td>Retained R3 float CNN/decoder</td><td>78.7%</td><td>78.2%</td><td>4.6%</td></tr>
+<tr><td>Retained R3 fixed CNN / float decoder</td><td>80.5%</td><td>78.4%</td><td>1.8%</td></tr>
+<tr><td>Retained R3 fixed CNN / integer decoder</td><td>81.1%</td><td>79.0%</td><td>0.9%</td></tr>
+<tr><td>Rejected R4 global256 acquisition</td><td>64.5%</td><td>57.5%</td><td>0.0%</td></tr>
+<tr><td>Rejected R5 global384 acquisition</td><td>69.0%</td><td>63.9%</td><td>0.0%</td></tr>
+<tr><td>Rejected R6 sequential slices</td><td>36.1%</td><td>54.7%</td><td>86.6%</td></tr>
+</tbody></table>
+<p>Fixed-point numerical changes can alter later tracking trajectories. Their small gain does NOT prove quantization inherently improves accuracy. R4/R5/R6 search experiments were rejected and have not replaced retained R3. R6 had54.7% recall and284/328true-empty trigger frames; it is clearly worse and was NOT adopted. R6 is included only if its full report existed when this snapshot was created; otherwise it is still a separate live experiment. No new training happened during these frontend trials.</p>
+<h2>Files to open</h2>
+<ul>
+<li>charts/all_drone_videos.png — all20 drone recordings, including weaker ones.</li>
+<li>charts/training_history.png and training_epochs.csv — every epoch, with its original protocol.</li>
+<li>native_per_video.csv / native_per_source.csv — complete breakdowns.</li>
+<li>native_all_17193_frames.csv — frame-by-frame predictions, truth boxes, overlaps, activity and neural scores.</li>
+<li>completed_pipeline_comparisons.csv — matched arithmetic variants and completed search trials.</li>
+<li>dataset_counts.csv / compressed training manifest — exact registered data membership and paths.</li>
+<li>raw_evidence/ — original saved reports plus compressed native labels/predictions.</li>
+<li>model/epoch_08.pt — exact retained checkpoint (includes training/recovery state, not just deployment weights).</li>
+<li>model/quantized_fx.pt and coefficients.bin — matching fixed-point reference and hardware coefficients.</li>
+<li>video_locations.csv — annotated video paths.</li>
+<li>../model_photo_examples_50/index.html —50 selected explanatory photos.</li>
+</ul>
+<h2>Reading the numbers</h2>
+<p>Recall: how many actual drone frames got a correct box. Precision: how many outputs were correct. F1: a balance of those two, not a generic accuracy percentage. IoU: overlap between predicted and labelled boxes;0means no overlap,1means exact overlap. Centre-inside-label is an extra location diagnostic, not a substitute for correct-box IoU. A pretty selected photo or good video does not establish overall performance.</p>
+<p>Evidence hashes and checkpoint identity are in SNAPSHOT.json. This folder is a snapshot; original evidence files remain preserved.</p>

@@ -1,0 +1,7 @@
+# Preserve exact imported bytes and checksum provenance across platforms.
+* -text
+*.pt binary
+*.bin binary
+*.npy binary
+*.npz binary
+*.gz binary

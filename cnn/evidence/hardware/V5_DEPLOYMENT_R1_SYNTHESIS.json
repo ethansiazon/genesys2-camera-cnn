@@ -1,0 +1,8 @@
+{
+  "status": "needs_attention",
+  "synthesis_passed": false,
+  "rtl_passed": false,
+  "scope": "Actual evaluated V5epoch8 trained331114parameter/55op model on sharedR7circuit. HLS estimate ONLY, not completecamera-system fit or measuredboardFPS.",
+  "error": "v5_deploy_prepare_r1 exited1; inspectC:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\shared_engine\\v5_deploy_prepare_r1.log",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\shared_engine\\run_v5_deployment_r1.py\", line 19, in main\n    runner.run('v5_deploy_prepare_r1',[sys.executable,str(HERE/'prepare_v5_deployment_r1.py')],600)\n  File \"C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\shared_engine\\run_shared_preflight.py\", line 30, in run\n    if process.returncode:raise RuntimeError(f'{stage} exited{process.returncode}; inspect{path}')\n                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: v5_deploy_prepare_r1 exited1; inspectC:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\shared_engine\\v5_deploy_prepare_r1.log\n"
+}

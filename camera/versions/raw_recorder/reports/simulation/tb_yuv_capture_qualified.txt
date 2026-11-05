@@ -1,0 +1,15 @@
+=== tb_yuv_capture_qualified start ===
+MARK A: YUYV byte order
+  ok  pixels per frame = 64
+  ok  x_max (last pixel index) = 15
+  ok  y_max = 3
+  ok  short lines on clean HREF = 0
+  ok  writes outside the buffer = 0
+  ok  YUYV pixels never written = 0
+  ok  YUYV pixels wrong = 0
+MARK B: UYVY byte order
+  ok  UYVY pixels never written = 0
+  ok  UYVY pixels wrong = 0
+=== TESTS COMPLETE: 0 error(s) ===
+=== ALL TESTS PASS ===
+C:\Users\ethan\Desktop\genesys2_camera_hdmi_20261019\variants\raw_yuv_snapshot\sim\tb_yuv_capture_qualified.v:200: $finish called at 115237500 (1ps)

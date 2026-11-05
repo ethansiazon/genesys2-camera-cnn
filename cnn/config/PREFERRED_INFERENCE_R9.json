@@ -1,0 +1,68 @@
+{
+  "status": "reviewed_incremental_improvement",
+  "preferred_software_policy": "R9_acquire015",
+  "trained_weights_changed": false,
+  "new_training_started": false,
+  "model": "Retained V5 epoch8, 331114 parameters, 256x192 RGB ROI",
+  "controller": {
+    "acquire_score": 0.15,
+    "maintain_score": 0.06,
+    "acquisition_hits": 2,
+    "maximum_missed_updates": 1,
+    "maximum_observation_age": 0.6,
+    "maximum_without_high_score": 1.0,
+    "search_scale": 4.0,
+    "minimum_search_width": 80.0,
+    "maximum_search_width": 256.0,
+    "search_aspect": 0.75,
+    "association_diagonal": 1.5,
+    "minimum_association_radius": 8.0,
+    "minimum_side_ratio": 0.25,
+    "maximum_side_ratio": 4.0
+  },
+  "checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "quantized_model_sha256": "d6c0f5dec98c8b7c4663b8763717457b289ef600a676f6ca6ffb42ed5f9f5867",
+  "configuration_file": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\v5_retained_acquisition_native_r9\\FROZEN_CONFIG.json",
+  "original_policy_preserved": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\v5_integer_decoder_native_r2\\FROZEN_CONFIG.json",
+  "new_annotated_videos": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\outputs\\video_demos\\v5_epoch08_acquire015_candidate",
+  "verification_file": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\outputs\\video_demos\\v5_epoch08_acquire015_candidate\\VERIFIED.json",
+  "validation": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8162040488714274,
+    "f1": 0.8136689801199859,
+    "precision": 0.8282840378397797,
+    "recall": 0.79956074442261,
+    "scene_empty_trigger": 0.009146341463414634,
+    "tp": 6917,
+    "fp_or_bad_box": 1434,
+    "fn": 1734,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "watched_videos": [
+    {
+      "sequence": "video20",
+      "baseline_recall": 0.7773700305810397,
+      "candidate_recall": 0.7773700305810397,
+      "recall_change": 0.0,
+      "baseline_precision": 0.7860235003092146,
+      "candidate_precision": 0.7860235003092146,
+      "baseline_centre_inside": 0.9749235474006116,
+      "candidate_centre_inside": 0.9749235474006116
+    },
+    {
+      "sequence": "video13",
+      "baseline_recall": 0.3448275862068966,
+      "candidate_recall": 0.3850574712643678,
+      "recall_change": 0.040229885057471215,
+      "baseline_precision": 0.7577497129735936,
+      "candidate_precision": 0.7574511819116135,
+      "baseline_centre_inside": 0.4043887147335423,
+      "candidate_centre_inside": 0.4508881922675026
+    }
+  ],
+  "semantics": "High-confidence threshold .25 -> .15. Used for initial two-hit acquisition AND refreshing the existing track high-score timestamp. Maintenance remains .06; maximum_missed_updates remains1; geometry/search/motion/model unchanged. Not a pure initial-start-only change.",
+  "tradeoff": "Native correct boxes +80; false/bad outputs +33, precision82.99% ->82.83%. No correct-box recall decrease on any of20droneVALrecordings. Author-negative triggers3/328unchanged; reviewedexternal0/42both. Small correlated development samples; not field false-positive guarantees.",
+  "hardware": "No changed CNN/weights/arithmetic/shape. Existing actual routed CNN-core fit remains applicable to that same core. New controller policy is software-only; complete camera/MIG/frontend/controller/decoder system and physical board inference remain unproven.",
+  "next": "Keep current architecture. A larger gain needs TRAIN-only difficult positive ROI/background fine-tuning with original sampling retained, then independent evaluation. No blind extra epochs or another architecture pivot. Actual daylight camera footage is the most relevant future validation. No new training or compiler remains running."
+}

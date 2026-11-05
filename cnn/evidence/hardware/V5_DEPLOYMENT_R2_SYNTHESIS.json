@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "synthesis_passed": true,
+  "rtl_passed": false,
+  "scope": "Actual evaluated V5epoch8 trained331114parameter/55op model on sharedR7circuit. HLS estimate ONLY, not completecamera-system fit or measuredboardFPS.",
+  "resources": {
+    "BRAM_18K": 226,
+    "DSP": 269,
+    "FF": 21612,
+    "LUT": 55557,
+    "URAM": 0
+  },
+  "device_limits": {
+    "BRAM_18K": 890,
+    "DSP": 840,
+    "FF": 407600,
+    "LUT": 203800,
+    "URAM": 0
+  },
+  "resource_fractions": {
+    "BRAM_18K": 0.2539325842696629,
+    "DSP": 0.3202380952380952,
+    "FF": 0.0530225711481845,
+    "LUT": 0.2726054955839058
+  },
+  "within_engine60percent_reserve": true,
+  "estimated_clock_period_ns": 7.3,
+  "host_numerical": {
+    "passed": true,
+    "max_abs_error": 0.0,
+    "different_values": 0,
+    "compared_values": 241920,
+    "vectors": 3
+  }
+}

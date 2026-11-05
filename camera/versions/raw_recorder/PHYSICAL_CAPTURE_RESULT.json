@@ -1,0 +1,20 @@
+{
+  "saved_at": "2026-10-20T00:34:51.037277-05:00",
+  "state": "stopped_at_user_requested_boundary",
+  "best_archive": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\saved_versions\\best_camera_20261020",
+  "best_bitstream_sha256": "b0cb809916ab4df4265cfb1f2007d68e4598f4b6cde008da9a39093d6e46a9b3",
+  "best_archive_files_verified": 72,
+  "board_configuration": "raw_yuv_snapshot; same qualified receiver and video path as best version",
+  "recorder_bitstream_sha256": "53d749e45772c7dac18ef6603df51c7837d23a105c745658b487718cb4b2f9ba",
+  "actual_capture": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\saved_versions\\raw_camera_capture_20261020\\reports\\raw_yuv_20261020_003241.yuyv.bin",
+  "actual_capture_sha256": "802e56a9cd02c91c22c63cbf999174be948b00e2cdefe12d9f6622a27502f329",
+  "pixels": 76800,
+  "bytes": 153600,
+  "packets": 5487,
+  "address_errors": 0,
+  "transfer_resynchronizations": 0,
+  "camera_frame": 5,
+  "physical_capture_completed": true,
+  "live_colour_issue": "Unresolved: magenta tint and false colours around bright/white objects",
+  "no_further_work_until_user_requests": true
+}

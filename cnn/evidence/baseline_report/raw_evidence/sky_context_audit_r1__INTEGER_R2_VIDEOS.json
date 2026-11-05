@@ -1,0 +1,65 @@
+{
+  "videos": [
+    {
+      "sequence": "video05",
+      "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\sky_context_audit_r1\\videos\\video05_integer_r2.mp4",
+      "frames_verified": 450,
+      "scores": {
+        "positive_frames": 450,
+        "correct_box_frames": 424,
+        "correct_box_recall": 0.9422222222222222,
+        "active_positive_frames": 435,
+        "box_precision_when_active": 0.9747126436781609,
+        "author_negative_frames": 0,
+        "author_negative_triggers": 0
+      },
+      "source_prediction_sha256": "37911c67c2de791a1cbaa27feec48bc7cdc94d593e0bf577aa6eff8a30ab38ab"
+    },
+    {
+      "sequence": "V_DRONE_002",
+      "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\sky_context_audit_r1\\videos\\V_DRONE_002_integer_r2.mp4",
+      "frames_verified": 301,
+      "scores": {
+        "positive_frames": 301,
+        "correct_box_frames": 283,
+        "correct_box_recall": 0.9401993355481728,
+        "active_positive_frames": 292,
+        "box_precision_when_active": 0.9691780821917808,
+        "author_negative_frames": 0,
+        "author_negative_triggers": 0
+      },
+      "source_prediction_sha256": "06b96afa825d8cadb03295ab4ed3c55c5a41ae8c0dc2a0bcf51c2732e0c46a0c"
+    },
+    {
+      "sequence": "V_DRONE_031",
+      "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\sky_context_audit_r1\\videos\\V_DRONE_031_integer_r2.mp4",
+      "frames_verified": 328,
+      "scores": {
+        "positive_frames": 328,
+        "correct_box_frames": 316,
+        "correct_box_recall": 0.9634146341463414,
+        "active_positive_frames": 319,
+        "box_precision_when_active": 0.9905956112852664,
+        "author_negative_frames": 0,
+        "author_negative_triggers": 0
+      },
+      "source_prediction_sha256": "52871000f113343a735832108ccd8f6806811e497784edc267abe66ca38dd297"
+    },
+    {
+      "sequence": "video14",
+      "path": "C:\\Users\\ethan\\Desktop\\FPGA LAB PROJECT\\genesys2_drone_tracker_v2\\genesys2_feasibility_campaign\\sky_context_audit_r1\\videos\\video14_integer_r2.mp4",
+      "frames_verified": 590,
+      "scores": {
+        "positive_frames": 590,
+        "correct_box_frames": 463,
+        "correct_box_recall": 0.7847457627118644,
+        "active_positive_frames": 521,
+        "box_precision_when_active": 0.8886756238003839,
+        "author_negative_frames": 0,
+        "author_negative_triggers": 0
+      },
+      "source_prediction_sha256": "f23cb4a2f77256fe734ff85137a3e8c37d878ecfb9102e3ff9378765ee56c9c1"
+    }
+  ],
+  "scope": "ActualfullnativeV5fixedcore/integerdecoder causalR3predictions, same preselected3sky clips plus originalVALbuilding/treevideo14challenge. LabelsONLYscore/draw, no retuning. Not actualboard/camera/MIG; tracker/resizeCPU. CorrectboxIoU50 and allnativeframes. Oldfloatvideospreserved."
+}

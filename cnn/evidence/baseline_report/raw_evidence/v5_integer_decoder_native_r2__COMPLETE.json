@@ -1,0 +1,511 @@
+{
+  "complete": true,
+  "native_frames": 17193,
+  "application": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8110285182199869,
+    "f1": 0.8096394102670377,
+    "precision": 0.8299344501092498,
+    "recall": 0.7903132585828228,
+    "scene_empty_trigger": 0.009146341463414634,
+    "tp": 6837,
+    "fp_or_bad_box": 1401,
+    "fn": 1814,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "same_core_float_decoder_baseline": {
+    "threshold": 0.5,
+    "balanced_f1": 0.8050989232964457,
+    "f1": 0.8075251533011848,
+    "precision": 0.8325558556346673,
+    "recall": 0.783955612067969,
+    "scene_empty_trigger": 0.018292682926829267,
+    "tp": 6782,
+    "fp_or_bad_box": 1364,
+    "fn": 1869,
+    "scene_empty_frames": 328,
+    "positive_frames": 8651
+  },
+  "balanced_f1_change": 0.0059295949235411705,
+  "within_three_percentage_point_loss": true,
+  "author_negative_gate_passed": true,
+  "clipped_values": 0,
+  "strict_all_frames": {
+    "threshold": 0.5,
+    "balanced_f1": 0.7062424402420254,
+    "f1": 0.6292103810049695,
+    "precision": 0.5226664628086538,
+    "recall": 0.7903132585828228,
+    "scene_empty_trigger": 0.5673144462655116,
+    "tp": 6837,
+    "fp_or_bad_box": 6244,
+    "fn": 1814,
+    "scene_empty_frames": 8542,
+    "positive_frames": 8651
+  },
+  "sequences": [
+    {
+      "source": "DUT_Anti_UAV",
+      "sequence": "video05",
+      "frames": 450,
+      "cnn_updates": 150,
+      "cnn_calls": 298,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 8.8
+    },
+    {
+      "source": "DUT_Anti_UAV",
+      "sequence": "video10",
+      "frames": 2635,
+      "cnn_updates": 879,
+      "cnn_calls": 1756,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 6,
+      "seconds_offline": 57.3
+    },
+    {
+      "source": "DUT_Anti_UAV",
+      "sequence": "video14",
+      "frames": 590,
+      "cnn_updates": 197,
+      "cnn_calls": 372,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 3,
+      "seconds_offline": 12.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_019",
+      "frames": 306,
+      "cnn_updates": 102,
+      "cnn_calls": 202,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.6
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_027",
+      "frames": 321,
+      "cnn_updates": 107,
+      "cnn_calls": 174,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.1
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_029",
+      "frames": 326,
+      "cnn_updates": 109,
+      "cnn_calls": 89,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 2.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_033",
+      "frames": 323,
+      "cnn_updates": 108,
+      "cnn_calls": 187,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_041",
+      "frames": 328,
+      "cnn_updates": 110,
+      "cnn_calls": 213,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_044",
+      "frames": 304,
+      "cnn_updates": 102,
+      "cnn_calls": 202,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 5.6
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_045",
+      "frames": 316,
+      "cnn_updates": 106,
+      "cnn_calls": 209,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 5.7
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_054",
+      "frames": 311,
+      "cnn_updates": 104,
+      "cnn_calls": 198,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_AIRPLANE_056",
+      "frames": 324,
+      "cnn_updates": 108,
+      "cnn_calls": 189,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.3
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_005",
+      "frames": 302,
+      "cnn_updates": 101,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_007",
+      "frames": 307,
+      "cnn_updates": 103,
+      "cnn_calls": 201,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_014",
+      "frames": 329,
+      "cnn_updates": 110,
+      "cnn_calls": 217,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 3,
+      "seconds_offline": 6.1
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_019",
+      "frames": 316,
+      "cnn_updates": 106,
+      "cnn_calls": 210,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 5,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_022",
+      "frames": 323,
+      "cnn_updates": 108,
+      "cnn_calls": 214,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 3,
+      "seconds_offline": 5.9
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_030",
+      "frames": 327,
+      "cnn_updates": 109,
+      "cnn_calls": 209,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_034",
+      "frames": 319,
+      "cnn_updates": 107,
+      "cnn_calls": 212,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.9
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_BIRD_050",
+      "frames": 303,
+      "cnn_updates": 101,
+      "cnn_calls": 192,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 2,
+      "seconds_offline": 5.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_002",
+      "frames": 301,
+      "cnn_updates": 101,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.6
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_008",
+      "frames": 302,
+      "cnn_updates": 101,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.6
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_009",
+      "frames": 302,
+      "cnn_updates": 101,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_031",
+      "frames": 328,
+      "cnn_updates": 110,
+      "cnn_calls": 218,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 6.1
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_038",
+      "frames": 304,
+      "cnn_updates": 102,
+      "cnn_calls": 199,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_050",
+      "frames": 316,
+      "cnn_updates": 106,
+      "cnn_calls": 207,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.7
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_052",
+      "frames": 312,
+      "cnn_updates": 104,
+      "cnn_calls": 203,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_053",
+      "frames": 300,
+      "cnn_updates": 100,
+      "cnn_calls": 192,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 3,
+      "seconds_offline": 5.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_056",
+      "frames": 305,
+      "cnn_updates": 102,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.5
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_067",
+      "frames": 325,
+      "cnn_updates": 109,
+      "cnn_calls": 215,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 6.0
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_068",
+      "frames": 311,
+      "cnn_updates": 104,
+      "cnn_calls": 205,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.7
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_074",
+      "frames": 316,
+      "cnn_updates": 106,
+      "cnn_calls": 210,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 6.0
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_079",
+      "frames": 311,
+      "cnn_updates": 104,
+      "cnn_calls": 204,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.6
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_080",
+      "frames": 300,
+      "cnn_updates": 100,
+      "cnn_calls": 196,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_085",
+      "frames": 316,
+      "cnn_updates": 106,
+      "cnn_calls": 208,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.7
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_093",
+      "frames": 329,
+      "cnn_updates": 110,
+      "cnn_calls": 217,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 6.0
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_DRONE_109",
+      "frames": 326,
+      "cnn_updates": 109,
+      "cnn_calls": 216,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 6.0
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_017",
+      "frames": 314,
+      "cnn_updates": 105,
+      "cnn_calls": 208,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.9
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_026",
+      "frames": 314,
+      "cnn_updates": 105,
+      "cnn_calls": 207,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 2,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_034",
+      "frames": 317,
+      "cnn_updates": 106,
+      "cnn_calls": 167,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 4.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_036",
+      "frames": 324,
+      "cnn_updates": 108,
+      "cnn_calls": 206,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 5.7
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_042",
+      "frames": 321,
+      "cnn_updates": 107,
+      "cnn_calls": 212,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 5.9
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_049",
+      "frames": 318,
+      "cnn_updates": 106,
+      "cnn_calls": 210,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_055",
+      "frames": 301,
+      "cnn_updates": 101,
+      "cnn_calls": 200,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 1,
+      "seconds_offline": 5.4
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_059",
+      "frames": 313,
+      "cnn_updates": 105,
+      "cnn_calls": 208,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 0,
+      "seconds_offline": 5.8
+    },
+    {
+      "source": "DroneDetectionThesis",
+      "sequence": "V_HELICOPTER_061",
+      "frames": 307,
+      "cnn_updates": 103,
+      "cnn_calls": 204,
+      "maximum_cnn_calls_per_update": 2,
+      "acquisitions": 2,
+      "seconds_offline": 5.6
+    }
+  ],
+  "seconds_this_process": 320.1,
+  "scope": "Actual trainedV5fixedcore plus integerLUTsigmoid/boxsize/Q16coordinateconversion/motion+associationgatesbeforeRAWlogitranking. SamefrozenR3controller. Causal ROI feedback recomputed from fresh nativepixels. CPU imagepreprocessing and tracker velocity/timing stillFLOAT; no hardware/system/boardFPS/field acceptance."
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "event": "acquired",
+    "capture_time": 1.3,
+    "available_time": 1.4
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 10.6
+  }
+]

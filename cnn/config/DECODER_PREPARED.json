@@ -1,0 +1,262 @@
+{
+  "cnn_build": "C:\\Users\\ethan\\fpga_builds\\g2_roi_v5_epoch08_output32_r2",
+  "actual_trained_checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "heads": [
+    {
+      "name": "head2",
+      "offset_words": 18432,
+      "shape_bchw": [
+        1,
+        21,
+        48,
+        64
+      ]
+    },
+    {
+      "name": "head3",
+      "offset_words": 0,
+      "shape_bchw": [
+        1,
+        21,
+        24,
+        32
+      ]
+    }
+  ],
+  "anchor_q16": [
+    [
+      [
+        616038,
+        432538
+      ],
+      [
+        1074790,
+        760218
+      ],
+      [
+        1966080,
+        1225523
+      ]
+    ],
+    [
+      [
+        3230925,
+        2129920
+      ],
+      [
+        5131469,
+        3846963
+      ],
+      [
+        9928704,
+        3447194
+      ]
+    ]
+  ],
+  "queries": [
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 0,
+      "ry": 0,
+      "rw": 0,
+      "rh": 0,
+      "use_association": 0
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 5898240,
+      "v": 4587520,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 1,
+      "rx": 0,
+      "ry": 0,
+      "rw": 0,
+      "rh": 0,
+      "use_association": 0
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 5898240,
+      "ry": 4587520,
+      "rw": 1074790,
+      "rh": 760218,
+      "use_association": 1
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 5898240,
+      "v": 4587520,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 1,
+      "rx": 5898240,
+      "ry": 4587520,
+      "rw": 1074790,
+      "rh": 760218,
+      "use_association": 1
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 655360000,
+      "ry": -655360000,
+      "rw": 1310720,
+      "rh": 655360,
+      "use_association": 1
+    },
+    {
+      "sx": 20470,
+      "sy": 20833,
+      "ox": 16384000,
+      "oy": 9175040,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 0,
+      "ry": 0,
+      "rw": 0,
+      "rh": 0,
+      "use_association": 0
+    },
+    {
+      "sx": 20470,
+      "sy": 20833,
+      "ox": 16384000,
+      "oy": 9175040,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 18226217,
+      "ry": 10633216,
+      "rw": 393216,
+      "rh": 262144,
+      "use_association": 1
+    },
+    {
+      "sx": 1,
+      "sy": 1,
+      "ox": -1310720000,
+      "oy": 1310720000,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 1310720000,
+      "ry": -1310720000,
+      "rw": 262144,
+      "rh": 262144,
+      "use_association": 1
+    },
+    {
+      "sx": 65536000,
+      "sy": 65536000,
+      "ox": 1310720000,
+      "oy": -1310720000,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 0,
+      "ry": 0,
+      "rw": 0,
+      "rh": 0,
+      "use_association": 0
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 5898240,
+      "ry": 4587520,
+      "rw": 0,
+      "rh": 655360,
+      "use_association": 1
+    },
+    {
+      "sx": 65536,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 5898240,
+      "ry": 4587520,
+      "rw": 1,
+      "rh": 1,
+      "use_association": 1
+    },
+    {
+      "sx": 0,
+      "sy": 65536,
+      "ox": 0,
+      "oy": 0,
+      "u": 0,
+      "v": 0,
+      "mx": 524288,
+      "my": 524288,
+      "use_motion": 0,
+      "rx": 0,
+      "ry": 0,
+      "rw": 0,
+      "rh": 0,
+      "use_association": 0
+    }
+  ],
+  "cases": [
+    "actualV5zero",
+    "actualV5checker",
+    "actualV5TRAINimage",
+    "motion_distractor",
+    "raw_logit_ties",
+    "wide_saturation_zero_sides",
+    "deterministic_random",
+    "negative_roi_offset"
+  ],
+  "geometry": "IntegerQ16 ROI-to640workmapping/nearestties-even, quarter/fourfold sizeassociation, squaredradiusmax8px/1.5diag (no sqrt), motionpeak8pxmargin; allgatesBEFORE rawranking.",
+  "scope": "Componentnumericgate only. Not HLS/RTL/fullnativequantizedquality/wholecamera-system or accuracy claim."
+}

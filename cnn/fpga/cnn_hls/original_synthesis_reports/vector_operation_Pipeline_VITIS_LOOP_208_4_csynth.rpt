@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vitis HLS Report for 'vector_operation_Pipeline_VITIS_LOOP_208_4'
+================================================================
+* Date:           Sat Oct 17 20:29:07 2026
+
+* Version:        2026.1 (Build 6493734 on Jun 16 2026)
+* Project:        shared_engine_prj
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: kintex7
+* Target device:  xc7k325t-ffg900-2
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval |      Pipeline     |
+    |   min   |   max   |    min    |    max   | min | max |        Type       |
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+    |        5|      131|  50.000 ns|  1.310 us|    0|    0|  loop pipeline stp|
+    +---------+---------+-----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip  |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |  Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+        |- VITIS_LOOP_208_4  |        3|      129|         3|          1|          1|  2 ~ 128|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+---------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+--------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |   LUT  | URAM|
++-----------------+---------+-----+--------+--------+-----+
+|DSP              |        -|    -|       -|       -|    -|
+|Expression       |        -|    -|       0|      34|    -|
+|FIFO             |        -|    -|       -|       -|    -|
+|Instance         |        -|    -|       -|       -|    -|
+|Memory           |        -|    -|       -|       -|    -|
+|Multiplexer      |        -|    -|       0|      45|    -|
+|Register         |        -|    -|     286|       -|    -|
++-----------------+---------+-----+--------+--------+-----+
+|Total            |        0|    0|     286|      79|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Available        |      890|  840|  407600|  203800|    0|
++-----------------+---------+-----+--------+--------+-----+
+|Utilization (%)  |        0|    0|      ~0|      ~0|    0|
++-----------------+---------+-----+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +---------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name       | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |add_ln208_fu_124_p2        |         +|   0|  0|  15|           8|           1|
+    |ap_block_pp0_stage0_11001  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln208_fu_118_p2       |      icmp|   0|  0|  15|           8|           8|
+    |ap_enable_pp0              |       xor|   0|  0|   2|           1|           2|
+    +---------------------------+----------+----+---+----+------------+------------+
+    |Total                      |          |   0|  0|  34|          18|          12|
+    +---------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_x       |   9|          2|    8|         16|
+    |feature_ddr_blk_n_R      |   9|          2|    1|          2|
+    |x_1_fu_68                |   9|          2|    8|         16|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  45|         10|   19|         38|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------------+-----+----+-----+-----------+
+    |                    Name                   |  FF | LUT| Bits| Const Bits|
+    +-------------------------------------------+-----+----+-----+-----------+
+    |ap_CS_fsm                                  |    1|   0|    1|          0|
+    |ap_block_pp0_stage0_subdone_grp0_done_reg  |    1|   0|    1|          0|
+    |ap_done_reg                                |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1                    |    1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter2                    |    1|   0|    1|          0|
+    |ap_loop_exit_ready_pp0_iter1_reg           |    1|   0|    1|          0|
+    |feature_ddr_addr_read_reg_166              |  256|   0|  256|          0|
+    |x_1_fu_68                                  |    8|   0|    8|          0|
+    |x_reg_157                                  |    8|   0|    8|          0|
+    |x_reg_157_pp0_iter1_reg                    |    8|   0|    8|          0|
+    +-------------------------------------------+-----+----+-----+-----------+
+    |Total                                      |  286|   0|  286|          0|
+    +-------------------------------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|           RTL Ports          | Dir | Bits|  Protocol  |                Source Object               |    C Type    |
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+|ap_clk                        |   in|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|ap_rst                        |   in|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|ap_start                      |   in|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|ap_done                       |  out|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|ap_idle                       |  out|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|ap_ready                      |  out|    1|  ap_ctrl_hs|  vector_operation_Pipeline_VITIS_LOOP_208_4|  return value|
+|m_axi_feature_ddr_0_AWVALID   |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWREADY   |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWADDR    |  out|   64|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWID      |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWLEN     |  out|   32|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWSIZE    |  out|    3|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWBURST   |  out|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWLOCK    |  out|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWCACHE   |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWPROT    |  out|    3|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWQOS     |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWREGION  |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_AWUSER    |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WVALID    |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WREADY    |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WDATA     |  out|  256|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WSTRB     |  out|   32|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WLAST     |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WID       |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_WUSER     |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARVALID   |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARREADY   |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARADDR    |  out|   64|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARID      |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARLEN     |  out|   32|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARSIZE    |  out|    3|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARBURST   |  out|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARLOCK    |  out|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARCACHE   |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARPROT    |  out|    3|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARQOS     |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARREGION  |  out|    4|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_ARUSER    |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RVALID    |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RREADY    |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RDATA     |   in|  256|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RLAST     |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RID       |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RFIFONUM  |   in|    8|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RUSER     |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_RRESP     |   in|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_BVALID    |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_BREADY    |  out|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_BRESP     |   in|    2|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_BID       |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|m_axi_feature_ddr_0_BUSER     |   in|    1|       m_axi|                                 feature_ddr|       pointer|
+|empty                         |   in|    8|     ap_none|                                       empty|        scalar|
+|sext_ln208                    |   in|   59|     ap_none|                                  sext_ln208|        scalar|
+|odd_address1                  |  out|    7|   ap_memory|                                         odd|         array|
+|odd_ce1                       |  out|    1|   ap_memory|                                         odd|         array|
+|odd_we1                       |  out|    1|   ap_memory|                                         odd|         array|
+|odd_d1                        |  out|  256|   ap_memory|                                         odd|         array|
++------------------------------+-----+-----+------------+--------------------------------------------+--------------+
+

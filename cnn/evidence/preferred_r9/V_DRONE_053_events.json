@@ -1,0 +1,27 @@
+[
+  {
+    "event": "acquired",
+    "capture_time": 0.2,
+    "available_time": 0.3
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 1.4
+  },
+  {
+    "event": "acquired",
+    "capture_time": 1.5,
+    "available_time": 1.6
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 4.2
+  },
+  {
+    "event": "acquired",
+    "capture_time": 4.3,
+    "available_time": 4.4
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "event": "acquired",
+    "capture_time": 0.3,
+    "available_time": 0.4
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 10.3
+  },
+  {
+    "event": "acquired",
+    "capture_time": 10.4,
+    "available_time": 10.5
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 16.1
+  },
+  {
+    "event": "acquired",
+    "capture_time": 16.3,
+    "available_time": 16.4
+  },
+  {
+    "event": "released",
+    "reason": "miss_limit",
+    "at": 17.1
+  },
+  {
+    "event": "acquired",
+    "capture_time": 17.2,
+    "available_time": 17.3
+  }
+]

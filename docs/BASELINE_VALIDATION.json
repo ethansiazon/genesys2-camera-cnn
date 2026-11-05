@@ -1,0 +1,108 @@
+{
+  "date": "2026-11-04",
+  "camera": {
+    "passed": true,
+    "count": 15,
+    "tests": [
+      {
+        "test": "tb_yuv_capture_qualified",
+        "passed": true
+      },
+      {
+        "test": "tb_banked_frame_memory",
+        "passed": true
+      },
+      {
+        "test": "tb_frame_snapshot",
+        "passed": true
+      },
+      {
+        "test": "tb_tmds",
+        "passed": true
+      },
+      {
+        "test": "tb_pipeline_recorder",
+        "passed": true
+      },
+      {
+        "test": "tb_sync_health_probe",
+        "passed": true
+      },
+      {
+        "test": "tb_init_readback",
+        "passed": true
+      },
+      {
+        "test": "tb_ycbcr",
+        "passed": true
+      },
+      {
+        "test": "tb_vga",
+        "passed": true
+      },
+      {
+        "test": "tb_sccb",
+        "passed": true
+      },
+      {
+        "test": "tb_yuv_capture",
+        "passed": true
+      },
+      {
+        "test": "tb_yuv_capture_source",
+        "passed": true
+      },
+      {
+        "test": "tb_camera_status_snapshot",
+        "passed": true
+      },
+      {
+        "test": "tb_top_wiring",
+        "passed": true
+      },
+      {
+        "test": "tb_top_wiring_inverted",
+        "passed": true
+      }
+    ]
+  },
+  "cnn": {
+    "passed": true,
+    "parameters": 331114,
+    "completed_epoch": 8,
+    "next_epoch_recovery_counter": 9,
+    "input_bchw": [
+      1,
+      3,
+      192,
+      256
+    ],
+    "head_shapes_bchw": [
+      [
+        1,
+        21,
+        48,
+        64
+      ],
+      [
+        1,
+        21,
+        24,
+        32
+      ]
+    ],
+    "ema_strict_load": true,
+    "clipped_values": 0,
+    "random_probe_float_vs_fixed_max_abs": [
+      0.008348464965820312,
+      0.005205661058425903
+    ],
+    "checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+    "quantized_model_sha256": "d6c0f5dec98c8b7c4663b8763717457b289ef600a676f6ca6ffb42ed5f9f5867",
+    "torch": "2.4.1+cpu",
+    "scope": "Loading/shape/random-input smoke check, not an accuracy evaluation."
+  },
+  "copied_files_verified_by_sha256": 1366,
+  "credential_pattern_scan": "No matches for GitHub/OpenAI/AWS tokens or private-key blocks in staged files",
+  "scope": "Offline baseline functional checks; no new build, board programming or physical image-quality validation. Model check used existing Python/Torch and legacy dependency shim; not a clean-install test."
+}

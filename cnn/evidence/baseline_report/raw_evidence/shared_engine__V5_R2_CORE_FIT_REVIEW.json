@@ -1,0 +1,54 @@
+{
+  "core_fit_verified": true,
+  "system_fit_verified": false,
+  "board_inference_demonstrated": false,
+  "trained_checkpoint_sha256": "be7a50e9f03d758e7eb8c8b92ff3a1a89a09aeff7fa5bbcec94ed9c6cb7e7b74",
+  "actual_postroute_resources": {
+    "LUT": 26828,
+    "FF": 14037,
+    "DSP": 266,
+    "RAMB36": 98,
+    "RAMB18": 12,
+    "BRAM18_equivalent": 208
+  },
+  "fractions_of_genesys2": {
+    "LUT": 0.1316388616290481,
+    "FF": 0.03443817468105986,
+    "DSP": 0.31666666666666665,
+    "BRAM18_equivalent": 0.23370786516853934
+  },
+  "actual_timing": {
+    "setup_wns_ns": 0.309,
+    "hold_whs_ns": 0.056,
+    "clock_periods_ns": "10.000",
+    "blackbox_count": 0
+  },
+  "route": {
+    "routable_nets": 58199,
+    "fully_routed_nets": 58199,
+    "routing_errors": 0
+  },
+  "timing_checks": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "multiple_clock": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0,
+    "no_input_delay": 445,
+    "no_output_delay": 530
+  },
+  "warning_scope": "139DRCwarnings:configurationvoltage notspecified,OOCboundarynets nointernalloads,DSPpipeline suggestions. No errors/criticalwarnings. NOTbitstreamready.445input/530outputportsuntimedexternalboundaries, but0internalunconstrainedendpoints. Fullsystemconstraints/configbank/MIG/camera remain required.",
+  "evidence_sha256": {
+    "routed.dcp": "c3c32ee4b92b475801758e3a40f96796eca3b43e6b0a4bfb6e65c30fceb64dec",
+    "route_status.rpt": "daafb0f436d96065edec4c66767a5996fca304da46deabf29e620362f235248e",
+    "timing.rpt": "1d7fb161f4227656a7f521bedaeaa821e5679667b5274722c7dcd646cd586ab5",
+    "timing_values.json": "f3233a50ec39f21d9b58131f7ea17e94b0325333706e316d06f97c8f334902c8",
+    "utilization.rpt": "b0b16ac8412f54af1dbd23d983b9f0c88c3458c7b25811572409ae47fc04060b",
+    "drc.rpt": "d53844b6463e269172da0ebe72cfe6a5770b39426da83495e070854b7167d56c",
+    "check_timing.rpt": "2a51443299114016eb94b693f5a38f13a29272a6f3a045f5a6a6deb46022713f"
+  },
+  "scope": "Actual trained V5epoch8 full55op/331114parameterR7CNN core, same source as exactactualRTL proof.100MHz placement/routing and internal timing verified. NOTcompletecamera/frontend/controller/decoder/MIGsystem fit or physicalDDR/boardFPS/field proof."
+}

@@ -1,0 +1,77 @@
+{
+  "original_rows": 6319,
+  "input": [
+    256,
+    192,
+    3
+  ],
+  "application_diagnostic": {
+    "threshold": 0.43,
+    "f1": 0.6201218508150832,
+    "balanced_f1": 0.4983826362026822,
+    "precision": 0.815504547423127,
+    "recall": 0.5002656748140276,
+    "negative_trigger": 0.035196687370600416,
+    "tp": 1883,
+    "fp_or_bad_box": 426,
+    "fn": 1881,
+    "sources": {
+      "ADE20K": {
+        "positive_recall": null
+      },
+      "AntiUAV300": {
+        "positive_recall": 0.9246987951807228
+      },
+      "DUT_Anti_UAV": {
+        "positive_recall": 0.2831541218637993
+      },
+      "DroneDetectionThesis": {
+        "positive_recall": 0.5542168674698795
+      },
+      "MendeleyEO": {
+        "positive_recall": 0.12014134275618374
+      },
+      "SkyDetectionOutdoor": {
+        "positive_recall": null
+      },
+      "UAV_CB": {
+        "positive_recall": 0.04827586206896552
+      }
+    }
+  },
+  "strict_at_diagnostic_threshold": {
+    "threshold": 0.43,
+    "f1": 0.5542310522442974,
+    "balanced_f1": 0.47658371397264543,
+    "precision": 0.6212471131639723,
+    "recall": 0.5002656748140276,
+    "negative_trigger": 0.2958904109589041,
+    "tp": 1883,
+    "fp_or_bad_box": 1148,
+    "fn": 1881,
+    "sources": {
+      "ADE20K": {
+        "positive_recall": null
+      },
+      "AntiUAV300": {
+        "positive_recall": 0.9246987951807228
+      },
+      "DUT_Anti_UAV": {
+        "positive_recall": 0.2831541218637993
+      },
+      "DroneDetectionThesis": {
+        "positive_recall": 0.5542168674698795
+      },
+      "MendeleyEO": {
+        "positive_recall": 0.12014134275618374
+      },
+      "SkyDetectionOutdoor": {
+        "positive_recall": null
+      },
+      "UAV_CB": {
+        "positive_recall": 0.04827586206896552
+      }
+    }
+  },
+  "scope": "Original6319 static VAL rows at256input, not primary ROI model selection. Original Mendeley labels retained despite visual-quality concerns; this is not a clean architecture ablation against480globalmodel."
+}
