@@ -512,3 +512,14 @@ No settingschanged. SavedRGB565_SENSOR_READBACK.json withphysicalsession.
 Next controlledtonecurveGammaReference trial afterstablewhite/coloured/light
 scene, settledWBheld andbeforecapture, preserving exposure/gain/saturation.
 Awaitsceneready; do notblindlyadjustallsettings orclaimtonecurvefixesgreenfault.
+
+
+## Gamma trial BEFORE frame saved
+
+HeldcurrentWB via340600->01 with readback. ActualR04B2/G054C/B0400 unchanged
+acrossfreeze; exposure128/gain1x/manual03, gammafactorydefault verified. User
+raisedSW7withsceneunchanged/noreset. RawRGB565beforecapture complete5487packets
+atframe9789, decoderformatR565 verified. Image includesbacklitcolourbar screen,
+ceiling/room andgreen/darkbrightlamp; not calibratedmattewhite. Saved under
+local_results/picture_trials/r8_gamma_before_capture_20261105. No gammawritesyet.
+AwaitSW7downbeforeGammaReferenceonlywrite; nevercommandsduringrecording.
