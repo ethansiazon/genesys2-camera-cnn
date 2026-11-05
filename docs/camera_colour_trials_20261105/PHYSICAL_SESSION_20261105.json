@@ -1,0 +1,15 @@
+{
+  "stage": "awaiting_manual_RGB565_load",
+  "baseline": "last_exposure_test, actual captures saved",
+  "saved_photos": 10,
+  "capture_reader_process_active": false,
+  "USB_detected": "JTAG FTDI6010 only",
+  "candidate": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Colour-Tests-20261105\\02_rgb565_comparison\\camera_hdmi.bit",
+  "candidate_sha256": "10aa69b4e8f142f553127b2ab570ff06b5ce5513df5bd32269201dd4908e2f9f",
+  "expected_switches": "Only SW6 up; SW7 down; BTNC reset",
+  "wiring": "PCLK JA1 / D6 JB8; user must confirm if teammates changed it",
+  "change": "RGB565 format/direct unpack versus preferred YUYV conversion; same starting exposure128/gain1x/clocks/geometry",
+  "physical_result": null,
+  "automatic_programming": false,
+  "scope": "Compare actual white/coloured objects and bright-light fault before any exposure/gamma/saturation recipes"
+}

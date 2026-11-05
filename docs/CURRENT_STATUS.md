@@ -475,3 +475,15 @@ capture_20261105_032841_314 initiallywaiting_for_normal_view; instructedSW7down,
 SW6up, thenraise7onlyatREADY. No boardprogramming or sensorwrites. Source/desktop
 READMEandDesktopmanifestupdated; existingphotospreserved. Sessionmayremain
 waitingforinputorfinishlater; inspectlatestCAPTURE.json beforelaunchinganother.
+
+
+## Resuming camera colour diagnosis after photos
+
+User finishedtakingpictures and requestedreturntocolourfixes. Confirmed no
+capturePowerShellprocess running andUSBnowJTAG6010only. Savedphotoscount in
+camera_colour_trials_20261105/PHYSICAL_SESSION_20261105.json; originalimages
+preserved. VerifiedRGB565r8bitSHA bothbuildandDesktopkit. Readyforusermanual
+loadonlySW6up/SW7down+BTNC, sametestscene, thenqualitativecomparison. No new
+build or boardprogramming. RGBcomparesformatpath atsamestartingexposure128/gain1x;
+no simultaneousbrightness/saturation changes. Awaitphysicalobservation before
+adoptingnewpreferredversion or applyingreversibletuningtrials.
