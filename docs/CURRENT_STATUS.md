@@ -447,3 +447,18 @@ new launcher remains pending: board unavailable withteammates. UseoriginalPNG
 with retainedCNNpreprocessing; still cannot evaluate motion/tracking pipeline.
 See docs/still_capture_20261105/PROJECT_RESULT.json and copiedprojectREADME.
 No boardprogramming,Windowsdriverchanges,CNNchanges orGitpush.
+
+
+## First physical capture succeeded with new launcher
+
+User had not launched the capture tool; no softwarefailure was observed.
+Windows detectedUART/J15FTDI6001AV0KS1EZCOM3. Opened visibleWindowsPowerShell
+capture window atuserrequest (PID19828), read-onlyUART. Normal-viewtelemetry
+ID5640/switches40verified, then userraisedSW7. All5487packets arrived,
+zeroresyncs; metadata/fullframe/address/padding checks passed. Camera frame7012.
+Saved Desktop/Genesys2-Camera-Images/capture_20261105_032127_468/image.png,
+preview.png, transfer.txt, IMAGE.json andCAPTURE.json. Viewed actualpreview:
+very dark scene; this is transport success, not a camera-colour fix or CNNresult.
+See FIRST_PHYSICAL_CAPTURE.json. No boardprogramming or registerwrites occurred.
+UserinstructedlowerSW7afterDONE, then runlauncheragainfornextnewframe. Window
+staysopen(-NoExit); serialportreleasedoncompletion. Do not startduplicate readers.

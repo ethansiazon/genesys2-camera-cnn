@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-05",
+  "capture": {
+    "started": "2026-11-05T03:21:27.4842353-06:00",
+    "port": "COM3",
+    "state": "complete",
+    "complete": true,
+    "packets": 5487,
+    "resynchronizations": 0,
+    "normal_view_telemetry": "D1640000 00005640 0000406F 006E02A9 000093A7 0003B8A2 0000000F 00000DB0",
+    "source_bitstream": "last_exposure_test",
+    "raw_file": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Images\\capture_20261105_032127_468\\transfer.txt",
+    "image": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Images\\capture_20261105_032127_468\\image.png"
+  },
+  "image": {
+    "complete": true,
+    "image": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Images\\capture_20261105_032127_468\\image.png",
+    "preview": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Images\\capture_20261105_032127_468\\preview.png",
+    "camera_frame": 7012,
+    "width": 320,
+    "height": 240,
+    "mode": "RGB",
+    "transfer_sha256": "8892a3d1a9862ccb5b1f759d0cdf2d8330e374163c831b382db4f221d3bd0f52",
+    "image_sha256": "58029cad0ccce0448564a2da801155155e349c1695b672e1d7e7c7221a104987",
+    "format": "RGB565 copy of framebuffer-write pixels, expanded to RGB PNG",
+    "enhancements": "None; no brightness, saturation, denoising or crop applied",
+    "cnn_note": "Use image.png. Keep full frame; model-specific crop/resize belongs in inference preprocessing.",
+    "limits": "5/6/5-bit snapshot precision; not full RGB888 readback, HDMI screenshot, raw Bayer, motion/tracking evaluation or proof of electrical byte correctness."
+  },
+  "visual_inspection": "Actual image seen: very dark scene with a light rectangular surface and small dark shape. Capture transport/completeness worked; no claim of colour quality, target identity or CNN detection.",
+  "physical_changes": "None by assistant. User raisedSW7 after READY; host performed read-only UART capture.",
+  "next_step": "LowerSW7; launch again for another new frame. Use nativeimage.png for CNN preprocessing, not enlargedpreview."
+}

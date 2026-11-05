@@ -13,8 +13,7 @@
   "snapshot_simulation_passed": true,
   "decoder_exhaustive_RGB565_test_passed": true,
   "windows_powershell_parser_switch_selftest_passed": true,
-  "physical_capture_with_new_launcher_tested": false,
-  "board_available": false,
+  "physical_capture_with_new_launcher_tested": true,
   "board_programmed": false,
   "new_synthesis_performed": false,
   "PNG_native_RGB_size": [
@@ -27,5 +26,8 @@
   ],
   "snapshot_precision": "RGB565 diagnostic copy, expanded to RGB PNG",
   "cnn_weights_changed": false,
-  "limits": "Still detection input only; single photo does not evaluate motion proposal/tracking. Original camera colour defects persist."
+  "limits": "Still detection input only; single photo does not evaluate motion proposal/tracking. Original camera colour defects persist.",
+  "board_available_at_initial_setup": false,
+  "first_physical_capture": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Images\\capture_20261105_032127_468\\image.png",
+  "first_capture_complete": true
 }
