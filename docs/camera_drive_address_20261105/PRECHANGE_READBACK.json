@@ -1,0 +1,55 @@
+{
+  "source_commit": "4387210",
+  "session": {
+    "started": "2026-11-05T01:20:02.4244395-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "300A",
+        "value": "56"
+      },
+      {
+        "address": "300B",
+        "value": "40"
+      },
+      {
+        "address": "3016",
+        "value": "03"
+      },
+      {
+        "address": "3020",
+        "value": "21"
+      },
+      {
+        "address": "302C",
+        "value": "02"
+      },
+      {
+        "address": "4740",
+        "value": "22"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "0A"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3406",
+        "value": "01"
+      }
+    ]
+  },
+  "interpretation": "302C=02 has drive bits7:6=00 (default 1x). 3016 read03 does not mirror writtenC3; reserved/debug fields need not read back. This confirms no intended drive write reached302C, not the cause of colour distortion.",
+  "mutations": false
+}

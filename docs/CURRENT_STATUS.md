@@ -316,3 +316,16 @@ Current r6 write allowlist blocks pad/clock writes: no host bypass. Next useful
 physical read whenSW7down:3016/3020/302C, read-only. A corrected drive-address
 entry needs a separate preserved candidate/build. Larger256-line exposure was
 not applied. Board remains160, held manualWB, UART only, SW6/SW7up per last reply.
+
+
+## R7 address correction prepared after physical audit
+
+User confirmed SW7down/SW6up/UART/noreset. Read-only session completed with
+ID5640,3016=03,3020=21,302C=02,4740=22,exposure160,manualWB. All mutations=[]
+(PRECHANGE_READBACK.json). 302C drive field is default1x; intendedC3 never reached
+that address. This is not a proved colour cause. Working entry6 now writes
+302C=C3 instead of3016=C3, the only RTL change. Other settings and protected
+receiver are unchanged. See camera_drive_address_20261105/PLAN.md. Original
+archived favourite and r6 source backup preserved. Simulations/build pending;
+no programming or runtime pad write occurred. Current running board remainsr6,
+exposure160,heldWB,SW6up/SW7down,UARTonly. New startup will restore128/autoWB.

@@ -103,7 +103,7 @@ module ov5640_init #(
         8'd3  : entry = {C_WR,  16'h3103, 8'h13};  // [reference] sysclk from PLL (was 0x11/0x03)
         8'd4  : entry = {C_WR,  16'h3017, 8'hFF};  // [reference] DVP pad enable
         8'd5  : entry = {C_WR,  16'h3018, 8'hFF};  // [reference] DVP pad enable
-        8'd6  : entry = {C_WR,  16'h3016, 8'hC3};  // [reference]
+        8'd6  : entry = {C_WR,  16'h302C, 8'hC3};  // [reference] DRIVE_CAPABILITY; 3016 is pad output enable
         8'd7  : entry = {C_WR,  16'h3020, 8'h21};  // [reference]
         8'd8  : entry = {C_WR,  16'h4713, 8'h02};  // [reference]
         8'd9  : entry = {C_WR,  16'h5001, 8'h83};  // [reference]
