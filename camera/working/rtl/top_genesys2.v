@@ -1,4 +1,6 @@
-// Source-clock receiver: PCLK JA physical 1, D6 JB physical 8.
+// Qualified sampled-input receiver: PCLK JA physical 1, D6 JB physical 8.
+// Nov 4 diagnostic: manual 128-line exposure/1x gain preserved; SW7 records raw
+// YUYV instead of converted RGB565. HDMI and the receiver datapath are unchanged.
 // Slow divider 4; explicit rising-PCLK/active-high-HREF configuration.
 // SCCB reader uses JB[3] SDA. 320x240 capture, 2x display over DVI-compatible
 // TMDS on HDMI OUT. No temporal/median blur in this reference bring-up build.
@@ -408,9 +410,12 @@ module top_genesys2 #(
     always @(posedge clk200)record_mode_sync<={record_mode_sync[0],sw[7]};
     wire record_mode=record_mode_sync[1];
     wire report_busy,record_go;wire[255:0] record_words;
-    frame_snapshot record_i(.src_clk(clk_cam),.src_rst(rst_cam),
+    wire raw_we;wire[16:0]raw_addr;wire[15:0]raw_word;
+    yuv_word_observer raw_observer(.clk(clk_cam),.rst(rst_cam),.state(capture_debug),
+      .wr_en(raw_we),.wr_addr(raw_addr),.wr_data(raw_word));
+    frame_snapshot #(.RAW_WORDS(1)) record_i(.src_clk(clk_cam),.src_rst(rst_cam),
        .dst_clk(clk200),.dst_rst(rst200),.arm(sw[7]&&init_done),
-       .pixel_we(cwr_en),.pixel_addr(cwr_addr),.pixel_rgb(cwr_data),
+       .pixel_we(raw_we),.pixel_addr(raw_addr),.pixel_rgb({8'd0,raw_word}),
        .frame_count(cam_frame_cnt),.report_busy(report_busy),
        .words(record_words),.go(record_go));
     uart_report rpt_i (

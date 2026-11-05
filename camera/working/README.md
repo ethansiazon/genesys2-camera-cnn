@@ -24,3 +24,13 @@ in ../WIRING.md. Verify actual wiring before programming a new design.
 Next: obtain current camera-register and raw-pixel evidence, then isolate
 exposure, data capture/byte interpretation and colour processing one change
 at a time. Sensor colour bars alone do not prove correct live colour.
+
+## Raw diagnostic added 4 November
+
+SW7 now records pre-RGB YUYV bytes using the earlier tested raw observer.
+Exposure remains 128 lines, gain 1x, VTS 520. The image conversion and display
+path are unchanged. Use scripts/analyze_raw_yuv.py for D16C captures; the old
+RGB565 analyze_snapshot.py decoder is incompatible with this new mode.
+Wait for the camera to settle before raising SW7; lower then raise it to capture
+a new frame without resetting the camera. The preserved .bit in this folder is
+still the OLD baseline; use the separately built diagnostic .bit after it passes.

@@ -31,6 +31,18 @@ received YUV values and offline RGB conversion; isolate capture/byte interpretat
 from sensor configuration. Then vary one setting and compare against baseline.
 No new camera programming or heavy build occurred during repository preparation.
 
+## Active raw diagnostic — 4 November
+
+The editable camera/working source now adds raw YUYV observation/recording using
+the earlier tested observer and snapshot format. Exposure remains 128 lines,
+gain 1x, VTS 520; camera conversion and HDMI paths are unchanged. SW7 recordings
+use D16C packets and require analyze_raw_yuv.py. Host captures default to ignored
+local_results/captures. The register reader labels the current exposure/gain
+readback addresses correctly. Seventeen functional fixtures and the host decoder
+fixture passed. The guarded single-thread build is in
+builds/raw_exposure_diagnostic_20261104_r1; inspect its STATUS.json before acting.
+No new version has yet been programmed or physically validated.
+
 ## CNN and Niko's board work
 
 Retained V5 epoch 8 EMA: 331,114 parameters, 256 x 192 RGB ROI, P2/P3 heads.

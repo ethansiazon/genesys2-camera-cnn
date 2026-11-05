@@ -5,6 +5,7 @@ p=argparse.ArgumentParser()
 p.add_argument('--out',required=True)
 p.add_argument('--iverilog',default=shutil.which('iverilog'))
 p.add_argument('--vvp',default=shutil.which('vvp'))
+p.add_argument('--only',nargs='+',help='Run selected named fixtures')
 a=p.parse_args()
 if not a.iverilog or not a.vvp:raise SystemExit('Icarus Verilog and vvp are required')
 root=Path(__file__).resolve().parents[1]/'camera'/'working'
@@ -12,6 +13,9 @@ out=Path(a.out).resolve()
 if out.exists():raise SystemExit('Choose a NEW output directory')
 out.mkdir(parents=True)
 src=(root/'scripts/run_tests.py').read_text(encoding='utf-8-sig')
+if a.only:
+    selected=repr(a.only)
+    src=src.replace('results=[]',f"assert set({selected}) <= set(tests), 'Unknown fixture'\ntests={{k:v for k,v in tests.items() if k in {selected}}}\nresults=[]")
 old="WORK=ROOT/'reports'/'simulation';WORK.mkdir(parents=True,exist_ok=True)"
 assert old in src
 src=src.replace(old,f'WORK=Path({str(out)!r})')

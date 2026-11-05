@@ -24,7 +24,8 @@ tests={
  'tb_top_wiring_inverted':['top_genesys2','cam_capture','ycbcr2rgb','frame_buffer',
  'sccb_master','ov5640_init','sync_health_probe','camera_status_snapshot','uart_tx','uart_report','dvp_probe','debug_overlay','pattern_gen','vga_timing'],
 }
-tests={k:v for k,v in tests.items() if k in ('tb_init_readback','tb_top_wiring_inverted')}
+tests['tb_yuv_word_observer']=['frame_snapshot']
+tests['tb_raw_word_snapshot']=['frame_snapshot']
 results=[]
 for test,files in tests.items():
     if 'frame_buffer' in files or 'frame_snapshot' in files: files=files+['banked_frame_memory']
