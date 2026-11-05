@@ -32,7 +32,8 @@ The matching, unchanged preferred bitstream is in that folder's parent:
 5. Once it says READY, hold the camera still and raise SW7. Leave SW6 up.
    Do not press BTNC. The next full frame freezes; transfer usually takes
    roughly 40–90 seconds at 115200 baud.
-6. Wait for DONE, then lower SW7. To take another photo, run the launcher again.
+6. Wait for DONE, then lower SW7. Press ENTER in the window for another photo,
+   or type Q then ENTER to finish. The window stays available between captures.
 
 If automatic port selection is ambiguous, run from a terminal in the project:
 

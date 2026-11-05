@@ -462,3 +462,16 @@ very dark scene; this is transport success, not a camera-colour fix or CNNresult
 See FIRST_PHYSICAL_CAPTURE.json. No boardprogramming or registerwrites occurred.
 UserinstructedlowerSW7afterDONE, then runlauncheragainfornextnewframe. Window
 staysopen(-NoExit); serialportreleasedoncompletion. Do not startduplicate readers.
+
+
+## Repeating capture window added
+
+User saidCMDstopped. Inspection found firstcapturecomplete and no captureprocess;
+no error session existed. Addedcapture_session.ps1 wrapper: serialreader closes
+betweenpictures, window promptsENTERforanother/Qtofinish, catcheserrorswithout
+blindauto-retry. DesktopCapture_Image.cmd now startswrapper. Opened visible
+WindowsPowerShellsessionPID20068 atuserrequest,COM3. Newsession
+capture_20261105_032841_314 initiallywaiting_for_normal_view; instructedSW7down,
+SW6up, thenraise7onlyatREADY. No boardprogramming or sensorwrites. Source/desktop
+READMEandDesktopmanifestupdated; existingphotospreserved. Sessionmayremain
+waitingforinputorfinishlater; inspectlatestCAPTURE.json beforelaunchinganother.
