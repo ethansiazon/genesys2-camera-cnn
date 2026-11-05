@@ -301,3 +301,18 @@ sequence as in Espressif set_aec_value, checking VTS first. No claim that the
 earlier single-byte update failed; source sequencing is followed to remove an
 uncertainty. Current physical setting remains160, SW6/SW7 up, UART only. Await
 SW7 down before writes. No colour gains changed; no image fix claimed.
+
+## New source review: prioritize register-address audit
+
+User supplied Camera Journey repo, generic pasted notes, manufacturer PDF and
+MIT pixel_reconstruct lab. No further exposure changes were made while reviewing.
+Concrete mismatch found: our reference-tagged startup3016=C3 /3020=21 differ
+from Espressif DRIVE_CAPABILITY302C=C3 /CLOCK_POL_CONTROL4740=21 and MIT ROM.
+Manufacturer PDF confirms3016 and302C have different functions. Current table
+also has tested final4740=22, which must remain unchanged for a controlled test.
+This is not a proved colour cause, but deserves priority over broad tuning.
+See CAMERA_REFERENCE_AUDIT_20261105.md for pinned sources, limits and next steps.
+Current r6 write allowlist blocks pad/clock writes: no host bypass. Next useful
+physical read whenSW7down:3016/3020/302C, read-only. A corrected drive-address
+entry needs a separate preserved candidate/build. Larger256-line exposure was
+not applied. Board remains160, held manualWB, UART only, SW6/SW7up per last reply.
