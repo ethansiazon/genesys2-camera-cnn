@@ -13,7 +13,6 @@ tests={
  'tb_pipeline_recorder':['pipeline_recorder'],
  'tb_sync_health_probe':['sync_health_probe'],
  'tb_init_readback':['ov5640_init'],
- 'tb_init_unity_wb':['ov5640_init'],
  'tb_ycbcr':['ycbcr2rgb'],
  'tb_vga':['vga_timing','pattern_gen'],
  'tb_sccb':['sccb_master'],
@@ -27,12 +26,16 @@ tests={
 }
 tests['tb_yuv_word_observer']=['frame_snapshot']
 tests['tb_raw_word_snapshot']=['frame_snapshot']
+tests['tb_top_live_control']=tests['tb_top_wiring_inverted'][:]
+tests['tb_uart_rx']=['uart_rx']
+tests['tb_camera_uart_control']=['camera_uart_control']
+tests['tb_init_host_control']=['ov5640_init']
 results=[]
 for test,files in tests.items():
     if 'frame_buffer' in files or 'frame_snapshot' in files: files=files+['banked_frame_memory']
-    if "top_genesys2" in files: files=files+["frame_snapshot","dvp_clean_sampler"]
+    if "top_genesys2" in files: files=files+["frame_snapshot","dvp_clean_sampler","uart_rx","camera_uart_control"]
     sources=[rtl/(s+'.v') for s in files]+[sim/(test+'.v')]
-    if test.startswith('tb_top_wiring'):sources.append(sim/'ov5640_yuyv_model.v')
+    if test.startswith('tb_top_'):sources.append(sim/'ov5640_yuyv_model.v')
     target=WORK/(test+'.vvp')
     command=[str(IVERILOG),'-g2012','-DSYNTHESIS','-s',test,'-o',str(target),*map(str,sources)]
     compile_result=subprocess.run(command,capture_output=True,text=True,timeout=60)

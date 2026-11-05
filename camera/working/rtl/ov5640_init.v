@@ -57,6 +57,11 @@ module ov5640_init #(
     // Getting this wrong swaps red and blue; it is one register and there is
     // no way to know from here which the breakout actually emits.
     input  wire        vyuy,
+    // Host valid/ready handshake. Initialization and refresh retain bus ownership.
+    input wire host_valid, input wire host_rw,
+    input wire [15:0] host_addr, input wire [7:0] host_wdata,
+    output wire host_ready, output reg host_done,
+    output reg [7:0] host_rdata, output reg host_nack,
     // sccb_master handshake
     output reg         sccb_start,
     output reg         sccb_rw,
@@ -167,18 +172,8 @@ module ov5640_init #(
         8'd59 : entry = {C_WR, 16'h3502, 8'h00};
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
-        // Controlled AWB isolation: manual R/G/B gains all 0x0400 (1x).
-        // OV5640 specification table 7-4; manual selection also used by Espressif.
-        // Equal gains are a diagnostic control, not a calibrated white-balance preset.
-        8'd62 : entry = {C_WR, 16'h3406, 8'h01}; // [manual-WB isolation]
-        8'd63 : entry = {C_WR, 16'h3400, 8'h04}; // [manual-WB isolation]
-        8'd64 : entry = {C_WR, 16'h3401, 8'h00}; // [manual-WB isolation]
-        8'd65 : entry = {C_WR, 16'h3402, 8'h04}; // [manual-WB isolation]
-        8'd66 : entry = {C_WR, 16'h3403, 8'h00}; // [manual-WB isolation]
-        8'd67 : entry = {C_WR, 16'h3404, 8'h04}; // [manual-WB isolation]
-        8'd68 : entry = {C_WR, 16'h3405, 8'h00}; // [manual-WB isolation]
-        8'd69 : entry = {C_WR, 16'h3008, 8'h02}; // start streaming
-        8'd70 : entry = {C_DLY,16'd100, 8'h00};
+        8'd62 : entry = {C_WR, 16'h3008, 8'h02}; // start streaming
+        8'd63 : entry = {C_DLY,16'd100, 8'h00};
         default: entry = {C_END, 16'h0000, 8'h00};
         endcase
     end
@@ -192,7 +187,7 @@ module ov5640_init #(
                      P_ID_HI=4'd3, P_ID_HI_W=4'd4,
                      P_ID_LO=4'd5, P_ID_LO_W=4'd6,
                      P_TBL=4'd7,   P_TBL_W=4'd8, P_DLY=4'd9,
-                     P_DONE=4'd10, P_DEBUG=4'd11, P_DEBUG_WAIT=4'd12;
+                     P_DONE=4'd10, P_DEBUG=4'd11, P_DEBUG_WAIT=4'd12, P_HOST_WAIT=4'd13;
 
     reg [5:0] debug_index;
     reg debug_refresh_q = 0;
@@ -254,7 +249,10 @@ module ov5640_init #(
     reg [31:0] timer = 32'd0;
     reg [15:0] delay_ms = 16'd0;
 
+    assign host_ready = st == P_DONE && init_done && !sccb_busy &&
+                        !(debug_refresh && !debug_refresh_q);
     always @(posedge clk) begin
+        host_done <= 1'b0;
         sccb_start <= 1'b0;
         debug_refresh_q <= debug_refresh;
         if (rst) begin
@@ -263,6 +261,7 @@ module ov5640_init #(
             delay_ms    <= 16'd0;
             cam_pwdn    <= 1'b1;        // powered down
             cam_reset_n <= 1'b0;        // held in reset
+            host_done <= 0; host_rdata <= 0; host_nack <= 0;
             chip_id     <= 16'h0000;
             id_valid    <= 1'b0;
             init_done   <= 1'b0;
@@ -364,7 +363,15 @@ module ov5640_init #(
                 init_done <= 1'b1;
                 if (debug_refresh && !debug_refresh_q) begin
                     debug_index <= 0; st <= P_DEBUG;
+                end else if (host_valid && host_ready) begin
+                    sccb_rw <= host_rw; sccb_addr <= host_addr;
+                    sccb_wdata <= host_wdata; sccb_start <= 1'b1;
+                    st <= P_HOST_WAIT;
                 end
+            end
+            P_HOST_WAIT: if (sccb_done) begin
+                host_rdata <= sccb_rdata; host_nack <= sccb_nack;
+                host_done <= 1'b1; st <= P_DONE;
             end
             default: st <= P_DONE;
             endcase

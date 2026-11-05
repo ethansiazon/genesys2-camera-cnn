@@ -1,6 +1,7 @@
 # Faster camera diagnosis: proposed next engineering step
 
-Status: design review only, not implemented or built. Preferred baseline remains
+Status: implemented and simulation checked; FPGA build/physical checks pending.
+See CAMERA_LIVE_CONTROL_PROTOCOL.md for the implemented interface. Preferred baseline remains
 camera/versions/last_exposure_test. Recent analog-startup and equal-gain trials
 have not established acceptable live colour. No further full-register batch is
 selected from the photograph alone.

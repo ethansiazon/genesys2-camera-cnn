@@ -216,3 +216,12 @@ setting comparisons do not require rebuilding. Official Digilent master XDC
 confirms uart_tx_in is Y20 (FPGA input); existing uart_rx_out is Y23 (FPGA TX).
 See CAMERA_LIVE_CONTROL_PLAN.md. This is not implemented or promised as a
 colour fix. Seek exact ESP configuration that previously produced clean video.
+
+## Live controls r6 under development
+
+Exact known-working ESP code is unavailable per user. Preserving r5 working
+copy in local_artifacts/unity_wb_working_before_live_controls_r5. New working
+copy starts from r3 diagnostic with exact preferred startup sensor writes,
+auto WB, exposure128 and gain1x. Adding UART RX/control, not new colour tuning.
+Control owns SCCB only through init FSM handshake after startup/refresh.
+No physical build/load result yet; current user image report follows r5.

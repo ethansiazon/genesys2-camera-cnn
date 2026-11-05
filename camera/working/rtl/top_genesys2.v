@@ -33,6 +33,7 @@ module top_genesys2 #(
     output wire       hdmi_tx_clk_n,
 
     // ---- USB-UART bridge ----
+    input wire        uart_tx_in,        // Y20, from USB bridge; FPGA INPUT
     output wire       uart_rx_out        // FPGA transmit; see README if silent
 );
     // ---------------- clocking ----------------
@@ -190,8 +191,13 @@ module top_genesys2 #(
         if (rst200) debug_refresh_sync <= 0;
         else debug_refresh_sync <= {debug_refresh_sync[0],sw[0]};
     end
+    wire ctrl_valid,ctrl_rw,ctrl_ready,ctrl_done,ctrl_nack;
+    wire [15:0] ctrl_addr; wire [7:0] ctrl_wdata,ctrl_rdata;
     ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000)) init_i (
         .clk(clk200), .rst(rst200), .debug_refresh(debug_refresh_sync[1]), .testbar(testbar), .vyuy(vyuy_sel),
+        .host_valid(ctrl_valid),.host_rw(ctrl_rw),.host_addr(ctrl_addr),
+        .host_wdata(ctrl_wdata),.host_ready(ctrl_ready),.host_done(ctrl_done),
+        .host_rdata(ctrl_rdata),.host_nack(ctrl_nack),
         .sccb_start(sccb_start), .sccb_rw(sccb_rw),
         .sccb_addr(sccb_addr), .sccb_wdata(sccb_wdata),
         .sccb_rdata(sccb_rdata), .sccb_busy(sccb_busy),
@@ -426,12 +432,32 @@ module top_genesys2 #(
        .pixel_we(raw_we),.pixel_addr(raw_addr),.pixel_rgb({8'd0,raw_word}),
        .frame_count(cam_frame_cnt),.report_busy(report_busy),
        .words(record_words),.go(record_go));
+    // Commands are blocked while SW7 raw recording is active. During recording
+    // the original report path has sole ownership; no response can consume a
+    // snapshot's packet handshake. Outside recording, replies get packet priority.
+    localparam integer CONTROL_BAUD = SIM_FAST_INIT ? 20_000_000 : 115200;
+    wire [7:0] rx_byte; wire rx_valid,rx_error;
+    wire reply_valid,reply_take; wire [255:0] reply_words;
+    uart_rx #(.CLK_HZ(200_000_000),.BAUD(CONTROL_BAUD)) urx_i(
+      .clk(clk200),.rst(rst200),.rx(uart_tx_in),.data(rx_byte),
+      .valid(rx_valid),.error(rx_error));
+    camera_uart_control #(.CLK_HZ(200_000_000)) control_i(
+      .clk(clk200),.rst(rst200),.rx_data(rx_byte),.rx_valid(rx_valid),
+      .rx_error(rx_error),.blocked(record_mode),
+      .cfg_valid(ctrl_valid),.cfg_rw(ctrl_rw),.cfg_addr(ctrl_addr),
+      .cfg_wdata(ctrl_wdata),.cfg_ready(ctrl_ready),.cfg_done(ctrl_done),
+      .cfg_rdata(ctrl_rdata),.cfg_nack(ctrl_nack),
+      .reply_valid(reply_valid),.reply_words(reply_words),.reply_take(reply_take));
+    assign reply_take = reply_valid && !record_mode && !report_busy && !u_busy && !u_stb;
+    wire report_go = record_mode ? record_go : (reply_take || (!reply_valid && m_tick));
+    wire [255:0] report_words = record_mode ? record_words :
+                                (reply_valid ? reply_words : diagnostic_words);
     uart_report rpt_i (
-        .clk(clk200), .rst(rst200), .go(record_mode ? record_go : m_tick),
-        .words(record_mode ? record_words : diagnostic_words),
+        .clk(clk200), .rst(rst200), .go(report_go),
+        .words(report_words),
         .tx_data(u_data), .tx_stb(u_stb), .tx_busy(u_busy), .busy(report_busy)
     );
-    uart_tx #(.CLK_HZ(200_000_000), .BAUD(115200)) utx_i (
+    uart_tx #(.CLK_HZ(200_000_000), .BAUD(CONTROL_BAUD)) utx_i (
         .clk(clk200), .rst(rst200), .data(u_data), .stb(u_stb),
         .tx(uart_rx_out), .busy(u_busy)
     );
