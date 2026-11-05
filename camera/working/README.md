@@ -1,32 +1,26 @@
-# Best verified camera receiver — saved 20 October 2026
+# Active camera debugging copy
 
-This is the qualified_sampler bitstream, preserved with its matching RTL,
-constraints and build evidence. It is the best physically verified version so
-far; it is NOT a claim that the camera is fully finished.
+This is the editable copy of Ethan's preferred manual-exposure version,
+selected on 4 November 2026. The unchanged saved version is
+`../versions/last_exposure_test`. Original bitstream SHA256:
+`2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185`.
 
-Verified: clean camera colour bars, clear live image, 320×240 capture displayed
-at 640×480, complete76,800-pixel frame, and no long corrupted rows in the saved
-test-pattern capture. Remaining issue: false colours around bright/white objects.
-The later combined ISP-reference recipe made colours worse and was rejected.
+Initial RTL and constraints are byte-identical to that saved version.
+Exposure is fixed at 128 lines, gain 1x, VTS 520. The user reports a dark,
+washed-out picture, with remaining green distortion on bright lights.
+Monitor aspect-ratio stretching has been corrected on the monitor.
 
-## Normal live-camera controls
+Edit RTL here; keep versions/ unchanged. The generated Vivado project is
+`../../builds/camera_exposure_debug_20261104/camera_hdmi.xpr`.
+The root tools/create_camera_project.tcl recreates the project in a NEW directory.
+Build outputs/captures stay ignored; push changes only after Ethan approves.
+The copied .bit is the original baseline, not a newly built result. After RTL
+changes it must not be presented as matching those changes.
 
-- Only SW6 up; SW0–SW5 and SW7 down. Press BTNC and wait a few seconds.
-- SW1 up + BTNC selects the camera's colour bars.
-- SW5 up selects FPGA-generated bars, bypassing the camera.
-- SW7 up records/replays a diagnostic copy over UART; it does not freeze HDMI.
-- SW3 changes conversion range; it changed contrast but did not fix false colours.
+Normal viewing: only SW6 up, press BTNC. Capture remains 320 x 240 YUV422,
+displayed at 640 x 480 / 60 Hz. PCLK is JA1 and D6 is JB8; full mapping is
+in ../WIRING.md. Verify actual wiring before programming a new design.
 
-Wiring: PCLK→JA physical1; D6→JB physical8. Preserve the remaining confirmed
-camera wiring. This archive includes no CNN or actuator logic.
-
-## Restore through JTAG only
-
-Keep board main power on. Connect only USB-JTAG/J17; leave UART/J15 disconnected.
-Run RESTORE_BEST.ps1 in local PowerShell. It verifies the bitstream hash, USB
-identity and absence of other hardware tools before loading via Vivado.
-This loads volatile FPGA configuration, NOT QSPI flash. Board power-off/PROG
-requires reloading. No drivers or Windows settings are changed.
-
-For diagnostics, wait until programming tools close, then move to UART/J15 only.
-Detailed build evidence and example captures are in reports/.
+Next: obtain current camera-register and raw-pixel evidence, then isolate
+exposure, data capture/byte interpretation and colour processing one change
+at a time. Sensor colour bars alone do not prove correct live colour.

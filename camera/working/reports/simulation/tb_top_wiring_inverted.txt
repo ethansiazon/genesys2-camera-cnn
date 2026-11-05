@@ -1,0 +1,16 @@
+  ok actual top SCCB chip ID
+  ok ID valid
+  ok SCCB acknowledgements
+  ok slow system divider
+  ok explicit DVP polarity
+  ok YUYV format
+  ok YUV mux
+  ok width low byte
+  ok height low byte
+  ok captured pixels/frame
+  ok last x
+  ok last y
+  ok all 640 stored pixels
+  ok st-pattern switch selects bypass
+=== ALL TESTS PASS ===
+C:\Users\ethan\Desktop\genesys2_camera_hdmi_20261019\variants\manual_exposure_once\sim\tb_top_wiring_inverted.v:73: $finish called at 2227100000 (1ps)

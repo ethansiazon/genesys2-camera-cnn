@@ -2,8 +2,14 @@
 
 ## Camera: Ethan's saved work
 
-Best baseline is `camera/versions/best_receiver`, copied unchanged into
-`camera/working` for future edits. Best bitstream SHA256:
+Active baseline changed on 4 November 2026: Ethan selected the final
+manual-exposure version as his preferred picture. `camera/working` now starts
+from `camera/versions/last_exposure_test`, with identical RTL/constraints.
+See CAMERA_PREFERRED_BASELINE_20261104.json for hashes and current observations.
+Monitor stretching was corrected using the monitor's aspect-ratio setting.
+
+The earlier qualified-receiver checkpoint is `camera/versions/best_receiver`.
+Its historical bitstream SHA256:
 `b0cb809916ab4df4265cfb1f2007d68e4598f4b6cde008da9a39093d6e46a9b3`.
 It produced clean sensor test bars and clear live images, with false colours
 around bright/white objects. Qualified short-pulse rejection removed streaks.
@@ -19,7 +25,7 @@ readback/raw capture. Cause of the remaining issue is unproved.
 does not prove all incoming camera values were correct. Raw captures are ignored
 by Git and retained in the local/original archives.
 
-Next: reproduce best_receiver with matching wiring/switches before changes.
+Next: use the confirmed preferred exposure baseline with matching wiring/switches.
 Capture exact registers and raw pixels for normal and bright objects. Compare
 received YUV values and offline RGB conversion; isolate capture/byte interpretation
 from sensor configuration. Then vary one setting and compare against baseline.

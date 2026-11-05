@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
-| Date         : Mon Oct 19 23:51:52 2026
+| Date         : Tue Oct 20 00:48:00 2026
 | Host         : ethanomen running 64-bit major release  (build 9200)
 | Command      : report_cdc -details -file cdc.rpt
 | Design       : top_genesys2
@@ -75,12 +75,12 @@ CDC Type: No Common Phase
 Row  ID     Severity  Description                                         Depth  Exception            Source (From)                    Destination (To)
 ---  -----  --------  --------------------------------------------------  -----  -------------------  -------------------------------  ----------------
   1  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[1]/C    href_s_reg[0]/D
-  2  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[8]/D
-  3  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[9]/D
-  4  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[10]/D
-  5  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[16]/D
-  6  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[17]/D
-  7  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/init_done_reg/C           ov_q_reg[18]/D
+  2  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[8]/D
+  3  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[9]/D
+  4  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[10]/D
+  5  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[16]/D
+  6  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[17]/D
+  7  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/nack_seen_reg/C           ov_q_reg[18]/D
   8  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[70]/C   pf_p0_reg[4]/D
   9  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[71]/C   pf_p0_reg[5]/D
  10  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[72]/C   pf_p0_reg[6]/D

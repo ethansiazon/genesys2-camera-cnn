@@ -1,7 +1,7 @@
 {
   "status": "complete",
-  "free_gib": 8.383773803710938,
-  "build_directory": "C:\\Users\\ethan\\AppData\\Local\\Temp\\g2cam_kd_2mvt2",
+  "free_gib": 8.376632690429688,
+  "build_directory": "C:\\Users\\ethan\\AppData\\Local\\Temp\\g2cam_js4zkmhi",
   "rtl_sha256": {
     "banked_frame_memory.v": "3fbc013f0e07ca260ae0cb05332a9fea74767aaf14818a44d20d4035fc9d1a27",
     "cam_capture.v": "7c01b6bb2c8abdff81a3bc1bd336e83d4637487b499831b7ddf967250ffa7570",
@@ -13,7 +13,7 @@
     "frame_buffer.v": "7942bc42a15a8fd745af62b78676f7c6aaeb4e791eebd776d2e3b515acc95dbe",
     "frame_snapshot.v": "c6b58257fc84d29f3381caca8e3fd86aa8294920551f3645d000968fdda6ad95",
     "hdmi_out.v": "287e0dc85f8980b41d4137761b7d8d516bf11f469cc88179968ffe3090c9b664",
-    "ov5640_init.v": "b2cacf3069145c62a0b5ff99c4d2d608867d7d233628c9c5bc6174698d868b7c",
+    "ov5640_init.v": "410a6ab86670c937e4de7df294184434ca523f66c584e8fe7c9b792a542ff6ca",
     "pattern_gen.v": "bce4be60195507a4e647dbe9165607b3ede64fc7f94f809864ebc4ebcfe3b35c",
     "pipeline_recorder.v": "d0dd29035bc7389957bba8deaded3d766c7022938aa91a899b73ee69c55252bb",
     "sccb_master.v": "b5768dcc4825d2c68ac8d6e589d74769eba54cc40c12effac4d5a28fb246625e",
@@ -25,13 +25,13 @@
     "vga_timing.v": "dfcd550bb17785eaff368c5c2afac3c7c7c4198ed459e1d16b8fbcd95a6bd1c3",
     "ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58"
   },
-  "pid": 22056,
+  "pid": 10364,
   "returncode": 0,
-  "bitstream": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\qualified_sampler\\camera_hdmi.bit",
-  "bitstream_sha256": "b0cb809916ab4df4265cfb1f2007d68e4598f4b6cde008da9a39093d6e46a9b3",
+  "bitstream": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\manual_exposure_once\\camera_hdmi.bit",
+  "bitstream_sha256": "2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185",
   "timing": {
-    "setup_wns_ns": 0.109,
-    "hold_whs_ns": 0.056,
+    "setup_wns_ns": 0.253,
+    "hold_whs_ns": 0.05,
     "physical_camera_tested": false
   },
   "physical_camera_tested": false
