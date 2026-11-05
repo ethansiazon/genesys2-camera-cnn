@@ -1,0 +1,93 @@
+{
+  "capture": "local_results\\live_controls\\r6_neutral_reference_20261105\\raw_yuv_20261105_005506.txt",
+  "raw_bytes": 153600,
+  "raw_sha256": "be6f969f46bfcdcab6cbb539ede67ddea6d0c05a7092f285a9ac7f22aae62ce8",
+  "packets": 5487,
+  "transfer_resynchronizations": 0,
+  "sensor_exposure_lines": 128,
+  "sensor_gain": "1x",
+  "WB_mode": "manual holding former automatic gains",
+  "colour_gains_hex": {
+    "R": "04CD",
+    "G": "052F",
+    "B": "0400"
+  },
+  "white_paper_regions": [
+    {
+      "xyxy": [
+        65,
+        40,
+        110,
+        80
+      ],
+      "median_RGB": [
+        107.0,
+        107.0,
+        105.0
+      ],
+      "mean_RGB": [
+        107.365,
+        107.38777777777777,
+        105.19777777777777
+      ],
+      "median_YUV": [
+        108.0,
+        127.0,
+        128.0
+      ],
+      "clipped_fraction": 0.0
+    },
+    {
+      "xyxy": [
+        65,
+        100,
+        100,
+        150
+      ],
+      "median_RGB": [
+        102.0,
+        102.0,
+        99.0
+      ],
+      "mean_RGB": [
+        101.52114285714286,
+        101.97885714285714,
+        98.188
+      ],
+      "median_YUV": [
+        103.0,
+        127.0,
+        128.0
+      ],
+      "clipped_fraction": 0.0
+    },
+    {
+      "xyxy": [
+        190,
+        35,
+        225,
+        75
+      ],
+      "median_RGB": [
+        114.0,
+        111.0,
+        111.0
+      ],
+      "mean_RGB": [
+        113.96071428571429,
+        111.75357142857143,
+        111.16214285714285
+      ],
+      "median_YUV": [
+        112.0,
+        127.0,
+        129.0
+      ],
+      "clipped_fraction": 0.0
+    }
+  ],
+  "finding": "Selected paper regions have approximately neutral chroma and no clipping: median Cb=127, Cr=128/129. No substantial global cast is demonstrated in these regions under this lighting.",
+  "limits": "White paper is an informal neutral reference, not a calibrated colour chart. Local light artefacts, other colours, other lighting, display appearance and temporal instability are not ruled out. No overall colour accuracy claimed.",
+  "decision": "Do not fit/alter colour gains from a 1-3-level paper difference. Next isolate brightness with a bounded 128->160-line exposure trial while gains stay fixed. Await SW7 down before any live write.",
+  "next_capture_requirement": "Keep camera, paper, objects and lighting fixed for paired comparison."
+}

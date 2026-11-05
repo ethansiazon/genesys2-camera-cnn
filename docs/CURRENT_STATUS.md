@@ -266,3 +266,16 @@ Do not reset before the requested neutral-reference snapshot: BTNC would
 restore automatic WB. Next user action is matte white paper centred on desk,
 coloured object beside it, no bright lamp/screen in view; then raise SW7 without
 BTNC. Save raw neutral reference before choosing colour gains.
+
+## R6 matte-paper reference obtained
+
+Complete raw local_results/live_controls/r6_neutral_reference_20261105/raw_yuv_20261105_005506.txt; 5487 packets, no
+transfer resyncs. White paper clearly visible with red-handled tool. Three
+selected unclipped paper regions median RGB approximately107/107/105,102/102/99,
+114/111/111 using independent limited-range conversion. Chroma medians Cb127,
+Cr128/129. This does not justify broad WB correction and does not establish
+colour correctness everywhere. No colour-gain changes selected. The scene is
+dim; proposed next isolated test exposure128->160 lines (+25%) with current
+gains held, camera/paper/lighting stationary. Await user SW7 down (SW6 stays up)
+before sending commands, since firmware blocks commands during raw replay.
+Current board remains exposure128, manual held gains, UART only, SW6/SW7 up.
