@@ -172,3 +172,8 @@ Readbacks are latched by refresh, not continuous measurements of gain changes.
 Next physical request: stationary white/colour reference and bright light,
 raise SW7 without reset for raw snapshot. Keep UART only for transfer.
 No new colour settings, compiler job or board programming initiated here.
+
+Raw r3 snapshot raw_yuv_20261104_235655 completed with all 5487 packets;
+user then requested redo due to setup mistake. Keep this capture out of white
+reference calibration. Await SW7 down/up after scene is ready, no BTNC.
+Do not infer white-object chroma or change gains from the invalidated frame.
