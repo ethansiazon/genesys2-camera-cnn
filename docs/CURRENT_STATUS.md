@@ -152,3 +152,9 @@ only SW6 up, BTNC and wait five seconds; confirm preferred image returns.
 Baseline restoration is not yet confirmed. A read-only ISP/AWB diagnostic is
 already built as r3 if needed later; do not call it physically tested or read
 UART until the user confirms the appropriate connection and loaded version.
+
+User confirms preferred baseline image restored. Rejected r4 is no longer the
+reported running design. r3 bit hash and its complete sensor-write sequence
+were rechecked against the preferred baseline: identical writes. Next request
+is manual loading of r3, readback refresh via SW0 and UART-only connection.
+No new compiler job or automatic board programming started.
