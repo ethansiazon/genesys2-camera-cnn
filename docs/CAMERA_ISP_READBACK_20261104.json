@@ -34,7 +34,7 @@
   ],
   "ISP_packet_tag": "D1640004",
   "refresh_control": "After settling, pulse SW0 up then down without reset; this repeats SCCB reads only. Overlay appears while SW0 is up.",
-  "physical_status": "Build running; current board still exposure-192 until new candidate is loaded",
+  "physical_status": "Built and timing passed; awaiting physical ISP readback",
   "sources": [
     "https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf",
     "https://github.com/espressif/esp32-camera/blob/master/sensors/ov5640.c"
@@ -45,5 +45,6 @@
     "tb_top_wiring_inverted"
   ],
   "test_scope": "48-register byte order, high/low NACK masks, refresh without extra sensor writes, restored exposure, UART page-4 packing and top-level camera capture",
-  "build_path": "builds/isp_readback128_20261104_r3"
+  "build_path": "builds/isp_readback128_20261104_r3",
+  "build_result": "docs/camera_isp_readback_20261104/BUILD_RESULT.json"
 }

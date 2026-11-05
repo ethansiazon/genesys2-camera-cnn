@@ -106,3 +106,13 @@ The initialization/refresh/NACK and top-level UART-page/capture checks passed.
 Build: builds/isp_readback128_20261104_r3, guarded single-thread, not yet complete.
 User moved USB to JTAG only, board powered, only SW6 up. No new version has yet
 been loaded. Current physical board remains the exposure-192 test.
+
+ISP readback build completed in 318 seconds; setup +0.289 ns, hold +0.071 ns,
+zero routing errors. Bitstream:
+builds/isp_readback128_20261104_r3/camera_hdmi.bit
+SHA256 b5efa2d466facf3e188cf2b164fae4c355505f2c105526f556e868b12b1e4e90.
+User was asked to load it, only SW6 up, BTNC then wait 5 seconds, pulse SW0 up
+for 1 second and down (no BTNC), then move to UART/J15 only while main power
+stays on. That reply is pending. Do not read COM3 until UART is confirmed.
+After confirmation verify D1640004 ISP packets and read actual AWB/CMX controls.
+Current code performs no new ISP writes; causes of colour distortion remain open.

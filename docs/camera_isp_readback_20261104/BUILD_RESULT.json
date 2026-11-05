@@ -1,0 +1,23 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\isp_readback128_20261104_r3",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\isp_readback128_20261104_r3\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-04 23:17:19",
+  "launcher_pid": 16488,
+  "elapsed_seconds": 318,
+  "available_ram_gib": 3.42,
+  "timing": {
+    "setup_wns_ns": 0.289,
+    "hold_whs_ns": 0.071,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "b5efa2d466facf3e188cf2b164fae4c355505f2c105526f556e868b12b1e4e90",
+  "source_commit": "876a676",
+  "sensor_write_table_matches_raw128": true,
+  "exposure_lines": 128,
+  "gain": "1x",
+  "physical_status": "Built and timing checked; awaiting user loading, readback refresh, and UART"
+}
