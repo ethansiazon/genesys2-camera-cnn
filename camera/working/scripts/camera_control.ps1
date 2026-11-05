@@ -56,6 +56,7 @@ if($Action -eq 'Restore') {
 foreach($item in $Writes){if($item -notmatch '^[0-9a-fA-F]{4}=[0-9a-fA-F]{2}$'){throw "Invalid register assignment: $item"}}
 if($Action -eq 'Write' -and $Writes.Count -eq 0){throw 'Write requires -Writes 3406=01 (or another permitted assignment)'}
 $repoRoot=Split-Path (Split-Path (Split-Path $PSScriptRoot))
+if(-not (Test-Path -LiteralPath (Join-Path $repoRoot 'camera/working'))) {$repoRoot=Split-Path $PSScriptRoot}
 if(-not $OutDir){$OutDir=Join-Path $repoRoot ('local_results/live_controls/'+(Get-Date -Format 'yyyyMMdd_HHmmss_fff'))}
 if(Test-Path -LiteralPath $OutDir){throw 'Choose a new output directory for each session'}
 New-Item -ItemType Directory -Path $OutDir -Force|Out-Null

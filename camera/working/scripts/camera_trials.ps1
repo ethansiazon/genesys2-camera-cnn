@@ -34,6 +34,7 @@ if($Action -ne 'Restore') {
 } elseif(-not $RestoreFile -or -not (Test-Path -LiteralPath $RestoreFile)) {throw 'Restore requires the saved change SESSION.json'}
 if(-not $OutDir) {
  $repoRoot=Split-Path (Split-Path (Split-Path $PSScriptRoot))
+ if(-not (Test-Path -LiteralPath (Join-Path $repoRoot 'camera/working'))) {$repoRoot=Split-Path $PSScriptRoot}
  $OutDir=Join-Path $repoRoot ('local_results/picture_trials/'+(Get-Date -Format 'yyyyMMdd_HHmmss_fff'))
 }
 if(Test-Path -LiteralPath $OutDir){throw 'Choose a new output directory'}

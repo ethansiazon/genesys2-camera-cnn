@@ -2,7 +2,10 @@ param([string]$Port='COM3',[int]$Seconds=110,[string]$OutDir='',
  [ValidateSet('Auto','YUYV','RGB565')][string]$ExpectedFormat='Auto')
 $ErrorActionPreference='Stop'
 $traceRoot=Split-Path $PSScriptRoot
-if(-not $OutDir){$OutDir=Join-Path $traceRoot '..\..\local_results\captures'}
+if(-not $OutDir){
+ if(Test-Path -LiteralPath (Join-Path $traceRoot 'rtl')){$OutDir=Join-Path $traceRoot '..\..\local_results\captures'}
+ else {$OutDir=Join-Path $traceRoot 'measurements/captures'}
+}
 New-Item -ItemType Directory -Path $OutDir -Force | Out-Null
 $OutDir=(Resolve-Path -LiteralPath $OutDir).Path
 $traceStamp=Get-Date -Format 'yyyyMMdd_HHmmss'
