@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-04",
+  "exposure_lines_verified": 192,
+  "gain_verified": "1x",
+  "user_observation": "brighter but greener and more purple hue",
+  "decision": "Rejected as overall improvement; retain preferred exposure-128 baseline",
+  "raw_local": "local_results\\physical_exposure192_20261104\\raw_yuv_20261104_230206.yuyv.bin",
+  "raw_sha256": "5c7ebbeda7a9e45c8705056e14acf02e0fe1b8c2f15c7d1f3a919dd6503d297e",
+  "raw_transfer_complete": true,
+  "raw_pixels": 76800,
+  "raw_median_luma": 43.0,
+  "green_dominant_pixels": 15,
+  "comparison_limit": "Framing differs from raw-128 image; these raw statistics are not a paired before/after effect estimate. User observed colour worsening.",
+  "next_step": "Return to 128 exposure and inspect actual camera ISP/white-balance/colour-matrix settings before changing them."
+}
