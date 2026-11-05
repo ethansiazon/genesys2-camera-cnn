@@ -1,0 +1,151 @@
+{
+  "rtl_boundary_test": {
+    "vectors": 25088,
+    "ranges": [
+      "studio",
+      "full"
+    ],
+    "result": "passed",
+    "reference": "independent real-valued BT601/JFIF equations with tolerance2 output levels",
+    "scope": "Every8-bitY value with7Cb and7Cr boundary/neutral/extreme values, both ranges. Not exhaustive all16.8million colour triples."
+  },
+  "converter_hashes": {
+    "camera\\working\\rtl\\ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58",
+    "camera\\versions\\last_exposure_test\\rtl\\ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58",
+    "builds\\drive_address128_20261105_r7\\source\\rtl\\ycbcr2rgb.v": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58"
+  },
+  "raw_capture": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\physical_isp_readback128_20261104_r3\\white_reference_redo\\raw_yuv_20261105_000004.yuyv.bin",
+  "independent_decoder": "OpenCV COLOR_YUV2RGB_YUY2",
+  "lamp_samples": [
+    {
+      "xy": [
+        166,
+        128
+      ],
+      "Y_Cb_Cr": [
+        224,
+        96,
+        127
+      ],
+      "opencv_RGB": [
+        241,
+        255,
+        178
+      ]
+    },
+    {
+      "xy": [
+        166,
+        122
+      ],
+      "Y_Cb_Cr": [
+        41,
+        84,
+        254
+      ],
+      "opencv_RGB": [
+        230,
+        0,
+        0
+      ]
+    },
+    {
+      "xy": [
+        160,
+        126
+      ],
+      "Y_Cb_Cr": [
+        29,
+        118,
+        128
+      ],
+      "opencv_RGB": [
+        15,
+        19,
+        0
+      ]
+    },
+    {
+      "xy": [
+        172,
+        128
+      ],
+      "Y_Cb_Cr": [
+        63,
+        170,
+        99
+      ],
+      "opencv_RGB": [
+        8,
+        62,
+        139
+      ]
+    },
+    {
+      "xy": [
+        158,
+        128
+      ],
+      "Y_Cb_Cr": [
+        255,
+        115,
+        136
+      ],
+      "opencv_RGB": [
+        255,
+        255,
+        252
+      ]
+    },
+    {
+      "xy": [
+        175,
+        128
+      ],
+      "Y_Cb_Cr": [
+        152,
+        129,
+        127
+      ],
+      "opencv_RGB": [
+        157,
+        159,
+        160
+      ]
+    },
+    {
+      "xy": [
+        160,
+        120
+      ],
+      "Y_Cb_Cr": [
+        255,
+        106,
+        123
+      ],
+      "opencv_RGB": [
+        255,
+        255,
+        234
+      ]
+    },
+    {
+      "xy": [
+        170,
+        121
+      ],
+      "Y_Cb_Cr": [
+        255,
+        128,
+        127
+      ],
+      "opencv_RGB": [
+        255,
+        255,
+        255
+      ]
+    }
+  ],
+  "finding": "Earlier saved rawYUYV capture reproduces dark/coloured ring with independent laptop decoder. Rules against HDMI-only fault and simple FPGA colour-converter overflow; does not distinguish sensor/ISP configuration from received-byte corruption or capture phase errors.",
+  "hardware_changes": false
+}

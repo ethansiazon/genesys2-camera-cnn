@@ -4,10 +4,13 @@
   "bitstream_sha256": "1a87f4655d11fde536ed1252f4ec258d0e653c671082723395f994d3d6fde45b",
   "user_observation_verbatim": "Worse",
   "prompted_conditions": "Only SW6 up; BTNC; five-second settle; compare purple tint and green bright areas against preferred original",
-  "acceptance": "Rejected as preferred image candidate",
+  "acceptance": "Not established as improvement; initial worse report revised to roughly similar after settling",
   "limitations": "No post-program camera register readback or saved raw image. User report does not isolate higher drive from removal of previous3016 write, reset/WB or scene effects. Correct register mapping alone is not an image cure.",
   "rollback_bitstream": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\camera\\versions\\last_exposure_test\\camera_hdmi.bit",
   "rollback_sha256": "2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185",
   "rollback_confirmed": false,
-  "next_direction": "Restore favourite first. Consider separately bounded RGB565 diagnostic to isolate YUV interpretation/ISP path; no new build launched."
+  "next_direction": "Restore favourite first. Consider separately bounded RGB565 diagnostic to isolate YUV interpretation/ISP path; no new build launched.",
+  "follow_up_observation_verbatim": "the current one is r7 but it kinda looks similar to the last exposure test",
+  "symptoms_follow_up": "Purple hue starts stronger then settles; lights show dark internal area with green edges.",
+  "current_board_user_confirmed": "r7; preferred original not reloaded"
 }

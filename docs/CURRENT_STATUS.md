@@ -355,3 +355,26 @@ Candidate RGB565 comparison can isolate YUV interpretation/conversion and sensor
 format path; requires dedicated capture/format handling, not a whole MIT ROM copy.
 No new build or camera setting changes launched after rejection. Current board
 inferredr7/JTAGonly/onlySW6up based on requested test; rollback not yet confirmed.
+
+
+## Physical clarification and numerical overflow audit
+
+User clarified board is stillr7 and now looks roughly similar to preferred
+last_exposure_test after startup tint settles. Initial worse report revised;
+PHYSICAL_RESULT.json preserves both observations. No rollback confirmed; working
+source remainsr6 while loaded boardr7 (deliberate separation recorded).
+Bright lights still have dark inner region and green/coloured edges.
+
+Converter RTL matches original andr7 byte-for-byte. 25088 independent real-valued
+reference vectors passed(all256Y,7Cb*7Cr boundary/neutral/extreme values,both
+range modes,tolerance2). Signed22bit intermediates and explicit saturation make
+simple converter wraparound unlikely; this is not a proof against all hardware
+or sensor arithmetic faults. Earlier rawYUYV lamp capture was independently
+decoded with OpenCV and visually reproduces dark/coloured ring. Some ring Y
+values are already29/41 before FPGA RGBconversion. This narrows away from
+HDMI-only or converter-only explanation but cannot distinguish sensor/ISP
+processing from received-byte errors/phase. No new hardware changes in audit.
+Next priority controlled RGB565 format comparison, with dedicated packing path,
+same image geometry/clocks/exposure and original source preserved. Do not
+claim every fix tried or assume sensor defective. AWB startup settling is a
+hypothesis consistent with automaticWB, not a verified cause of this observation.
