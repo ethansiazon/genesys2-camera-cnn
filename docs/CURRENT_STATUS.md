@@ -158,3 +158,17 @@ reported running design. r3 bit hash and its complete sensor-write sequence
 were rechecked against the preferred baseline: identical writes. Next request
 is manual loading of r3, readback refresh via SW0 and UART-only connection.
 No new compiler job or automatic board programming started.
+
+## Physical ISP readback obtained
+
+User confirmed r3 loaded, SW0 refreshed and UART only. COM3 capture saved at
+local_results/physical_isp_readback128_20261104_r3/diagnostics_20261104_235316.json.
+Camera ID 5640, switches 40, both read-NACK masks zero, complete 76800-pixel
+frames at 320x240. White balance automatic (3406=00); sampled gains R=1.1455x,
+G=1.2031x, B=1.0000x. Unequal gains alone do not prove incorrect calibration.
+The colour matrix matches datasheet power-on values; 5480=00 alone does NOT
+prove gamma disabled. User observes green hue on white objects in this r3 image.
+Readbacks are latched by refresh, not continuous measurements of gain changes.
+Next physical request: stationary white/colour reference and bright light,
+raise SW7 without reset for raw snapshot. Keep UART only for transfer.
+No new colour settings, compiler job or board programming initiated here.

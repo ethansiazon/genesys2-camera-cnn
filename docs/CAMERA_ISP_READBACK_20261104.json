@@ -34,7 +34,7 @@
   ],
   "ISP_packet_tag": "D1640004",
   "refresh_control": "After settling, pulse SW0 up then down without reset; this repeats SCCB reads only. Overlay appears while SW0 is up.",
-  "physical_status": "Built and timing passed; awaiting physical ISP readback",
+  "physical_status": "User loaded r3, refreshed reads and connected UART; 48-register readback passed, greenish-white appearance reported. Awaiting controlled raw capture.",
   "sources": [
     "https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf",
     "https://github.com/espressif/esp32-camera/blob/master/sensors/ov5640.c"
