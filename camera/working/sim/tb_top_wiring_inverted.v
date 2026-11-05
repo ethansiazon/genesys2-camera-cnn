@@ -66,6 +66,14 @@ module tb_top_wiring_inverted;
             end
         end
         ck("all 640 stored pixels",errors,0);
+        ck("manual exposure restored",sensor.regs[16'h3501],8'h08);
+        ck("ISP first bank value",dut.config_readback[199:192],8'hA7);
+        force dut.diagnostic_page=3'd4;#1;
+        ck("ISP UART page tag",dut.diagnostic_words[31:0],32'hD1640004);
+        ck("ISP UART first data byte",dut.diagnostic_words[39:32],8'hA7);
+        ck("ISP UART second data byte",dut.diagnostic_words[47:40],8'hA3);
+        ck("ISP UART NACK mask",dut.diagnostic_words[255:224],0);
+        release dut.diagnostic_page;
         sw[5]=1; repeat(10) @(posedge dut.clk_pix);
         ck("test-pattern switch selects bypass",dut.testpat_en,1);
         if(errors==0)$display("=== ALL TESTS PASS ===");

@@ -177,3 +177,15 @@ Raw r3 snapshot raw_yuv_20261104_235655 completed with all 5487 packets;
 user then requested redo due to setup mistake. Keep this capture out of white
 reference calibration. Await SW7 down/up after scene is ready, no BTNC.
 Do not infer white-object chroma or change gains from the invalidated frame.
+
+## Manual white-balance isolation candidate r5
+
+Redo raw frame completed: local_results/physical_isp_readback128_20261104_r3/white_reference_redo/raw_yuv_20261105_000004.txt.
+5487 packets, 153600 bytes, zero transfer resynchronizations; visible bright-light
+colour errors reproduced in independent laptop conversion. Not a calibrated
+white chart; do not fit gains from this frame. Preparing r5 from physically
+read-back r3, only seven manual WB writes added. Colour gains R/G/B=1x and
+3406=01, exposure128/sensor gain1x unchanged. Equal gains are a diagnostic
+control, not final calibration. Previous rejected r4 working folder preserved
+in local_artifacts/rejected_analog_working_20261104_r4. No analog-block retry.
+Current physical board still r3. Physical r5 performance remains unknown.

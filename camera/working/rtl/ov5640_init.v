@@ -47,6 +47,7 @@ module ov5640_init #(
 )(
     input  wire        clk,
     input  wire        rst,
+    input  wire        debug_refresh, // Rising edge: repeat READS only; no camera reset/writes.
     // SW1: run the sensor's own internal colour bar instead of the imager.
     // The DVP then carries a synthetic, noise-free, perfectly static pattern,
     // so anything speckled or flickering on screen is transport error, not
@@ -74,8 +75,8 @@ module ov5640_init #(
     output reg         init_done,
     output reg         nack_seen,
     output reg  [7:0]  table_index,
-    output reg [191:0] debug_readback,
-    output reg [23:0] debug_read_nack
+    output reg [383:0] debug_readback,
+    output reg [47:0] debug_read_nack
 );
     localparam integer MS = CLK_HZ / 1000;
 
@@ -95,110 +96,89 @@ module ov5640_init #(
         8'd1  : entry = {C_DLY, 16'd20  , 8'h00};  // 20 ms
         8'd2  : entry = {C_WR,  16'h3008, 8'h42};  // power down while configuring
         8'd3  : entry = {C_WR,  16'h3103, 8'h13};  // [reference] sysclk from PLL (was 0x11/0x03)
-        // Controlled reference-startup trial: Linux ov5640_init_setting.
-        // Verified against saved source SHA in docs/CAMERA_ANALOG_REFERENCE_20261104.json.
-        // These settings are an initialization hypothesis, not a proven highlight fix.
-        8'd4  : entry = {C_WR, 16'h3630, 8'h36}; // [Linux reference startup]
-        8'd5  : entry = {C_WR, 16'h3631, 8'h0E}; // [Linux reference startup]
-        8'd6  : entry = {C_WR, 16'h3632, 8'hE2}; // [Linux reference startup]
-        8'd7  : entry = {C_WR, 16'h3633, 8'h12}; // [Linux reference startup]
-        8'd8  : entry = {C_WR, 16'h3621, 8'hE0}; // [Linux reference startup]
-        8'd9  : entry = {C_WR, 16'h3704, 8'hA0}; // [Linux reference startup]
-        8'd10 : entry = {C_WR, 16'h3703, 8'h5A}; // [Linux reference startup]
-        8'd11 : entry = {C_WR, 16'h3715, 8'h78}; // [Linux reference startup]
-        8'd12 : entry = {C_WR, 16'h3717, 8'h01}; // [Linux reference startup]
-        8'd13 : entry = {C_WR, 16'h370B, 8'h60}; // [Linux reference startup]
-        8'd14 : entry = {C_WR, 16'h3705, 8'h1A}; // [Linux reference startup]
-        8'd15 : entry = {C_WR, 16'h3905, 8'h02}; // [Linux reference startup]
-        8'd16 : entry = {C_WR, 16'h3906, 8'h10}; // [Linux reference startup]
-        8'd17 : entry = {C_WR, 16'h3901, 8'h0A}; // [Linux reference startup]
-        8'd18 : entry = {C_WR, 16'h3731, 8'h12}; // [Linux reference startup]
-        8'd19 : entry = {C_WR, 16'h3600, 8'h08}; // [Linux reference startup]
-        8'd20 : entry = {C_WR, 16'h3601, 8'h33}; // [Linux reference startup]
-        8'd21 : entry = {C_WR, 16'h302D, 8'h60}; // [Linux reference startup]
-        8'd22 : entry = {C_WR, 16'h3620, 8'h52}; // [Linux reference startup]
-        8'd23 : entry = {C_WR, 16'h371B, 8'h20}; // [Linux reference startup]
-        8'd24 : entry = {C_WR, 16'h471C, 8'h50}; // [Linux reference startup]
-        8'd25 : entry = {C_WR, 16'h3A13, 8'h43}; // [Linux reference startup]
-        8'd26 : entry = {C_WR, 16'h3A18, 8'h00}; // [Linux reference startup]
-        8'd27 : entry = {C_WR, 16'h3A19, 8'hF8}; // [Linux reference startup]
-        8'd28 : entry = {C_WR, 16'h3635, 8'h13}; // [Linux reference startup]
-        8'd29 : entry = {C_WR, 16'h3636, 8'h03}; // [Linux reference startup]
-        8'd30 : entry = {C_WR, 16'h3634, 8'h40}; // [Linux reference startup]
-        8'd31 : entry = {C_WR, 16'h3622, 8'h01}; // [Linux reference startup]
-        8'd32  : entry = {C_WR,  16'h3017, 8'hFF};  // [reference] DVP pad enable
-        8'd33  : entry = {C_WR,  16'h3018, 8'hFF};  // [reference] DVP pad enable
-        8'd34  : entry = {C_WR,  16'h3016, 8'hC3};  // [reference]
-        8'd35  : entry = {C_WR,  16'h3020, 8'h21};  // [reference]
-        8'd36  : entry = {C_WR,  16'h4713, 8'h02};  // [reference]
-        8'd37  : entry = {C_WR,  16'h5001, 8'h83};  // [reference]
-        8'd38 : entry = {C_WR,  16'h3000, 8'h20};  // [reference] block reset
-        8'd39 : entry = {C_DLY, 16'd10  , 8'h00};  // 10 ms
-        8'd40 : entry = {C_WR,  16'h3002, 8'h1C};  // [reference] block reset
-        8'd41 : entry = {C_WR,  16'h3004, 8'hFF};  // [reference] BLOCK CLOCK ENABLE
-        8'd42 : entry = {C_WR,  16'h3006, 8'hC3};  // [reference] BLOCK CLOCK ENABLE
-        8'd43 : entry = {C_WR,  16'h5000, 8'hA7};  // [reference] ISP enable
-        8'd44 : entry = {C_WR,  16'h5001, 8'hA3};  // [reference] ISP + scaling
-        8'd45 : entry = {C_WR,  16'h5003, 8'h08};  // [reference]
-        8'd46 : entry = {C_WR,  16'h370C, 8'h02};  // [reference]
-        8'd47 : entry = {C_WR,  16'h3634, 8'h40};  // [reference]
+        8'd4  : entry = {C_WR,  16'h3017, 8'hFF};  // [reference] DVP pad enable
+        8'd5  : entry = {C_WR,  16'h3018, 8'hFF};  // [reference] DVP pad enable
+        8'd6  : entry = {C_WR,  16'h3016, 8'hC3};  // [reference]
+        8'd7  : entry = {C_WR,  16'h3020, 8'h21};  // [reference]
+        8'd8  : entry = {C_WR,  16'h4713, 8'h02};  // [reference]
+        8'd9  : entry = {C_WR,  16'h5001, 8'h83};  // [reference]
+        8'd10 : entry = {C_WR,  16'h3000, 8'h20};  // [reference] block reset
+        8'd11 : entry = {C_DLY, 16'd10  , 8'h00};  // 10 ms
+        8'd12 : entry = {C_WR,  16'h3002, 8'h1C};  // [reference] block reset
+        8'd13 : entry = {C_WR,  16'h3004, 8'hFF};  // [reference] BLOCK CLOCK ENABLE
+        8'd14 : entry = {C_WR,  16'h3006, 8'hC3};  // [reference] BLOCK CLOCK ENABLE
+        8'd15 : entry = {C_WR,  16'h5000, 8'hA7};  // [reference] ISP enable
+        8'd16 : entry = {C_WR,  16'h5001, 8'hA3};  // [reference] ISP + scaling
+        8'd17 : entry = {C_WR,  16'h5003, 8'h08};  // [reference]
+        8'd18 : entry = {C_WR,  16'h370C, 8'h02};  // [reference]
+        8'd19 : entry = {C_WR,  16'h3634, 8'h40};  // [reference]
         // --- PLL. esp32-camera sets these programmatically, so there is no table
         //     to copy. Chosen for a DELIBERATELY SLOW PCLK (~14 MHz): the 100 MHz
         //     oversampler needs PCLK well under 25 MHz, and my previous x105
         //     multiplier was almost certainly far too fast. [derived]
-        8'd48 : entry = {C_WR,  16'h3039, 8'h00};  // [derived] PLL not bypassed
-        8'd49 : entry = {C_WR,  16'h3034, 8'h1A};  // [reference] 10-bit mode
-        8'd50 : entry = {C_WR,  16'h3035, 8'h41};  // Diagnostic: sysclk divider 4, half baseline sensor/DVP rate; measure on board.
-        8'd51 : entry = {C_WR,  16'h3036, 8'h48};  // [measured] PLL multiplier x72
-        8'd52 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
-        8'd53 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]
-        8'd54 : entry = {C_WR,  16'h3824, 8'h04};  // [measured] DVP PCLK div /4 -- affects PCLK ONLY, not fps
-        8'd55 : entry = {C_WR,  16'h460C, 8'h22};  // [derived] PCLK manual divider
+        8'd20 : entry = {C_WR,  16'h3039, 8'h00};  // [derived] PLL not bypassed
+        8'd21 : entry = {C_WR,  16'h3034, 8'h1A};  // [reference] 10-bit mode
+        8'd22 : entry = {C_WR,  16'h3035, 8'h41};  // Diagnostic: sysclk divider 4, half baseline sensor/DVP rate; measure on board.
+        8'd23 : entry = {C_WR,  16'h3036, 8'h48};  // [measured] PLL multiplier x72
+        8'd24 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
+        8'd25 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]
+        8'd26 : entry = {C_WR,  16'h3824, 8'h04};  // [measured] DVP PCLK div /4 -- affects PCLK ONLY, not fps
+        8'd27 : entry = {C_WR,  16'h460C, 8'h22};  // [derived] PCLK manual divider
         // --- windowing: 320x240 out of the full array ---
-        8'd56 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
-        8'd57 : entry = {C_WR,  16'h3821, 8'h07};  // [reference] mirror + binning
-        8'd58 : entry = {C_WR,  16'h3814, 8'h71};  // [measured] X subsample /4
-        8'd59 : entry = {C_WR,  16'h3815, 8'h71};  // [measured] Y subsample /4 -- sets the VTS floor
-        8'd60 : entry = {C_WR,  16'h3800, 8'h00};
-        8'd61 : entry = {C_WR,  16'h3801, 8'h00};  // X start 0
-        8'd62 : entry = {C_WR,  16'h3802, 8'h00};
-        8'd63 : entry = {C_WR,  16'h3803, 8'h04};  // Y start 4
-        8'd64 : entry = {C_WR,  16'h3804, 8'h0A};
-        8'd65 : entry = {C_WR,  16'h3805, 8'h3F};  // X end 2623
-        8'd66 : entry = {C_WR,  16'h3806, 8'h07};
-        8'd67 : entry = {C_WR,  16'h3807, 8'h9B};  // Y end 1947
-        8'd68 : entry = {C_WR,  16'h3808, 8'h01};
-        8'd69 : entry = {C_WR,  16'h3809, 8'h40};  // DVP width 320
-        8'd70 : entry = {C_WR,  16'h380A, 8'h00};
-        8'd71 : entry = {C_WR,  16'h380B, 8'hF0};  // DVP height 240
-        8'd72 : entry = {C_WR,  16'h380C, 8'h07};
-        8'd73 : entry = {C_WR,  16'h380D, 8'h68};  // HTS 1896
-        8'd74 : entry = {C_WR,  16'h380E, 8'h02};
-        8'd75 : entry = {C_WR,  16'h380F, 8'h08};  // VTS 520  (floor is the /4 readout, 486 lines)
-        8'd76 : entry = {C_WR,  16'h3810, 8'h00};
-        8'd77 : entry = {C_WR,  16'h3811, 8'h10};  // X offset 16
-        8'd78 : entry = {C_WR,  16'h3812, 8'h00};
-        8'd79 : entry = {C_WR,  16'h3813, 8'h06};  // Y offset 6
+        8'd28 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
+        8'd29 : entry = {C_WR,  16'h3821, 8'h07};  // [reference] mirror + binning
+        8'd30 : entry = {C_WR,  16'h3814, 8'h71};  // [measured] X subsample /4
+        8'd31 : entry = {C_WR,  16'h3815, 8'h71};  // [measured] Y subsample /4 -- sets the VTS floor
+        8'd32 : entry = {C_WR,  16'h3800, 8'h00};
+        8'd33 : entry = {C_WR,  16'h3801, 8'h00};  // X start 0
+        8'd34 : entry = {C_WR,  16'h3802, 8'h00};
+        8'd35 : entry = {C_WR,  16'h3803, 8'h04};  // Y start 4
+        8'd36 : entry = {C_WR,  16'h3804, 8'h0A};
+        8'd37 : entry = {C_WR,  16'h3805, 8'h3F};  // X end 2623
+        8'd38 : entry = {C_WR,  16'h3806, 8'h07};
+        8'd39 : entry = {C_WR,  16'h3807, 8'h9B};  // Y end 1947
+        8'd40 : entry = {C_WR,  16'h3808, 8'h01};
+        8'd41 : entry = {C_WR,  16'h3809, 8'h40};  // DVP width 320
+        8'd42 : entry = {C_WR,  16'h380A, 8'h00};
+        8'd43 : entry = {C_WR,  16'h380B, 8'hF0};  // DVP height 240
+        8'd44 : entry = {C_WR,  16'h380C, 8'h07};
+        8'd45 : entry = {C_WR,  16'h380D, 8'h68};  // HTS 1896
+        8'd46 : entry = {C_WR,  16'h380E, 8'h02};
+        8'd47 : entry = {C_WR,  16'h380F, 8'h08};  // VTS 520  (floor is the /4 readout, 486 lines)
+        8'd48 : entry = {C_WR,  16'h3810, 8'h00};
+        8'd49 : entry = {C_WR,  16'h3811, 8'h10};  // X offset 16
+        8'd50 : entry = {C_WR,  16'h3812, 8'h00};
+        8'd51 : entry = {C_WR,  16'h3813, 8'h06};  // Y offset 6
         // --- output format + polarity + internal test bar ---
         // YUV422 instead of RGB565: same two bytes per pixel on the wire, so
         // PCLK and the ribbon rate are unchanged, but luma arrives as a full
         // 8 bits per pixel instead of 6 bits of green. The 24-bit HDMI path
         // wants RGB, so ycbcr2rgb converts in fabric.
-        8'd80 : entry = {C_WR,  16'h4300, vyuy ? 8'h31 : 8'h30};  // YVYU : YUYV
-        8'd81 : entry = {C_WR,  16'h501F, 8'h00};  // ISP YUV422 (was 0x01, RGB)
-        8'd82 : entry = {C_WR,  16'h4740, 8'h22};  // Linux OV5640 DVP: rising sample, HREF high, VSYNC high (bit0=0).
-        8'd83 : entry = {C_WR,  16'h503D, testbar ? 8'h80 : 8'h00};  // internal colour bar
+        8'd52 : entry = {C_WR,  16'h4300, vyuy ? 8'h31 : 8'h30};  // YVYU : YUYV
+        8'd53 : entry = {C_WR,  16'h501F, 8'h00};  // ISP YUV422 (was 0x01, RGB)
+        8'd54 : entry = {C_WR,  16'h4740, 8'h22};  // Linux OV5640 DVP: rising sample, HREF high, VSYNC high (bit0=0).
+        8'd55 : entry = {C_WR,  16'h503D, testbar ? 8'h80 : 8'h00};  // internal colour bar
         // One controlled trial: manual exposure 128 lines of VTS 520,
         // gain 1x. Register encodings follow Espressif OV5640 controls.
         // White balance, receiver, clock, window and format stay unchanged.
-        8'd84 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
-        8'd85 : entry = {C_WR, 16'h3500, 8'h00};
-        8'd86 : entry = {C_WR, 16'h3501, 8'h08}; // 128 << 4 = 0x00800
-        8'd87 : entry = {C_WR, 16'h3502, 8'h00};
-        8'd88 : entry = {C_WR, 16'h350A, 8'h00};
-        8'd89 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
-        8'd90 : entry = {C_WR, 16'h3008, 8'h02}; // start streaming
-        8'd91 : entry = {C_DLY,16'd100, 8'h00};
+        8'd56 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
+        8'd57 : entry = {C_WR, 16'h3500, 8'h00};
+        8'd58 : entry = {C_WR, 16'h3501, 8'h08}; // 128 << 4 = 0x00800
+        8'd59 : entry = {C_WR, 16'h3502, 8'h00};
+        8'd60 : entry = {C_WR, 16'h350A, 8'h00};
+        8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
+        // Controlled AWB isolation: manual R/G/B gains all 0x0400 (1x).
+        // OV5640 specification table 7-4; manual selection also used by Espressif.
+        // Equal gains are a diagnostic control, not a calibrated white-balance preset.
+        8'd62 : entry = {C_WR, 16'h3406, 8'h01}; // [manual-WB isolation]
+        8'd63 : entry = {C_WR, 16'h3400, 8'h04}; // [manual-WB isolation]
+        8'd64 : entry = {C_WR, 16'h3401, 8'h00}; // [manual-WB isolation]
+        8'd65 : entry = {C_WR, 16'h3402, 8'h04}; // [manual-WB isolation]
+        8'd66 : entry = {C_WR, 16'h3403, 8'h00}; // [manual-WB isolation]
+        8'd67 : entry = {C_WR, 16'h3404, 8'h04}; // [manual-WB isolation]
+        8'd68 : entry = {C_WR, 16'h3405, 8'h00}; // [manual-WB isolation]
+        8'd69 : entry = {C_WR, 16'h3008, 8'h02}; // start streaming
+        8'd70 : entry = {C_DLY,16'd100, 8'h00};
         default: entry = {C_END, 16'h0000, 8'h00};
         endcase
     end
@@ -214,34 +194,59 @@ module ov5640_init #(
                      P_TBL=4'd7,   P_TBL_W=4'd8, P_DLY=4'd9,
                      P_DONE=4'd10, P_DEBUG=4'd11, P_DEBUG_WAIT=4'd12;
 
-    reg [4:0] debug_index;
+    reg [5:0] debug_index;
+    reg debug_refresh_q = 0;
     reg [15:0] debug_addr;
     always @* begin
         case (debug_index)
-        5'd0: debug_addr=16'h4740;
-        5'd1: debug_addr=16'h4300;
-        5'd2: debug_addr=16'h501F;
-        5'd3: debug_addr=16'h300E;
-        5'd4: debug_addr=16'h3017;
-        5'd5: debug_addr=16'h3018;
-        5'd6: debug_addr=16'h3034;
-        5'd7: debug_addr=16'h3035;
-        5'd8: debug_addr=16'h3036;
-        5'd9: debug_addr=16'h3037;
-        5'd10: debug_addr=16'h3108;
-        5'd11: debug_addr=16'h3824;
-        5'd12: debug_addr=16'h3808;
-        5'd13: debug_addr=16'h3809;
-        5'd14: debug_addr=16'h380A;
-        5'd15: debug_addr=16'h380B;
-        5'd16: debug_addr=16'h3008;
-        5'd17: debug_addr=16'h4713;
-        5'd18: debug_addr=16'h3503;
-        5'd19: debug_addr=16'h3500;
-        5'd20: debug_addr=16'h3501;
-        5'd21: debug_addr=16'h3502;
-        5'd22: debug_addr=16'h350A;
-        5'd23: debug_addr=16'h350B;
+        6'd0: debug_addr=16'h4740;
+        6'd1: debug_addr=16'h4300;
+        6'd2: debug_addr=16'h501F;
+        6'd3: debug_addr=16'h300E;
+        6'd4: debug_addr=16'h3017;
+        6'd5: debug_addr=16'h3018;
+        6'd6: debug_addr=16'h3034;
+        6'd7: debug_addr=16'h3035;
+        6'd8: debug_addr=16'h3036;
+        6'd9: debug_addr=16'h3037;
+        6'd10: debug_addr=16'h3108;
+        6'd11: debug_addr=16'h3824;
+        6'd12: debug_addr=16'h3808;
+        6'd13: debug_addr=16'h3809;
+        6'd14: debug_addr=16'h380A;
+        6'd15: debug_addr=16'h380B;
+        6'd16: debug_addr=16'h3008;
+        6'd17: debug_addr=16'h4713;
+        6'd18: debug_addr=16'h3503;
+        6'd19: debug_addr=16'h3500;
+        6'd20: debug_addr=16'h3501;
+        6'd21: debug_addr=16'h3502;
+        6'd22: debug_addr=16'h350A;
+        6'd23: debug_addr=16'h350B;
+        6'd24: debug_addr=16'h5000;
+        6'd25: debug_addr=16'h5001;
+        6'd26: debug_addr=16'h5005;
+        6'd27: debug_addr=16'h3400;
+        6'd28: debug_addr=16'h3401;
+        6'd29: debug_addr=16'h3402;
+        6'd30: debug_addr=16'h3403;
+        6'd31: debug_addr=16'h3404;
+        6'd32: debug_addr=16'h3405;
+        6'd33: debug_addr=16'h3406;
+        6'd34: debug_addr=16'h5380;
+        6'd35: debug_addr=16'h5381;
+        6'd36: debug_addr=16'h5382;
+        6'd37: debug_addr=16'h5383;
+        6'd38: debug_addr=16'h5384;
+        6'd39: debug_addr=16'h5385;
+        6'd40: debug_addr=16'h5386;
+        6'd41: debug_addr=16'h5387;
+        6'd42: debug_addr=16'h5388;
+        6'd43: debug_addr=16'h5389;
+        6'd44: debug_addr=16'h538A;
+        6'd45: debug_addr=16'h538B;
+        6'd46: debug_addr=16'h5480;
+        6'd47: debug_addr=16'h5580;
         default: debug_addr=16'h300A;
         endcase
     end
@@ -251,6 +256,7 @@ module ov5640_init #(
 
     always @(posedge clk) begin
         sccb_start <= 1'b0;
+        debug_refresh_q <= debug_refresh;
         if (rst) begin
             st          <= P_RST0;
             timer       <= 32'd0;
@@ -262,6 +268,7 @@ module ov5640_init #(
             init_done   <= 1'b0;
             nack_seen   <= 1'b0;
             table_index <= 8'd0;
+            debug_refresh_q <= 0;
             debug_index <= 0; debug_readback <= 0; debug_read_nack <= 0;
             sccb_rw     <= 1'b0;
             sccb_addr   <= 16'h0000;
@@ -350,10 +357,15 @@ module ov5640_init #(
             P_DEBUG_WAIT: if (sccb_done) begin
                 debug_readback[debug_index*8 +: 8] <= sccb_rdata;
                 debug_read_nack[debug_index] <= sccb_nack;
-                if (debug_index == 23) st <= P_DONE;
+                if (debug_index == 47) st <= P_DONE;
                 else begin debug_index <= debug_index + 1'b1; st <= P_DEBUG; end
             end
-            P_DONE: init_done <= 1'b1;
+            P_DONE: begin
+                init_done <= 1'b1;
+                if (debug_refresh && !debug_refresh_q) begin
+                    debug_index <= 0; st <= P_DEBUG;
+                end
+            end
             default: st <= P_DONE;
             endcase
         end

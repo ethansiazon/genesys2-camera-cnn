@@ -1,0 +1,48 @@
+{
+  "purpose": "Isolate automatic white-balance contribution to greenish whites and highlight artefacts",
+  "reference_build": "isp_readback128_20261104_r3",
+  "changed_RTL": [
+    "ov5640_init.v"
+  ],
+  "added_sensor_writes": [
+    [
+      "3406",
+      "01"
+    ],
+    [
+      "3400",
+      "04"
+    ],
+    [
+      "3401",
+      "00"
+    ],
+    [
+      "3402",
+      "04"
+    ],
+    [
+      "3403",
+      "00"
+    ],
+    [
+      "3404",
+      "04"
+    ],
+    [
+      "3405",
+      "00"
+    ]
+  ],
+  "exposure_lines": 128,
+  "sensor_gain": "1x",
+  "colour_gain_R_G_B": "1x each; not calibrated",
+  "receiver_and_conversion_unchanged": true,
+  "rejected_analog_block_absent": true,
+  "new_build": "builds/unity_wb128_20261104_r5",
+  "physical_result": "pending",
+  "sources": [
+    "https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_datasheet.pdf",
+    "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c"
+  ]
+}

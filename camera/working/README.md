@@ -1,24 +1,19 @@
-# Controlled reference startup candidate
+# Manual white-balance isolation candidate (r5)
 
-**REJECTED after user test:** darker, more purple, slight green hue, farther
-from real colours. Do not promote this candidate. Restore the preserved
-`camera/versions/last_exposure_test/camera_hdmi.bit` for preferred viewing.
-The source below remains as a reproducible rejected experiment; see
-`docs/camera_analog_reference_20261104/PHYSICAL_RESULT.json`.
+Based on the physically read-back r3 128-line diagnostic, whose complete sensor
+write sequence matched the preferred last_exposure_test archive. Only seven
+manual white-balance writes added in synthesizable RTL. R/G/B gains are all
+0x0400 (1x); automatic gain selection is overridden with 3406=01. This is a
+diagnostic control, not a calibrated colour preset or a promised highlight fix.
 
-Fresh copy of camera/versions/last_exposure_test, Ethan's preferred picture.
-Only ov5640_init.v differs in synthesizable RTL: 28 Linux-verified startup
-register writes inserted after the PLL-source selection and before DVP/ISP setup.
-All original settings/order remain; exposure 128 lines, gain 1x, capture 320x240,
-HDMI 640x480 at 60 Hz. This is an unproved sensor-initialization experiment.
+Exposure remains 128 lines, sensor gain 1x, VTS 520, capture 320x240 and HDMI
+640x480 at 60 Hz. Receiver, conversion, memory and diagnostic logic match r3.
+No rejected Linux analog-startup writes are present. Normal view only SW6 up,
+BTNC. SW0 rising refreshes the 48 sensor reads without writes. SW7 records RAW
+YUYV, decoded with scripts/analyze_raw_yuv.py (not the old RGB565 decoder).
 
-The previous ISP/raw diagnostic copy is preserved under local_artifacts/ and Git.
-This candidate uses the ORIGINAL RGB565 snapshot format, not raw YUYV recording.
-Use this copy's scripts/analyze_snapshot.py, not the previous raw decoder.
-The copied camera_hdmi.bit here is the ORIGINAL baseline bitstream; it does not
-contain these edits. Use the new builds/analog_reference128_20261104_r4 output.
-
-Normal live viewing: ONLY SW6 up; press BTNC, wait five seconds.
-Camera bars: SW1 and SW6 up; BTNC. Verify PCLK JA1 and D6 JB8 before programming.
-Keep versions immutable. No board programming or Git pushes occur automatically.
-See docs/CAMERA_ANALOG_REFERENCE_20261104.json for verified source provenance.
+Original preferred .bit remains camera/versions/last_exposure_test/camera_hdmi.bit.
+The copied .bit in this working folder is that OLD baseline, not these edits.
+New build output: builds/unity_wb128_20261104_r5/camera_hdmi.bit.
+Rejected r4 copy is preserved in local_artifacts/rejected_analog_working_20261104_r4.
+Keep PCLK JA1 / D6 JB8. Do not program automatically or push without approval.
