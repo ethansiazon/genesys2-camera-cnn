@@ -225,3 +225,21 @@ copy starts from r3 diagnostic with exact preferred startup sensor writes,
 auto WB, exposure128 and gain1x. Adding UART RX/control, not new colour tuning.
 Control owns SCCB only through init FSM handshake after startup/refresh.
 No physical build/load result yet; current user image report follows r5.
+
+R6 live-control build completed in 318 seconds. Setup +0.235 ns, hold
++0.084 ns, zero route errors and no ERROR/CRITICAL WARNING log entries.
+Six targeted simulations plus host encoder/decoder self-test passed.
+Initial full serial integration simulation exceeded 90s; only its simulation
+UART rate was increased to reduce simulated bit periods. Physical baud remains
+115200. The actual-wire serial/camera/telemetry check then passed in 63.6s.
+
+Bit: builds/live_control128_20261105_r6/camera_hdmi.bit
+SHA256 257cb8304019cf2636d342623904b6077e33d7b4ac333410c8d32fd16f004e98
+Project: builds/camera_live_control_20261105_project/camera_hdmi.xpr
+Preferred startup sensor writes and original archived bit hash were verified
+unchanged. Frozen build hashes match active RTL/constraints. No new colour
+recipe is applied at startup. Physical UART control and image quality remain
+unverified. Next user action: load r6 through JTAG, only SW6 up, BTNC and wait
+5s; move to UART only with main power maintained. Then run host Read/Ping
+without writes to verify signature, ID, startup exposure/AWB and actual read
+handshake before any live colour tuning. No Git push or auto-programming.

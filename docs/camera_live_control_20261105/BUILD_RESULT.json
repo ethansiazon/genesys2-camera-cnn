@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\live_control128_20261105_r6",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\live_control128_20261105_r6\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-05 00:41:01",
+  "launcher_pid": 5872,
+  "elapsed_seconds": 318,
+  "available_ram_gib": 2.62,
+  "timing": {
+    "setup_wns_ns": 0.235,
+    "hold_whs_ns": 0.084,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "257cb8304019cf2636d342623904b6077e33d7b4ac333410c8d32fd16f004e98",
+  "source_commit": "2818a31",
+  "critical_warnings": 0,
+  "errors": 0,
+  "baseline_sensor_writes_match": true,
+  "baseline_bit_preserved": true,
+  "physical_uart_control_validated": false,
+  "physical_colour_improvement_demonstrated": false,
+  "GUI_project": "builds/camera_live_control_20261105_project/camera_hdmi.xpr"
+}
