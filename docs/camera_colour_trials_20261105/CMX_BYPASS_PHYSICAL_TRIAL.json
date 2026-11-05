@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "stage": "applied_await_visual_result",
+  "stage": "rejected_and_restored",
   "camera": "OV5640 RGB565r8,430061/501F01/live503D00",
   "diagnostic": "DisableCMX only:5001A3->A1, bit1 cleared; scaling/SDE/AWBenablebits unchanged",
   "WB": "Manual hold atR04B6/G0528/B0400 after separate340600->01 write",
@@ -162,8 +162,13 @@
   },
   "write_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_bypass_write_20261105\\SESSION.json",
   "WB_restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_hold_wb_20261105\\SESSION.json",
-  "visual_result": null,
+  "visual_result": "Confirmedpoorwithoutreset; keepCMXenabled",
   "limits": "Diagnostic bypass of camera colour matrix, not a final calibrated recipe or claimed improvement. Earlier rawreference had differentWB values; do not claim quantitatively matched images.",
   "gamma_changes": false,
-  "user_state": "UARTonly,onlySW6up,SW7down, same scene,noreset confirmed"
+  "user_state": "UARTonly,onlySW6up,SW7down, same scene,noreset confirmed",
+  "initial_observation": "Worse/newcolourproblems, but user later confirmedpressingBTNC; settings alreadyreset atrestore. Initial attributionconfounded.",
+  "repeat_reason": "Repeat controls resetconfound explicitly, notblind identicalfailedrecipe retry.",
+  "repeat_user_verbatim": "the change u just made made everything green with some purple accents; really bad, everything is green mostly",
+  "repeat_active_setting_verified": "5001=A1 withheldWB01, thenrestore read before=A1 after=A3; actualactive state corroborated",
+  "restore_verified": "5001=A3,WBheldR04AB/G051D/B0400,exposure128/gain1xunchanged"
 }

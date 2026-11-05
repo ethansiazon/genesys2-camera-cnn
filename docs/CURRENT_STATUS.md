@@ -566,3 +566,18 @@ No gamma/clock/pad/scaling changes. Awaituserhue/light observation. Restore
 matrix via saved r8_cmx_bypass_write_20261105/SESSION.json (5001A3); WBrestore
 separate r8_cmx_hold_wb_20261105/SESSION.json (340600). Neverautopromotebypass.
 CurrentboardRGB565r8,WBheld,CMXoff,UARTonly,SW6up/SW7down. No newbuild/program.
+
+
+## CMX bypass rejected reliably; referencecoefficients trialactive
+
+FirstbypassreportconfoundedbyuserBTNC(resetexplicitlyconfirmed). ExplainedUART
+changesliveandBTNCundoesthem. Repeatedwithfreshprecheck/heldWB andreadback;
+userwithoutresetreportsmostlygreen/purple,reallybad. Restorecommandactually
+readA1before->A3after, confirmingactivebypass. HeldWBR04AB/G051D/B0400,
+manualexposure128/gain1xstable. Rejectbypass; do notrepeat.
+
+AppliedpublishedEspressifSaturation0matrix5381..538B via existingvalidatedrecipe.
+Allwritesreadbackverified;CMXremainsenabled5001A3. Before->aftercommoncontrols
+identicalincludingheldWB/exposure/gain. No gamma/newbitstream. Awaituserlive
+huecomparison(NOreset). Restoreusingr8_cmx_reference0_20261105/change/SESSION.json.
+CurrentRGB565r8/UART/onlySW6up,WBheld01,matrixreference0. Gammafactoryuntouched.

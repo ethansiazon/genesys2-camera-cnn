@@ -1,0 +1,188 @@
+{
+  "date": "2026-11-05",
+  "stage": "applied_await_visual_result",
+  "trial": "EspressifSaturation0 referencecolourmatrix;CMXenabled5001A3",
+  "recipe": "camera/working/scripts/camera_trials.json:Saturation0",
+  "setting_family": "5381..538B only; no gamma/exposure/gain/orientation changes",
+  "before_control_readback": {
+    "started": "2026-11-05T04:22:55.7048503-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "5001",
+        "value": "A3"
+      },
+      {
+        "address": "3406",
+        "value": "01"
+      },
+      {
+        "address": "3400",
+        "value": "04"
+      },
+      {
+        "address": "3401",
+        "value": "AB"
+      },
+      {
+        "address": "3402",
+        "value": "05"
+      },
+      {
+        "address": "3403",
+        "value": "1D"
+      },
+      {
+        "address": "3404",
+        "value": "04"
+      },
+      {
+        "address": "3405",
+        "value": "00"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "08"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3503",
+        "value": "03"
+      },
+      {
+        "address": "350A",
+        "value": "00"
+      },
+      {
+        "address": "350B",
+        "value": "10"
+      }
+    ]
+  },
+  "after_readback": {
+    "started": "2026-11-05T04:23:55.0851163-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "5001",
+        "value": "A3"
+      },
+      {
+        "address": "3406",
+        "value": "01"
+      },
+      {
+        "address": "3400",
+        "value": "04"
+      },
+      {
+        "address": "3401",
+        "value": "AB"
+      },
+      {
+        "address": "3402",
+        "value": "05"
+      },
+      {
+        "address": "3403",
+        "value": "1D"
+      },
+      {
+        "address": "3404",
+        "value": "04"
+      },
+      {
+        "address": "3405",
+        "value": "00"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "08"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3503",
+        "value": "03"
+      },
+      {
+        "address": "350A",
+        "value": "00"
+      },
+      {
+        "address": "350B",
+        "value": "10"
+      },
+      {
+        "address": "5381",
+        "value": "1D"
+      },
+      {
+        "address": "5382",
+        "value": "60"
+      },
+      {
+        "address": "5383",
+        "value": "03"
+      },
+      {
+        "address": "5384",
+        "value": "0C"
+      },
+      {
+        "address": "5385",
+        "value": "78"
+      },
+      {
+        "address": "5386",
+        "value": "84"
+      },
+      {
+        "address": "5387",
+        "value": "7D"
+      },
+      {
+        "address": "5388",
+        "value": "6B"
+      },
+      {
+        "address": "5389",
+        "value": "12"
+      },
+      {
+        "address": "538A",
+        "value": "01"
+      },
+      {
+        "address": "538B",
+        "value": "98"
+      }
+    ]
+  },
+  "other_shared_controls_unchanged": true,
+  "restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_reference0_20261105\\change\\SESSION.json",
+  "result": null,
+  "user_instructed": "NoBTNC/switchchange;lookatliveblue/yellowreference",
+  "important": "Neutralreferencelevel0 is not calibratedtoourmodule; notclaimedhuefix."
+}
