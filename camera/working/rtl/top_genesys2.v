@@ -9,7 +9,8 @@
 
 module top_genesys2 #(
     parameter integer SIM_FAST_INIT = 0, // Testbench only; keep zero on board.
-    parameter integer RGB565 = 0 // Build-time format selection, never a live switch.
+    parameter integer RGB565 = 0, // Build-time format selection, never a live switch.
+    parameter integer REFERENCE_READOUT = 0
 )(
     input  wire       sysclk_p,          // AD12, 200 MHz LVDS
     input  wire       sysclk_n,          // AD11
@@ -194,7 +195,7 @@ module top_genesys2 #(
     end
     wire ctrl_valid,ctrl_rw,ctrl_ready,ctrl_done,ctrl_nack;
     wire [15:0] ctrl_addr; wire [7:0] ctrl_wdata,ctrl_rdata;
-    ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000),.RGB565(RGB565)) init_i (
+    ov5640_init #(.CLK_HZ(SIM_FAST_INIT ? 10_000 : 200_000_000),.RGB565(RGB565),.REFERENCE_READOUT(REFERENCE_READOUT)) init_i (
         .clk(clk200), .rst(rst200), .debug_refresh(debug_refresh_sync[1]), .testbar(testbar), .vyuy(vyuy_sel),
         .host_valid(ctrl_valid),.host_rw(ctrl_rw),.host_addr(ctrl_addr),
         .host_wdata(ctrl_wdata),.host_ready(ctrl_ready),.host_done(ctrl_done),

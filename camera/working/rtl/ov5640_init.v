@@ -44,7 +44,8 @@
 
 module ov5640_init #(
     parameter integer CLK_HZ = 100_000_000,
-    parameter integer RGB565 = 0 // Separate format diagnostic; default preserves YUYV.
+    parameter integer RGB565 = 0, // Separate format diagnostic; default preserves YUYV.
+    parameter integer REFERENCE_READOUT = 0 // Reference-derived 2x readout trial; default preserves r8.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -133,8 +134,8 @@ module ov5640_init #(
         // --- windowing: 320x240 out of the full array ---
         8'd28 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
         8'd29 : entry = {C_WR,  16'h3821, 8'h07};  // [reference] mirror + binning
-        8'd30 : entry = {C_WR,  16'h3814, 8'h71};  // [measured] X subsample /4
-        8'd31 : entry = {C_WR,  16'h3815, 8'h71};  // [measured] Y subsample /4 -- sets the VTS floor
+        8'd30 : entry = {C_WR,  16'h3814, REFERENCE_READOUT ? 8'h31 : 8'h71};
+        8'd31 : entry = {C_WR,  16'h3815, REFERENCE_READOUT ? 8'h31 : 8'h71};
         8'd32 : entry = {C_WR,  16'h3800, 8'h00};
         8'd33 : entry = {C_WR,  16'h3801, 8'h00};  // X start 0
         8'd34 : entry = {C_WR,  16'h3802, 8'h00};
@@ -149,8 +150,10 @@ module ov5640_init #(
         8'd43 : entry = {C_WR,  16'h380B, 8'hF0};  // DVP height 240
         8'd44 : entry = {C_WR,  16'h380C, 8'h07};
         8'd45 : entry = {C_WR,  16'h380D, 8'h68};  // HTS 1896
-        8'd46 : entry = {C_WR,  16'h380E, 8'h02};
-        8'd47 : entry = {C_WR,  16'h380F, 8'h08};  // VTS 520  (floor is the /4 readout, 486 lines)
+        // 2x readout needs room for about 972 sensor rows, not 240 output rows.
+        // Linux QVGA DVP timing: height 240 + vblank 744 = VTS 984.
+        8'd46 : entry = {C_WR,  16'h380E, REFERENCE_READOUT ? 8'h03 : 8'h02};
+        8'd47 : entry = {C_WR,  16'h380F, REFERENCE_READOUT ? 8'hD8 : 8'h08};
         8'd48 : entry = {C_WR,  16'h3810, 8'h00};
         8'd49 : entry = {C_WR,  16'h3811, 8'h10};  // X offset 16
         8'd50 : entry = {C_WR,  16'h3812, 8'h00};
@@ -175,8 +178,18 @@ module ov5640_init #(
         8'd59 : entry = {C_WR, 16'h3502, 8'h00};
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
-        8'd62 : entry = {C_WR, 16'h3008, 8'h02}; // start streaming
-        8'd63 : entry = {C_DLY,16'd100, 8'h00};
+        // Mode-specific readout/black-reference values from Linux OV5640
+        // ov5640_setting_low_res, not the earlier rejected broad analog recipe.
+        // The baseline branch retains its original exact write sequence.
+        8'd62 : entry = REFERENCE_READOUT ? {C_WR,16'h3618,8'h00} : {C_WR,16'h3008,8'h02};
+        8'd63 : entry = REFERENCE_READOUT ? {C_WR,16'h3612,8'h29} : {C_DLY,16'd100,8'h00};
+        8'd64 : entry = REFERENCE_READOUT ? {C_WR,16'h3708,8'h64} : {C_END,16'd0,8'd0};
+        8'd65 : entry = REFERENCE_READOUT ? {C_WR,16'h3709,8'h52} : {C_END,16'd0,8'd0};
+        8'd66 : entry = REFERENCE_READOUT ? {C_WR,16'h370C,8'h03} : {C_END,16'd0,8'd0};
+        8'd67 : entry = REFERENCE_READOUT ? {C_WR,16'h4001,8'h02} : {C_END,16'd0,8'd0};
+        8'd68 : entry = REFERENCE_READOUT ? {C_WR,16'h4004,8'h02} : {C_END,16'd0,8'd0};
+        8'd69 : entry = REFERENCE_READOUT ? {C_WR,16'h3008,8'h02} : {C_END,16'd0,8'd0};
+        8'd70 : entry = REFERENCE_READOUT ? {C_DLY,16'd100,8'h00} : {C_END,16'd0,8'd0};
         default: entry = {C_END, 16'h0000, 8'h00};
         endcase
     end

@@ -1,0 +1,20 @@
+{
+  "date_local": "2026-11-05",
+  "board_build": "colour_rgb565_20261105_r8",
+  "connection": "UART/J15 only",
+  "switches_up": [
+    6
+  ],
+  "reset_instructed": false,
+  "reference": "Real objects under normal room lighting; no screens or ceiling lights in shot",
+  "user_observation": "blue looks green; red is more pastel red; pink is orange; green is gray; light blue / bright blue is almost off-white; yellow is pink; white is lighter pink",
+  "interpretation": "Confirms wrong live hues beyond photographed-screen viewing-angle confound; root cause remains unproved",
+  "restored_before_trial": {
+    "CMX": "factory baseline, enabled",
+    "AWB": "automatic 3406=00",
+    "manual_exposure_lines": 128,
+    "analogue_gain": 1,
+    "gamma": "factory, no gamma writes applied"
+  },
+  "candidate_physical_tested": false
+}

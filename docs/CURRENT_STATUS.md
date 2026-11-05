@@ -599,3 +599,21 @@ Coherentpublishedreadoutprofilemaybenextifphysicalhueswrong: currentinc71/71,
 VTS520 differsLinux/Espressiflowresinc31/31 withlongerVTS andmode-specificanalog/
 BLCcontrols. Changingincrementsalonewouldinvalidateframetiming; no suchwriteor
 newbuildstarted. Preservepreferredandcurrentpreparedprofiles.
+
+
+## Physical colour fault confirmed; r9 sensor-readout candidate
+
+Ethan tested real objects under room lighting, excluding screens: blue looks
+green, red pastel, pink orange, green grey, bright blue nearly off-white, yellow
+pink and white pale pink. An angled photographed LCD cannot explain this alone.
+CMX bypass and reference coefficients were rejected and fully restored, including
+automatic white balance. No gamma writes applied. Board remains RGB565 r8, UART
+only, SW6 up/SW7 down; no new board programming has occurred.
+
+Preparing a separate RGB565 reference-derived 2x readout profile, REFERENCE_READOUT=1.
+This pairs sampling 31/31 with VTS984 and seven mode-specific sensor/BLC writes.
+320x240 output, receiver, wiring, clocks, exposure128/gain1x and HDMI stay as r8.
+Default profile preserves r8. This is a coupled mode-family diagnostic, not a
+confirmed fix or full Linux port. Timing/frame rate and physical hues need testing.
+See camera_reference_readout_20261105/PLAN.md for the exact changes/provenance.
+Previous working source saved in local_artifacts/r8_before_reference_readout_20261105.

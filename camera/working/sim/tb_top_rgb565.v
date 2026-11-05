@@ -2,7 +2,7 @@
 // Uses behavioural clock/HDMI stand-ins. Verifies the ACTUAL top-level camera
 // pin wiring, chip-ID reads, initialization writes, capture and frame-buffer
 // pixels. It does not model MMCM locking or physical TMDS serialization.
-module tb_top_rgb565;
+module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
     reg sysclk=0;
     always #2.5 sysclk=~sysclk;
     reg [7:0] sw=8'h40;
@@ -25,7 +25,7 @@ module tb_top_rgb565;
     assign jb[0]=data[5]; assign jb[1]=data[3];
     assign jb[2]=data[1]; assign jb[4]=data[7];
     assign jb[5]=data[4]; assign jb[6]=vs^glitch;
-    top_genesys2 #(.SIM_FAST_INIT(1),.RGB565(1)) dut(
+    top_genesys2 #(.SIM_FAST_INIT(1),.RGB565(1),.REFERENCE_READOUT(REFERENCE_READOUT)) dut(
         .sysclk_p(sysclk),.sysclk_n(~sysclk),.sw(sw),.btnc(btn),.led(led),
         .ja(ja),.jb(jb),.hdmi_tx_p(hp),.hdmi_tx_n(hn),
         .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_tx_in(1'b1),.uart_rx_out(tx));
@@ -55,6 +55,18 @@ module tb_top_rgb565;
         ck("RGB mux",sensor.regs[16'h501f],1);
         ck("width low byte",sensor.regs[16'h3809],8'h40);
         ck("height low byte",sensor.regs[16'h380b],8'hf0);
+        ck("horizontal increment",sensor.regs[16'h3814],REFERENCE_READOUT ? 8'h31 : 8'h71);
+        ck("vertical increment",sensor.regs[16'h3815],REFERENCE_READOUT ? 8'h31 : 8'h71);
+        ck("frame length",{sensor.regs[16'h380e],sensor.regs[16'h380f]},REFERENCE_READOUT ? 984 : 520);
+        if(REFERENCE_READOUT) begin
+            ck("readout 3618",sensor.regs[16'h3618],8'h00);
+            ck("readout 3612",sensor.regs[16'h3612],8'h29);
+            ck("readout 3708",sensor.regs[16'h3708],8'h64);
+            ck("readout 3709",sensor.regs[16'h3709],8'h52);
+            ck("readout 370c",sensor.regs[16'h370c],8'h03);
+            ck("black reference start",sensor.regs[16'h4001],8'h02);
+            ck("black reference lines",sensor.regs[16'h4004],8'h02);
+        end
         settled_frame=frames+4; wait(frames>=settled_frame); repeat(50) @(posedge sysclk);
         ck("captured pixels/frame",dut.pix_pf,640);
         ck("last x",dut.xmax_raw,319);
@@ -99,6 +111,18 @@ module tb_top_rgb565;
         $finish;
     end
     initial begin #10_000_000; $fatal(1,"WATCHDOG top wiring"); end
+    // These sensor-mode writes must complete before enabling the live array.
+    // This checks transaction ordering, not just the final register image.
+    always @(posedge sysclk) if(REFERENCE_READOUT && dut.init_i.sccb_start &&
+        !dut.init_i.sccb_rw && dut.init_i.sccb_addr==16'h3008 &&
+        dut.init_i.sccb_wdata==8'h02) begin
+        if(sensor.regs[16'h3618]!==8'h00 || sensor.regs[16'h3612]!==8'h29 ||
+           sensor.regs[16'h3708]!==8'h64 || sensor.regs[16'h3709]!==8'h52 ||
+           sensor.regs[16'h370c]!==8'h03 || sensor.regs[16'h4001]!==8'h02 ||
+           sensor.regs[16'h4004]!==8'h02 || sensor.regs[16'h380e]!==8'h03 ||
+           sensor.regs[16'h380f]!==8'hd8)
+            $fatal(1,"FAIL streaming before readout profile completed");
+    end
 endmodule
 
 module clk_gen(input sysclk_p,sysclk_n,output clk200,output reg clk24=0,
