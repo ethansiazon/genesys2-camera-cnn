@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-05",
+  "project": "C:\\Users\\ethan\\Desktop\\Genesys2-Still-Capture-20261105\\project\\camera_hdmi.xpr",
+  "bitstream": "C:\\Users\\ethan\\Desktop\\Genesys2-Still-Capture-20261105\\camera_hdmi.bit",
+  "launcher": "C:\\Users\\ethan\\Desktop\\Genesys2-Still-Capture-20261105\\Capture_Image.cmd",
+  "saved_images_root": "C:/Users/ethan/Desktop/Genesys2-Camera-Images",
+  "baseline": "last_exposure_test",
+  "hardware_changed": false,
+  "baseline_rtl_constraints_exact_match": true,
+  "bitstream_sha256": "2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185",
+  "vivado_project_creation_verified": true,
+  "RTL_files": 21,
+  "snapshot_simulation_passed": true,
+  "decoder_exhaustive_RGB565_test_passed": true,
+  "windows_powershell_parser_switch_selftest_passed": true,
+  "physical_capture_with_new_launcher_tested": false,
+  "board_available": false,
+  "board_programmed": false,
+  "new_synthesis_performed": false,
+  "PNG_native_RGB_size": [
+    320,
+    240
+  ],
+  "preview_size": [
+    960,
+    720
+  ],
+  "snapshot_precision": "RGB565 diagnostic copy, expanded to RGB PNG",
+  "cnn_weights_changed": false,
+  "limits": "Still detection input only; single photo does not evaluate motion proposal/tracking. Original camera colour defects persist."
+}

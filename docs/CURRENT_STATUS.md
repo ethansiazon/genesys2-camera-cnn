@@ -420,3 +420,30 @@ Fresh Vivado project creation validated21RTLfiles/part/SIM_FAST_INIT0/constraint
 no synthesis or board programming. See BEST_CAMERA_HANDOFF_20261105.json forhash.
 Original and active working sources unchanged; noGitpush. Physical image still
 dark/washed with bright-light green/dark artefacts; handoff does not claim cure.
+
+
+## Preferred-camera still-image project created November5
+
+User requested separatelast_exposure_test project to save camera images forCNN.
+Existing preferred RTL already includesD16A/SNAP RGB565 framebuffer-write snapshot.
+No FPGAhardware changes or new synthesis needed. New tracked source lives in
+camera/working/still_capture_20261105 (rootr8working and originalversions untouched).
+Desktop/Genesys2-Still-Capture-20261105/project/camera_hdmi.xpr created/verified
+inVivado2026.1 (21RTLfiles,hardwareSIM_FAST_INIT0), with matching source and
+unchanged preferredcamera_hdmi.bit. Capture_Image.cmd opens interactive reader
+when user launches; process-only execution-policy flag, no permanentOSchanges.
+ReadsUART115200 without camera register writes; requires normal-viewID/switch
+telemetry before askingSW7up to avoid stale snapshots. SW6 staysup, SW7down
+beforelaunch anddownafterDONE. UseUART/J15, notJTAG, mainboardpowerkepton.
+
+Saves sessions inDesktop/Genesys2-Camera-Images: native320x240RGB image.png,
+960x720preview.png, rawtransfer.txt andJSONprovenance. Strict packet/metadata/
+address/finish/padding validation before imageacceptance; no brightness/crop/
+saturation enhancement.5/6/5bit snapshot precision, not fullRGB888 or rawBayer.
+OfflineallRGB565encodings/76800pixels checked; invalidframe/order/magic/padding
+and overwrite cases rejected; WindowsPowerShell hostselftest and snapshotRTLsim
+passed. No fake testPNG copied into cameraimages. Physical transfer with this
+new launcher remains pending: board unavailable withteammates. UseoriginalPNG
+with retainedCNNpreprocessing; still cannot evaluate motion/tracking pipeline.
+See docs/still_capture_20261105/PROJECT_RESULT.json and copiedprojectREADME.
+No boardprogramming,Windowsdriverchanges,CNNchanges orGitpush.
