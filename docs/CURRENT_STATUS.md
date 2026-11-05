@@ -251,3 +251,18 @@ sent and no settings changed (session changes/reads empty). Requested reseating
 UART/J15 and laptop USB ends while main board power stays on. Re-enumerate the
 actual serial port before trying it. Do not rebuild or change drivers for this
 connection observation. Physical r6 control validation remains pending.
+
+## R6 physical live controls validated
+
+Known-working cable at J15 and another laptop USB port restored FTDI COM3.
+No driver/OS changes. Live-control signature verified; ID5640 and baseline
+exposure128/gain1x read correctly. No-op 3406=00 write/readback passed. Then
+3406=01 froze existing automatic gains; all six gain bytes exactly match the
+prior live read: R=04CD, G=052F, B=0400 (approximately1.200/1.296/1.000x).
+No new gain values or colour recipe selected. This is actual host-to-camera
+read/write evidence, not image-quality evidence. Only WB mode changed.
+Current board r6, UART only, only SW6 up, manual WB holds the prior gains.
+Do not reset before the requested neutral-reference snapshot: BTNC would
+restore automatic WB. Next user action is matte white paper centred on desk,
+coloured object beside it, no bright lamp/screen in view; then raise SW7 without
+BTNC. Save raw neutral reference before choosing colour gains.
