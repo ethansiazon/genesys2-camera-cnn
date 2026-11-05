@@ -1,6 +1,6 @@
 {
   "date": "2026-11-05",
-  "stage": "applied_await_visual_result",
+  "stage": "no_improvement_restored",
   "trial": "EspressifSaturation0 referencecolourmatrix;CMXenabled5001A3",
   "recipe": "camera/working/scripts/camera_trials.json:Saturation0",
   "setting_family": "5381..538B only; no gamma/exposure/gain/orientation changes",
@@ -184,5 +184,8 @@
   "restore_file": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_cmx_reference0_20261105\\change\\SESSION.json",
   "result": null,
   "user_instructed": "NoBTNC/switchchange;lookatliveblue/yellowreference",
-  "important": "Neutralreferencelevel0 is not calibratedtoourmodule; notclaimedhuefix."
+  "important": "Neutralreferencelevel0 is not calibratedtoourmodule; notclaimedhuefix.",
+  "result_user_verbatim": "still similar to original from what i can see blues are green and greens are very washed out and seem gray",
+  "restore_verified": "5381..538B factorypreviousvalues restored,5001A3 enabled,340600autoWB,exposure128/gain1x",
+  "restore_session": "local_results/picture_trials/r8_matrix_trials_baseline_restored_20261105/SESSION.json"
 }

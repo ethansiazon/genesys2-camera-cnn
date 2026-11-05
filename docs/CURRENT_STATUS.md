@@ -581,3 +581,21 @@ Allwritesreadbackverified;CMXremainsenabled5001A3. Before->aftercommoncontrols
 identicalincludingheldWB/exposure/gain. No gamma/newbitstream. Awaituserlive
 huecomparison(NOreset). Restoreusingr8_cmx_reference0_20261105/change/SESSION.json.
 CurrentRGB565r8/UART/onlySW6up,WBheld01,matrixreference0. Gammafactoryuntouched.
+
+
+## ReferenceCMXdidnotimprove; baselinefullyrestored; checkphysicalcolourreference
+
+Userreportsreference0similar:bluegreen,greenwashedgray. Restoredall11coefficients
+andverifiedactualvalues/CMXenabledA3. Thenrestored340600autoWB(initialbeforehold),
+exposure128/gain1xunchanged. AllCMXexperimentsrolledback; gammanevertouched.
+CurrentRGB565r8/UART/onlySW6up/SW7down,autowhitebalance.
+
+Identifiedimportantreferenceconfound: photographedLCDviewedatsteepangle can
+shiftcolour. PrimaryEIZOmonitor docs verifyVA/TNangularcolourchange. Earlier
+imagehueerrorisvisiblebutdoesnotaloneestablishcamera-mappingfailure. Acknowledged
+thisshouldhavebeencheckedearlier. Askeduserrealblueobject+whitepaper inroomlight,
+excludescreens/ceilinglamps,wait10sWBsettle,noreset. Needanswerbeforemoretuning.
+Coherentpublishedreadoutprofilemaybenextifphysicalhueswrong: currentinc71/71,
+VTS520 differsLinux/Espressiflowresinc31/31 withlongerVTS andmode-specificanalog/
+BLCcontrols. Changingincrementsalonewouldinvalidateframetiming; no suchwriteor
+newbuildstarted. Preservepreferredandcurrentpreparedprofiles.

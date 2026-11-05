@@ -212,7 +212,7 @@
     "DVP data bit/phase/transport fault",
     "Format/packing error not yet independently ruled out on actual hardware"
   ],
-  "next_test": "Stop repeating known bar visual check. With SW7down, read ISP/mirror/binning/colour-matrix control state; consider one-bit colour-matrix bypass then restore, preserving scaling/exposure/WB. Actual frame/readback evidence required.",
+  "next_test": "User physicalblueobject test; automaticWB restored, settle10s. If genuinelywrongphysicalhues, consider coherent published sensor-readout/binning/BLC profile, not more saturation tweaks. No new readout writes/build yet.",
   "gamma_writes_applied": false,
   "state_note": "Only earlier3406WBhold was applied. NextBTNC is intentional and returnsWBauto/exposure128/defaultgamma.",
   "primary_sources": [
@@ -221,5 +221,7 @@
     "OV5640v2.03 product specification table6-5"
   ],
   "user_follow_up": "Built-in camera colour bars look similar to expected reference, but live sensor scene colours do not.",
-  "scope_update": "Reported clean synthetic bars suggest downstream display/packing works for those test values; does not prove every DVP value or live-mode transition is correct."
+  "scope_update": "Reported clean synthetic bars suggest downstream display/packing works for those test values; does not prove every DVP value or live-mode transition is correct.",
+  "reference_limit_update": "Captured LCD at steep angle is an unreliable sole hue reference: LCD angular colour shift and emission differ from matte objects. Earlier hue mismatch measured is real in image, but not yet proven to originate solely in camera. Need actual blue object + neutralpaper under roomlight, screen excluded.",
+  "reference_limit_source": "https://www.eizo.com/library/management/cms/02.html/"
 }
