@@ -243,3 +243,11 @@ unverified. Next user action: load r6 through JTAG, only SW6 up, BTNC and wait
 5s; move to UART only with main power maintained. Then run host Read/Ping
 without writes to verify signature, ID, startup exposure/AWB and actual read
 handshake before any live colour tuning. No Git push or auto-programming.
+
+User confirms r6 loaded, only SW6 up, UART only. First host Read could not open
+COM3 because Windows currently lists no serial port. Follow-up PnP inventory
+also lists no VID_0403/FTDIBUS board USB device. No ping/register operation was
+sent and no settings changed (session changes/reads empty). Requested reseating
+UART/J15 and laptop USB ends while main board power stays on. Re-enumerate the
+actual serial port before trying it. Do not rebuild or change drivers for this
+connection observation. Physical r6 control validation remains pending.
