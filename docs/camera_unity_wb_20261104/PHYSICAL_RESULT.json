@@ -1,0 +1,13 @@
+{
+  "candidate": "unity_wb128_20261104_r5",
+  "bitstream_sha256": "754433b86e128950ec96100fdaff250574c8752eb2ead9154d61e219b90a4602",
+  "evidence": "User report and monitor photograph following r5 loading instructions. Actual manual-gain register readback has not yet been obtained.",
+  "user_observation_verbatim": "there is just this purple haze/slight hue over the image idk what, i feel like we arent making any meqaningful progress its been avery long time",
+  "visual_observations": [
+    "Broad purple/cool cast visible in monitor photograph",
+    "Bright ceiling lights retain severe green/blue/purple distorted areas"
+  ],
+  "limitations": "Phone photograph is not a calibrated colour measurement. Exposure, scene framing and display capture differ from earlier raw reference. No quantitative before/after colour effect claimed.",
+  "decision": "not accepted as an image improvement; do not promote equal gains as a final calibration",
+  "next_direction": "Improve test efficiency with UART camera-register controls and rollback, then measure a fixed neutral/colour reference. Seek exact known-working ESP camera configuration if available. No further speculative sensor-register batch selected."
+}

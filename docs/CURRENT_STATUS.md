@@ -199,3 +199,20 @@ SHA256: 754433b86e128950ec96100fdaff250574c8752eb2ead9154d61e219b90a4602
 User has confirmed JTAG only, only SW6 up. Await manual programming, BTNC,
 5-second settling and physical image report. No appearance claim made.
 Baseline fallback remains unchanged; working source hashes match this build.
+
+## User reports purple haze after r5 instructions
+
+User supplied a monitor photograph and reports persistent purple haze/hue and
+frustration with lack of image improvement. Severe bright-light colour errors
+also remain visible. R5 is not accepted as an improvement. Its actual manual
+gain registers have not been physically read back; do not claim that verified.
+Phone photograph is not calibrated/paired raw data. No new sensor setting was
+chosen from it. No compiler is running. Current report follows r5 instructions;
+preferred fallback remains available. See camera_unity_wb_20261104/PHYSICAL_RESULT.json.
+
+Code audit confirms UART diagnostics are transmit-only. Proposed efficiency
+change: add UART RX and serialized, checked camera-register controls so most
+setting comparisons do not require rebuilding. Official Digilent master XDC
+confirms uart_tx_in is Y20 (FPGA input); existing uart_rx_out is Y23 (FPGA TX).
+See CAMERA_LIVE_CONTROL_PLAN.md. This is not implemented or promised as a
+colour fix. Seek exact ESP configuration that previously produced clean video.
