@@ -1,0 +1,21 @@
+{
+  "trial": "R6 live exposure160 with held white balance",
+  "before_exposure_lines": 128,
+  "after_exposure_lines": 160,
+  "sensor_gain": "1x",
+  "verified_register_delta": {
+    "3501": [
+      "08",
+      "0A"
+    ]
+  },
+  "colour_gains_unchanged": true,
+  "WB_mode": "manual held R04CD G052F B0400",
+  "setting_write_and_readback_verified": true,
+  "image_improvement_proved": false,
+  "paired_raw_after_capture": "pending; await SW7 raise without reset, same scene",
+  "user_observation": "pending",
+  "rollback_write": "3501=08",
+  "restore_log": "local_results/live_controls/r6_exposure160_write_20261105/SESSION.json",
+  "important": "This is a volatile camera setting, not a new bitstream default. BTNC returns preferred startup exposure128/auto WB."
+}

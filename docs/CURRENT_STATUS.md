@@ -279,3 +279,14 @@ dim; proposed next isolated test exposure128->160 lines (+25%) with current
 gains held, camera/paper/lighting stationary. Await user SW7 down (SW6 stays up)
 before sending commands, since firmware blocks commands during raw replay.
 Current board remains exposure128, manual held gains, UART only, SW6/SW7 up.
+
+## Live exposure160 trial applied
+
+User confirmed SW7 down, same scene, no reset. Before/after physical readbacks
+verify only3501 changed08->0A (128->160 lines). Exposure manual, sensor gain1x,
+WB manual and all six colour-gain bytes unchanged. No rebuild. Volatile setting
+only; no new image-quality claim. User observation and same-scene raw capture
+are pending. Next request SW7 up after settling, without BTNC. Current board
+R6 UART only, SW6 up, exposure160, held gainsR04CD/G052F/B0400. To undo viaUART
+write3501=08 or restore the saved write-session before value. BTNC restores
+preferred startup128 and automatic WB, so do not reset during paired comparison.
