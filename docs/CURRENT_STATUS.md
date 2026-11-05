@@ -390,3 +390,18 @@ All targeted simulations and offlinehost/decoder tests passed. See
 camera_colour_trials_20261105/PLAN.md. Original archived favourite untouched.
 Next build two separate frozen camera-only variants sequentially under guard;
 no claimed image improvement before board comparisons. No push authorized.
+
+
+## R8 offline preparation complete: both bitstreams passed
+
+Both frozen-source builds passed routed timing, route/DRC and zero critical
+warnings/errors. RGB565374s setup+0.214/hold+0.069ns; YUYV342s setup+0.294/
+hold+0.075ns. Frozen source SHA manifests identical, generic differsRGB5651/0.
+See camera_colour_trials_20261105/BUILD_SUMMARY.md and START_HERE.md.
+Ten reversible runtime trial recipes ready, no actual trial applied in this
+turn. RGB565 data decoding/tagging and legacyYUV path tested. Board unavailable
+with teammates; no UART/JTAG access, no programming. Original archived favourite
+unchanged, noCNN changes or Git push. Next step is physical same-scene format
+comparison before stacking picture tuning. Do not call these confirmed fixes.
+Desktop test kit and ZIP will contain baseline, both builds, matching source,
+recipes, instructions, blank observationsheet and evidence. User can test later.

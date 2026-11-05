@@ -1,0 +1,25 @@
+{
+  "source_rtl_commit": "2cedfdd",
+  "status": {
+    "state": "complete",
+    "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\colour_rgb565_20261105_r8",
+    "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\colour_rgb565_20261105_r8\\source",
+    "memory_guard_gib": 1.5,
+    "threads": 1,
+    "board_programming": false,
+    "camera_format": "rgb565",
+    "rgb565_generic": 1,
+    "updated_at_local": "2026-11-05 02:22:02",
+    "launcher_pid": 16912,
+    "elapsed_seconds": 374,
+    "available_ram_gib": 2.83,
+    "timing": {
+      "setup_wns_ns": 0.214,
+      "hold_whs_ns": 0.069,
+      "physical_camera_tested": false
+    },
+    "bitstream_sha256": "10aa69b4e8f142f553127b2ab570ff06b5ce5513df5bd32269201dd4908e2f9f"
+  },
+  "physical_image_tested": false,
+  "scope": "Camera-only format diagnostic, not camera+CNN fit or image-quality evidence"
+}
