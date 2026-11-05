@@ -157,12 +157,12 @@ module ov5640_init #(
         8'd53 : entry = {C_WR,  16'h501F, 8'h00};  // ISP YUV422 (was 0x01, RGB)
         8'd54 : entry = {C_WR,  16'h4740, 8'h22};  // Linux OV5640 DVP: rising sample, HREF high, VSYNC high (bit0=0).
         8'd55 : entry = {C_WR,  16'h503D, testbar ? 8'h80 : 8'h00};  // internal colour bar
-        // One controlled trial: manual exposure 128 lines of VTS 520,
+        // One controlled trial: manual exposure 192 lines of VTS 520,
         // gain 1x. Register encodings follow Espressif OV5640 controls.
         // White balance, receiver, clock, window and format stay unchanged.
         8'd56 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
         8'd57 : entry = {C_WR, 16'h3500, 8'h00};
-        8'd58 : entry = {C_WR, 16'h3501, 8'h08}; // 128 << 4 = 0x00800
+        8'd58 : entry = {C_WR, 16'h3501, 8'h0C}; // 192 << 4 = 0x00C00
         8'd59 : entry = {C_WR, 16'h3502, 8'h00};
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16

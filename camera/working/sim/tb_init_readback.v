@@ -38,7 +38,7 @@ module tb_init_readback;
  initial begin
   manual_addr[0]=16'h3503;manual_data[0]=8'h03;
   manual_addr[1]=16'h3500;manual_data[1]=8'h00;
-  manual_addr[2]=16'h3501;manual_data[2]=8'h08;
+  manual_addr[2]=16'h3501;manual_data[2]=8'h0C;
   manual_addr[3]=16'h3502;manual_data[3]=8'h00;
   manual_addr[4]=16'h350a;manual_data[4]=8'h00;
   manual_addr[5]=16'h350b;manual_data[5]=8'h10;

@@ -6,7 +6,8 @@ selected on 4 November 2026. The unchanged saved version is
 `2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185`.
 
 Initial RTL and constraints are byte-identical to that saved version.
-Exposure is fixed at 128 lines, gain 1x, VTS 520. The user reports a dark,
+The saved baseline uses 128 exposure lines, gain 1x, VTS 520.
+The active working copy now tests 192 exposure lines; gain and VTS remain fixed. The user reports a dark,
 washed-out picture, with remaining green distortion on bright lights.
 Monitor aspect-ratio stretching has been corrected on the monitor.
 
@@ -34,3 +35,12 @@ RGB565 analyze_snapshot.py decoder is incompatible with this new mode.
 Wait for the camera to settle before raising SW7; lower then raise it to capture
 a new frame without resetting the camera. The preserved .bit in this folder is
 still the OLD baseline; use the separately built diagnostic .bit after it passes.
+
+## Controlled exposure-192 experiment
++
++Only the exposure-time setpoint changes: 128 to 192 lines (+50%). Gain remains
++1x and timing, format, receiver, colour conversion and raw recorder are unchanged.
++Expected readback: 3503=03, 3500=00, 3501=0C, 3502=00, 350A=00, 350B=10.
++The original and raw-128 bitstreams remain saved separately. This experiment
++requires its new built bitstream; source changes do not alter the running board.
++
