@@ -339,3 +339,19 @@ address/comment differs fromr6. No physical image result or board programming.
 User confirmedJTAGonly/mainpoweron/onlySW6up. Await manual Program Device,
 thenBTNC/fivesecondsettle and same-scene observation. New startup128/autoWB.
 To rollback load immutable last_exposure_test/camera_hdmi.bit (onlySW6up+BTNC).
+
+
+## R7 rejected by physical observation
+
+User answered "Worse" to r7 comparison of purple tint/green bright areas.
+Saved camera_drive_address_20261105/PHYSICAL_RESULT.json. No raw capture or
+post-load register verification; do not infer exact cause from this observation.
+R7 remains preserved in frozen build; it is not the preferred camera version.
+Restore immutable last_exposure_test/camera_hdmi.bit (SHA verified), onlySW6up,
+BTNC and five-second settle. Await user confirmation before assuming rollback.
+Working init source restored to r6 baseline from preserved backup; runtime UART
+controls remain available in source. This source restore is not board programming.
+Candidate RGB565 comparison can isolate YUV interpretation/conversion and sensor
+format path; requires dedicated capture/format handling, not a whole MIT ROM copy.
+No new build or camera setting changes launched after rejection. Current board
+inferredr7/JTAGonly/onlySW6up based on requested test; rollback not yet confirmed.

@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-05",
+  "candidate": "drive_address128_20261105_r7",
+  "bitstream_sha256": "1a87f4655d11fde536ed1252f4ec258d0e653c671082723395f994d3d6fde45b",
+  "user_observation_verbatim": "Worse",
+  "prompted_conditions": "Only SW6 up; BTNC; five-second settle; compare purple tint and green bright areas against preferred original",
+  "acceptance": "Rejected as preferred image candidate",
+  "limitations": "No post-program camera register readback or saved raw image. User report does not isolate higher drive from removal of previous3016 write, reset/WB or scene effects. Correct register mapping alone is not an image cure.",
+  "rollback_bitstream": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\camera\\versions\\last_exposure_test\\camera_hdmi.bit",
+  "rollback_sha256": "2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185",
+  "rollback_confirmed": false,
+  "next_direction": "Restore favourite first. Consider separately bounded RGB565 diagnostic to isolate YUV interpretation/ISP path; no new build launched."
+}
