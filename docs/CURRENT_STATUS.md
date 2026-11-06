@@ -690,3 +690,10 @@ waveform, line completeness, frame rate and live color require board testing.
 Clock register encoding and divider calculation reference: Espressif
 `set_pll` and `calc_sysclk` in
 https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c.
+
+R11 passed the RGB565 integration fixture and routed timing (setup +0.102 ns,
+hold +0.076 ns, zero routing errors). Source and bitstream hashes verified.
+Bitstream: builds/reference_readout_20fps_rgb565_20261105_r11/camera_hdmi.bit.
+SHA256: fa7a8fdc80eb0bd67b5b62f87e434024ab13b35f684277d35ed350770808d0cd.
+Await manual board test. White-paper capture on R10 was offered and is
+pending user setup. No white-balance or saturation changes applied.
