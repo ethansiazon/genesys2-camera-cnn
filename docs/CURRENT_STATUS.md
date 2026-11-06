@@ -773,3 +773,11 @@ and the reference gamma curve. The image writes complete before streaming.
 Manual WB was chosen in the saved scene and can look different in other
 lighting. Original R13 remains available with automatic WB. The UART tuner
 can still adjust the saved-picture build while it is running.
+
+Both the original R13 and saved-picture fixtures passed, with all 35 saved
+registers verified before stream enable in the saved-picture simulation.
+Routed timing passed (setup +0.164 ns, hold +0.082 ns, zero routing errors).
+Bitstream: builds/r13_saved_picture_20261106/camera_hdmi.bit.
+SHA256: e25dc7dc9ee0c659e14d64b4ce6cf7aeacb772c92f8cfca0a0b49100a290a67e.
+Source and bitstream hashes verified. Original R13 bitstream also verified.
+Await manual load and comparison in the lighting used to save the preset.
