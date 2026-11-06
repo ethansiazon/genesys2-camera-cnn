@@ -1,0 +1,21 @@
+{
+  "stage": "RGB565_verified_readonly_audit_complete",
+  "baseline": "last_exposure_test, actual captures saved",
+  "saved_photos": 10,
+  "capture_reader_process_active": false,
+  "USB_detected": "JTAG FTDI6010 only",
+  "candidate": "C:\\Users\\ethan\\Desktop\\Genesys2-Camera-Colour-Tests-20261105\\02_rgb565_comparison\\camera_hdmi.bit",
+  "candidate_sha256": "10aa69b4e8f142f553127b2ab570ff06b5ce5513df5bd32269201dd4908e2f9f",
+  "expected_switches": "Only SW6 up; SW7 down; BTNC reset",
+  "wiring": "PCLK JA1 / D6 JB8; user must confirm if teammates changed it",
+  "change": "RGB565 format/direct unpack versus preferred YUYV conversion; same starting exposure128/gain1x/clocks/geometry",
+  "physical_result": {
+    "user_verbatim": "Looks about the same",
+    "compared_with": "last_exposure_test",
+    "camera_format_register_readback_verified": true,
+    "interpretation": "No demonstrated improvement after changing sensor format and bypassing FPGA YUV conversion. Qualitative observation narrows converter-only explanation but does not isolate ISP versus capture/transport issues."
+  },
+  "automatic_programming": false,
+  "scope": "Compare actual white/coloured objects and bright-light fault before any exposure/gamma/saturation recipes",
+  "next_step": "Stationary scene, allow autoWBsettle, holdcurrentWB, savebeforeframe, compareGammaReference without exposure/gain/saturation changes"
+}

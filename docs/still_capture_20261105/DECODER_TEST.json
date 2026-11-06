@@ -1,0 +1,23 @@
+{
+  "passed": true,
+  "synthetic_pixels_checked": 76800,
+  "all_65536_RGB565_words_checked": true,
+  "invalid_frames_refused": [
+    "partial_frame",
+    "address_errors",
+    "early_finish",
+    "wrong_magic",
+    "wrong_tag",
+    "bad_padding"
+  ],
+  "native_PNG_size": [
+    320,
+    240
+  ],
+  "preview_size": [
+    960,
+    720
+  ],
+  "overwrite_refused": true,
+  "camera_connected": false
+}

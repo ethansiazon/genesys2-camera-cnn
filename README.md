@@ -8,7 +8,7 @@ working subsystems. The live camera has not yet been connected to the CNN.
 
 | Folder | Purpose |
 |---|---|
-| `camera/working/` | Editable copy of the best qualified camera receiver; start colour debugging here. |
+| `camera/working/` | Editable copy of the preferred final manual-exposure receiver; start debugging here. |
 | `camera/versions/` | Preserved best receiver, final exposure trial, and raw recorder. |
 | `cnn/` | Retained software, two trusted checkpoints, HLS, generated RTL, tests and provenance. |
 | `fpga_system/` | Niko's DDR3/CNN/decoder integration and October 29 board results. |
@@ -20,6 +20,11 @@ states and absolute paths. Read CURRENT_STATUS before acting on historical notes
 The original folders on the Desktop were not changed.
 
 ## Camera baseline
+
+**Active baseline, selected 4 November:** `camera/versions/last_exposure_test`.
+`camera/working` now copies this preferred final exposure version. The older
+`best_receiver` name describes a historical receiver checkpoint, not the user's
+current preferred picture. See `docs/CAMERA_PREFERRED_BASELINE_20261104.json`.
 
 The best receiver produced clean camera-generated bars and clear live video.
 Bright/white regions still had incorrect green/purple colours. The last separate
@@ -34,7 +39,7 @@ To create a new editable project from `camera/working`, in Vivado Tcl:
 
 ```tcl
 cd C:/Users/ethan/Desktop/genesys2-camera-cnn
-set argv [list C:/g2_camera_work_01]
+set argv [list C:/g2_camera_work_02]
 source tools/create_camera_project.tcl
 ```
 

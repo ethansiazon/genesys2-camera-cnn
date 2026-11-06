@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-04",
+  "experiment": "Exposure 192 lines; gain fixed 1x",
+  "baseline": "docs/camera_raw_diagnostic_20261104/BUILD_RESULT.json",
+  "changed_sensor_register": {
+    "address": "3501",
+    "before": "08",
+    "after": "0C"
+  },
+  "exposure_before": 128,
+  "exposure_after": 192,
+  "gain": "1x",
+  "VTS": 520,
+  "unchanged": "Receiver, YUV format/range, RGB conversion, HDMI clocks/resolution and raw recorder",
+  "expected_registers": {
+    "3503": "03",
+    "3500": "00",
+    "3501": "0C",
+    "3502": "00",
+    "350A": "00",
+    "350B": "10"
+  },
+  "physical_status": "Rejected as an overall improvement; user reports brighter but greener/purpler",
+  "scope": "Controlled brightness experiment; not a claimed fix for green highlights",
+  "functional_tests_passed": [
+    "tb_init_readback",
+    "tb_top_wiring_inverted"
+  ],
+  "build_path": "builds/exposure192_20261104_r2",
+  "build_result": "docs/camera_exposure192_20261104/BUILD_RESULT.json"
+}

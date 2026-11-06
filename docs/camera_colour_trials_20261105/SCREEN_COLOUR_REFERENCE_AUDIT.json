@@ -1,0 +1,227 @@
+{
+  "date": "2026-11-05",
+  "user_reference": "Expected displayed bars: white/yellow/cyan/green/magenta/red/blue/black; user identifies blue as farthest-right colour in both views. Reference stored locally only.",
+  "measurements": {
+    "source": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\picture_trials\\r8_gamma_before_capture_20261105\\raw_yuv_20261105_040048.txt",
+    "frame": 9789,
+    "format": "rgb565",
+    "assumption": "Approximate narrow central ROIs assigned to screen bars in user-specified left-to-right order; no calibrated colour fit or inferred wiring correction",
+    "bars": [
+      {
+        "expected_label": "white",
+        "ROI_xyxy": [
+          37,
+          185,
+          42,
+          201
+        ],
+        "median_RGB": [
+          231.0,
+          223.0,
+          222.0
+        ],
+        "median_R5G6B5": [
+          28.0,
+          55.0,
+          27.0
+        ],
+        "median_high_low_bytes": [
+          230.0,
+          251.0
+        ],
+        "byte_swap_median_RGB": [
+          255.0,
+          125.0,
+          53.0
+        ]
+      },
+      {
+        "expected_label": "yellow",
+        "ROI_xyxy": [
+          49,
+          185,
+          54,
+          201
+        ],
+        "median_RGB": [
+          239.0,
+          203.0,
+          239.0
+        ],
+        "median_R5G6B5": [
+          29.0,
+          50.0,
+          29.0
+        ],
+        "median_high_low_bytes": [
+          238.0,
+          92.0
+        ],
+        "byte_swap_median_RGB": [
+          90.0,
+          190.0,
+          115.0
+        ]
+      },
+      {
+        "expected_label": "cyan",
+        "ROI_xyxy": [
+          61,
+          185,
+          66,
+          201
+        ],
+        "median_RGB": [
+          181.0,
+          227.0,
+          189.0
+        ],
+        "median_R5G6B5": [
+          22.0,
+          56.0,
+          23.0
+        ],
+        "median_high_low_bytes": [
+          183.0,
+          23.0
+        ],
+        "byte_swap_median_RGB": [
+          16.0,
+          247.0,
+          189.0
+        ]
+      },
+      {
+        "expected_label": "green",
+        "ROI_xyxy": [
+          73,
+          185,
+          78,
+          201
+        ],
+        "median_RGB": [
+          189.0,
+          199.0,
+          189.0
+        ],
+        "median_R5G6B5": [
+          23.0,
+          49.0,
+          23.0
+        ],
+        "median_high_low_bytes": [
+          190.0,
+          56.0
+        ],
+        "byte_swap_median_RGB": [
+          57.0,
+          247.0,
+          247.0
+        ]
+      },
+      {
+        "expected_label": "magenta",
+        "ROI_xyxy": [
+          84,
+          185,
+          89,
+          201
+        ],
+        "median_RGB": [
+          222.0,
+          125.0,
+          82.0
+        ],
+        "median_R5G6B5": [
+          27.0,
+          31.0,
+          10.0
+        ],
+        "median_high_low_bytes": [
+          219.0,
+          233.0
+        ],
+        "byte_swap_median_RGB": [
+          239.0,
+          60.0,
+          156.0
+        ]
+      },
+      {
+        "expected_label": "red",
+        "ROI_xyxy": [
+          96,
+          185,
+          101,
+          201
+        ],
+        "median_RGB": [
+          239.0,
+          65.0,
+          82.0
+        ],
+        "median_R5G6B5": [
+          29.0,
+          16.0,
+          10.0
+        ],
+        "median_high_low_bytes": [
+          234.0,
+          10.0
+        ],
+        "byte_swap_median_RGB": [
+          8.0,
+          93.0,
+          82.0
+        ]
+      },
+      {
+        "expected_label": "blue",
+        "ROI_xyxy": [
+          107,
+          185,
+          112,
+          201
+        ],
+        "median_RGB": [
+          57.0,
+          121.0,
+          49.0
+        ],
+        "median_R5G6B5": [
+          7.0,
+          30.0,
+          6.0
+        ],
+        "median_high_low_bytes": [
+          59.0,
+          198.0
+        ],
+        "byte_swap_median_RGB": [
+          198.0,
+          199.0,
+          222.0
+        ]
+      }
+    ]
+  },
+  "finding": "Approximate blue ROI medianRGB57/121/49, green dominates; yellowROI239/203/239 is pinkish. This is a hue/chroma mismatch, not merely low brightness. ROI assignments are approximate under perspective; not a calibrated chart measurement.",
+  "byte_packing_check": "Source 4300=61/501F=01 agrees with manufacturer table6-5 and official Linux/Espressif RGB565 high-byte-first definitions. Offline byte swap does not consistently restore expected bar colours. No forced swizzle or wiring change justified from these values alone.",
+  "hypotheses": [
+    "Sensor ISP colour processing/readout configuration",
+    "DVP data bit/phase/transport fault",
+    "Format/packing error not yet independently ruled out on actual hardware"
+  ],
+  "next_test": "User physicalblueobject test; automaticWB restored, settle10s. If genuinelywrongphysicalhues, consider coherent published sensor-readout/binning/BLC profile, not more saturation tweaks. No new readout writes/build yet.",
+  "gamma_writes_applied": false,
+  "state_note": "Only earlier3406WBhold was applied. NextBTNC is intentional and returnsWBauto/exposure128/defaultgamma.",
+  "primary_sources": [
+    "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c",
+    "https://linux.googlesource.com/linux/kernel/git/torvalds/linux/+/077ab8985ee278c3d8618182d335b0f0cd919e16/drivers/media/i2c/ov5640.c",
+    "OV5640v2.03 product specification table6-5"
+  ],
+  "user_follow_up": "Built-in camera colour bars look similar to expected reference, but live sensor scene colours do not.",
+  "scope_update": "Reported clean synthetic bars suggest downstream display/packing works for those test values; does not prove every DVP value or live-mode transition is correct.",
+  "reference_limit_update": "Captured LCD at steep angle is an unreliable sole hue reference: LCD angular colour shift and emission differ from matte objects. Earlier hue mismatch measured is real in image, but not yet proven to originate solely in camera. Need actual blue object + neutralpaper under roomlight, screen excluded.",
+  "reference_limit_source": "https://www.eizo.com/library/management/cms/02.html/"
+}

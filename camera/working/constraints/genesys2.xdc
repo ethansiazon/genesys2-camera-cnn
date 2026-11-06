@@ -103,3 +103,7 @@ set_false_path -from [get_ports {jb[3]}]
 # DVP sampled as asynchronous data into matched synchronizer pipelines.
 # No camera pin is used as a fabric clock in this variant.
 set_false_path -from [get_ports {ja[0] ja[1] ja[3] ja[4] ja[5] jb[0] jb[1] jb[2] jb[4] jb[5] jb[6]}]
+
+# Host commands arrive from the USB bridge; this port is an INPUT.
+set_property -dict { PACKAGE_PIN Y20 IOSTANDARD LVCMOS33 } [get_ports {uart_tx_in}]
+set_false_path -from [get_ports {uart_tx_in}]

@@ -1,0 +1,20 @@
+{
+  "source": "local_results\\physical_isp_readback128_20261104_r3\\white_reference_redo\\raw_yuv_20261105_000004.txt",
+  "bytes": 153600,
+  "sha256": "73c890222094652d4b9fdc4f71ae009f990443527ca55d39559728ef1e36daca",
+  "packets": 5487,
+  "resynchronizations": 0,
+  "scope": "Visible bright-source green halo and coloured dark ring reproduced by laptop YUYV conversion. Scene is not a calibrated colour chart.",
+  "flat_pale_region_xyxy": [
+    145,
+    25,
+    200,
+    65
+  ],
+  "region_median_Y_Cb_Cr": [
+    87.0,
+    126.0,
+    127.0
+  ],
+  "interpretation_limit": "No claim that these chroma values identify the cause; camera AWB snapshot predates this framing. No quantitative effect of changing AWB has yet been measured."
+}

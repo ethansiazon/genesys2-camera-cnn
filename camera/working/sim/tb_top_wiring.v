@@ -25,7 +25,7 @@ module tb_top_wiring;
     top_genesys2 #(.SIM_FAST_INIT(1)) dut(
         .sysclk_p(sysclk),.sysclk_n(~sysclk),.sw(sw),.btnc(btn),.led(led),
         .ja(ja),.jb(jb),.hdmi_tx_p(hp),.hdmi_tx_n(hn),
-        .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_rx_out(tx));
+        .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_tx_in(1'b1),.uart_rx_out(tx));
     ov5640_yuyv_model #(.H_ACTIVE(320),.V_ACTIVE(2),.PCLK_PERIOD(70)) sensor(
         .pclk(pc),.vsync(vs),.href(hr),.d(data),.pwdn(ja[6]),.reset_n(ja[7]),
         .sioc(jb[7]),.siod(jb[3]),.frames_sent(frames));

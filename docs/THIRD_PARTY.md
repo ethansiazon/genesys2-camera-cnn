@@ -14,3 +14,12 @@ DOI 10.1145/2684746.2689060 (computation reuse). These are inspiration, not exac
 reproductions or evidence that this full system fits. Camera references: OV5640
 product specification, Espressif esp32-camera OV5640 driver, Digilent Genesys 2
 manual. See the subsystem READMEs for links and original source details.
+
+
+Camera colour trials November5,2026: register recipes in
+camera/working/scripts/camera_trials.json are adapted from Espressif
+esp32-camera sensors/private_include/ov5640_settings.h. Project Apache2.0
+license retained at docs/camera_colour_trials_20261105/ESPRESSIF_LICENSE.txt.
+The inspected ov5640.c separately retains its OpenMV MIT notice; no full driver
+was copied. Recipe scope/provenance and downloaded source hashes accompany
+these adaptations. Original third-party notices remain intact.

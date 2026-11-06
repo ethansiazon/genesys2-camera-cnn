@@ -97,6 +97,18 @@ module ov5640_yuyv_model #(
     localparam integer HTOT = H_ACTIVE + EXTRA_COLS;
     localparam integer VTOT = V_ACTIVE + EXTRA_ROWS;
 
+    function [15:0] test_rgb565; input integer xx,yy;
+        begin
+            case(xx%8)
+             0:test_rgb565=16'hF800; 1:test_rgb565=16'h07E0;
+             2:test_rgb565=16'h001F; 3:test_rgb565=16'hFFFF;
+             4:test_rgb565=16'h0000; 5:test_rgb565=16'hFFE0;
+             6:test_rgb565=16'h07FF; 7:test_rgb565=16'hF81F;
+            endcase
+            if(yy%2) test_rgb565=(xx*109+811)&65535;
+        end
+    endfunction
+    reg [15:0] rgbword;
     integer x, y, k;
     reg [4:0] R; reg [5:0] G; reg [4:0] B;
 
@@ -128,11 +140,14 @@ module ov5640_yuyv_model #(
 
             for (y = 0; y < VTOT; y = y + 1) begin
                 for (x = 0; x < HTOT; x = x + 1) begin
-                    emit_byte(8'd16 + ((x+y)%200));
-                    emit_byte(8'd128);
-                    emit_byte(8'd16 + ((x+y+1)%200));
-                    emit_byte(8'd128);
-                    x = x + 1;
+                    if(regs[16'h501f]==1 && regs[16'h4300]==8'h61) begin
+                        rgbword=test_rgb565(x,y);
+                        emit_byte(rgbword[15:8]);emit_byte(rgbword[7:0]);
+                    end else begin
+                        emit_byte(8'd16 + ((x+y)%200));emit_byte(8'd128);
+                        emit_byte(8'd16 + ((x+y+1)%200));emit_byte(8'd128);
+                        x = x + 1;
+                    end
                 end
                 @(negedge pclk_gen); href_gen = 1'b0; d = 8'h00;
                 repeat (H_BLANK_PCLK) @(negedge pclk_gen);

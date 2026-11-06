@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "RGB565_pixels_checked": 76800,
+  "tests": [
+    "Known red/green/blue/white/black/cyan/magenta/yellow channel packing",
+    "Wrong-format refusal",
+    "Unknown-format refusal",
+    "Existing physicalYUYV bytes preserved exactly"
+  ],
+  "hardware_access": false
+}

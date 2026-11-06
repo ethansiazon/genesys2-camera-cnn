@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-04",
+  "baseline_archive_unchanged": true,
+  "working_rtl_constraints_and_fixtures_match_baseline": true,
+  "project_created": "builds/camera_exposure_debug_20261104/camera_hdmi.xpr",
+  "project_source_files": 22,
+  "all_project_sources_in_camera_working": true,
+  "functional_checks_passed": [
+    "tb_init_readback",
+    "tb_top_wiring_inverted"
+  ],
+  "scope": "Exposure initialization and top-level functional checks only; clocks/HDMI primitives substituted. No synthesis, routing, new bitstream, or board programming."
+}

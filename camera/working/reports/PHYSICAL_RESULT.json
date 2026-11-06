@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-20T00:53:23.782278-05:00",
+  "state": "stopped_after_one_authorized_visual_trial",
+  "user_observation": "BETTER, less wrong colors, but really dark however, brighter lights like the lights on cieleing have green glitching color still but the rest of the weird colors are gone",
+  "assessment": "Partial improvement with a major brightness tradeoff; not a complete fix",
+  "pulsing_result": "Not separately specified in the user report",
+  "inference": "Appearance depends on exposure/gain or resulting image values; the exact cause remains unproved",
+  "limitations": "Visual report only; no physical register readback or new raw capture for this trial",
+  "exposure_lines": 128,
+  "gain_register": 16,
+  "white_balance": "unchanged",
+  "bitstream_sha256": "2a4cfed6b09c4b06ff9c2b739cb0a284b4b2b251db3c72dc4affbced6fdf0185",
+  "current_board_design": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\variants\\manual_exposure_once\\camera_hdmi.bit",
+  "trial_archive": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\saved_versions\\manual_exposure_once_20261020",
+  "previous_best_archive": "C:\\Users\\ethan\\Desktop\\genesys2_camera_hdmi_20261019\\saved_versions\\best_camera_20261020",
+  "no_further_work_until_user_requests": true
+}

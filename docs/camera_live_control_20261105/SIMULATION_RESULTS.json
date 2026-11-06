@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "tests": [
+    {
+      "test": "tb_uart_rx",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_unit_20261105_r6a\\tb_uart_rx.txt"
+    },
+    {
+      "test": "tb_camera_uart_control",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_unit_20261105_r6a\\tb_camera_uart_control.txt"
+    },
+    {
+      "test": "tb_init_readback",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_arbitration_20261105_r6a\\tb_init_readback.txt"
+    },
+    {
+      "test": "tb_top_wiring_inverted",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_arbitration_20261105_r6a\\tb_top_wiring_inverted.txt"
+    },
+    {
+      "test": "tb_init_host_control",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_arbitration_20261105_r6a\\tb_init_host_control.txt"
+    },
+    {
+      "test": "tb_top_live_control",
+      "passed": true,
+      "log": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\local_results\\live_control_link_20261105_r6b\\tb_top_live_control.txt"
+    }
+  ],
+  "host_selftest": "passed",
+  "scope": "UART protocol, exclusive init/refresh arbitration, actual top serial/SCCB/telemetry path and continued synthetic capture. Physical control pending."
+}

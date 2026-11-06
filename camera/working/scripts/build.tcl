@@ -2,6 +2,12 @@
 # Never connects to/programs a board. Timing failure is a build failure.
 set root [file dirname [file dirname [file normalize [info script]]]]
 set out [file normalize [lindex $argv 0]]
+set rgb565 0
+if {[llength $argv] > 1} {set rgb565 [lindex $argv 1]}
+if {$rgb565 ni {0 1}} {error {RGB565 generic must be0 or1}}
+set reference_readout 0
+if {[llength $argv] > 2} {set reference_readout [lindex $argv 2]}
+if {$reference_readout ni {0 1 2 3 4 5}} {error {REFERENCE_READOUT generic must be in 0..5}}
 file mkdir $out
 cd $out
 set_param general.maxThreads 2
@@ -10,7 +16,7 @@ read_xdc [file join $root constraints genesys2.xdc]
 # Prevent Vivado's deep-BRAM cascade implementation from producing REQP-1962
 # mismatched ADDR15 tie-offs. Logical memory contents/latency stay unchanged.
 # AMD UG835 synth_design documents this maximum cascade-height control.
-synth_design -top top_genesys2 -part xc7k325tffg900-2 -max_bram_cascade_height 1
+synth_design -top top_genesys2 -part xc7k325tffg900-2 -max_bram_cascade_height 1 -generic [list RGB565=$rgb565 REFERENCE_READOUT=$reference_readout]
 write_checkpoint -force synthesized.dcp
 opt_design
 place_design

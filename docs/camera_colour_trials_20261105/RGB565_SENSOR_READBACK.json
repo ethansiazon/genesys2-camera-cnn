@@ -1,0 +1,261 @@
+{
+  "read_only_session": {
+    "started": "2026-11-05T03:53:24.6880899-06:00",
+    "port": "COM3",
+    "action": "Read",
+    "preset": "AutoWB",
+    "state": "complete",
+    "changes": [],
+    "reads": [
+      {
+        "address": "300A",
+        "value": "56"
+      },
+      {
+        "address": "300B",
+        "value": "40"
+      },
+      {
+        "address": "4300",
+        "value": "61"
+      },
+      {
+        "address": "501F",
+        "value": "01"
+      },
+      {
+        "address": "4740",
+        "value": "22"
+      },
+      {
+        "address": "302C",
+        "value": "02"
+      },
+      {
+        "address": "3500",
+        "value": "00"
+      },
+      {
+        "address": "3501",
+        "value": "08"
+      },
+      {
+        "address": "3502",
+        "value": "00"
+      },
+      {
+        "address": "3503",
+        "value": "03"
+      },
+      {
+        "address": "350A",
+        "value": "00"
+      },
+      {
+        "address": "350B",
+        "value": "10"
+      },
+      {
+        "address": "380E",
+        "value": "02"
+      },
+      {
+        "address": "380F",
+        "value": "08"
+      },
+      {
+        "address": "3400",
+        "value": "04"
+      },
+      {
+        "address": "3401",
+        "value": "79"
+      },
+      {
+        "address": "3402",
+        "value": "05"
+      },
+      {
+        "address": "3403",
+        "value": "68"
+      },
+      {
+        "address": "3404",
+        "value": "04"
+      },
+      {
+        "address": "3405",
+        "value": "00"
+      },
+      {
+        "address": "3406",
+        "value": "00"
+      },
+      {
+        "address": "5000",
+        "value": "A7"
+      },
+      {
+        "address": "5001",
+        "value": "A3"
+      },
+      {
+        "address": "5005",
+        "value": "36"
+      },
+      {
+        "address": "4000",
+        "value": "89"
+      },
+      {
+        "address": "4001",
+        "value": "00"
+      },
+      {
+        "address": "4004",
+        "value": "08"
+      },
+      {
+        "address": "4005",
+        "value": "18"
+      },
+      {
+        "address": "4006",
+        "value": "08"
+      },
+      {
+        "address": "4008",
+        "value": "00"
+      },
+      {
+        "address": "4009",
+        "value": "10"
+      },
+      {
+        "address": "5381",
+        "value": "20"
+      },
+      {
+        "address": "5382",
+        "value": "64"
+      },
+      {
+        "address": "5383",
+        "value": "08"
+      },
+      {
+        "address": "5384",
+        "value": "30"
+      },
+      {
+        "address": "5385",
+        "value": "90"
+      },
+      {
+        "address": "5386",
+        "value": "C0"
+      },
+      {
+        "address": "5387",
+        "value": "A0"
+      },
+      {
+        "address": "5388",
+        "value": "98"
+      },
+      {
+        "address": "5389",
+        "value": "08"
+      },
+      {
+        "address": "538A",
+        "value": "01"
+      },
+      {
+        "address": "538B",
+        "value": "98"
+      },
+      {
+        "address": "5480",
+        "value": "00"
+      },
+      {
+        "address": "5481",
+        "value": "26"
+      },
+      {
+        "address": "5482",
+        "value": "35"
+      },
+      {
+        "address": "5483",
+        "value": "48"
+      },
+      {
+        "address": "5484",
+        "value": "57"
+      },
+      {
+        "address": "5485",
+        "value": "63"
+      },
+      {
+        "address": "5486",
+        "value": "6E"
+      },
+      {
+        "address": "5487",
+        "value": "77"
+      },
+      {
+        "address": "5488",
+        "value": "80"
+      },
+      {
+        "address": "5489",
+        "value": "88"
+      },
+      {
+        "address": "548A",
+        "value": "96"
+      },
+      {
+        "address": "548B",
+        "value": "A3"
+      },
+      {
+        "address": "548C",
+        "value": "AF"
+      },
+      {
+        "address": "548D",
+        "value": "C5"
+      },
+      {
+        "address": "548E",
+        "value": "D7"
+      },
+      {
+        "address": "548F",
+        "value": "E8"
+      },
+      {
+        "address": "5490",
+        "value": "0F"
+      }
+    ]
+  },
+  "confirmed_sensor": "OV5640",
+  "confirmed_format": "RGB565,4300=61/501F=01",
+  "exposure_lines": 128,
+  "sensor_gain": 1.0,
+  "manual_AEC_AGC": true,
+  "white_balance_mode": "automatic",
+  "RAW_gamma_enabled": true,
+  "gamma_curve": "All17 gamma registers match manufacturer default table. 5480=00 does NOT mean gamma disabled; bit0 is BIAS plus, not global gamma enable.",
+  "BLC": "4000=89 enabled;4001=00 startline and4004=08 differ from Espressif defaults02/02. Read-only observation; not a proven fault, no allowlist bypass.",
+  "decision": "Controlled GammaReference curve trial after settled scene, held currentWB and savedbeforecapture; no exposure/gain/saturation change simultaneously. Need capture/visual evidence; no predicted cure.",
+  "physical_image_result": "User: Looks about the same vs preferred original",
+  "hardware_or_setting_mutations": false,
+  "primary_reference": "OV5640v2.03 PDFpp59,66,148; Espressif sensor_regs_gamma0 and set_wb_mode source recorded in recipe manifest"
+}

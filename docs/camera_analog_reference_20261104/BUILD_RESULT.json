@@ -1,0 +1,23 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\analog_reference128_20261104_r4",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\analog_reference128_20261104_r4\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-04 23:43:33",
+  "launcher_pid": 21800,
+  "elapsed_seconds": 332,
+  "available_ram_gib": 3.01,
+  "timing": {
+    "setup_wns_ns": 0.279,
+    "hold_whs_ns": 0.084,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "7f287fae0a415126e231f36e4bb643f9bd449e1739dbd76941cc210354ffc7ab",
+  "source_commit": "090f597",
+  "GUI_project": "builds/camera_analog_reference128_20261104_project/camera_hdmi.xpr",
+  "errors": 0,
+  "critical_warnings": 0,
+  "physical_camera_tested": false
+}

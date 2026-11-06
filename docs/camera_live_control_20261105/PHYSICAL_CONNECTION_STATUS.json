@@ -1,0 +1,13 @@
+{
+  "user_report": "Loaded; only SW6 up; UART only ready",
+  "loaded_candidate_reported": "live_control128_20261105_r6",
+  "first_host_action": "Read (ping preflight before any register access)",
+  "result": "COM3 not present; SerialPort.Open failed",
+  "present_device_check": "No FTDI VID_0403/FTDIBUS device or serial port was returned in follow-up inventory",
+  "settings_changed": false,
+  "physical_control_validated": true,
+  "session": "local_results/live_controls/r6_physical_first_read_20261105/SESSION.json",
+  "next_step": "User reseats UART/J15-to-laptop USB cable with main power maintained. Re-enumerate actual port before opening it; no firmware rebuild or driver changes.",
+  "connection_now_present": true,
+  "resolution": "Known-working cable at J15 and another laptop USB port restored FTDI COM3; see PHYSICAL_CONTROL_RESULT.json"
+}

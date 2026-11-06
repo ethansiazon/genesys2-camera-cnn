@@ -1,0 +1,25 @@
+{
+  "source_rtl_commit": "2cedfdd",
+  "status": {
+    "state": "complete",
+    "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\colour_yuyv_20261105_r8",
+    "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\colour_yuyv_20261105_r8\\source",
+    "memory_guard_gib": 1.5,
+    "threads": 1,
+    "board_programming": false,
+    "camera_format": "yuyv",
+    "rgb565_generic": 0,
+    "updated_at_local": "2026-11-05 02:28:10",
+    "launcher_pid": 4260,
+    "elapsed_seconds": 342,
+    "available_ram_gib": 3.06,
+    "timing": {
+      "setup_wns_ns": 0.294,
+      "hold_whs_ns": 0.075,
+      "physical_camera_tested": false
+    },
+    "bitstream_sha256": "2f50ac8395cb33fcb877e517d98aff484d4db0a068f5df79323af7939e73832c"
+  },
+  "physical_image_tested": false,
+  "scope": "Matched camera-only YUV control, not image-quality validation"
+}

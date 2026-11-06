@@ -1,0 +1,27 @@
+{
+  "trial": "R6 live exposure160 with held white balance",
+  "before_exposure_lines": 128,
+  "after_exposure_lines": 160,
+  "sensor_gain": "1x",
+  "verified_register_delta": {
+    "3501": [
+      "08",
+      "0A"
+    ]
+  },
+  "colour_gains_unchanged": true,
+  "WB_mode": "manual held R04CD G052F B0400",
+  "setting_write_and_readback_verified": true,
+  "image_improvement_proved": false,
+  "paired_raw_after_capture": "pending; await SW7 raise without reset, same scene",
+  "user_observation": "i didnt even notice a change i didnt realize it can change wehn connected through uart",
+  "rollback_write": "3501=08",
+  "restore_log": "local_results/live_controls/r6_exposure160_write_20261105/SESSION.json",
+  "important": "This is a volatile camera setting, not a new bitstream default. BTNC returns preferred startup exposure128/auto WB.",
+  "after_raw_capture": "local_results/live_controls/r6_exposure160_capture_20261105/raw_yuv_20261105_010205.txt",
+  "after_raw_sha256": "55d4e3ddeb9e5ae9fecbbce40d460a746e771e694c347ce1fa8c2a952be8e418",
+  "after_capture_complete": true,
+  "comparison_limit": "Camera framing/paper/tool position visibly changed. Fresh frame counter 15218 versus 9211, but no fixed-region paired brightness effect is claimed.",
+  "next_step": "Await SW7 down; use full three-register exposure update sequence and a larger 256-line visual trial below VTS limit, with held WB unchanged. No new build.",
+  "exposure_setter_source": "https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c"
+}

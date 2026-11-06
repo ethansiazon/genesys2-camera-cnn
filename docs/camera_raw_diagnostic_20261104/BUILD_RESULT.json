@@ -1,0 +1,26 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\raw_exposure_diagnostic_20261104_r1",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\raw_exposure_diagnostic_20261104_r1\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "updated_at_local": "2026-11-04 22:10:30",
+  "launcher_pid": 14256,
+  "elapsed_seconds": 310,
+  "available_ram_gib": 3.12,
+  "timing": {
+    "setup_wns_ns": 0.175,
+    "hold_whs_ns": 0.078,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "ddf836b7b6d4bd54d13b1098c4975e0cc858bbcc5a57ae74bc36296a723ee0eb",
+  "source_commit": "fddad3a",
+  "build_only": true,
+  "physical_status": "User reports loading diagnostic; live image looks different, with more purple tone and still dark. Awaiting UART readback/raw capture.",
+  "offline_checks": "17 functional fixtures passed; raw decoder fixture byte-identical",
+  "frozen_rtl_matches_working_copy": true,
+  "known_build_warnings": "Inout header buffering and unloaded optional signals; no critical warnings/errors; routed with zero routing errors. These reports do not establish physical camera colour quality.",
+  "user_observation_20261104": "it looks different, has a more purple tone still kind of dark feel, idk whether its exposer gamma or whatever",
+  "comparison_limit": "No fresh physical register readback or raw image yet. Source comparison confirms exposure initialization, receiver and RGB conversion unchanged; cause of visible difference not established."
+}

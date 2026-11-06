@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "tests": [
+    "Exposure encoding",
+    "Gamma recipe length",
+    "Format guard",
+    "HeldWB guard",
+    "Frame length guard",
+    "Sensor ID guard"
+  ],
+  "hardware_opened": false
+}

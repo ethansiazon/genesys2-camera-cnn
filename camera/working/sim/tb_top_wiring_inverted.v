@@ -25,7 +25,7 @@ module tb_top_wiring_inverted;
     top_genesys2 #(.SIM_FAST_INIT(1)) dut(
         .sysclk_p(sysclk),.sysclk_n(~sysclk),.sw(sw),.btnc(btn),.led(led),
         .ja(ja),.jb(jb),.hdmi_tx_p(hp),.hdmi_tx_n(hn),
-        .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_rx_out(tx));
+        .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_tx_in(1'b1),.uart_rx_out(tx));
     ov5640_yuyv_model #(.H_ACTIVE(320),.V_ACTIVE(2),.PCLK_PERIOD(70)) sensor(
         .pclk(pc),.vsync(vs),.href(hr),.d(data),.pwdn(ja[6]),.reset_n(ja[7]),
         .sioc(jb[7]),.siod(jb[3]),.frames_sent(frames));
@@ -66,6 +66,14 @@ module tb_top_wiring_inverted;
             end
         end
         ck("all 640 stored pixels",errors,0);
+        ck("manual exposure restored",sensor.regs[16'h3501],8'h08);
+        ck("ISP first bank value",dut.config_readback[199:192],8'hA7);
+        force dut.diagnostic_page=3'd4;#1;
+        ck("ISP UART page tag",dut.diagnostic_words[31:0],32'hD1640004);
+        ck("ISP UART first data byte",dut.diagnostic_words[39:32],8'hA7);
+        ck("ISP UART second data byte",dut.diagnostic_words[47:40],8'hA3);
+        ck("ISP UART NACK mask",dut.diagnostic_words[255:224],0);
+        release dut.diagnostic_page;
         sw[5]=1; repeat(10) @(posedge dut.clk_pix);
         ck("test-pattern switch selects bypass",dut.testpat_en,1);
         if(errors==0)$display("=== ALL TESTS PASS ===");
