@@ -652,3 +652,10 @@ which represents about half the exposure time at twice the line rate. Compare
 motion, brightness, residual tint, bright-light artefacts and new line noise
 before accepting the speed profile. The receiver's four-sample qualification
 remains in place. Build output: builds/reference_readout_fast_rgb565_20261105_r10.
+
+R10 passed the RGB565 integration fixture at a modeled 14.3 MHz DVP clock
+with short glitches injected. Vivado completed in 334 seconds with zero
+routing errors, setup slack +0.291 ns and hold slack +0.085 ns. Source
+snapshot and bitstream hashes verified. Bitstream SHA256:
+0bd8d5ec32a5f2163685d2fdcc652d8bf486128aac7fdaac70bc03e5e4fcdfb3.
+Await manual JTAG load and physical comparison with R9.
