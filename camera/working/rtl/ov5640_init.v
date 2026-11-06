@@ -45,7 +45,7 @@
 module ov5640_init #(
     parameter integer CLK_HZ = 100_000_000,
     parameter integer RGB565 = 0, // Separate format diagnostic; default preserves YUYV.
-    parameter integer REFERENCE_READOUT = 0 // Reference-derived 2x readout trial; default preserves r8.
+    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: reference readout with faster sensor clock.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -125,7 +125,7 @@ module ov5640_init #(
         //     multiplier was almost certainly far too fast. [derived]
         8'd20 : entry = {C_WR,  16'h3039, 8'h00};  // [derived] PLL not bypassed
         8'd21 : entry = {C_WR,  16'h3034, 8'h1A};  // [reference] 10-bit mode
-        8'd22 : entry = {C_WR,  16'h3035, 8'h41};  // Diagnostic: sysclk divider 4, half baseline sensor/DVP rate; measure on board.
+        8'd22 : entry = {C_WR,  16'h3035, REFERENCE_READOUT == 2 ? 8'h21 : 8'h41}; // Divider 2 for the speed comparison.
         8'd23 : entry = {C_WR,  16'h3036, 8'h48};  // [measured] PLL multiplier x72
         8'd24 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
         8'd25 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]

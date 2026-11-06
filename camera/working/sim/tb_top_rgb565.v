@@ -49,7 +49,7 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
         ck("actual top SCCB chip ID",dut.chip_id,16'h5640);
         ck("ID valid",dut.id_valid,1);
         ck("SCCB acknowledgements",dut.nack_seen,0);
-        ck("slow system divider",sensor.regs[16'h3035],8'h41);
+        ck("system divider",sensor.regs[16'h3035],REFERENCE_READOUT == 2 ? 8'h21 : 8'h41);
         ck("explicit DVP polarity",sensor.regs[16'h4740],8'h22);
         ck("RGB565 format",sensor.regs[16'h4300],8'h61);
         ck("RGB mux",sensor.regs[16'h501f],1);

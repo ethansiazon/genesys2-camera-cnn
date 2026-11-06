@@ -633,3 +633,22 @@ Frozen source hashes verified, working RTL matches, preferred original unchanged
 No board programming or push. User asked to move UART to JTAG only, keep SW6 up;
 confirmation has not arrived. Next manual load instructions in build LOAD_README.md.
 Need actual colour comparison/readback/geometry before promoting this candidate.
+
+### R9 physical result and R10 speed comparison
+
+Ethan reported that R9 corrected bars 1 (white), 2 (yellow), 5 (magenta),
+6 (red), 7 (blue) and 8 (black) against his colour reference. Cyan looked
+white, green looked yellowish, and the picture retained a green cast. The green
+and black artefacts around bright lights disappeared. Motion was noticeably
+slower. No new UART measurements or raw capture accompanied this observation.
+R9 remains the colour reference and its bitstream hash was rechecked unchanged.
+
+At the same sensor clock, increasing frame length from 520 to 984 lines gives
+an estimated 53% of the previous frame rate. The R10 `reference2x-fast` profile
+changes only register 3035 from 41 to 21 relative to R9, doubling the sensor
+clock with the same DVP divider. The targets are about 14–16 frames/s and a
+14.4 MHz pixel clock, subject to board measurement. Exposure stays at 128 lines,
+which represents about half the exposure time at twice the line rate. Compare
+motion, brightness, residual tint, bright-light artefacts and new line noise
+before accepting the speed profile. The receiver's four-sample qualification
+remains in place. Build output: builds/reference_readout_fast_rgb565_20261105_r10.
