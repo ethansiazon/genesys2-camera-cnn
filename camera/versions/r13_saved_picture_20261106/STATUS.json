@@ -1,0 +1,22 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\r13_saved_picture_20261106",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\r13_saved_picture_20261106\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "camera_format": "rgb565",
+  "rgb565_generic": 1,
+  "readout_profile": "reference2x-20fps-saved-picture",
+  "reference_readout_generic": 6,
+  "updated_at_local": "2026-11-06 00:21:36",
+  "launcher_pid": 22796,
+  "elapsed_seconds": 324,
+  "available_ram_gib": 2.33,
+  "timing": {
+    "setup_wns_ns": 0.164,
+    "hold_whs_ns": 0.082,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "e25dc7dc9ee0c659e14d64b4ce6cf7aeacb772c92f8cfca0a0b49100a290a67e"
+}

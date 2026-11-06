@@ -1,0 +1,1828 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 08-oct-2027.
+
+****** Vivado v2026.1 (64-bit)
+  **** SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+  **** IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+  **** SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+  **** Start of session at: Fri Nov  6 00:16:13 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source {C:\Users\ethan\Desktop\genesys2-camera-cnn\builds\r13_saved_picture_20261106\source\scripts\build.tcl} -notrace
+read_verilog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 587.508 ; gain = 266.754
+Command: synth_design -top top_genesys2 -part xc7k325tffg900-2 -max_bram_cascade_height 1 -generic {RGB565=1 REFERENCE_READOUT=6}
+Starting synth_design
+Attempting to get a license for feature 'Vivado_Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Synthesis' and/or device 'xc7k325t'
+INFO: [Vivado_Tcl 4-549] User specified maximum number of BRAM that can be cascaded is 1
+INFO: [Device 21-403] Loading part xc7k325tffg900-2
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 1 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16276
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1396.414 ; gain = 578.895
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_genesys2' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/top_genesys2.v:10]
+	Parameter RGB565 bound to: 1 - type: integer 
+	Parameter REFERENCE_READOUT bound to: 6 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'clk_gen' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/clk_gen.v:7]
+INFO: [Synth 8-6157] synthesizing module 'IBUFDS' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:82833]
+	Parameter DIFF_TERM bound to: TRUE - type: string 
+	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
+	Parameter IOSTANDARD bound to: LVDS - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUFDS' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:82833]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+	Parameter CLKFBOUT_MULT_F bound to: 6.000000e+00 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 5.000000e+00 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 6.000000e+00 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 50 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_BASE__parameterized0' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+	Parameter CLKFBOUT_MULT_F bound to: 3.150000e+01 - type: double 
+	Parameter CLKIN1_PERIOD bound to: 5.000000e+00 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 1.000000e+01 - type: double 
+	Parameter CLKOUT1_DIVIDE bound to: 50 - type: integer 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_BASE__parameterized0' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:95844]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:2678]
+INFO: [Synth 8-6155] done synthesizing module 'clk_gen' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/clk_gen.v:7]
+INFO: [Synth 8-6157] synthesizing module 'ODDR' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117076]
+	Parameter DDR_CLK_EDGE bound to: SAME_EDGE - type: string 
+	Parameter INIT bound to: 1'b0 
+	Parameter SRTYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'ODDR' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117076]
+INFO: [Synth 8-6157] synthesizing module 'sccb_master' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:6]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+	Parameter SCL_HZ bound to: 10000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:42]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:52]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:62]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:70]
+INFO: [Synth 8-6155] done synthesizing module 'sccb_master' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sccb_master.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ov5640_init' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/ov5640_init.v:45]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+	Parameter RGB565 bound to: 1 - type: integer 
+	Parameter REFERENCE_READOUT bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ov5640_init' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/ov5640_init.v:45]
+INFO: [Synth 8-6157] synthesizing module 'dvp_clean_sampler' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/dvp_clean_sampler.v:6]
+	Parameter MAJORITY_FILTER bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dvp_clean_sampler' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/dvp_clean_sampler.v:6]
+INFO: [Synth 8-6157] synthesizing module 'cam_capture' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:5]
+	Parameter H bound to: 320 - type: integer 
+	Parameter RGB565 bound to: 1 - type: integer 
+	Parameter SOURCE_SYNC bound to: 0 - type: integer 
+	Parameter SAMPLE_TICK_MODE bound to: 1 - type: integer 
+	Parameter V bound to: 240 - type: integer 
+	Parameter VSYNC_ACTIVE_HIGH bound to: 1 - type: integer 
+	Parameter MIN_LINE_PX bound to: 280 - type: integer 
+	Parameter MEDIAN3 bound to: 0 - type: integer 
+	Parameter TEMPORAL bound to: 0 - type: integer 
+	Parameter SYNC_FILTER bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'cam_capture' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:5]
+INFO: [Synth 8-6157] synthesizing module 'camera_status_snapshot' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/camera_status_snapshot.v:5]
+	Parameter WIDTH bound to: 160 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'camera_status_snapshot' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/camera_status_snapshot.v:5]
+INFO: [Synth 8-6157] synthesizing module 'vga_timing' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/vga_timing.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'vga_timing' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/vga_timing.v:19]
+INFO: [Synth 8-6157] synthesizing module 'frame_buffer' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_buffer.v:30]
+INFO: [Synth 8-6157] synthesizing module 'banked_frame_memory' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:5]
+	Parameter DW bound to: 24 - type: integer 
+	Parameter DEPTH bound to: 76800 - type: integer 
+	Parameter AW bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'banked_frame_memory' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'frame_buffer' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_buffer.v:30]
+INFO: [Synth 8-6157] synthesizing module 'debug_overlay' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/debug_overlay.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'debug_overlay' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/debug_overlay.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pattern_gen' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/pattern_gen.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'pattern_gen' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/pattern_gen.v:29]
+INFO: [Synth 8-6157] synthesizing module 'hdmi_out' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/hdmi_out.v:26]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117683]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117683]
+INFO: [Synth 8-6157] synthesizing module 'OSERDESE2__parameterized0' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117683]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'OSERDESE2__parameterized0' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:117683]
+INFO: [Synth 8-6157] synthesizing module 'tmds_encoder' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/tmds_encoder.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'tmds_encoder' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/tmds_encoder.v:28]
+INFO: [Synth 8-6157] synthesizing module 'OBUFDS' [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:113414]
+INFO: [Synth 8-6155] done synthesizing module 'OBUFDS' (0#1) [C:/AMDDesignTools/2026.1/Vivado/scripts/rt/data/unisim_comp.v:113414]
+INFO: [Synth 8-6155] done synthesizing module 'hdmi_out' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/hdmi_out.v:26]
+INFO: [Synth 8-6157] synthesizing module 'dvp_probe' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/dvp_probe.v:17]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'dvp_probe' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/dvp_probe.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sync_health_probe' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sync_health_probe.v:4]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'sync_health_probe' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/sync_health_probe.v:4]
+INFO: [Synth 8-6157] synthesizing module 'yuv_word_observer' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_snapshot.v:80]
+INFO: [Synth 8-6155] done synthesizing module 'yuv_word_observer' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_snapshot.v:80]
+INFO: [Synth 8-6157] synthesizing module 'frame_snapshot' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_snapshot.v:4]
+	Parameter RAW_WORDS bound to: 1 - type: integer 
+	Parameter RAW_MAGIC bound to: 1379218997 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'banked_frame_memory__parameterized0' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:5]
+	Parameter DW bound to: 16 - type: integer 
+	Parameter DEPTH bound to: 76800 - type: integer 
+	Parameter AW bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'banked_frame_memory__parameterized0' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'frame_snapshot' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/frame_snapshot.v:4]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_rx.v:5]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+	Parameter BAUD bound to: 115200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_rx.v:5]
+INFO: [Synth 8-6157] synthesizing module 'camera_uart_control' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/camera_uart_control.v:8]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/camera_uart_control.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'camera_uart_control' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/camera_uart_control.v:8]
+INFO: [Synth 8-6157] synthesizing module 'uart_report' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_report.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'uart_report' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_report.v:9]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_tx.v:8]
+	Parameter CLK_HZ bound to: 200000000 - type: integer 
+	Parameter BAUD bound to: 115200 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/uart_tx.v:8]
+INFO: [Synth 8-6155] done synthesizing module 'top_genesys2' (0#1) [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/top_genesys2.v:10]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/dvp_clean_sampler.v:27]
+WARNING: [Synth 8-6014] Unused sequential element vs_int_reg was removed.  [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:98]
+WARNING: [Synth 8-6014] Unused sequential element vs_f_reg was removed.  [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:98]
+WARNING: [Synth 8-6014] Unused sequential element m1_reg was removed.  [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:131]
+WARNING: [Synth 8-6014] Unused sequential element m0_reg was removed.  [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/cam_capture.v:131]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wsel_reg' and it is trimmed from '17' to '7' bits. [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:14]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rsel_reg' and it is trimmed from '17' to '7' bits. [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:13]
+WARNING: [Synth 8-3936] Found unconnected internal register 'wsel_reg' and it is trimmed from '17' to '7' bits. [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:14]
+WARNING: [Synth 8-3936] Found unconnected internal register 'rsel_reg' and it is trimmed from '17' to '7' bits. [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/rtl/banked_frame_memory.v:13]
+WARNING: [Synth 8-7129] Port pixel_rgb[23] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[22] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[21] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[20] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[19] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[18] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[17] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[16] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[48] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[47] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[46] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[45] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[44] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[43] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[42] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[41] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[40] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[39] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[38] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[37] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[36] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[35] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[34] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[33] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[10] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port state[9] in module yuv_word_observer is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pclk_i in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uyvy in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port full_range in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[23] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[22] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[21] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[20] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[19] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[18] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[17] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[16] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[15] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[14] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[13] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[12] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[11] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[10] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[9] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[8] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[7] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[6] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[5] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[4] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[3] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[2] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[1] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[0] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vyuy in module ov5640_init is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1678.125 ; gain = 860.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1678.125 ; gain = 860.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1678.125 ; gain = 860.605
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.118 . Memory (MB): peak = 1678.125 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc:91]
+Finished Parsing XDC File [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_genesys2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_genesys2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1736.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  MMCME2_BASE => MMCME2_ADV: 2 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 4 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1737.238 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1737.238 ; gain = 919.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg900-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1737.238 ; gain = 919.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1737.238 ; gain = 919.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'sccb_master'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'ov5640_init'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'frame_snapshot'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'camera_uart_control'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'uart_report'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE4 |                              000 |                              000
+                 iSTATE5 |                              001 |                              001
+                 iSTATE2 |                              010 |                              010
+                  iSTATE |                              011 |                              011
+                 iSTATE1 |                              100 |                              100
+                 iSTATE0 |                              101 |                              101
+                 iSTATE3 |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'sccb_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  P_RST0 |                             0000 |                             0000
+                  P_RST1 |                             0001 |                             0001
+                  P_RST2 |                             0010 |                             0010
+                 P_ID_HI |                             0011 |                             0011
+               P_ID_HI_W |                             0100 |                             0100
+                 P_ID_LO |                             0101 |                             0101
+               P_ID_LO_W |                             0110 |                             0110
+                   P_TBL |                             0111 |                             0111
+                 P_TBL_W |                             1000 |                             1000
+                   P_DLY |                             1001 |                             1001
+                 P_DEBUG |                             1010 |                             1011
+            P_DEBUG_WAIT |                             1011 |                             1100
+                  P_DONE |                             1100 |                             1010
+             P_HOST_WAIT |                             1101 |                             1101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'ov5640_init'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE5 |                          0000001 |                             0000
+                 iSTATE3 |                          0000010 |                             0001
+                  iSTATE |                          0000100 |                             0010
+                 iSTATE0 |                          0001000 |                             0011
+                 iSTATE4 |                          0010000 |                             0100
+                 iSTATE1 |                          0100000 |                             0101
+                 iSTATE2 |                          1000000 |                             0110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'frame_snapshot'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                              000 |                              000
+                  iSTATE |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE0 |                              011 |                              011
+                 iSTATE2 |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 RECEIVE |                               00 |                               00
+                   ISSUE |                               01 |                               01
+             WAIT_RESULT |                               10 |                               10
+                   REPLY |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'camera_uart_control'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+                 iSTATE1 |                               01 |                               01
+                 iSTATE0 |                               10 |                               10
+                 iSTATE2 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'uart_report'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1737.238 ; gain = 919.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 14    
+	   2 Input   18 Bit       Adders := 1     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 3     
+	   2 Input   10 Bit       Adders := 7     
+	   2 Input    9 Bit       Adders := 3     
+	   2 Input    8 Bit       Adders := 5     
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 2     
+	   4 Input    6 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 6     
+	   2 Input    2 Bit       Adders := 3     
++---XORs : 
+	   2 Input      8 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 33    
++---Registers : 
+	              384 Bit    Registers := 1     
+	              256 Bit    Registers := 3     
+	              160 Bit    Registers := 2     
+	               48 Bit    Registers := 1     
+	               32 Bit    Registers := 30    
+	               24 Bit    Registers := 155   
+	               20 Bit    Registers := 3     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 160   
+	               10 Bit    Registers := 22    
+	                8 Bit    Registers := 30    
+	                7 Bit    Registers := 7     
+	                6 Bit    Registers := 5     
+	                4 Bit    Registers := 6     
+	                3 Bit    Registers := 12    
+	                2 Bit    Registers := 41    
+	                1 Bit    Registers := 62    
++---RAMs : 
+	              24K Bit	(1024 X 24 bit)          RAMs := 75    
+	              16K Bit	(1024 X 16 bit)          RAMs := 75    
++---Muxes : 
+	   2 Input  384 Bit        Muxes := 1     
+	  14 Input  384 Bit        Muxes := 1     
+	   7 Input  256 Bit        Muxes := 2     
+	   2 Input  256 Bit        Muxes := 10    
+	   4 Input  256 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 1     
+	  14 Input   48 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 21    
+	  14 Input   32 Bit        Muxes := 1     
+	   3 Input   32 Bit        Muxes := 1     
+	   5 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   26 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 2     
+	   4 Input   17 Bit        Muxes := 1     
+	   3 Input   17 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	  14 Input   16 Bit        Muxes := 4     
+	   2 Input   16 Bit        Muxes := 5     
+	   8 Input   16 Bit        Muxes := 2     
+	   4 Input   16 Bit        Muxes := 1     
+	   3 Input   12 Bit        Muxes := 3     
+	   2 Input   12 Bit        Muxes := 4     
+	   4 Input   12 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 2     
+	   2 Input   10 Bit        Muxes := 13    
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 14    
+	   4 Input    8 Bit        Muxes := 2     
+	  14 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	   8 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 5     
+	   7 Input    7 Bit        Muxes := 1     
+	  14 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 16    
+	  14 Input    4 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   7 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 9     
+	   5 Input    3 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 2     
+	   7 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 4     
+	   3 Input    2 Bit        Muxes := 1     
+	  18 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 130   
+	   4 Input    1 Bit        Muxes := 42    
+	   5 Input    1 Bit        Muxes := 8     
+	   7 Input    1 Bit        Muxes := 15    
+	  14 Input    1 Bit        Muxes := 17    
+	   8 Input    1 Bit        Muxes := 8     
+	   3 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP addr0, operation Mode is: C'+A2*(B:0x140).
+DSP Report: register gy_reg is absorbed into DSP addr0.
+DSP Report: register gx_reg is absorbed into DSP addr0.
+DSP Report: operator addr0 is absorbed into DSP addr0.
+DSP Report: operator addr00 is absorbed into DSP addr0.
+DSP Report: Generating DSP raw_observer/wr_addr_reg, operation Mode is: (C+A*(B:0x140)+CarryIn)'.
+DSP Report: register raw_observer/wr_addr_reg is absorbed into DSP raw_observer/wr_addr_reg.
+DSP Report: operator raw_observer/wr_addr0 is absorbed into DSP raw_observer/wr_addr_reg.
+DSP Report: operator raw_observer/wr_addr2 is absorbed into DSP raw_observer/wr_addr_reg.
+WARNING: [Synth 8-7129] Port pixel_rgb[23] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[22] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[21] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[20] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[19] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[18] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[17] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pixel_rgb[16] in module frame_snapshot is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_max[15] in module debug_overlay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port y_max[14] in module debug_overlay is either unconnected or has no load
+WARNING: [Synth 8-7129] Port pclk_i in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port uyvy in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port full_range in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[23] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[22] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[21] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[20] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[19] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[18] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[17] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[16] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[15] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[14] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[13] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[12] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[11] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[10] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[9] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[8] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[7] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[6] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[5] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[4] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[3] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[2] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[1] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port fb_old[0] in module cam_capture is either unconnected or has no load
+WARNING: [Synth 8-7129] Port vyuy in module ov5640_init is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1860.754 ; gain = 1043.234
+---------------------------------------------------------------------------------
+ Sort Area is  addr0_0 : 0 0 : 182 182 : Used 1 time 0
+ Sort Area is  raw_observer/wr_addr_reg_2 : 0 0 : 179 179 : Used 1 time 0
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|ov5640_init | debug_addr | 64x15         | LUT            | 
+|ov5640_init | debug_addr | 64x15         | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\fb_i/storage    | g_bank[0].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[1].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[2].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[3].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[4].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[5].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[6].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[7].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[8].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[9].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[10].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[11].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[12].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[13].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[14].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[15].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[16].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[17].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[18].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[19].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[20].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[21].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[22].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[23].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[24].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[25].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[26].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[27].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[28].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[29].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[30].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[31].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[32].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[33].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[34].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[35].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[36].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[37].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[38].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[39].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[40].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[41].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[42].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[43].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[44].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[45].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[46].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[47].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[48].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[49].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[50].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[51].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[52].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[53].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[54].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[55].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[56].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[57].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[58].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[59].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[60].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[61].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[62].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[63].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[64].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[65].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[66].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[67].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[68].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[69].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[70].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[71].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[72].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[73].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[74].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|record_i/storage | g_bank[0].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[1].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[2].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[3].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[4].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[5].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[6].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[7].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[8].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[9].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[10].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[11].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[12].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[13].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[14].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[15].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[16].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[17].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[18].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[19].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[20].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[21].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[22].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[23].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[24].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[25].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[26].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[27].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[28].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[29].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[30].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[31].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[32].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[33].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[34].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[35].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[36].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[37].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[38].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[39].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[40].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[41].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[42].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[43].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[44].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[45].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[46].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[47].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[48].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[49].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[50].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[51].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[52].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[53].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[54].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[55].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[56].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[57].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[58].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[59].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[60].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[61].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[62].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[63].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[64].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[65].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[66].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[67].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[68].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[69].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[70].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[71].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[72].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[73].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[74].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping              | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cam_capture       | C'+A2*(B:0x140)          | 10     | 9      | 10     | -      | 17     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|yuv_word_observer | (C+A*(B:0x140)+CarryIn)' | 10     | 9      | 10     | -      | 17     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
++------------------+--------------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 1917.938 ; gain = 1100.418
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1967.309 ; gain = 1149.789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name      | RTL Object            | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\fb_i/storage    | g_bank[0].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[1].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[2].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[3].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[4].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[5].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[6].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[7].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[8].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[9].memory_reg  | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[10].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[11].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[12].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[13].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[14].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[15].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[16].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[17].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[18].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[19].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[20].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[21].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[22].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[23].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[24].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[25].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[26].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[27].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[28].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[29].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[30].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[31].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[32].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[33].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[34].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[35].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[36].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[37].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[38].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[39].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[40].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[41].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[42].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[43].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[44].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[45].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[46].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[47].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[48].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[49].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[50].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[51].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[52].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[53].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[54].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[55].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[56].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[57].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[58].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[59].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[60].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[61].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[62].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[63].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[64].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[65].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[66].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[67].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[68].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[69].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[70].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[71].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[72].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[73].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|\fb_i/storage    | g_bank[74].memory_reg | 1 K x 24(READ_FIRST)   | W | R | 1 K x 24(WRITE_FIRST)  |   | R | Port A and B     | 0      | 1      | 
+|record_i/storage | g_bank[0].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[1].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[2].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[3].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[4].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[5].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[6].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[7].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[8].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[9].memory_reg  | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[10].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[11].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[12].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[13].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[14].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[15].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[16].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[17].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[18].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[19].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[20].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[21].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[22].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[23].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[24].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[25].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[26].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[27].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[28].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[29].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[30].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[31].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[32].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[33].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[34].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[35].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[36].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[37].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[38].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[39].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[40].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[41].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[42].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[43].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[44].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[45].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[46].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[47].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[48].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[49].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[50].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[51].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[52].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[53].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[54].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[55].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[56].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[57].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[58].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[59].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[60].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[61].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[62].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[63].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[64].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[65].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[66].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[67].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[68].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[69].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[70].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[71].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[72].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[73].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
+|record_i/storage | g_bank[74].memory_reg | 1 K x 16(READ_FIRST)   | W | R | 1 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 1      | 0      | 
++-----------------+-----------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[0].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[1].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[2].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[3].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[4].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[5].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[6].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[7].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[8].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[9].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[10].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[11].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[12].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[13].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[14].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[15].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[16].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[17].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[18].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[19].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[20].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[21].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[22].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[23].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[24].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[25].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[26].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[27].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[28].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[29].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[30].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[31].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[32].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[33].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[34].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[35].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[36].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[37].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[38].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[39].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[40].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[41].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[42].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[43].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[44].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[45].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[46].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[47].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[48].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[49].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[50].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[51].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[52].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[53].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[54].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[55].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[56].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[57].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[58].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[59].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[60].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[61].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[62].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[63].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[64].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[65].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[66].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[67].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[68].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[69].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[70].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[71].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[72].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[73].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance fb_i/storage/g_bank[74].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[0].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[1].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[2].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[3].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[4].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[5].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[6].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[7].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[8].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[9].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[10].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[11].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[12].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[13].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[14].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[15].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[16].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[17].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[18].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[19].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[20].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[21].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[22].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[23].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance record_i/storage/g_bank[24].memory_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-7052' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 2054.625 ; gain = 1237.105
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2179.504 ; gain = 1361.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:18 ; elapsed = 00:01:19 . Memory (MB): peak = 2179.504 ; gain = 1361.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2179.504 ; gain = 1361.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2179.504 ; gain = 1361.984
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2183.531 ; gain = 1366.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2183.531 ; gain = 1366.012
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name  | RTL Name         | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top_genesys2 | rstpix_sr_reg[3] | 4      | 1     | NO           | NO                 | YES               | 1      | 0       | 
++-------------+------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name       | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|cam_capture       | C'+A'*B            | 10     | 9      | 10     | -      | 17     | 1    | 0    | 1    | -    | -     | 0    | 0    | 
+|yuv_word_observer | (C'+A'*B+CARRYIN)' | 10     | 9      | 10     | -      | 17     | 1    | 0    | 1    | -    | -     | 0    | 1    | 
++------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     4|
+|2     |CARRY4      |   388|
+|3     |DSP48E1     |     2|
+|5     |LUT1        |   102|
+|6     |LUT2        |   561|
+|7     |LUT3        |   329|
+|8     |LUT4        |   719|
+|9     |LUT5        |   595|
+|10    |LUT6        |  1865|
+|11    |MMCME2_BASE |     2|
+|12    |MUXF7       |   397|
+|13    |MUXF8       |   176|
+|14    |ODDR        |     1|
+|15    |OSERDESE2   |     8|
+|17    |RAMB18E1    |    75|
+|18    |RAMB36E1    |    75|
+|19    |SRL16E      |     1|
+|20    |FDPE        |     4|
+|21    |FDRE        |  3832|
+|22    |FDSE        |    29|
+|23    |IBUF        |    21|
+|24    |IBUFDS      |     1|
+|25    |IOBUF       |     1|
+|26    |OBUF        |    12|
+|27    |OBUFDS      |     4|
+|28    |OBUFT       |     1|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:18 ; elapsed = 00:01:20 . Memory (MB): peak = 2183.531 ; gain = 1366.012
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:01 ; elapsed = 00:01:16 . Memory (MB): peak = 2183.531 ; gain = 1306.898
+Synthesis Optimization Complete : Time (s): cpu = 00:01:19 ; elapsed = 00:01:20 . Memory (MB): peak = 2183.531 ; gain = 1366.012
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.066 . Memory (MB): peak = 2188.688 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1122 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc:91]
+INFO: [Timing 38-2] Deriving generated clocks [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc:91]
+get_clocks: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2698.109 ; gain = 496.426
+Finished Parsing XDC File [C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/source/constraints/genesys2.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 7 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 1 instance 
+  MMCME2_BASE => MMCME2_ADV: 2 instances
+  OBUFDS => OBUFDS: 4 instances
+
+Synth Design complete | Checksum: d96276d1
+INFO: [Common 17-83] Releasing license: Vivado_Synthesis
+203 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:31 ; elapsed = 00:01:41 . Memory (MB): peak = 2698.109 ; gain = 2110.602
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/synthesized.dcp' has been generated.
+Command: opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [Project 1-461] DRC finished with 0 Errors, 15 Warnings
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.696 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.442 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Detect if minReqCache needed
+Phase 2.1 Detect if minReqCache needed | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.2 Timer Update
+Phase 2.2 Timer Update | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.308 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.3 Timing Data Collection
+Phase 2.3 Timing Data Collection | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.315 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1890d22ae
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.316 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 1a7e34b5a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.427 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Retarget | Checksum: 1a7e34b5a
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 11 cells
+INFO: [Opt 31-1021] In phase Retarget, 2 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 112fa9bd5
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.489 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Constant propagation | Checksum: 112fa9bd5
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1451e88b6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.659 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Sweep | Checksum: 1451e88b6
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 12 cells
+
+Phase 6 BUFG optimization
+Phase 6 BUFG optimization | Checksum: 1451e88b6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.744 . Memory (MB): peak = 2698.109 ; gain = 0.000
+BUFG optimization | Checksum: 1451e88b6
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1451e88b6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.759 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Shift Register Optimization | Checksum: 1451e88b6
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1451e88b6
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.783 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Post Processing Netlist | Checksum: 1451e88b6
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 18615fd2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.953 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 18615fd2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.980 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 9 Finalization | Checksum: 18615fd2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.981 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |              11  |                                              2  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               2  |              12  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 18615fd2d
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.984 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 75 BRAM(s) out of a total of 150 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 75 Total Ports: 300
+Ending PowerOpt Patch Enables Task | Checksum: 1616f1b30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.386 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 1616f1b30
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 1616f1b30
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+230 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running DRC as a precondition to command place_design
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 36 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 1466f70a4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1432bb8c8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.870 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1ba596089
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1ba596089
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1ba596089
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1ece6bbdd
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1b2efe480
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 1b2efe480
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 19f881a90
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:25 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1981e9150
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 366 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 165 nets or LUTs. Breaked 0 LUT, combined 165 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1408] Pass 1. Identified 1 candidate net for high-fanout optimization.
+INFO: [Physopt 32-81] Processed net rst200. Replicated 9 times.
+INFO: [Physopt 32-232] Optimized 1 net. Created 9 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 1 net or cell. Created 9 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Physopt 32-457] Pass 1. Identified 1 candidate cell for DSP register optimization.
+INFO: [Physopt 32-665] Processed cell raw_observer/wr_addr_reg. 17 registers were pushed out.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 1 net or cell. Created 17 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            165  |                   165  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            9  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |           17  |              0  |                     1  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           26  |            165  |                   167  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 1f1be3f4d
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 181fc8f8d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 181fc8f8d
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 16d9dc837
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 11d285825
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 138d66f6c
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1c3de4fb5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:33 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 10f65df34
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 16487c91f
+
+Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 145918fc9
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 160f39dab
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 169911a86
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 169911a86
+
+Time (s): cpu = 00:00:44 ; elapsed = 00:00:44 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 1d7d5ad85
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 1 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.057 | TNS=-0.458 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1c6826684
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.248 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 17d26633c
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.292 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 1d7d5ad85
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.099. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 16d18c9a7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 16d18c9a7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 16d18c9a7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 16d18c9a7
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 16d18c9a7
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 10c21abe2
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Ending Placer Task | Checksum: 109157077
+
+Time (s): cpu = 00:01:10 ; elapsed = 00:01:10 . Memory (MB): peak = 2698.109 ; gain = 0.000
+264 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:12 ; elapsed = 00:01:12 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 0.099 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+269 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+Command: route_design
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+
+
+Starting Routing Task
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 89084b2f ConstDB: 0 ShapeSum: 5791aaf8 RouteDB: 287b7a50
+Post Restoration Checksum: NetGraph: 444dc791 | NumContArr: 9e5514da | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 267f4d1a5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 267f4d1a5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 267f4d1a5
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2698.109 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 1dc759474
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.112  | TNS=0.000  | WHS=-0.365 | THS=-680.778|
+
+
+Phase 2.4 Soft Constraint Pins - Fast Budgeting
+Phase 2.4 Soft Constraint Pins - Fast Budgeting | Checksum: 1046e78b2
+
+Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 9630
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 9630
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 19be52e15
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 19be52e15
+
+Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 2ab3e8cd5
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 4 Initial Routing | Checksum: 2ab3e8cd5
+
+Time (s): cpu = 00:00:47 ; elapsed = 00:00:47 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Route 35-580] Design has 46 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++====================+===================+===========================+
+| Launch Setup Clock | Launch Hold Clock | Pin                       |
++====================+===================+===========================+
+| clk200_i           | clk200_i          | record_i/words_reg[109]/D |
+| clk200_i           | clk200_i          | record_i/words_reg[70]/D  |
+| clk200_i           | clk200_i          | record_i/words_reg[128]/D |
+| clk200_i           | clk200_i          | record_i/words_reg[86]/D  |
+| clk200_i           | clk200_i          | record_i/words_reg[98]/D  |
++--------------------+-------------------+---------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 889
+ Number of Nodes with overlaps = 112
+ Number of Nodes with overlaps = 28
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.015  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 22449a427
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 68
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.069  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 1d187d8c4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 5 Rip-up And Reroute | Checksum: 1d187d8c4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 1d187d8c4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 1d187d8c4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 6 Delay and Skew Optimization | Checksum: 1d187d8c4
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.161  | TNS=0.000  | WHS=0.081  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1666ef02f
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Phase 7 Post Hold Fix | Checksum: 1666ef02f
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.10902 %
+  Global Horizontal Routing Utilization  = 1.46913 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1666ef02f
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1666ef02f
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:01:01 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 216ebdb08
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 216ebdb08
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=0.161  | TNS=0.000  | WHS=0.081  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 216ebdb08
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Total Elapsed time in route_design: 62.199 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 12f2080ee
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 12f2080ee
+
+Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+279 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:01:02 ; elapsed = 00:01:02 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+Command: report_drc -file drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/drc.rpt.
+report_drc completed successfully
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: min_max.
+INFO: [Timing 38-433] Consider using Xilinx recommended XPM_CDC modules to avoid Critical severities
+INFO: [Timing 38-314] The report_cdc command only analyzes and reports clock domain crossing paths where clocks have been defined on both source and destination sides. Ports with no input delay constraint are skipped. Please run check_timing to verify there are no missing clock definitions in your design, nor any unconstrained input port.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Delay Type: max.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.150 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote PlaceStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.276 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.455 . Memory (MB): peak = 2698.109 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/routed.dcp' has been generated.
+Command: write_bitstream -force camera_hdmi.bit
+Attempting to get a license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Vivado_Implementation' and/or device 'xc7k325t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+Integrating Hard IP ELF/MEM with the PDI.
+Initializing bitstream generation complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.902 . Memory (MB): peak = 2698.109 ; gain = 0.000
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./camera_hdmi.bit...
+Generate Bitstream complete. Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 2752.633 ; gain = 54.523
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Common 17-83] Releasing license: Vivado_Implementation
+296 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:33 ; elapsed = 00:00:41 . Memory (MB): peak = 2752.633 ; gain = 54.523
+CAMERA_BUILD_PASSED: C:/Users/ethan/Desktop/genesys2-camera-cnn/builds/r13_saved_picture_20261106/camera_hdmi.bit
+INFO: [Common 17-206] Exiting Vivado at Fri Nov  6 00:21:34 2026...

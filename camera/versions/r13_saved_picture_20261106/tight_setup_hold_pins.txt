@@ -1,0 +1,50 @@
++====================+===================+=============================+
+| Launch Setup Clock | Launch Hold Clock | Pin                         |
++====================+===================+=============================+
+| clk200_i           | clk200_i          | record_i/words_reg[109]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[70]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[128]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[86]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[98]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[76]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[85]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[66]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[99]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[32]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[88]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[44]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[64]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[67]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[48]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[97]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[106]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[108]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[57]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[62]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[80]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[77]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[107]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[42]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[94]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[96]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[74]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[81]/D    |
+| clk200_i           | clk200_i          | control_i/reply_valid_reg/D |
+| clk200_i           | clk200_i          | record_i/words_reg[35]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[93]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[58]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[45]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[89]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[91]/D    |
+| clk200_i           | clk200_i          | control_i/index_reg[1]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[90]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[51]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[92]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[83]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[59]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[129]/D   |
+| clk200_i           | clk200_i          | record_i/words_reg[72]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[56]/D    |
+| clk200_i           | clk200_i          | control_i/index_reg[2]/D    |
+| clk200_i           | clk200_i          | record_i/words_reg[73]/D    |
++--------------------+-------------------+-----------------------------+
