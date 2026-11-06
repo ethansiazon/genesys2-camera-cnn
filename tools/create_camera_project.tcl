@@ -1,6 +1,6 @@
 # Create only: source is camera/working; generated project is external/new.
 set root [file dirname [file dirname [file normalize [info script]]]]
-if {[llength $argv] < 1 || [llength $argv] > 3} {error {Usage: set argv [list NEW_PROJECT_DIR ?yuyv|rgb565? ?baseline|reference2x|reference2x-fast|reference2x-20fps|reference2x-20fps-even|reference2x-20fps-filter|reference2x-20fps-saved-picture?]; source tools/create_camera_project.tcl}}
+if {[llength $argv] < 1 || [llength $argv] > 3} {error {Usage: set argv [list NEW_PROJECT_DIR ?yuyv|rgb565? ?baseline|reference2x|reference2x-fast|reference2x-20fps|reference2x-20fps-even|reference2x-20fps-filter|reference2x-20fps-saved-picture|reference2x-30fps-saved-picture?]; source tools/create_camera_project.tcl}}
 set dest [file normalize [lindex $argv 0]]
 set format yuyv
 if {[llength $argv] >= 2} {set format [lindex $argv 1]}
@@ -8,8 +8,8 @@ if {$format ni {yuyv rgb565}} {error {Format must be yuyv or rgb565}}
 set rgb565 [expr {$format eq "rgb565" ? 1 : 0}]
 set readout baseline
 if {[llength $argv] == 3} {set readout [lindex $argv 2]}
-if {$readout ni {baseline reference2x reference2x-fast reference2x-20fps reference2x-20fps-even reference2x-20fps-filter reference2x-20fps-saved-picture}} {error {Invalid readout profile}}
-set reference_readout [lsearch -exact {baseline reference2x reference2x-fast reference2x-20fps reference2x-20fps-even reference2x-20fps-filter reference2x-20fps-saved-picture} $readout]
+if {$readout ni {baseline reference2x reference2x-fast reference2x-20fps reference2x-20fps-even reference2x-20fps-filter reference2x-20fps-saved-picture reference2x-30fps-saved-picture}} {error {Invalid readout profile}}
+set reference_readout [lsearch -exact {baseline reference2x reference2x-fast reference2x-20fps reference2x-20fps-even reference2x-20fps-filter reference2x-20fps-saved-picture reference2x-30fps-saved-picture} $readout]
 if {[file exists $dest]} {error {Existing directory refused; select a new project output path}}
 set src [file join $root camera working]
 create_project camera_hdmi $dest -part xc7k325tffg900-2

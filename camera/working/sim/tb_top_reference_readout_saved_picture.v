@@ -1,6 +1,6 @@
 `timescale 1ns/1ps
-module tb_top_reference_readout_saved_picture;
-    tb_top_rgb565 #(.REFERENCE_READOUT(6)) test();
+module tb_top_reference_readout_saved_picture #(parameter integer REFERENCE_READOUT=6);
+    tb_top_rgb565 #(.REFERENCE_READOUT(REFERENCE_READOUT)) test();
 
     task check_register(input [15:0] addr, input [7:0] expected);
         if (test.sensor.regs[addr] !== expected)
@@ -12,8 +12,8 @@ module tb_top_reference_readout_saved_picture;
         !test.dut.init_i.sccb_rw && test.dut.init_i.sccb_addr == 16'h3008 &&
         test.dut.init_i.sccb_wdata == 8'h02) begin
         check_register(16'h3500, 8'h00);
-        check_register(16'h3501, 8'h19);
-        check_register(16'h3502, 8'h00);
+        check_register(16'h3501, REFERENCE_READOUT == 7 ? 8'h26 : 8'h19);
+        check_register(16'h3502, REFERENCE_READOUT == 7 ? 8'hE0 : 8'h00);
         check_register(16'h350A, 8'h00);
         check_register(16'h350B, 8'h10);
         check_register(16'h3406, 8'h01);

@@ -45,7 +45,7 @@
 module ov5640_init #(
     parameter integer CLK_HZ = 100_000_000,
     parameter integer RGB565 = 0, // Separate format diagnostic; default preserves YUYV.
-    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: faster reference readout, 3: 20 fps trial, 4: 20 fps with even DVP divider, 5: R13, 6: R13 with saved picture settings.
+    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: faster reference readout, 3: 20 fps trial, 4: 20 fps with even DVP divider, 5: R13, 6: R13 saved picture, 7: 30 FPS saved-picture trial.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -125,12 +125,13 @@ module ov5640_init #(
         //     multiplier was almost certainly far too fast. [derived]
         8'd20 : entry = {C_WR,  16'h3039, 8'h00};  // [derived] PLL not bypassed
         8'd21 : entry = {C_WR,  16'h3034, 8'h1A};  // [reference] 10-bit mode
-        8'd22 : entry = {C_WR,  16'h3035, REFERENCE_READOUT >= 2 ? 8'h21 : 8'h41}; // Divider 2 for the speed comparison.
-        8'd23 : entry = {C_WR,  16'h3036, REFERENCE_READOUT == 4 ? 8'h64 :
-                         REFERENCE_READOUT >= 3 ? 8'h5A : 8'h48}; // x100, x90, or x72.
+        8'd22 : entry = {C_WR,  16'h3035, REFERENCE_READOUT == 7 ? 8'h11 : (REFERENCE_READOUT >= 2 ? 8'h21 : 8'h41)}; // Divider 2 for the speed comparison.
+        8'd23 : entry = {C_WR,  16'h3036, REFERENCE_READOUT == 7 ? 8'h63 :
+                         REFERENCE_READOUT == 4 ? 8'h64 :
+                         REFERENCE_READOUT >= 3 ? 8'h5A : 8'h48}; // x99, x100, x90, or x72.
         8'd24 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
-        8'd25 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]
-        8'd26 : entry = {C_WR,  16'h3824, REFERENCE_READOUT == 4 ? 8'h06 : ((REFERENCE_READOUT == 3 || REFERENCE_READOUT >= 5) ? 8'h05 : 8'h04)}; // R11 measured /4 behavior with 05.
+        8'd25 : entry = {C_WR,  16'h3108, REFERENCE_READOUT == 7 ? 8'h11 : 8'h01}; // PCLK root /2 only in 30 FPS mode.
+        8'd26 : entry = {C_WR,  16'h3824, REFERENCE_READOUT == 7 ? 8'h04 : REFERENCE_READOUT == 4 ? 8'h06 : ((REFERENCE_READOUT == 3 || REFERENCE_READOUT >= 5) ? 8'h05 : 8'h04)}; // R11 measured /4 behavior with 05.
         8'd27 : entry = {C_WR,  16'h460C, 8'h22};  // [derived] PCLK manual divider
         // --- windowing: 320x240 out of the full array ---
         8'd28 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
@@ -149,8 +150,8 @@ module ov5640_init #(
         8'd41 : entry = {C_WR,  16'h3809, 8'h40};  // DVP width 320
         8'd42 : entry = {C_WR,  16'h380A, 8'h00};
         8'd43 : entry = {C_WR,  16'h380B, 8'hF0};  // DVP height 240
-        8'd44 : entry = {C_WR,  16'h380C, REFERENCE_READOUT == 4 ? 8'h08 : 8'h07};
-        8'd45 : entry = {C_WR,  16'h380D, REFERENCE_READOUT == 4 ? 8'h40 : 8'h68}; // HTS 2112 at x100 keeps the x90 line time.
+        8'd44 : entry = {C_WR,  16'h380C, REFERENCE_READOUT == 7 ? 8'h0A : (REFERENCE_READOUT == 4 ? 8'h08 : 8'h07)};
+        8'd45 : entry = {C_WR,  16'h380D, REFERENCE_READOUT == 7 ? 8'h7C : (REFERENCE_READOUT == 4 ? 8'h40 : 8'h68)}; // HTS 2684, 2112 or 1896.
         // 2x readout needs room for about 972 sensor rows, not 240 output rows.
         // Linux QVGA DVP timing: height 240 + vblank 744 = VTS 984.
         8'd46 : entry = {C_WR,  16'h380E, REFERENCE_READOUT ? 8'h03 : 8'h02};
@@ -175,8 +176,8 @@ module ov5640_init #(
         // White balance, receiver, clock, window and format stay unchanged.
         8'd56 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
         8'd57 : entry = {C_WR, 16'h3500, 8'h00};
-        8'd58 : entry = {C_WR, 16'h3501, REFERENCE_READOUT >= 3 ? 8'h19 : 8'h08};
-        8'd59 : entry = {C_WR, 16'h3502, 8'h00};
+        8'd58 : entry = {C_WR, 16'h3501, REFERENCE_READOUT == 7 ? 8'h26 : (REFERENCE_READOUT >= 3 ? 8'h19 : 8'h08)};
+        8'd59 : entry = {C_WR, 16'h3502, REFERENCE_READOUT == 7 ? 8'hE0 : 8'h00}; // 622 lines at 30 FPS.
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16
         // Mode-specific readout/black-reference values from Linux OV5640
@@ -195,7 +196,7 @@ module ov5640_init #(
         endcase
         // R13 picture chosen in the live tuner on 2026-11-06.
         // Apply white balance, gamma and tone before enabling the stream.
-        if (REFERENCE_READOUT == 6 && table_index >= 69) begin
+        if (REFERENCE_READOUT >= 6 && table_index >= 69) begin
             case (table_index)
                 8'd69: entry = {C_WR, 16'h3406, 8'h01};
                 8'd70: entry = {C_WR, 16'h3400, 8'h05};

@@ -781,3 +781,22 @@ Bitstream: builds/r13_saved_picture_20261106/camera_hdmi.bit.
 SHA256: e25dc7dc9ee0c659e14d64b4ce6cf7aeacb772c92f8cfca0a0b49100a290a67e.
 Source and bitstream hashes verified. Original R13 bitstream also verified.
 Await manual load and comparison in the lighting used to save the preset.
+
+### R13 saved picture, 30 FPS trial
+
+The `reference2x-30fps-saved-picture` profile retains 320x240 RGB565, the
+984-line frame and the selected white balance, gain, gamma and tone settings.
+The new nominal sensor line clock is 79.2 MHz (24 MHz XCLK, PLL x99,
+system divider /1), with HTS 2684 for a calculated 30.0 FPS. Set the documented
+PCLK root /2 (3108=11) and the known manual DVP /4 (3824=04), targeting 19.8 MHz
+and 671 clock cycles per line for 640 active bytes. The PLL VCO estimate is
+792 MHz, below the sensor specification limit of 800 MHz. The earlier odd
+divider behaved differently on hardware, so these are predictions to check.
+Exposure becomes 622 lines, about 21.1 ms, matching R13's 400-line exposure
+time. At the faster link, the receiver confirms two successive majority
+results and takes the data from an earlier pipeline sample. The live tuner
+recognizes the trial's read-only timing signature as a separate profile.
+Check PCLK, frame rate and full-frame pixel count with UART if available,
+and compare specks, horizontal streaks and motion with the saved R13 build.
+Clock-divider source: OmniVision OV5640 Product Specification, sections 6.2,
+7.1 and 7.2, https://dl.sipeed.com/MAIX/HDK/Chip_DS/OV5640-datasheet.pdf.
