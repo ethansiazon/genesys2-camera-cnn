@@ -45,7 +45,7 @@
 module ov5640_init #(
     parameter integer CLK_HZ = 100_000_000,
     parameter integer RGB565 = 0, // Separate format diagnostic; default preserves YUYV.
-    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: reference readout with faster sensor clock.
+    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: faster reference readout, 3: 20 fps trial.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -125,11 +125,11 @@ module ov5640_init #(
         //     multiplier was almost certainly far too fast. [derived]
         8'd20 : entry = {C_WR,  16'h3039, 8'h00};  // [derived] PLL not bypassed
         8'd21 : entry = {C_WR,  16'h3034, 8'h1A};  // [reference] 10-bit mode
-        8'd22 : entry = {C_WR,  16'h3035, REFERENCE_READOUT == 2 ? 8'h21 : 8'h41}; // Divider 2 for the speed comparison.
-        8'd23 : entry = {C_WR,  16'h3036, 8'h48};  // [measured] PLL multiplier x72
+        8'd22 : entry = {C_WR,  16'h3035, REFERENCE_READOUT >= 2 ? 8'h21 : 8'h41}; // Divider 2 for the speed comparison.
+        8'd23 : entry = {C_WR,  16'h3036, REFERENCE_READOUT == 3 ? 8'h5A : 8'h48}; // Trial: x90 runs the sensor 25% faster.
         8'd24 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
         8'd25 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]
-        8'd26 : entry = {C_WR,  16'h3824, 8'h04};  // [measured] DVP PCLK div /4 -- affects PCLK ONLY, not fps
+        8'd26 : entry = {C_WR,  16'h3824, REFERENCE_READOUT == 3 ? 8'h05 : 8'h04}; // /5 offsets the x90 increase at the DVP output.
         8'd27 : entry = {C_WR,  16'h460C, 8'h22};  // [derived] PCLK manual divider
         // --- windowing: 320x240 out of the full array ---
         8'd28 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
@@ -174,7 +174,7 @@ module ov5640_init #(
         // White balance, receiver, clock, window and format stay unchanged.
         8'd56 : entry = {C_WR, 16'h3503, 8'h03}; // manual AEC and AGC
         8'd57 : entry = {C_WR, 16'h3500, 8'h00};
-        8'd58 : entry = {C_WR, 16'h3501, 8'h08}; // 128 << 4 = 0x00800
+        8'd58 : entry = {C_WR, 16'h3501, REFERENCE_READOUT == 3 ? 8'h19 : 8'h08}; // 400 lines at x90 matches 320 at x72.
         8'd59 : entry = {C_WR, 16'h3502, 8'h00};
         8'd60 : entry = {C_WR, 16'h350A, 8'h00};
         8'd61 : entry = {C_WR, 16'h350B, 8'h10}; // 1.0x, gain units 1/16

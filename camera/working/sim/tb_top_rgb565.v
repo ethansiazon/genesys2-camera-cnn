@@ -49,7 +49,9 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
         ck("actual top SCCB chip ID",dut.chip_id,16'h5640);
         ck("ID valid",dut.id_valid,1);
         ck("SCCB acknowledgements",dut.nack_seen,0);
-        ck("system divider",sensor.regs[16'h3035],REFERENCE_READOUT == 2 ? 8'h21 : 8'h41);
+        ck("system divider",sensor.regs[16'h3035],REFERENCE_READOUT >= 2 ? 8'h21 : 8'h41);
+        ck("PLL multiplier",sensor.regs[16'h3036],REFERENCE_READOUT == 3 ? 8'h5a : 8'h48);
+        ck("DVP divider",sensor.regs[16'h3824],REFERENCE_READOUT == 3 ? 5 : 4);
         ck("explicit DVP polarity",sensor.regs[16'h4740],8'h22);
         ck("RGB565 format",sensor.regs[16'h4300],8'h61);
         ck("RGB mux",sensor.regs[16'h501f],1);
@@ -96,7 +98,7 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
             end
         end
         ck("all 640 stored pixels",errors,0);
-        ck("manual exposure restored",sensor.regs[16'h3501],8'h08);
+        ck("manual exposure",sensor.regs[16'h3501],REFERENCE_READOUT == 3 ? 8'h19 : 8'h08);
         ck("ISP first bank value",dut.config_readback[199:192],8'hA7);
         force dut.diagnostic_page=3'd4;#1;
         ck("ISP UART page tag",dut.diagnostic_words[31:0],32'hD1640004);

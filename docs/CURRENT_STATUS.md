@@ -659,3 +659,34 @@ routing errors, setup slack +0.291 ns and hold slack +0.085 ns. Source
 snapshot and bitstream hashes verified. Bitstream SHA256:
 0bd8d5ec32a5f2163685d2fdcc652d8bf486128aac7fdaac70bc03e5e4fcdfb3.
 Await manual JTAG load and physical comparison with R9.
+
+R10 board test: Ethan reported corrected colors and no bright-light glitches,
+with a remaining green haze and a dark image at startup exposure. Live UART
+verified the fast clock, 984-line frame length and 128-line manual exposure.
+Changing exposure to 256 lines made the image brighter, but Ethan still saw
+green haze and limited detail. At 256 lines, UART reported 15–16 filtered VSYNC
+edges per second and 76,800 captured pixels per frame. A second live change
+to 320 lines was verified, with gain still 1x and white balance automatic.
+Visual comparison at 320 lines is pending. Readbacks and rollback values are
+in local_results/picture_trials/r10_exposure{256,320}_20261105. These are live
+settings. BTNC restores the startup exposure.
+
+Ethan preferred the brighter 320-line image and reported no new glitches.
+He still saw a dull image with a green haze. A 384-line exposure trial was
+applied over UART and verified. Its rollback is in
+local_results/picture_trials/r10_exposure384_20261105/change/SESSION.json.
+
+### R11 frame-rate comparison
+
+The separate `reference2x-20fps` profile targets 19–20 FPS. Relative to R10,
+the PLL multiplier rises from 72 to 90 (3036: 48 to 5A). The DVP divider
+rises from 4 to 5 (3824) to target the same 14.4 MHz pin clock. The nominal
+line budget falls from about 948 to 758 DVP cycles for 640 active bytes.
+Keep the 984-line frame, sampling mode, color settings and qualified receiver.
+Startup exposure is 400 lines at the new rate, equivalent in time to the
+accepted 320 lines at R10 speed. R10 at 384 lines would correspond to 480 lines
+in R11 if the brighter trial proves preferable. The odd DVP divider's actual
+waveform, line completeness, frame rate and live color require board testing.
+Clock register encoding and divider calculation reference: Espressif
+`set_pll` and `calc_sysclk` in
+https://raw.githubusercontent.com/espressif/esp32-camera/master/sensors/ov5640.c.
