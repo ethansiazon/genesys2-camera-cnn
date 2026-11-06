@@ -1,0 +1,129 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Nov  5 22:26:57 2026
+| Host         : ethanomen running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file cdc.rpt
+| Design       : top_genesys2
+| Device       : 7k325t-ffg900
+| Speed File   : -2  PRODUCTION 1.12 2017-02-17
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID     Severity  Count  Description
+-----  --------  -----  --------------------------------------------------
+CDC-1  Critical     26  1-bit unknown CDC circuitry
+CDC-2  Warning      43  1-bit synchronized with missing ASYNC_REG property
+CDC-3  Info         19  1-bit synchronized with ASYNC_REG property
+
+Source Clock: input port clock
+Destination Clock: clk200_i
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                         Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  --------------------------------------------------  -----  ----------  -------------  ---------------------------
+  1  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  False Path  btnc           btn_s_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  sw[0]          debug_refresh_sync_reg[0]/D
+  3  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  ja[5]          g_dalive[0].s_reg[0]/D
+  4  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[2]          g_dalive[1].s_reg[0]/D
+  5  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  ja[4]          g_dalive[2].s_reg[0]/D
+  6  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[1]          g_dalive[3].s_reg[0]/D
+  7  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[5]          g_dalive[4].s_reg[0]/D
+  8  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[0]          g_dalive[5].s_reg[0]/D
+  9  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  ja[1]          g_dalive[6].s_reg[0]/D
+ 10  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[4]          g_dalive[7].s_reg[0]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[6]          health_i/s0_reg[0]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[3]          health_i/s0_reg[1]/D
+ 13  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  sw[6]          href_invert_c_reg[0]/D
+ 14  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  ja[0]          p_s_reg[0]/D
+ 15  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  False Path  ja[3]          probe_i/h_s_reg[0]/D
+ 16  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  sw[7]          record_i/arm_d_reg[0]/D
+ 17  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  sw[7]          record_i/arm_s_reg[0]/D
+ 18  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  sw[7]          record_mode_sync_reg[0]/D
+ 19  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[0]          rpt_i/lat_reg[72]/D
+ 20  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[1]          rpt_i/lat_reg[73]/D
+ 21  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[2]          rpt_i/lat_reg[74]/D
+ 22  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[3]          rpt_i/lat_reg[75]/D
+ 23  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[4]          rpt_i/lat_reg[76]/D
+ 24  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[5]          rpt_i/lat_reg[77]/D
+ 25  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[6]          rpt_i/lat_reg[78]/D
+ 26  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  sw[7]          rpt_i/lat_reg[79]/D
+ 27  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  False Path  sw[1]          s1_reg[0]/D
+ 28  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[0]          sampler_i/ps_reg[0]/D
+ 29  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[5]          sampler_i/s0_reg[0]/D
+ 30  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[2]          sampler_i/s0_reg[1]/D
+ 31  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[4]          sampler_i/s0_reg[2]/D
+ 32  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[1]          sampler_i/s0_reg[3]/D
+ 33  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[5]          sampler_i/s0_reg[4]/D
+ 34  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[0]          sampler_i/s0_reg[5]/D
+ 35  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[1]          sampler_i/s0_reg[6]/D
+ 36  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[4]          sampler_i/s0_reg[7]/D
+ 37  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  ja[3]          sampler_i/s0_reg[8]/D
+ 38  CDC-3  Info      1-bit synchronized with ASYNC_REG property              3  False Path  jb[6]          sampler_i/s0_reg[9]/D
+ 39  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[3]          sccb_i/nack_reg/D
+ 40  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[3]          sccb_i/rd_data_reg[0]/D
+ 41  CDC-3  Info      1-bit synchronized with ASYNC_REG property              2  False Path  uart_tx_in     urx_i/sync_reg[0]/D
+ 42  CDC-1  Critical  1-bit unknown CDC circuitry                             0  False Path  jb[6]          v_s_reg[0]/D
+
+Source Clock: clk200_i
+Destination Clock: pix_i
+CDC Type: No Common Phase
+
+Row  ID     Severity  Description                                         Depth  Exception            Source (From)                    Destination (To)
+---  -----  --------  --------------------------------------------------  -----  -------------------  -------------------------------  ----------------
+  1  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[1]/C    href_s_reg[0]/D
+  2  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[8]/D
+  3  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[9]/D
+  4  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[10]/D
+  5  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[16]/D
+  6  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[17]/D
+  7  CDC-1  Critical  1-bit unknown CDC circuitry                             0  Asynch Clock Groups  init_i/chip_id_reg[10]/C         ov_q_reg[18]/D
+  8  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[70]/C   pf_p0_reg[4]/D
+  9  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[71]/C   pf_p0_reg[5]/D
+ 10  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[72]/C   pf_p0_reg[6]/D
+ 11  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[73]/C   pf_p0_reg[7]/D
+ 12  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[74]/C   pf_p0_reg[8]/D
+ 13  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[75]/C   pf_p0_reg[9]/D
+ 14  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[76]/C   pf_p0_reg[10]/D
+ 15  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[77]/C   pf_p0_reg[11]/D
+ 16  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[78]/C   pf_p0_reg[12]/D
+ 17  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[79]/C   pf_p0_reg[13]/D
+ 18  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[80]/C   pf_p0_reg[14]/D
+ 19  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[81]/C   pf_p0_reg[15]/D
+ 20  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[82]/C   pf_p0_reg[16]/D
+ 21  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[83]/C   pf_p0_reg[17]/D
+ 22  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[84]/C   pf_p0_reg[18]/D
+ 23  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[85]/C   pf_p0_reg[19]/D
+ 24  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[0]/C    pix_s_reg[0]/D
+ 25  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[96]/C   xm_p0_reg[0]/D
+ 26  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[97]/C   xm_p0_reg[1]/D
+ 27  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[98]/C   xm_p0_reg[2]/D
+ 28  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[99]/C   xm_p0_reg[3]/D
+ 29  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[100]/C  xm_p0_reg[4]/D
+ 30  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[101]/C  xm_p0_reg[5]/D
+ 31  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[102]/C  xm_p0_reg[6]/D
+ 32  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[103]/C  xm_p0_reg[7]/D
+ 33  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[104]/C  xm_p0_reg[8]/D
+ 34  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[105]/C  xm_p0_reg[9]/D
+ 35  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[86]/C   ym_p0_reg[0]/D
+ 36  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[87]/C   ym_p0_reg[1]/D
+ 37  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[88]/C   ym_p0_reg[2]/D
+ 38  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[89]/C   ym_p0_reg[3]/D
+ 39  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[90]/C   ym_p0_reg[4]/D
+ 40  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[91]/C   ym_p0_reg[5]/D
+ 41  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[92]/C   ym_p0_reg[6]/D
+ 42  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[93]/C   ym_p0_reg[7]/D
+ 43  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[94]/C   ym_p0_reg[8]/D
+ 44  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  Asynch Clock Groups  telemetry_i/dst_data_reg[95]/C   ym_p0_reg[9]/D
+
+Source Clock: input port clock
+Destination Clock: pix_i
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                         Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  --------------------------------------------------  -----  ----------  -------------  ----------------
+  1  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  False Path  sw[0]          s0_reg[0]/D
+  2  CDC-2  Warning   1-bit synchronized with missing ASYNC_REG property      2  False Path  sw[5]          s5_reg[0]/D
+
