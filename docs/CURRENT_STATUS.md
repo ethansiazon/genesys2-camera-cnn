@@ -753,3 +753,10 @@ routing errors). Snapshot and bitstream hashes verified.
 Bitstream: builds/reference_readout_20fps_filter_rgb565_r13/camera_hdmi.bit.
 SHA256: 0e191414d1e749c364ad8e4efe94684c48da1a8f7ae9dd85ae666b52ff8f1344.
 Await visual board comparison with R11, using JTAG and HDMI only.
+
+R13 is Ethan's preferred picture after the automatic white balance settles.
+He described the remaining artifact as horizontal shadows that drift upward,
+similar to filming a display. Lighting or display flicker interacting with
+the sensor readout is a candidate. Compare a stationary matte subject under
+room lights and steady daylight with screens outside the scene before adjusting
+exposure. No new measurement or exposure change was made on R13.
