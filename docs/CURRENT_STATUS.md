@@ -697,3 +697,26 @@ Bitstream: builds/reference_readout_20fps_rgb565_20261105_r11/camera_hdmi.bit.
 SHA256: fa7a8fdc80eb0bd67b5b62f87e434024ab13b35f684277d35ed350770808d0cd.
 Await manual board test. White-paper capture on R10 was offered and is
 pending user setup. No white-balance or saturation changes applied.
+
+R11 physical comparison: Ethan reported smoother motion and more visible
+noise. The picture started with a heavy green cast that faded while he waited,
+leaving a noticeable haze. The startup behavior is consistent with automatic
+white balance settling. The type of noise and actual frame rate still need
+verification. Keep the current powered session for read-only UART measurements.
+
+Ethan clarified that the noise is transient colored specks and faint horizontal
+lines across the picture. UART confirmed R11 with 3036=5A, 3824=05 and 460C=22.
+It counted 18.08 MHz PCLK (rather than the expected 14.4 MHz), 19–20 filtered
+VSYNC edges/s, and 76,800 pixels per frame. Full pixel counts do not rule out
+corrupted bytes. Faster-link timing or signal integrity is a candidate cause.
+The data do not establish why the odd divider behaved like /4. Readbacks and
+telemetry are under local_results/picture_trials/r11_noise_20261105.
+
+R12 `reference2x-20fps-even` tests a coupled clock/timing profile. Relative to
+R11, increase PLL multiplier 90 to 100, set DVP divider to 6, and increase
+horizontal total 1896 to 2112. Estimated frame rate and 400-line exposure time
+are within 0.3% of R11. Expected pin clock is about 13.3 MHz if /6 takes effect,
+with about 704 DVP cycles per line for 640 active bytes. Keep the receiver and
+ISP settings. Physical clock, line completeness and artifact comparison decide
+the result. DVP divider reference: OmniVision OV5640 Product Specification,
+VFIFO CTRL0C, https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_DS.pdf.
