@@ -800,3 +800,13 @@ Check PCLK, frame rate and full-frame pixel count with UART if available,
 and compare specks, horizontal streaks and motion with the saved R13 build.
 Clock-divider source: OmniVision OV5640 Product Specification, sections 6.2,
 7.1 and 7.2, https://dl.sipeed.com/MAIX/HDK/Chip_DS/OV5640-datasheet.pdf.
+
+The 30 FPS RGB565 simulation passed at a 50.506 ns pixel-clock period with
+injected short glitches and verified the startup picture registers.
+The host tuner passed simulated profile detection, exposure adjustment,
+undo and export for both timings. Vivado routed with zero routing errors,
+setup +0.313 ns and hold +0.073 ns.
+Bitstream: builds/r13_saved_picture_30fps_20261106/camera_hdmi.bit.
+SHA256: ca21a6908da00fb793ec1e26a06fb1b098d2d6c94376ab968938c08a40fb2dac.
+Source and bitstream hashes verified. The saved-picture R13 fallback hash
+matches its recorded value. The 30 FPS build awaits the physical test.
