@@ -760,3 +760,24 @@ similar to filming a display. Lighting or display flicker interacting with
 the sensor readout is a candidate. Compare a stationary matte subject under
 room lights and steady daylight with screens outside the scene before adjusting
 exposure. No new measurement or exposure change was made on R13.
+
+### R13 saved picture startup option
+
+Ethan chose `my_pick.json` from his live tuner session. It was saved on
+2026-11-06 at 00:08 local time and verified against its live sensor readback.
+Source SHA256: ec9de6cd804e97a768ffa598e943fd1ddf9b5f916b62f5a2a2137c8570968bd5.
+The `reference2x-20fps-saved-picture` profile uses the R13 sensor timing and
+receiver. It starts at 400 exposure lines, 1x gain, manual WB gains
+R=0x050A, G=0x0400, B=0x074B, brightness +1, contrast +2, saturation +2,
+and the reference gamma curve. The image writes complete before streaming.
+Manual WB was chosen in the saved scene and can look different in other
+lighting. Original R13 remains available with automatic WB. The UART tuner
+can still adjust the saved-picture build while it is running.
+
+Both the original R13 and saved-picture fixtures passed, with all 35 saved
+registers verified before stream enable in the saved-picture simulation.
+Routed timing passed (setup +0.164 ns, hold +0.082 ns, zero routing errors).
+Bitstream: builds/r13_saved_picture_20261106/camera_hdmi.bit.
+SHA256: e25dc7dc9ee0c659e14d64b4ce6cf7aeacb772c92f8cfca0a0b49100a290a67e.
+Source and bitstream hashes verified. Original R13 bitstream also verified.
+Await manual load and comparison in the lighting used to save the preset.

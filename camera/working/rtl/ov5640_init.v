@@ -45,7 +45,7 @@
 module ov5640_init #(
     parameter integer CLK_HZ = 100_000_000,
     parameter integer RGB565 = 0, // Separate format diagnostic; default preserves YUYV.
-    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: faster reference readout, 3: 20 fps trial, 4: 20 fps with even DVP divider, 5: 20 fps with a majority-filter receiver.
+    parameter integer REFERENCE_READOUT = 0 // 0: baseline, 1: reference readout, 2: faster reference readout, 3: 20 fps trial, 4: 20 fps with even DVP divider, 5: R13, 6: R13 with saved picture settings.
 )(
     input  wire        clk,
     input  wire        rst,
@@ -130,7 +130,7 @@ module ov5640_init #(
                          REFERENCE_READOUT >= 3 ? 8'h5A : 8'h48}; // x100, x90, or x72.
         8'd24 : entry = {C_WR,  16'h3037, 8'h13};  // [reference] pre-div 3
         8'd25 : entry = {C_WR,  16'h3108, 8'h01};  // [reference]
-        8'd26 : entry = {C_WR,  16'h3824, REFERENCE_READOUT == 4 ? 8'h06 : ((REFERENCE_READOUT == 3 || REFERENCE_READOUT == 5) ? 8'h05 : 8'h04)}; // R11 measured /4 behavior with 05.
+        8'd26 : entry = {C_WR,  16'h3824, REFERENCE_READOUT == 4 ? 8'h06 : ((REFERENCE_READOUT == 3 || REFERENCE_READOUT >= 5) ? 8'h05 : 8'h04)}; // R11 measured /4 behavior with 05.
         8'd27 : entry = {C_WR,  16'h460C, 8'h22};  // [derived] PCLK manual divider
         // --- windowing: 320x240 out of the full array ---
         8'd28 : entry = {C_WR,  16'h3820, 8'h41};  // [reference] flip
@@ -193,6 +193,45 @@ module ov5640_init #(
         8'd70 : entry = REFERENCE_READOUT ? {C_DLY,16'd100,8'h00} : {C_END,16'd0,8'd0};
         default: entry = {C_END, 16'h0000, 8'h00};
         endcase
+        // R13 picture chosen in the live tuner on 2026-11-06.
+        // Apply white balance, gamma and tone before enabling the stream.
+        if (REFERENCE_READOUT == 6 && table_index >= 69) begin
+            case (table_index)
+                8'd69: entry = {C_WR, 16'h3406, 8'h01};
+                8'd70: entry = {C_WR, 16'h3400, 8'h05};
+                8'd71: entry = {C_WR, 16'h3401, 8'h0A};
+                8'd72: entry = {C_WR, 16'h3402, 8'h04};
+                8'd73: entry = {C_WR, 16'h3403, 8'h00};
+                8'd74: entry = {C_WR, 16'h3404, 8'h07};
+                8'd75: entry = {C_WR, 16'h3405, 8'h4B};
+                8'd76: entry = {C_WR, 16'h5480, 8'h01};
+                8'd77: entry = {C_WR, 16'h5481, 8'h08};
+                8'd78: entry = {C_WR, 16'h5482, 8'h14};
+                8'd79: entry = {C_WR, 16'h5483, 8'h28};
+                8'd80: entry = {C_WR, 16'h5484, 8'h51};
+                8'd81: entry = {C_WR, 16'h5485, 8'h65};
+                8'd82: entry = {C_WR, 16'h5486, 8'h71};
+                8'd83: entry = {C_WR, 16'h5487, 8'h7D};
+                8'd84: entry = {C_WR, 16'h5488, 8'h87};
+                8'd85: entry = {C_WR, 16'h5489, 8'h91};
+                8'd86: entry = {C_WR, 16'h548A, 8'h9A};
+                8'd87: entry = {C_WR, 16'h548B, 8'hAA};
+                8'd88: entry = {C_WR, 16'h548C, 8'hB8};
+                8'd89: entry = {C_WR, 16'h548D, 8'hCD};
+                8'd90: entry = {C_WR, 16'h548E, 8'hDD};
+                8'd91: entry = {C_WR, 16'h548F, 8'hEA};
+                8'd92: entry = {C_WR, 16'h5490, 8'h1D};
+                8'd93: entry = {C_WR, 16'h5583, 8'h50};
+                8'd94: entry = {C_WR, 16'h5584, 8'h50};
+                8'd95: entry = {C_WR, 16'h5586, 8'h30};
+                8'd96: entry = {C_WR, 16'h5587, 8'h10};
+                8'd97: entry = {C_WR, 16'h5588, 8'h41};
+                8'd98: entry = {C_WR, 16'h5580, 8'h06};
+                8'd99: entry = {C_WR, 16'h3008, 8'h02};
+                8'd100: entry = {C_DLY, 16'd100, 8'h00};
+                default: entry = {C_END, 16'h0000, 8'h00};
+            endcase
+        end
     end
 
     wire [1:0]  e_cmd  = entry[25:24];
