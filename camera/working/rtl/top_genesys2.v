@@ -246,7 +246,7 @@ module top_genesys2 #(
     wire [48:0] capture_debug;
     wire clean_tick,clean_href,clean_vsync;
     wire[7:0]clean_data;
-    dvp_clean_sampler #(.MAJORITY_FILTER(REFERENCE_READOUT == 5)) sampler_i(.clk(clk200),.rst(rst200),
+    dvp_clean_sampler #(.MAJORITY_FILTER(REFERENCE_READOUT >= 5)) sampler_i(.clk(clk200),.rst(rst200),
       .pclk(cam_pclk_raw),.href(cam_href ^ href_invert_c[1]),.vsync(cam_vsync),.data(cam_d),
       .tick(clean_tick),.sample_data(clean_data),.sample_href(clean_href),.sample_vsync(clean_vsync));
     wire [16:0] cwr_addr;
