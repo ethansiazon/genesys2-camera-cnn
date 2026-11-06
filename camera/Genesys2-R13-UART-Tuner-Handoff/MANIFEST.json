@@ -1,0 +1,299 @@
+{
+  "source_commit": "fede591750a48b4744b572a511da408bc8affe35",
+  "published_ref": "origin/camera/color-debug",
+  "original_r13_build_record_commit": "b6dceef",
+  "files": {
+    "camera/WIRING.md": {
+      "sha256": "1b8bcbfad9717f4b64f9d3e316fc9c8893355bdea75329240eb10c1c665cfa67",
+      "origin": "published_source"
+    },
+    "camera/working/constraints/genesys2.xdc": {
+      "sha256": "f073fb1e8c32f70b82c8ee5c859b10d576a0e5c976d05dd498e56cab8bbbb91e",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/banked_frame_memory.v": {
+      "sha256": "3fbc013f0e07ca260ae0cb05332a9fea74767aaf14818a44d20d4035fc9d1a27",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/cam_capture.v": {
+      "sha256": "4aac6e51a27651ecb13eeea0867c099c649dfdb29249d0a69cc02342b507a229",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/camera_status_snapshot.v": {
+      "sha256": "4308ce6baf4c6bda7b28c0c8ac7117e8bd5649d9f0e775f7ec7f8afa5ebba39c",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/camera_uart_control.v": {
+      "sha256": "405bb34967a240d048edea4836713115067cfad50ca8e665588903bbf7a00bff",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/clk_gen.v": {
+      "sha256": "498a4d1d35a8a6e5e15e014968a9793d7188a49dd4ee703e3eaa48643a663e99",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/debug_overlay.v": {
+      "sha256": "29987d454aa3b09ad40c612a2f44e94d51609458da811e9789ee7968694d4194",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/dvp_clean_sampler.v": {
+      "sha256": "1284d3fdcbd410b3d9e58dc55fbc22e014136eadb60fa6393a8309b7cfec6404",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/dvp_probe.v": {
+      "sha256": "da2179f54a1db9042f64224db5ecb8b692e0cc380cb30f1595ff664e0257f05c",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/frame_buffer.v": {
+      "sha256": "7942bc42a15a8fd745af62b78676f7c6aaeb4e791eebd776d2e3b515acc95dbe",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/frame_snapshot.v": {
+      "sha256": "7a8316efa6367b48e5f33cc6028a7550a38935f819d7bae88200eeb06470bf54",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/hdmi_out.v": {
+      "sha256": "287e0dc85f8980b41d4137761b7d8d516bf11f469cc88179968ffe3090c9b664",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/ov5640_init.v": {
+      "sha256": "462b7ad25f00e2fce3fcb93faf29349f8da156cde7bbff6728bc92dded6eeb93",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/pattern_gen.v": {
+      "sha256": "bce4be60195507a4e647dbe9165607b3ede64fc7f94f809864ebc4ebcfe3b35c",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/pipeline_recorder.v": {
+      "sha256": "d0dd29035bc7389957bba8deaded3d766c7022938aa91a899b73ee69c55252bb",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/sccb_master.v": {
+      "sha256": "b5768dcc4825d2c68ac8d6e589d74769eba54cc40c12effac4d5a28fb246625e",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/sync_health_probe.v": {
+      "sha256": "dbe89ebb519fbd8db1a6937d74eae9accb16411a4310fff78da8ec7964518dfe",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/tmds_encoder.v": {
+      "sha256": "08d5c122965ab8f562fe32827cef0b5945d5020e0c6d0034740da030a116fc0b",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/top_genesys2.v": {
+      "sha256": "c9b8c2920c4c831a0cadaa7366f4f6a0a5797cbf11e0d9f07be08f2ebc87eccd",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/uart_report.v": {
+      "sha256": "8d9505b09cb229371646276edbd3aa4d5cba882e4cb7c33b7bf40126b03fe22c",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/uart_rx.v": {
+      "sha256": "b57b37c8fc7a95d4a7ef6a5107aab06f9bd865899b2cca34542193ca7ffec634",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/uart_tx.v": {
+      "sha256": "311de313945d8bb5b74ef9c8ff2c18643ab5e66165fb8b15a1f778235163caee",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/vga_timing.v": {
+      "sha256": "dfcd550bb17785eaff368c5c2afac3c7c7c4198ed459e1d16b8fbcd95a6bd1c3",
+      "origin": "published_source"
+    },
+    "camera/working/rtl/ycbcr2rgb.v": {
+      "sha256": "06eb4ccdefe0862aef67f5566c470db22a9f7a88417c87260f3be9c9b567db58",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/Tune_R13.cmd": {
+      "sha256": "f305c2febf437c2bec1c0ecac32430dd0a7dbcc6c545db171e68cca4401adaf5",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/build.tcl": {
+      "sha256": "8d08fc46333725c890e8d754a98c7952c7e98fa93852fc591db590bff3ba8bf4",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/camera_control.ps1": {
+      "sha256": "0f2ce25413d41223aefcae9043651e2fb1996fb0ddb2a05255ea01feb9076c5b",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/camera_trials.json": {
+      "sha256": "546fc3184887c7ab5523af2f920ef07a08b31618103839c9e3b15e492cd615c1",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/camera_trials.ps1": {
+      "sha256": "e1ff12f84178421de7aa4f98d731acd219114bff8421e017d15acdbb78f9a33e",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/run_tests.py": {
+      "sha256": "291de5379ce47fb048e9cb6d7fc84e972e5e1b4587b7b7ae8ca46cc25a8cd4b1",
+      "origin": "published_source"
+    },
+    "camera/working/scripts/tune_r13.ps1": {
+      "sha256": "c73f822bbcb26fb0482424ebbc032fd04d4cfe8511f372b91eb672ea91e5b4b6",
+      "origin": "published_source"
+    },
+    "camera/working/sim/ov5640_model.v": {
+      "sha256": "41f8d2e0b1c8a118d3445b8bb3bdd8ef8f9a300a65ef3c6ab1d193a4540f7fc6",
+      "origin": "published_source"
+    },
+    "camera/working/sim/ov5640_yuyv_model.v": {
+      "sha256": "15d09de8fbc6bd4105268640bae6cf4b3304de77712e5b216093b57cc7d1b692",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_banked_frame_memory.v": {
+      "sha256": "905ac0c670026e1984b58ae66ad13188bc468e55af9331f83dea42c73c56606b",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_camera_status_snapshot.v": {
+      "sha256": "731941b80111aacd946587f416dbffc2b73d2c9be5a3f86cba814ca56216385f",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_camera_uart_control.v": {
+      "sha256": "6f29cef56f79fd37c5d2f84a8e88e7049eaa41d2f6a7cc1629757ce09b580932",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_frame_snapshot.v": {
+      "sha256": "afedb5b2c380f995f50cb942e609201cb2e310e26a3ca22e5d95dacb1cef7882",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_init_host_control.v": {
+      "sha256": "f046aeab1346e2dba9ed7436f8f78ed403f10a68ecd8698b591fedcbfdb0f2ae",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_init_readback.v": {
+      "sha256": "1c3c73f0d27bf0ce69425defa3cde8d0f2b1b1d083d75e6973f44d3eb67e13f1",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_pipeline_end_to_end.v": {
+      "sha256": "b98dc1b3cfbbef3169a75dbd29cf0f52157e6c0fab0088fc316fbb75f87f695d",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_pipeline_recorder.v": {
+      "sha256": "626fa95ff0f6299d5a7830a5714aae3129ab7e8361343b15bec4782ab7fb32b7",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_raw_word_snapshot.v": {
+      "sha256": "a52a43a08b1380ddfcbb786c34f8a425c925318f933929dce47e8f360fc93b03",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_rgb565_word_snapshot.v": {
+      "sha256": "832a016bcd6a982b84f57ccd7253fa70f630241f3c880b987eae18d6c425b30c",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_sccb.v": {
+      "sha256": "c96280658009f8e2059c1e32621ad9a86c8ee89dc0a568507b729a70fe6e9e34",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_sync_health_probe.v": {
+      "sha256": "403c9d98b456c5c0f5c75d264ec61c4846040f087775c2b9c9510b85807e02ac",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_tmds.v": {
+      "sha256": "83d53bc0c0ff86dce096c666a07ffe26985b373cc48c43fcfa90cf68cce10c78",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_live_control.v": {
+      "sha256": "79f54466288e62b4d204143cd5b5ed3cf10069e7de6a3c19dcc575c5708bf657",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout.v": {
+      "sha256": "69058a7750e6ac6cb4ff15e3856f515f520ab633b77c9e490b46de98be3c3404",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout_20fps.v": {
+      "sha256": "b94ec6fddf3dc5f7abf76c904012341f177826cbe11cd502fdd267d14474082e",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout_20fps_even.v": {
+      "sha256": "dca4cf8ccb89b74ef033e31115356d39b34d96629acab4d35d17d8a1e5f2a993",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout_20fps_filter.v": {
+      "sha256": "e7c1ba9608c7e9742e67f2a895575d5ba6ce1851dbed7e84d7632438b69f376e",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout_fast.v": {
+      "sha256": "870ee41444a41c521912389394ef5e7a8ac11652416575e7e639d1d92efc8da3",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_reference_readout_saved_picture.v": {
+      "sha256": "5120b9111fe616c7215d4245705abf3db3cdec4da63c145cba0999934c11f634",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_rgb565.v": {
+      "sha256": "fc47f93b899216556b7d79cb145ca102dd685b0aab586eaecc37e14c184d1113",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_wiring.v": {
+      "sha256": "1b3a8bf5effa31f28a8229e1ffd98c7d0c18dca3b1e4492cf5a68430ef4f741d",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_top_wiring_inverted.v": {
+      "sha256": "a66ac876964aeb595801f89129ad80ffe30baec30932393b889329ee51f26398",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_uart_rx.v": {
+      "sha256": "591d5b92269cf9c1da46bb2f6f5471b9bec65a33a4fb8ab4e59956fa765c726e",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_vga.v": {
+      "sha256": "ad35ac1b5ed6cdc2c554d6af7131b97f23ab93bb79f444e8a96b93b952430e1b",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_ycbcr.v": {
+      "sha256": "e12fe1f0258564037a116ec23bf028a9a0bc07d8b8976e8a2606a5920362c17c",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_yuv_capture.v": {
+      "sha256": "b59f4ac3e4295a13178aef73f30fa9eef7e018b582d2af9d05fc435a661689da",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_yuv_capture_qualified.v": {
+      "sha256": "7296e9faf927e16b0b30e62fe0f7a715d23d0d1e20cc5286fc90f93150715f2a",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_yuv_capture_source.v": {
+      "sha256": "6271dd0710f45b5e5afafe7591ce536227f5097f9b2a32ef2f03d2c6db7cd3ec",
+      "origin": "published_source"
+    },
+    "camera/working/sim/tb_yuv_word_observer.v": {
+      "sha256": "719aaf233f7559cf4e590709f9ff62bcf0473579b30048e9ae0257f461e32cec",
+      "origin": "published_source"
+    },
+    "docs/R13_CAMERA_TUNER.md": {
+      "sha256": "7baec82684ba669c75932280d2f334f8f13a4cd3d194cf5f721ead6d302ce8a7",
+      "origin": "published_source"
+    },
+    "docs/THIRD_PARTY.md": {
+      "sha256": "456c6eec25b1d63b9f502ae9b7b743fc4ee9f759976eb74075a8373f3e38da3d",
+      "origin": "published_source"
+    },
+    "docs/camera_colour_trials_20261105/ESPRESSIF_LICENSE.txt": {
+      "sha256": "8c6db340475136df3c1201d458fa5755698eace76e510471ecc9d857d6083dac",
+      "origin": "published_source"
+    },
+    "tools/build_camera_guarded.py": {
+      "sha256": "183589d7633c8cf6be7ea010532dfc6ee968f66730cfbeb15e80da800bb88b61",
+      "origin": "published_source"
+    },
+    "tools/create_camera_project.tcl": {
+      "sha256": "69de241eb7eaf605f257eb93e7745545c207c2599bba76f69c6d7542b78c53f1",
+      "origin": "published_source"
+    },
+    "tools/test_camera.py": {
+      "sha256": "1266fcc9d618c8c7b42bcbf5efe3959755ce32ded75c21786f381952750a799a",
+      "origin": "published_source"
+    },
+    "builds/reference_readout_20fps_filter_rgb565_r13/camera_hdmi.bit": {
+      "sha256": "0e191414d1e749c364ad8e4efe94684c48da1a8f7ae9dd85ae666b52ff8f1344",
+      "origin": "local_bitstream"
+    },
+    "START_HERE.md": {
+      "sha256": "ad87ff425235f1b0728ecaa59505e28902fa486c6b59b47716d10f2bbb62f69d",
+      "origin": "handoff_guide"
+    },
+    "UART_WALKTHROUGH.md": {
+      "sha256": "b55b1b7e974700ebc926b61f3a50b143f75f916e84ed6c636e85c2d4518e45a7",
+      "origin": "handoff_guide"
+    }
+  }
+}
