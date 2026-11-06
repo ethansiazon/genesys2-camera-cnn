@@ -831,3 +831,9 @@ describes 00 as asserting at the end of the field and clearing at the start
 of the frame. This tests sensor-generated frame alignment while preserving
 the measured clock configuration and saved image settings. The physical
 presence and alignment of VSYNC still require UART/HDMI confirmation.
+
+VSYNC-mode trial passed the targeted startup/capture simulation and routed
+timing (+0.294 ns setup, +0.075 ns hold, zero routing errors).
+Bitstream: builds/r13_saved_picture_30fps_vsync_20261106/camera_hdmi.bit.
+SHA256: e1bfeee4922b5626ecb43b3f2879f3e1975db8f75b9a058415d8b21f9dad39aa.
+Snapshot and bitstream hashes verified. Await manual JTAG load.
