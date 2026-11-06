@@ -29,7 +29,7 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
         .sysclk_p(sysclk),.sysclk_n(~sysclk),.sw(sw),.btnc(btn),.led(led),
         .ja(ja),.jb(jb),.hdmi_tx_p(hp),.hdmi_tx_n(hn),
         .hdmi_tx_clk_p(hcp),.hdmi_tx_clk_n(hcn),.uart_tx_in(1'b1),.uart_rx_out(tx));
-    ov5640_yuyv_model #(.H_ACTIVE(320),.V_ACTIVE(2),.PCLK_PERIOD(REFERENCE_READOUT == 4 ? 76 : 70)) sensor(
+    ov5640_yuyv_model #(.H_ACTIVE(320),.V_ACTIVE(2),.PCLK_PERIOD(REFERENCE_READOUT == 5 ? 56 : (REFERENCE_READOUT == 4 ? 76 : 70))) sensor(
         .pclk(pc),.vsync(vs),.href(hr),.d(data),.pwdn(ja[6]),.reset_n(ja[7]),
         .sioc(jb[7]),.siod(jb[3]),.frames_sent(frames));
     integer i,expect_y,expected,actual,errors=0,settled_frame;
@@ -50,8 +50,8 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
         ck("ID valid",dut.id_valid,1);
         ck("SCCB acknowledgements",dut.nack_seen,0);
         ck("system divider",sensor.regs[16'h3035],REFERENCE_READOUT >= 2 ? 8'h21 : 8'h41);
-        ck("PLL multiplier",sensor.regs[16'h3036],REFERENCE_READOUT == 4 ? 8'h64 : (REFERENCE_READOUT == 3 ? 8'h5a : 8'h48));
-        ck("DVP divider",sensor.regs[16'h3824],REFERENCE_READOUT == 4 ? 6 : (REFERENCE_READOUT == 3 ? 5 : 4));
+        ck("PLL multiplier",sensor.regs[16'h3036],REFERENCE_READOUT == 4 ? 8'h64 : (REFERENCE_READOUT >= 3 ? 8'h5a : 8'h48));
+        ck("DVP divider",sensor.regs[16'h3824],REFERENCE_READOUT == 4 ? 6 : ((REFERENCE_READOUT == 3 || REFERENCE_READOUT == 5) ? 5 : 4));
         ck("line length",{sensor.regs[16'h380c],sensor.regs[16'h380d]},REFERENCE_READOUT == 4 ? 2112 : 1896);
         ck("explicit DVP polarity",sensor.regs[16'h4740],8'h22);
         ck("RGB565 format",sensor.regs[16'h4300],8'h61);
@@ -99,7 +99,8 @@ module tb_top_rgb565 #(parameter integer REFERENCE_READOUT=0);
             end
         end
         ck("all 640 stored pixels",errors,0);
-        ck("manual exposure",sensor.regs[16'h3501],REFERENCE_READOUT >= 3 ? 8'h19 : 8'h08);
+        ck("manual exposure",{sensor.regs[16'h3500],sensor.regs[16'h3501],sensor.regs[16'h3502]},
+           (REFERENCE_READOUT >= 3 ? 400 : 128) << 4);
         ck("ISP first bank value",dut.config_readback[199:192],8'hA7);
         force dut.diagnostic_page=3'd4;#1;
         ck("ISP UART page tag",dut.diagnostic_words[31:0],32'hD1640004);

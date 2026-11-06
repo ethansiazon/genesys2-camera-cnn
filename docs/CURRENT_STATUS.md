@@ -726,3 +726,23 @@ timing passed with setup +0.346 ns, hold +0.071 ns, zero routing errors.
 Bitstream: builds/reference_readout_20fps_even_rgb565_r12/camera_hdmi.bit.
 SHA256: 497013e687f7a2b107e0f0de610ce2521cc50a33ab8ba0cf64324b48e6b3f1a9.
 Source snapshot and bitstream hashes verified. Await board comparison.
+
+R12 physical result was worse than R11. Ethan saw more moving, wrongly colored
+horizontal streaks and more speckles. He asked to compare by eye without UART.
+No R12 pin-clock or frame-completeness measurement was taken. Reject R12 as a
+viewing profile and do not infer whether its divider worked from the picture.
+
+A moderate-speed candidate (x78 PLL, /4 DVP divider, 347-line exposure) lost
+pixels in the 64 ns PCLK integration fixture with injected short glitches.
+It was rejected before synthesis. Evidence is saved under
+local_results/reference_readout_r13_tests_20261105.
+
+R13 `reference2x-20fps-filter` instead uses the measured 19–20 FPS R11 sensor
+profile verbatim and changes the FPGA pixel-clock filter. The alternative
+receiver takes a majority over five synchronized samples and still rejects
+isolated one- or two-sample excursions. This addresses the failure mode in
+which a brief excursion near an edge leaves fewer than four consecutive
+stable samples at the faster clock. Default and earlier profiles still use
+the four-consecutive-sample filter. The 56 ns RGB565 fixture exercises the
+R13 receiver with the same injected glitches. Visual comparison on the board
+is required because the physical noise waveform has not been measured.
