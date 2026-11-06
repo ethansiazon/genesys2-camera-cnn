@@ -228,8 +228,14 @@ module ov5640_init #(
                 8'd96: entry = {C_WR, 16'h5587, 8'h10};
                 8'd97: entry = {C_WR, 16'h5588, 8'h41};
                 8'd98: entry = {C_WR, 16'h5580, 8'h06};
-                8'd99: entry = {C_WR, 16'h3008, 8'h02};
-                8'd100: entry = {C_DLY, 16'd100, 8'h00};
+                // Mode 0 asserts VSYNC at field end and clears it at frame start.
+                // The pulse-based default produced no valid VSYNC at 30 FPS.
+                8'd99: entry = REFERENCE_READOUT == 7 ?
+                    {C_WR, 16'h471D, 8'h00} : {C_WR, 16'h3008, 8'h02};
+                8'd100: entry = REFERENCE_READOUT == 7 ?
+                    {C_WR, 16'h3008, 8'h02} : {C_DLY, 16'd100, 8'h00};
+                8'd101: entry = REFERENCE_READOUT == 7 ?
+                    {C_DLY, 16'd100, 8'h00} : {C_END, 16'h0000, 8'h00};
                 default: entry = {C_END, 16'h0000, 8'h00};
             endcase
         end

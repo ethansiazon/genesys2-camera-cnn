@@ -810,3 +810,24 @@ Bitstream: builds/r13_saved_picture_30fps_20261106/camera_hdmi.bit.
 SHA256: ca21a6908da00fb793ec1e26a06fb1b098d2d6c94376ab968938c08a40fb2dac.
 Source and bitstream hashes verified. The saved-picture R13 fallback hash
 matches its recorded value. The 30 FPS build awaits the physical test.
+
+Ethan tested the 30 FPS build and saw the entire camera picture roll upward
+and repeat. The internal FPGA bars (SW5) stayed stationary on the same HDMI
+output. Treat this separately from the moving shadows seen on R13. The first
+physical check points toward camera capture/frame alignment. Await UART timing
+and frame counters before changing the clock settings again.
+
+UART confirmed the 30 FPS clock registers and about 19.93 MHz PCLK. The
+filtered HREF rate was 7,246–7,247 lines/s, consistent with roughly 30 FPS
+if all 240 lines arrive each frame. Filtered VSYNC was zero. Raw VSYNC showed
+only 5 ns high excursions, and the capture counter stayed at frame 1 with
+zero completed-frame pixels. The observed roll is consistent with the
+capture logic missing the start-of-frame reset. Logs are under
+local_results/picture_trials/r13_30fps_rolling_20261106.
+
+The follow-up 30 FPS build changes only the startup VSYNC mode, 471D=01 to
+00. The sensor reports 01 on the rolling build. The OV5640 specification
+describes 00 as asserting at the end of the field and clearing at the start
+of the frame. This tests sensor-generated frame alignment while preserving
+the measured clock configuration and saved image settings. The physical
+presence and alignment of VSYNC still require UART/HDMI confirmation.

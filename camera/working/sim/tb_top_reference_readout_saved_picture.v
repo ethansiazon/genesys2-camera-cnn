@@ -46,6 +46,8 @@ module tb_top_reference_readout_saved_picture #(parameter integer REFERENCE_READ
         check_register(16'h5587, 8'h10);
         check_register(16'h5588, 8'h41);
         check_register(16'h5580, 8'h06);
+        if (REFERENCE_READOUT == 7)
+            check_register(16'h471D, 8'h00);
         $display("All saved picture registers verified before stream enable");
     end
 endmodule
