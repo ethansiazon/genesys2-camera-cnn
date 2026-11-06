@@ -746,3 +746,10 @@ stable samples at the faster clock. Default and earlier profiles still use
 the four-consecutive-sample filter. The 56 ns RGB565 fixture exercises the
 R13 receiver with the same injected glitches. Visual comparison on the board
 is required because the physical noise waveform has not been measured.
+
+R13 passed the 56 ns glitch-injected RGB565 fixture and the legacy qualified
+YUV fixture. Routed timing passed (setup +0.350 ns, hold +0.072 ns, zero
+routing errors). Snapshot and bitstream hashes verified.
+Bitstream: builds/reference_readout_20fps_filter_rgb565_r13/camera_hdmi.bit.
+SHA256: 0e191414d1e749c364ad8e4efe94684c48da1a8f7ae9dd85ae666b52ff8f1344.
+Await visual board comparison with R11, using JTAG and HDMI only.
