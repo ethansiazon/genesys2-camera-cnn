@@ -720,3 +720,9 @@ with about 704 DVP cycles per line for 640 active bytes. Keep the receiver and
 ISP settings. Physical clock, line completeness and artifact comparison decide
 the result. DVP divider reference: OmniVision OV5640 Product Specification,
 VFIFO CTRL0C, https://cdn.sparkfun.com/datasheets/Sensors/LightImaging/OV5640_DS.pdf.
+
+R12 passed the RGB565 integration fixture with injected short glitches. Routed
+timing passed with setup +0.346 ns, hold +0.071 ns, zero routing errors.
+Bitstream: builds/reference_readout_20fps_even_rgb565_r12/camera_hdmi.bit.
+SHA256: 497013e687f7a2b107e0f0de610ce2521cc50a33ab8ba0cf64324b48e6b3f1a9.
+Source snapshot and bitstream hashes verified. Await board comparison.
