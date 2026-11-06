@@ -1,0 +1,22 @@
+{
+  "state": "complete",
+  "output": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\reference_readout_20fps_filter_rgb565_r13",
+  "source_snapshot": "C:\\Users\\ethan\\Desktop\\genesys2-camera-cnn\\builds\\reference_readout_20fps_filter_rgb565_r13\\source",
+  "memory_guard_gib": 1.5,
+  "threads": 1,
+  "board_programming": false,
+  "camera_format": "rgb565",
+  "rgb565_generic": 1,
+  "readout_profile": "reference2x-20fps-filter",
+  "reference_readout_generic": 5,
+  "updated_at_local": "2026-11-05 22:27:40",
+  "launcher_pid": 24524,
+  "elapsed_seconds": 304,
+  "available_ram_gib": 2.89,
+  "timing": {
+    "setup_wns_ns": 0.35,
+    "hold_whs_ns": 0.072,
+    "physical_camera_tested": false
+  },
+  "bitstream_sha256": "0e191414d1e749c364ad8e4efe94684c48da1a8f7ae9dd85ae666b52ff8f1344"
+}
