@@ -46,3 +46,6 @@ camera/working/RESTORE_BEST.ps1
 !.env.example
 *.pem
 *.key
+
+# Shipped bitstreams are the one exception to the *.bit rule above.
+!bitstreams/**/*.bit
