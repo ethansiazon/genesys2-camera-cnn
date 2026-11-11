@@ -35,6 +35,7 @@ tests['tb_top_reference_readout_20fps']=tests['tb_top_rgb565'][:]
 tests['tb_top_reference_readout_20fps_even']=tests['tb_top_rgb565'][:]
 tests['tb_top_reference_readout_20fps_filter']=tests['tb_top_rgb565'][:]
 tests['tb_top_reference_readout_saved_picture']=tests['tb_top_rgb565'][:]
+tests['tb_top_reference_readout_30fps']=tests['tb_top_rgb565'][:]
 tests['tb_rgb565_word_snapshot']=['frame_snapshot']
 tests['tb_uart_rx']=['uart_rx']
 tests['tb_camera_uart_control']=['camera_uart_control']
@@ -46,6 +47,7 @@ for test,files in tests.items():
     sources=[rtl/(s+'.v') for s in files]+[sim/(test+'.v')]
     if test.startswith('tb_top_'):sources.append(sim/'ov5640_yuyv_model.v')
     if test.startswith('tb_top_reference_readout'):sources.append(sim/'tb_top_rgb565.v')
+    if test=='tb_top_reference_readout_30fps':sources.append(sim/'tb_top_reference_readout_saved_picture.v')
     target=WORK/(test+'.vvp')
     command=[str(IVERILOG),'-g2012','-DSYNTHESIS','-s',test,'-o',str(target),*map(str,sources)]
     compile_result=subprocess.run(command,capture_output=True,text=True,timeout=60)

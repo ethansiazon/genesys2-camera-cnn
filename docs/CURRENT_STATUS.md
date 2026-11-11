@@ -781,3 +781,59 @@ Bitstream: builds/r13_saved_picture_20261106/camera_hdmi.bit.
 SHA256: e25dc7dc9ee0c659e14d64b4ce6cf7aeacb772c92f8cfca0a0b49100a290a67e.
 Source and bitstream hashes verified. Original R13 bitstream also verified.
 Await manual load and comparison in the lighting used to save the preset.
+
+### R13 saved picture, 30 FPS trial
+
+The `reference2x-30fps-saved-picture` profile retains 320x240 RGB565, the
+984-line frame and the selected white balance, gain, gamma and tone settings.
+The new nominal sensor line clock is 79.2 MHz (24 MHz XCLK, PLL x99,
+system divider /1), with HTS 2684 for a calculated 30.0 FPS. Set the documented
+PCLK root /2 (3108=11) and the known manual DVP /4 (3824=04), targeting 19.8 MHz
+and 671 clock cycles per line for 640 active bytes. The PLL VCO estimate is
+792 MHz, below the sensor specification limit of 800 MHz. The earlier odd
+divider behaved differently on hardware, so these are predictions to check.
+Exposure becomes 622 lines, about 21.1 ms, matching R13's 400-line exposure
+time. At the faster link, the receiver confirms two successive majority
+results and takes the data from an earlier pipeline sample. The live tuner
+recognizes the trial's read-only timing signature as a separate profile.
+Check PCLK, frame rate and full-frame pixel count with UART if available,
+and compare specks, horizontal streaks and motion with the saved R13 build.
+Clock-divider source: OmniVision OV5640 Product Specification, sections 6.2,
+7.1 and 7.2, https://dl.sipeed.com/MAIX/HDK/Chip_DS/OV5640-datasheet.pdf.
+
+The 30 FPS RGB565 simulation passed at a 50.506 ns pixel-clock period with
+injected short glitches and verified the startup picture registers.
+The host tuner passed simulated profile detection, exposure adjustment,
+undo and export for both timings. Vivado routed with zero routing errors,
+setup +0.313 ns and hold +0.073 ns.
+Bitstream: builds/r13_saved_picture_30fps_20261106/camera_hdmi.bit.
+SHA256: ca21a6908da00fb793ec1e26a06fb1b098d2d6c94376ab968938c08a40fb2dac.
+Source and bitstream hashes verified. The saved-picture R13 fallback hash
+matches its recorded value. The 30 FPS build awaits the physical test.
+
+Ethan tested the 30 FPS build and saw the entire camera picture roll upward
+and repeat. The internal FPGA bars (SW5) stayed stationary on the same HDMI
+output. Treat this separately from the moving shadows seen on R13. The first
+physical check points toward camera capture/frame alignment. Await UART timing
+and frame counters before changing the clock settings again.
+
+UART confirmed the 30 FPS clock registers and about 19.93 MHz PCLK. The
+filtered HREF rate was 7,246–7,247 lines/s, consistent with roughly 30 FPS
+if all 240 lines arrive each frame. Filtered VSYNC was zero. Raw VSYNC showed
+only 5 ns high excursions, and the capture counter stayed at frame 1 with
+zero completed-frame pixels. The observed roll is consistent with the
+capture logic missing the start-of-frame reset. Logs are under
+local_results/picture_trials/r13_30fps_rolling_20261106.
+
+The follow-up 30 FPS build changes only the startup VSYNC mode, 471D=01 to
+00. The sensor reports 01 on the rolling build. The OV5640 specification
+describes 00 as asserting at the end of the field and clearing at the start
+of the frame. This tests sensor-generated frame alignment while preserving
+the measured clock configuration and saved image settings. The physical
+presence and alignment of VSYNC still require UART/HDMI confirmation.
+
+VSYNC-mode trial passed the targeted startup/capture simulation and routed
+timing (+0.294 ns setup, +0.075 ns hold, zero routing errors).
+Bitstream: builds/r13_saved_picture_30fps_vsync_20261106/camera_hdmi.bit.
+SHA256: e1bfeee4922b5626ecb43b3f2879f3e1975db8f75b9a058415d8b21f9dad39aa.
+Snapshot and bitstream hashes verified. Await manual JTAG load.

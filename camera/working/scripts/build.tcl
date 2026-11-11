@@ -7,7 +7,7 @@ if {[llength $argv] > 1} {set rgb565 [lindex $argv 1]}
 if {$rgb565 ni {0 1}} {error {RGB565 generic must be0 or1}}
 set reference_readout 0
 if {[llength $argv] > 2} {set reference_readout [lindex $argv 2]}
-if {$reference_readout ni {0 1 2 3 4 5 6}} {error {REFERENCE_READOUT generic must be in 0..6}}
+if {$reference_readout ni {0 1 2 3 4 5 6 7}} {error {REFERENCE_READOUT generic must be in 0..7}}
 file mkdir $out
 cd $out
 set_param general.maxThreads 2

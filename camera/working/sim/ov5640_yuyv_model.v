@@ -7,7 +7,7 @@ module ov5640_yuyv_model #(
     parameter integer V_ACTIVE          = 240,
     parameter integer H_BLANK_PCLK      = 40,     // pclk cycles between lines
     parameter integer V_BLANK_LINES     = 8,
-    parameter integer PCLK_PERIOD       = 40,     // ns  -> 25 MHz
+    parameter real PCLK_PERIOD       = 40,     // ns  -> 25 MHz
     parameter integer VSYNC_ACTIVE_HIGH = 1,
     parameter integer EXTRA_COLS        = 0,
     parameter integer EXTRA_ROWS        = 0,

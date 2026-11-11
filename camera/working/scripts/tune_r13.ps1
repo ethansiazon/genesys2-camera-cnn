@@ -33,11 +33,15 @@ $wbGains = @('3400','3401','3402','3403','3404','3405')
 $adjustable = @('3500','3501','3502','350A','350B','3406') + $wbGains +
     $gammaAddresses + @('5583','5584','5586','5587','5588','5580')
 $profile = [ordered]@{
-    '300A'=0x56; '300B'=0x40; '3035'=0x21; '3036'=0x5A; '3824'=5
-    '380C'=7; '380D'=0x68; '380E'=3; '380F'=0xD8; '3814'=0x31; '3815'=0x31
+    '300A'=0x56; '300B'=0x40; '380E'=3; '380F'=0xD8; '3814'=0x31; '3815'=0x31
     '4300'=0x61; '501F'=1; '503D'=0; '3503'=3
 }
-$addresses = @($profile.Keys) + @('5000','5001') + $adjustable
+$timingAddresses = @('3035','3036','3108','3824','380C','380D')
+$supportedTimings = @{
+    '21 5A 01 05 07 68' = 'R13'
+    '11 63 11 04 0A 7C' = 'R13 30 FPS trial'
+}
+$addresses = @($profile.Keys) + $timingAddresses + @('5000','5001') + $adjustable
 if (-not $OutDir) {
     $root = (Resolve-Path -LiteralPath (Join-Path $PSScriptRoot '../../..')).Path
     $OutDir = Join-Path $root ('local_results/camera_tuner/' + (Get-Date -Format 'yyyyMMdd_HHmmss_fff'))
@@ -47,6 +51,7 @@ New-Item -ItemType Directory -Path $OutDir | Out-Null
 $OutDir = (Resolve-Path -LiteralPath $OutDir).Path
 $history = [System.Collections.Generic.Stack[object]]::new()
 $script:uncertainWrite = $false
+$script:loadedProfile = $null
 
 function Read-Settings {
     $folder = Join-Path $OutDir ('read_' + [guid]::NewGuid().ToString('N'))
@@ -61,6 +66,13 @@ function Read-Settings {
             throw "Camera mode differs at register $address. Load R13, select only SW6, and reopen the tuner."
         }
     }
+    $signature = ($timingAddresses | ForEach-Object { '{0:X2}' -f $values[$_] }) -join ' '
+    $name = $supportedTimings[$signature]
+    if (-not $name) { throw 'Unsupported sensor clock settings. Load R13 or the R13 30 FPS trial.' }
+    if ($script:loadedProfile -and $script:loadedProfile -ne $name) {
+        throw 'The camera profile changed. Reopen the tuner to start a fresh session.'
+    }
+    $script:loadedProfile = $name
     return $values
 }
 
@@ -143,7 +155,7 @@ function Save-Preset($Values, [string]$Label) {
         $startup[$address] = $readback[$address]
     }
     [ordered]@{
-        schema = 1; expected_bitstream = 'R13'; saved_at = (Get-Date -Format o)
+        schema = 1; expected_bitstream = $script:loadedProfile; saved_at = (Get-Date -Format o)
         settings = (Get-PictureSettings $Values); image_registers_hex = $startup
         sensor_readback_hex = $readback
     } | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $path -Encoding UTF8
@@ -153,7 +165,7 @@ function Save-Preset($Values, [string]$Label) {
 Write-Host 'R13 Camera Tuner. Watch HDMI while you type commands here.'
 Write-Host 'Use UART/J15 only, leave only SW6 up, and avoid BTNC while tuning.'
 $initial = Read-Settings
-Write-Host "Connected to $Port. R13 sensor settings verified."
+Write-Host "Connected to $Port. Sensor settings match $script:loadedProfile."
 Write-Host "Session folder: $OutDir"
 Show-Help
 
